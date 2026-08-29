@@ -5,8 +5,8 @@
   --line:#d9e0e6; --line-strong:#c7d0d9;
   --ink:#18212b; --ink-2:#475569; --muted:#73808c;
   --ok:#168552; --ok-bg:#eaf7f0;
-  --warn:#a86a00; --warn-bg:#fff4d8;
-  --crit:#c73535; --crit-bg:#fff0f0;
+  --warn:#c2410c; --warn-bg:#fff4d8;
+  --crit:#dc2626; --crit-bg:#fff0f0;
   --info:#2869a8; --info-bg:#edf5fc;
   --us:#7b4b9e; --us-bg:#f5eff9;
   --r-s:8px; --r-m:12px; --r-l:18px;
@@ -14,8 +14,8 @@
   --sidebar:196px;
 }
 *,*::before,*::after{box-sizing:border-box}
-html,body{max-width:100%;overflow-x:hidden;overscroll-behavior:none}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;font-size:15px;line-height:1.42;padding-bottom:72px}
+html,body{max-width:100%;overflow-x:hidden}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;font-size:16px;line-height:1.42;padding-bottom:72px}
 h1,h2,h3,p,ul,figure{margin:0} a{color:inherit;-webkit-tap-highlight-color:transparent} button,input,select,textarea{font:inherit;color:inherit}
 button{cursor:pointer;-webkit-tap-highlight-color:transparent}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
 :focus-visible{outline:3px solid rgba(40,105,168,.25);outline-offset:2px}
@@ -383,8 +383,8 @@ body{background:#f5f7fb;color:#172033}
 .theme-slate .card-mark{background:#f1f4f7;color:#596a7d;border-color:#e0e6ec}.theme-slate .orb-accent{background:#718096}
 .theme-indigo .card-mark{background:#eef1ff;color:#5161d0;border-color:#dde3ff}.theme-indigo .orb-accent{background:#5e6fd9}
 
-.status-red .status-orb{background:linear-gradient(145deg,#ff6262,#d82e2e)}
-.status-orange .status-orb{background:linear-gradient(145deg,#ffb83e,#e48804)}
+.status-red .status-orb{background:linear-gradient(145deg,#ff5252,#dc2626)}
+.status-orange .status-orb{background:linear-gradient(145deg,#ff8a3d,#ea580c)}
 .status-blue .status-orb{background:linear-gradient(145deg,#58a9ff,#276fd0)}
 .status-green .status-orb{background:linear-gradient(145deg,#54c886,#1d9658)}
 .status-grey .status-orb{background:linear-gradient(145deg,#aab4c0,#7c8896)}
@@ -421,3 +421,14 @@ button.home-list-row:hover{background:#fafbfd}
 .btn{box-shadow:0 3px 8px rgba(28,39,60,.06);border-radius:10px}.btn:hover{box-shadow:0 6px 14px rgba(28,39,60,.09)}
 .sheet{border-radius:18px}.vrh-card{border-radius:16px;box-shadow:0 7px 22px rgba(28,39,60,.07)}
 @media(prefers-reduced-motion:reduce){.radar-card.orb-card,.btn{transition:none!important}}
+
+/* leggibilità mobile: font delle card troppo piccoli, uniforma senza rimpicciolire su schermi stretti */
+.orb-card .card-name{font-size:15px}
+.orb-card .card-meta{font-size:12px}
+.orb-status{font-size:11.5px}
+.orb-stats{font-size:12px}
+.orb-stats b{font-size:13px}
+.page-desc{font-size:14.5px}
+.card-meta{font-size:12px}
+.status-pill{font-size:11px}
+.badge{font-size:11px}
