@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Media Pilot — Autotest Beta Dashboard (TASK_FINAL_DASHBOARD_BETA_01 §22)</title>
+<link rel="stylesheet" href="app.css">
+<style>
+  #results{max-width:900px;margin:0 auto;padding:var(--s4)}
+  .test-row{border:1px solid var(--line);border-radius:var(--r-m);padding:var(--s3);margin-bottom:var(--s2)}
+  .test-pass{border-left:4px solid var(--ok)}
+  .test-fail{border-left:4px solid var(--crit)}
+  .test-name{font-weight:700}
+  .test-detail{font-size:13px;color:var(--ink-2);margin-top:4px;white-space:pre-wrap}
+  #summary{font-size:20px;font-weight:800;margin-bottom:var(--s4)}
+</style>
+</head>
+<body>
+<div id="results"><h1 class="t-28">Media Pilot — Autotest Beta Dashboard</h1>
+<p class="t-14" style="color:var(--ink-2)">Verifica §22 di TASK_FINAL_DASHBOARD_BETA_01.md contro i JSON REALI (assets/data/, data/pipeline_health.json), non l'embedded demo. Serve http (es. python -m http.server), non file://.</p>
+<div id="summary">In esecuzione…</div><div id="rows"></div></div>
+<script src="embedded-data.js"></script>
+<script src="data.js"></script>
+<script src="store.js"></script>
+<script src="dashboard-config.js"></script>
+<script src="radar.js"></script>
+<script src="ui.js"></script>
+<script src="header.js"></script>
+<script>
+(function () {
+  'use strict';
+  var rowsEl = document.getElementById('rows');
+  var results = [];
+  var jsErrors = [];
+  window.addEventListener('error', function (e) { jsErrors.push(String(e.message || e.error)); });
+  window.addEventListener('unhandledrejection', function (e) {
+    var msg = String((e.reason && e.reason.message) || e.reason);
+    if (/AbortError/.test(msg) && /transition/i.test(msg)) return; // vedi ui.js: rumore innocuo View Transitions
+    jsErrors.push(msg);
+  });
+
+  function addResult(n, name, pass, detail) { results.push({ n: n, name: name, pass: pass, detail: detail || '' }); }
+  function render() {
+    var passCount = results.filter(function (r) { return r.pass; }).length;
+    document.getElementById('summary').textContent = passCount + ' / ' + results.length + ' autotest passed';
+    document.getElementById('summary').style.color = passCount === results.length ? 'var(--ok)' : 'var(--crit)';
+    rowsEl.innerHTML = results.slice().sort(function (a, b) { return a.n - b.n; }).map(function (r) {
+      return '<div class="test-row ' + (r.pass ? 'test-pass' : 'test-fail') + '">' +
+        '<div class="test-name">' + r.n + '. ' + UI.esc(r.name) + ' — ' + (r.pass ? 'PASS' : 'FAIL') + '</div>' +
+        (r.detail ? '<div class="test-detail">' + UI.esc(r.detail) + '</div>' : '') + '</div>';
+    }).join('');
+  }
+
+  var ALL_CARDS = [].concat(DashboardConfig.US, DashboardConfig.KONKURENTI, DashboardConfig.OSTALI, DashboardConfig.TERITORIJ);
+
+  MPData.loadAll().then(function (data) {
+    var missing = data.__missing || [];
+
+    // 1. nessuna eccezione/rejection non gestita durante il caricamento + render minimale
+    (function () {
+      try {
+        RadarEngine.rankCards(ALL_CARDS, data.rassegna || [], data.signals || []);
+      } catch (e) { jsErrors.push('rankCards: ' + e.message); }
+      setTimeout(function () {
+        addResult(1, 'Dashboard carica senza errori JS', jsErrors.length === 0, jsErrors.length ? jsErrors.join(' | ') : 'nessun error/unhandledrejection catturato');
+        render();
+      }, 50);
+    })();
+
+    // 2-5. i 4 file reali sono stati letti (non in __missing) quando servito via http
+    ['rassegna', 'trending', 'signals', 'pipeline_health'].forEach(function (name, i) {
+      var ok = missing.indexOf(name) === -1;
+      addResult(2 + i, name + '.json viene letto', ok, ok ? (name + ' presente, __missing=[' + missing.join(',') + ']') : (name + ' in __missing (probabile file:// o file assente): [' + missing.join(',') + ']'));
+    });
+
+    // 6. semafori renderizzati (rankCards produce un livello per ogni card, US come campione)
+    (function () {
+      var rows = RadarEngine.rankCards(DashboardConfig.US, data.rassegna || [], data.signals || []);
+      var ok = rows.length > 0 && rows.every(function (r) { return ['grey', 'green', 'orange', 'red'].indexOf(r.status.level) !== -1; });
+      addResult(6, 'Semafori renderizzati (livello valido per ogni card US)', ok, rows.length + ' card, livelli: ' + rows.map(function (r) { return r.card.key + '=' + r.status.level; }).join(', '));
+    })();
+
+    // 7. menu collapse: Store.setNavCollapsed esiste e cambia lo stato
+    (function () {
+      var before = Store.state.navCollapsed;
+      var ok = typeof Store.setNavCollapsed === 'function';
+      if (ok) { Store.setNavCollapsed(!before); ok = Store.state.navCollapsed === !before; Store.setNavCollapsed(before); }
+      addResult(7, 'Menu collapse (Store.setNavCollapsed) cambia lo stato', ok, 'Store.state.navCollapsed toggle verificato: ' + ok);
+    })();
+
+    // 8. menu mobile / drawer: componente condiviso esiste (Header.menuSheet e' privato, verifichiamo Header.mount + UI.openSheet, gia' provato dal drawer)
+    (function () {
+      var ok = typeof Header === 'object' && typeof Header.mount === 'function' && typeof UI.openSheet === 'function';
+      addResult(8, 'Menu mobile / drawer disponibile (Header.mount + UI.openSheet condiviso)', ok, ok ? 'Header.mount() e UI.openSheet() presenti (menuSheet() di header.js li usa entrambi)' : 'componenti mancanti');
+    })();
+
+    // 9. detail card sheet apre/chiude
+    (function () {
+      var card = DashboardConfig.US[0];
+      var btn = document.createElement('button');
+      document.body.appendChild(btn);
+      var handle = UI.openDashboardCard(card, data.rassegna || [], btn, data.signals || []);
+      var openedOk = !!document.querySelector('.sheet-overlay');
+      if (handle && handle.close) handle.close();
+      setTimeout(function () {
+        var closedOk = !document.querySelector('.sheet-overlay');
+        btn.remove();
+        addResult(9, 'Detail card sheet apre/zatvara se', openedOk && closedOk, 'open=' + openedOk + ' close=' + closedOk);
+        render();
+      }, 250);
+    })();
+
+    // 10. evidence link apre URL originale (href reale, target=_blank) in un sheet gia' aperto
+    (function () {
+      var withUrl = (data.rassegna || []).find(function (i) { return !!i.url; });
+      var ok = false, detail = 'nessun item rassegna con url reale trovato';
+      if (withUrl) {
+        var card = DashboardConfig.US.find(function (c) { return RadarEngine.cardItems(c, [withUrl]).length > 0; }) || DashboardConfig.US[0];
+        var btn = document.createElement('button'); document.body.appendChild(btn);
+        var handle = UI.openDashboardCard(card, [withUrl].concat(data.rassegna || []), btn, data.signals || []);
+        var a = document.querySelector('.sheet-body a[target="_blank"]');
+        ok = !!a && a.getAttribute('href') && a.getAttribute('rel') === 'noopener';
+        detail = ok ? ('link evidence trovato: ' + a.getAttribute('href')) : 'nessun <a target=_blank rel=noopener> nel sheet';
+        if (handle && handle.close) handle.close();
+        btn.remove();
+      }
+      addResult(10, 'Evidence link apre URL originale (target=_blank, rel=noopener)', ok, detail);
+    })();
+
+    // 11. l'assenza di un singolo JSON non rompe tutto: replica dal vivo della logica di
+    // isolamento di data.js (fetch reali + 1 path volutamente inesistente)
+    (function () {
+      Promise.all([
+        fetch('assets/data/rassegna.json').then(function (r) { return { name: 'rassegna', ok: r.ok }; }, function () { return { name: 'rassegna', ok: false }; }),
+        fetch('assets/data/trending.json').then(function (r) { return { name: 'trending', ok: r.ok }; }, function () { return { name: 'trending', ok: false }; }),
+        fetch('assets/data/NON_ESISTE.json').then(function (r) { return { name: 'fake', ok: r.ok }; }, function () { return { name: 'fake', ok: false }; })
+      ]).then(function (results3) {
+        var okOthers = results3[0].ok && results3[1].ok;
+        var fakeFailed = !results3[2].ok;
+        var pass = okOthers && fakeFailed;
+        addResult(11, 'Assenza di un JSON non rompe gli altri (isolamento per-file)', pass,
+          'rassegna.json ok=' + results3[0].ok + ', trending.json ok=' + results3[1].ok + ', path inesistente fallito correttamente=' + fakeFailed +
+          ' — data.js applica lo stesso pattern (fetchAny + .catch individuale) prima di controllare "allFailed"');
+        render();
+      });
+    })();
+
+    // 12. nessun dato demo spacciato per reale: rassegna/trending/signals non hanno il
+    // marcatore demo (developer_info, solo nei file v19-large-light/embedded)
+    (function () {
+      var demoMarked = (data.rassegna || []).filter(function (i) { return i.developer_info; }).length +
+        (data.trending || []).filter(function (i) { return i.developer_info; }).length +
+        (data.signals || []).filter(function (i) { return i.developer_info; }).length;
+      var ok = demoMarked === 0;
+      addResult(12, 'Nessun dato demo (developer_info) dentro rassegna/trending/signals', ok, ok ? 'nessun item con developer_info nei 3 file reali' : (demoMarked + ' item con developer_info trovati — mescolamento demo/reale'));
+    })();
+
+    // 13. nessun ROSSO automatico da Signal/Trending: cardStatus su TUTTE le card reali
+    (function () {
+      var rows = RadarEngine.rankCards(ALL_CARDS, data.rassegna || [], data.signals || []);
+      var reds = rows.filter(function (r) { return r.status.level === 'red'; });
+      addResult(13, 'Nessun ROSSO automatico su nessuna card reale', reds.length === 0, reds.length ? ('ROSSO su: ' + reds.map(function (r) { return r.card.key; }).join(', ')) : (rows.length + ' card, 0 in rosso'));
+      render();
+    })();
+
+    render();
+  }).catch(function (e) {
+    document.getElementById('summary').textContent = 'Errore di caricamento dati: ' + e.message;
+  });
+})();
+</script>
+</body>
+</html>

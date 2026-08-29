@@ -1,0 +1,86 @@
+# Soglie e pesi del pilot. Punto di partenza, non verita': vanno calibrati sul golden set
+# (data/golden/golden_dataset.json). Ogni voce senza annotazione esplicita e' "# da calibrare".
+clustering:
+  # B3.2, 2026-08-28: calibrato su n=51 coppie positive (44 DUPLICATO + 7 STESSO_EVENTO,
+  # golden+golden_b3 combinati) con ora reale di pubblicazione. Nessuna coppia positiva supera
+  # le 32.34h. ATTENZIONE censura: generate_candidate_pairs() campiona solo entro 72h, quindi
+  # non si puo' escludere che esistano positivi oltre le 72h mai osservati. 60h resta dentro il
+  # margine osservato (48-72h indicate dal task): non alzata ne' abbassata per mancanza di prova
+  # in un senso o nell'altro.
+  # C2, TASK_BETA_02, 2026-08-28: riconfermato dopo il fix dedup (RFC §6, gruppi chiusi) su un
+  # campione indipendente costruito ad hoc (166 coppie golden+golden_b3, joinate a clean.jsonl per
+  # la data): 50 coppie positive (DUPLICATO+STESSO_EVENTO) con data reale su entrambi i lati,
+  # nessuna oltre 32.34h. 60h resta il margine dichiarato (48-72h indicato dal task), non alzato ne'
+  # abbassato per mancanza di prova in un senso o nell'altro - stessa censura di prima: il pool
+  # candidati campiona solo entro 72h.
+  window_hours: 60
+  # C2, TASK_BETA_02, 2026-08-28: calibrato su n=166 coppie (stesso campione di window_hours sopra,
+  # Jaccard di parole su title_norm, non il ratio di SequenceMatcher del dedup - scale diverse).
+  # A 0.35 (attuale): precisione 1.0, recall 0.72, F1 0.839 - zero falsi positivi fra 112 negativi.
+  # Scendere aiuta poco e costa precisione (0.20 -> prec 0.977, rec 0.778, F1 0.866; 0.15 -> prec
+  # 0.938, rec 0.833, F1 0.882, il migliore assoluto ma con 3 falsi positivi): dato che e' una delle
+  # tre prove in OR con corpo ed entita' (§2c), un falso positivo qui fonde due articoli scorrelati
+  # a prescindere dalle altre due prove - tenuta la soglia a precisione massima.
+  title_overlap_threshold: 0.35  # una delle tre prove (§2c), non piu' l'unico test
+  # TASK_BETA_02 C1, 2026-08-28: metrica sostituita, Jaccard su shingle -> TF-IDF+coseno (vedi
+  # pilot/dedup.py). La calibrazione B3.2 precedente (0.20, su Jaccard) e' SUPERATA — 0.20 su
+  # coseno significherebbe qualcosa di diverso, non solo un numero diverso. Ricalibrato su
+  # n=110 coppie golden (40 DUPLICATO, 7 STESSO_EVENTO, 63 DIVERSI), ESCLUSE le 52 coppie che
+  # coinvolgono BL_IJ3_006 (Banjaluka24, bug di estrazione: articoli correlati interi incollati
+  # nel testo, 71.4% degli item colpiti — non risolto, TASK_BETA_02_RESULTS.md). Coseno su
+  # quel campione: F1 0.968 stabile su tutto il plateau 0.10-0.40 (identico al miglior Jaccard
+  # di prima) — 0.20 al centro, stesso valore numerico per continuita' ma significato diverso.
+  # INCLUDENDO BL_IJ3_006 il coseno resta piu' robusto del Jaccard (F1 0.874-0.905 invece di
+  # 0.726 con Jaccard) ma non immune: falsi accorpamenti su quella fonte restano un rischio
+  # noto finche' l'estrazione non e' corretta.
+  body_overlap_threshold: 0.20
+  min_shared_entities: 2  # §2c: entita' condivise come prova, non piu' inutilizzate
+  # C2, TASK_BETA_02, 2026-08-28: RICONFERMATO, non un mancato ricalcolo - rimisurato dopo il fix
+  # dedup (RFC §6) su n=505 item rilevanti (era 520 in B3.2): stesso continuum, nessun gap netto -
+  # ij5-konkurencija 49.7%, dodik 37.0%, finansiranje 26.9%, us-snsd 26.5%, snsd 26.1%,
+  # doboj 24.6%, predsjednik-rs 22.0%, izborni-proces 21.2%, cik 21.2%, minic 16.0%,
+  # stanivukovic 15.0%, predsjednistvo 14.5%. A 0.10 il filtro esclude ~11 entita' dal segnale di
+  # clustering (prima del corpus allargato ne escludeva 2): cambio di comportamento gia' accettato
+  # in B3.2, confermato qui, non riaperto.
+  # Nota di merito invariata: diverse di queste (ij5-konkurencija/doboj/predsjednik-rs/izborni-
+  # proces/cik) sono categorie/ruoli/luoghi, non attori — un'unica soglia DF globale sta facendo
+  # un lavoro che dovrebbe fare il tipo di entita'. Decisione di prodotto, non presa qui.
+  max_document_frequency: 0.10
+velocity:
+  # B0: tetto anti-gonfiaggio di FIX 3, ora applicato come CAP sugli articoli
+  # (min(articoli_4h, gruppi_distinti * max_items_per_group)) invece di sostituire l'unita' del
+  # numeratore. Prima il numeratore contava gruppi e il denominatore item: velocity aveva 2 soli
+  # valori. 3 = una fonte che ripubblica piu' di 3 volte in 4h non aggiunge segnale.
+  # C2, TASK_BETA_02, 2026-08-28: CALIBRATO, n=0 - misurato su tutti i 332 cluster del corpus
+  # reale, il cap non vincola MAI (nessun cluster ha len(recent) > gruppi*3). Non e' una soglia
+  # non calibrata: e' verificato che qui non c'e' niente da tarare su questo corpus, resta come
+  # guardia strutturale per un volume che oggi non esiste.
+  max_items_per_group: 3
+signal_weights:
+  # C3, TASK_BETA_02, 2026-08-28: pesi ridisegnati, non solo ritoccati - vedi pilot/score.py
+  # compute_layer1_and_signal per il perche'. source_diversity e' un conteggio vero (1-8 su questo
+  # corpus) e resta l'unita' principale del punteggio, peso 1.0. Le altre tre sono booleane/
+  # categoriche (mai piu' di 4 livelli, vedi RFC_SECONDA_OPINIONE_02.md §7 domanda 3): pesate
+  # apposta su una scala che non supera MAI 1.0 in somma (0.3+0.2+0.1=0.6), cosi' due cluster con
+  # source_diversity diversa non collidono mai per via dei pesi. Prima erano tutti a peso 1.0 sulla
+  # stessa scala 0-1: era questo, non la mancanza di segnale, a schiacciare signal_score a 16-17
+  # valori (vedi TASK_BETA_02_RESULTS.md C3). Risultato misurato: 24 valori distinti su 332 cluster
+  # - e' anche il tetto reale delle combinazioni possibili di questi 4 segnali su questo corpus, non
+  # i 50 auspicati dal task: dichiarato in BETA_RESULTS.md, non nascosto con altri pesi.
+  source_diversity: 1.0  # piu' fonti indipendenti = segnale piu' forte, unita' principale del punteggio
+  trending_now: 0.2  # flag booleano (cluster_4h_count>=2), non piu' un rapporto continuo: vedi score.py
+  source_jump: 0.1  # locale->nazionale/ufficiale, boolean: 9/332 cluster, raro ma reale
+  entity_centrality: 0.3  # 4 livelli fissi per tipo di entita' (0/0.3/0.6/1.0), non 0-1 continuo
+dedup:
+  title_similarity_threshold: 0.90  # SequenceMatcher.ratio() su title_norm entro 48h, fallback (passaggio 4)
+  # TASK_BETA_02 C1, 2026-08-28: metrica sostituita (TF-IDF+coseno, vedi pilot/dedup.py). La
+  # riconferma B3.2 di 0.50 era su Jaccard: SUPERATA, non e' lo stesso numero sulla nuova scala.
+  # Ricalibrato su n=162 coppie golden (44 DUPLICATO, 7 STESSO_EVENTO, 111 DIVERSI, incl.
+  # BL_IJ3_006 — qui la contaminazione conta, la soglia va scelta per il corpus REALE che dedup
+  # vede ora, non per un sottoinsieme pulito): a 0.80 precisione 0.977, recall 0.977, F1 0.977 —
+  # il migliore misurato sull'intero campione. Soglia alta apposta: qui un falso positivo fonde
+  # due articoli distinti in un item solo (distruttivo, non recuperabile a valle), quindi la
+  # priorita' e' non sbagliare in quella direzione anche con BL_IJ3_006 ancora contaminato.
+  # (Sul solo campione pulito, esclusa BL_IJ3_006, l'ottimo sarebbe 0.65-0.67, F1 0.988 — piu'
+  # permissivo, ma presuppone che il bug di estrazione sia gia' corretto.)
+  body_similarity_threshold: 0.80

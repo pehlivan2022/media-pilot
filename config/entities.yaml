@@ -1,0 +1,2140 @@
+# generato da pilot/entities.py — NON modificare a mano.
+# fonte: dashboard-config.js (letto, non modificato). Rilanciare lo script per rigenerare.
+source_of_truth: dashboard-config.js
+generated_entities: 55
+entities:
+  - key: "us"
+    label: "Ujedinjena Srpska"
+    type: "party"
+    ij: null
+    aliases:
+      - text: "Ujedinjena Srpska"
+        script: "latn"
+        norm: "ujedinjena srpska"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Уједињена Српска"
+        script: "cyrl"
+        norm: "ujedinjena srpska"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "US"
+        script: "latn"
+        norm: "us"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "УС"
+        script: "cyrl"
+        norm: "us"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "stevandic"
+    label: "Nenad Stevandić"
+    type: "actor"
+    ij: null
+    aliases:
+      - text: "Nenad Stevandić"
+        script: "latn"
+        norm: "nenad stevandic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Ненад Стевандић"
+        script: "cyrl"
+        norm: "nenad stevandic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Nenad Stevandic"
+        script: "latn"
+        norm: "nenad stevandic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Ненад Стевандиц"
+        script: "cyrl"
+        norm: "nenad stevandic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Stevandić"
+        script: "latn"
+        norm: "stevandic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Стевандић"
+        script: "cyrl"
+        norm: "stevandic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Stevandic"
+        script: "latn"
+        norm: "stevandic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Стевандиц"
+        script: "cyrl"
+        norm: "stevandic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "STE"
+        script: "latn"
+        norm: "ste"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "СТЕ"
+        script: "cyrl"
+        norm: "ste"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "US"
+        script: "latn"
+        norm: "us"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "УС"
+        script: "cyrl"
+        norm: "us"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "us-snsd"
+    label: "US ↔ SNSD"
+    type: "relation"
+    ij: null
+    aliases:
+      - text: "Ujedinjena Srpska"
+        script: "latn"
+        norm: "ujedinjena srpska"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Уједињена Српска"
+        script: "cyrl"
+        norm: "ujedinjena srpska"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "SNSD"
+        script: "latn"
+        norm: "snsd"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "СНСД"
+        script: "cyrl"
+        norm: "snsd"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "REL"
+        script: "latn"
+        norm: "rel"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "РЕЛ"
+        script: "cyrl"
+        norm: "rel"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "US"
+        script: "latn"
+        norm: "us"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "УС"
+        script: "cyrl"
+        norm: "us"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "tesic"
+    label: "Rade Tešić"
+    type: "actor"
+    ij: "IJ5"
+    aliases:
+      - text: "Rade Tešić"
+        script: "latn"
+        norm: "rade tesic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Раде Тешић"
+        script: "cyrl"
+        norm: "rade tesic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Rade Tesic"
+        script: "latn"
+        norm: "rade tesic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Раде Тесиц"
+        script: "cyrl"
+        norm: "rade tesic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+  - key: "petkovic"
+    label: "Milan Petković"
+    type: "actor"
+    ij: null
+    aliases:
+      - text: "Milan Petković"
+        script: "latn"
+        norm: "milan petkovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Милан Петковић"
+        script: "cyrl"
+        norm: "milan petkovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Milan Petkovic"
+        script: "latn"
+        norm: "milan petkovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Милан Петковиц"
+        script: "cyrl"
+        norm: "milan petkovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+  - key: "trninic6"
+    label: "Milan Trninić"
+    type: "actor"
+    ij: "IJ6"
+    aliases:
+      - text: "Milan Trninić"
+        script: "latn"
+        norm: "milan trninic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Милан Трнинић"
+        script: "cyrl"
+        norm: "milan trninic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Milan Trninic"
+        script: "latn"
+        norm: "milan trninic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Милан Трниниц"
+        script: "cyrl"
+        norm: "milan trninic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+  - key: "radovic7"
+    label: "Miladin Radović"
+    type: "actor"
+    ij: "IJ7"
+    aliases:
+      - text: "Miladin Radović"
+        script: "latn"
+        norm: "miladin radovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Миладин Радовић"
+        script: "cyrl"
+        norm: "miladin radovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Miladin Radovic"
+        script: "latn"
+        norm: "miladin radovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Миладин Радовиц"
+        script: "cyrl"
+        norm: "miladin radovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+  - key: "mejakic1"
+    label: "Nenad Mejakić"
+    type: "actor"
+    ij: "IJ1"
+    aliases:
+      - text: "Nenad Mejakić"
+        script: "latn"
+        norm: "nenad mejakic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Ненад Мејакић"
+        script: "cyrl"
+        norm: "nenad mejakic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Nenad Mejakic"
+        script: "latn"
+        norm: "nenad mejakic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Ненад Мејакиц"
+        script: "cyrl"
+        norm: "nenad mejakic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+  - key: "trninic2"
+    label: "Aleksandar Trninić"
+    type: "actor"
+    ij: "IJ2"
+    aliases:
+      - text: "Aleksandar Trninić"
+        script: "latn"
+        norm: "aleksandar trninic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Александар Трнинић"
+        script: "cyrl"
+        norm: "aleksandar trninic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Aleksandar Trninic"
+        script: "latn"
+        norm: "aleksandar trninic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Александар Трниниц"
+        script: "cyrl"
+        norm: "aleksandar trninic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+  - key: "ivanovic4"
+    label: "Nemanja Ivanović"
+    type: "actor"
+    ij: "IJ4"
+    aliases:
+      - text: "Nemanja Ivanović"
+        script: "latn"
+        norm: "nemanja ivanovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Немања Ивановић"
+        script: "cyrl"
+        norm: "nemanja ivanovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Nemanja Ivanovic"
+        script: "latn"
+        norm: "nemanja ivanovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Немања Ивановиц"
+        script: "cyrl"
+        norm: "nemanja ivanovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+  - key: "brezo8"
+    label: "Slavka Brezo"
+    type: "actor"
+    ij: "IJ8"
+    aliases:
+      - text: "Slavka Brezo"
+        script: "latn"
+        norm: "slavka brezo"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Славка Брезо"
+        script: "cyrl"
+        norm: "slavka brezo"
+        alias_class: "frase"
+        exact_word_uppercase: false
+  - key: "kovac9"
+    label: "Milan Kovač"
+    type: "actor"
+    ij: "IJ9"
+    aliases:
+      - text: "Milan Kovač"
+        script: "latn"
+        norm: "milan kovac"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Милан Ковач"
+        script: "cyrl"
+        norm: "milan kovac"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Milan Kovac"
+        script: "latn"
+        norm: "milan kovac"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Милан Ковац"
+        script: "cyrl"
+        norm: "milan kovac"
+        alias_class: "frase"
+        exact_word_uppercase: false
+  - key: "us-sps"
+    label: "US ↔ SPS"
+    type: "relation"
+    ij: null
+    aliases:
+      - text: "Ujedinjena Srpska"
+        script: "latn"
+        norm: "ujedinjena srpska"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Уједињена Српска"
+        script: "cyrl"
+        norm: "ujedinjena srpska"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "SPS"
+        script: "latn"
+        norm: "sps"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "СПС"
+        script: "cyrl"
+        norm: "sps"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "Goran Selak"
+        script: "latn"
+        norm: "goran selak"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Горан Селак"
+        script: "cyrl"
+        norm: "goran selak"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "REL"
+        script: "latn"
+        norm: "rel"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "РЕЛ"
+        script: "cyrl"
+        norm: "rel"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "US"
+        script: "latn"
+        norm: "us"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "УС"
+        script: "cyrl"
+        norm: "us"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "komp-us"
+    label: "Kompenzaciona US"
+    type: "model"
+    ij: null
+    aliases: []
+  - key: "mandati-us"
+    label: "Mandatni radar US"
+    type: "model"
+    ij: null
+    aliases:
+      - text: "NSRS"
+        script: "latn"
+        norm: "nsrs"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "НСРС"
+        script: "cyrl"
+        norm: "nsrs"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "Ujedinjena Srpska"
+        script: "latn"
+        norm: "ujedinjena srpska"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Уједињена Српска"
+        script: "cyrl"
+        norm: "ujedinjena srpska"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "US"
+        script: "latn"
+        norm: "us"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "УС"
+        script: "cyrl"
+        norm: "us"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "IZB"
+        script: "latn"
+        norm: "izb"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ИЗБ"
+        script: "cyrl"
+        norm: "izb"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "snsd"
+    label: "SNSD"
+    type: "party"
+    ij: null
+    aliases:
+      - text: "SNSD"
+        script: "latn"
+        norm: "snsd"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "СНСД"
+        script: "cyrl"
+        norm: "snsd"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "dodik"
+    label: "Milorad Dodik"
+    type: "actor"
+    ij: null
+    aliases:
+      - text: "Milorad Dodik"
+        script: "latn"
+        norm: "milorad dodik"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Милорад Додик"
+        script: "cyrl"
+        norm: "milorad dodik"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Dodik"
+        script: "latn"
+        norm: "dodik"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Додик"
+        script: "cyrl"
+        norm: "dodik"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "SNSD"
+        script: "latn"
+        norm: "snsd"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "СНСД"
+        script: "cyrl"
+        norm: "snsd"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "sps"
+    label: "SPS · Goran Selak"
+    type: "party"
+    ij: null
+    aliases:
+      - text: "SPS"
+        script: "latn"
+        norm: "sps"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "СПС"
+        script: "cyrl"
+        norm: "sps"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "Goran Selak"
+        script: "latn"
+        norm: "goran selak"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Горан Селак"
+        script: "cyrl"
+        norm: "goran selak"
+        alias_class: "frase"
+        exact_word_uppercase: false
+  - key: "skrebic"
+    label: "Dragutin Škrebić"
+    type: "actor"
+    ij: "IJ5"
+    aliases:
+      - text: "Dragutin Škrebić"
+        script: "latn"
+        norm: "dragutin skrebic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Драгутин Шкребић"
+        script: "cyrl"
+        norm: "dragutin skrebic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Dragutin Skrebic"
+        script: "latn"
+        norm: "dragutin skrebic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Драгутин Скребиц"
+        script: "cyrl"
+        norm: "dragutin skrebic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Škrebić"
+        script: "latn"
+        norm: "skrebic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Шкребић"
+        script: "cyrl"
+        norm: "skrebic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Skrebic"
+        script: "latn"
+        norm: "skrebic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Скребиц"
+        script: "cyrl"
+        norm: "skrebic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+  - key: "josic"
+    label: "Danijel Jošić"
+    type: "actor"
+    ij: "IJ5"
+    aliases:
+      - text: "Danijel Jošić"
+        script: "latn"
+        norm: "danijel josic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Данијел Јошић"
+        script: "cyrl"
+        norm: "danijel josic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Danijel Josic"
+        script: "latn"
+        norm: "danijel josic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Данијел Јосиц"
+        script: "cyrl"
+        norm: "danijel josic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+  - key: "obren"
+    label: "Obren Petrović"
+    type: "actor"
+    ij: "IJ5"
+    aliases:
+      - text: "Obren Petrović"
+        script: "latn"
+        norm: "obren petrovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Обрен Петровић"
+        script: "cyrl"
+        norm: "obren petrovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Obren Petrovic"
+        script: "latn"
+        norm: "obren petrovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Обрен Петровиц"
+        script: "cyrl"
+        norm: "obren petrovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+  - key: "djurkovic"
+    label: "Sretko Đurković"
+    type: "actor"
+    ij: "IJ5"
+    aliases:
+      - text: "Sretko Đurković"
+        script: "latn"
+        norm: "sretko djurkovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Сретко Ђурковић"
+        script: "cyrl"
+        norm: "sretko djurkovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Sreto Đurković"
+        script: "latn"
+        norm: "sreto djurkovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Срето Ђурковић"
+        script: "cyrl"
+        norm: "sreto djurkovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Sretko Djurkovic"
+        script: "latn"
+        norm: "sretko djurkovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Сретко Дјурковиц"
+        script: "cyrl"
+        norm: "sretko djurkovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Sreto Djurkovic"
+        script: "latn"
+        norm: "sreto djurkovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Срето Дјурковиц"
+        script: "cyrl"
+        norm: "sreto djurkovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+  - key: "sp-demos"
+    label: "SP · DEMOS · NDP"
+    type: "party"
+    ij: null
+    aliases:
+      - text: "SP-DEMOS-NDP"
+        script: "latn"
+        norm: "sp-demos-ndp"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "СП-ДЕМОС-НДП"
+        script: "cyrl"
+        norm: "sp-demos-ndp"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Socijalistička partija"
+        script: "latn"
+        norm: "socijalisticka partija"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Социјалистичка партија"
+        script: "cyrl"
+        norm: "socijalisticka partija"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Socijalisticka partija"
+        script: "latn"
+        norm: "socijalisticka partija"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Социјалистицка партија"
+        script: "cyrl"
+        norm: "socijalisticka partija"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "DEMOS"
+        script: "latn"
+        norm: "demos"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "ДЕМОС"
+        script: "cyrl"
+        norm: "demos"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "NDP"
+        script: "latn"
+        norm: "ndp"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "НДП"
+        script: "cyrl"
+        norm: "ndp"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "Petar Đokić"
+        script: "latn"
+        norm: "petar djokic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Петар Ђокић"
+        script: "cyrl"
+        norm: "petar djokic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Petar Djokic"
+        script: "latn"
+        norm: "petar djokic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Петар Дјокиц"
+        script: "cyrl"
+        norm: "petar djokic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "SP"
+        script: "latn"
+        norm: "sp"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "СП"
+        script: "cyrl"
+        norm: "sp"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "dns-nps"
+    label: "DNS · NPS"
+    type: "party"
+    ij: null
+    aliases:
+      - text: "DNS-NPS"
+        script: "latn"
+        norm: "dns-nps"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "ДНС-НПС"
+        script: "cyrl"
+        norm: "dns-nps"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Darko Banjac"
+        script: "latn"
+        norm: "darko banjac"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Дарко Бањац"
+        script: "cyrl"
+        norm: "darko banjac"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Nenad Nešić"
+        script: "latn"
+        norm: "nenad nesic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Ненад Нешић"
+        script: "cyrl"
+        norm: "nenad nesic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Nenad Nesic"
+        script: "latn"
+        norm: "nenad nesic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Ненад Несиц"
+        script: "cyrl"
+        norm: "nenad nesic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "DNS"
+        script: "latn"
+        norm: "dns"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ДНС"
+        script: "cyrl"
+        norm: "dns"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "blanusa"
+    label: "Branko Blanuša"
+    type: "actor"
+    ij: null
+    aliases:
+      - text: "Branko Blanuša"
+        script: "latn"
+        norm: "branko blanusa"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Бранко Блануша"
+        script: "cyrl"
+        norm: "branko blanusa"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Branko Blanusa"
+        script: "latn"
+        norm: "branko blanusa"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Бранко Блануса"
+        script: "cyrl"
+        norm: "branko blanusa"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "BLA"
+        script: "latn"
+        norm: "bla"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "БЛА"
+        script: "cyrl"
+        norm: "bla"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "sds"
+    label: "SDS"
+    type: "party"
+    ij: null
+    aliases:
+      - text: "SDS"
+        script: "latn"
+        norm: "sds"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "СДС"
+        script: "cyrl"
+        norm: "sds"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "OPP"
+        script: "latn"
+        norm: "opp"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ОПП"
+        script: "cyrl"
+        norm: "opp"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "stanivukovic"
+    label: "Draško Stanivuković"
+    type: "actor"
+    ij: null
+    aliases:
+      - text: "Draško Stanivuković"
+        script: "latn"
+        norm: "drasko stanivukovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Драшко Станивуковић"
+        script: "cyrl"
+        norm: "drasko stanivukovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Drasko Stanivukovic"
+        script: "latn"
+        norm: "drasko stanivukovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Драско Станивуковиц"
+        script: "cyrl"
+        norm: "drasko stanivukovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "DRA"
+        script: "latn"
+        norm: "dra"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ДРА"
+        script: "cyrl"
+        norm: "dra"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "PSS"
+        script: "latn"
+        norm: "pss"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ПСС"
+        script: "cyrl"
+        norm: "pss"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "trivic"
+    label: "Jelena Trivić"
+    type: "actor"
+    ij: null
+    aliases:
+      - text: "Jelena Trivić"
+        script: "latn"
+        norm: "jelena trivic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Јелена Тривић"
+        script: "cyrl"
+        norm: "jelena trivic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Jelena Trivic"
+        script: "latn"
+        norm: "jelena trivic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Јелена Тривиц"
+        script: "cyrl"
+        norm: "jelena trivic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "JEL"
+        script: "latn"
+        norm: "jel"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ЈЕЛ"
+        script: "cyrl"
+        norm: "jel"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "NF"
+        script: "latn"
+        norm: "nf"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "НФ"
+        script: "cyrl"
+        norm: "nf"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "vukanovic"
+    label: "Vukanović / Crnadak"
+    type: "party"
+    ij: null
+    aliases:
+      - text: "Nebojša Vukanović"
+        script: "latn"
+        norm: "nebojsa vukanovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Небојша Вукановић"
+        script: "cyrl"
+        norm: "nebojsa vukanovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Nebojsa Vukanovic"
+        script: "latn"
+        norm: "nebojsa vukanovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Небојса Вукановиц"
+        script: "cyrl"
+        norm: "nebojsa vukanovic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Igor Crnadak"
+        script: "latn"
+        norm: "igor crnadak"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Игор Црнадак"
+        script: "cyrl"
+        norm: "igor crnadak"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Za pravdu i red"
+        script: "latn"
+        norm: "za pravdu i red"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "За правду и ред"
+        script: "cyrl"
+        norm: "za pravdu i red"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "PDP RS"
+        script: "latn"
+        norm: "pdp rs"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "ПДП РС"
+        script: "cyrl"
+        norm: "pdp rs"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "VUK"
+        script: "latn"
+        norm: "vuk"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ВУК"
+        script: "cyrl"
+        norm: "vuk"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "OPP"
+        script: "latn"
+        norm: "opp"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ОПП"
+        script: "cyrl"
+        norm: "opp"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ZPR"
+        script: "latn"
+        norm: "zpr"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ЗПР"
+        script: "cyrl"
+        norm: "zpr"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "opozicija"
+    label: "Opozicija · odnosi"
+    type: "relation"
+    ij: null
+    aliases:
+      - text: "SDS"
+        script: "latn"
+        norm: "sds"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "СДС"
+        script: "cyrl"
+        norm: "sds"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "PSS"
+        script: "latn"
+        norm: "pss"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ПСС"
+        script: "cyrl"
+        norm: "pss"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "Narodni front"
+        script: "latn"
+        norm: "narodni front"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Народни фронт"
+        script: "cyrl"
+        norm: "narodni front"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Vukanović"
+        script: "latn"
+        norm: "vukanovic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Вукановић"
+        script: "cyrl"
+        norm: "vukanovic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Vukanovic"
+        script: "latn"
+        norm: "vukanovic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Вукановиц"
+        script: "cyrl"
+        norm: "vukanovic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "OPP"
+        script: "latn"
+        norm: "opp"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ОПП"
+        script: "cyrl"
+        norm: "opp"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "DRA"
+        script: "latn"
+        norm: "dra"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ДРА"
+        script: "cyrl"
+        norm: "dra"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "JEL"
+        script: "latn"
+        norm: "jel"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ЈЕЛ"
+        script: "cyrl"
+        norm: "jel"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "VUK"
+        script: "latn"
+        norm: "vuk"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ВУК"
+        script: "cyrl"
+        norm: "vuk"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "OP"
+        script: "latn"
+        norm: "op"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ОП"
+        script: "cyrl"
+        norm: "op"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "ij5-konkurencija"
+    label: "IJ5 · borba za mandat"
+    type: "race"
+    ij: "IJ5"
+    aliases:
+      - text: "IJ5"
+        script: "latn"
+        norm: "ij5"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "ИЈ5"
+        script: "cyrl"
+        norm: "ij5"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Doboj"
+        script: "latn"
+        norm: "doboj"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Добој"
+        script: "cyrl"
+        norm: "doboj"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Teslić"
+        script: "latn"
+        norm: "teslic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Теслић"
+        script: "cyrl"
+        norm: "teslic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Teslic"
+        script: "latn"
+        norm: "teslic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Теслиц"
+        script: "cyrl"
+        norm: "teslic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Škrebić"
+        script: "latn"
+        norm: "skrebic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Шкребић"
+        script: "cyrl"
+        norm: "skrebic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Skrebic"
+        script: "latn"
+        norm: "skrebic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Скребиц"
+        script: "cyrl"
+        norm: "skrebic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Tešić"
+        script: "latn"
+        norm: "tesic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Тешић"
+        script: "cyrl"
+        norm: "tesic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Tesic"
+        script: "latn"
+        norm: "tesic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Тесиц"
+        script: "cyrl"
+        norm: "tesic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Jošić"
+        script: "latn"
+        norm: "josic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Јошић"
+        script: "cyrl"
+        norm: "josic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Josic"
+        script: "latn"
+        norm: "josic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Јосиц"
+        script: "cyrl"
+        norm: "josic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "IJ"
+        script: "latn"
+        norm: "ij"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ИЈ"
+        script: "cyrl"
+        norm: "ij"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "US"
+        script: "latn"
+        norm: "us"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "УС"
+        script: "cyrl"
+        norm: "us"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "SNSD"
+        script: "latn"
+        norm: "snsd"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "СНСД"
+        script: "cyrl"
+        norm: "snsd"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "predsjednik-rs"
+    label: "Predsjednik RS"
+    type: "race"
+    ij: null
+    aliases:
+      - text: "predsjednik RS"
+        script: "latn"
+        norm: "predsjednik rs"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "предсједник РС"
+        script: "cyrl"
+        norm: "predsjednik rs"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Savo Minić"
+        script: "latn"
+        norm: "savo minic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Саво Минић"
+        script: "cyrl"
+        norm: "savo minic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Savo Minic"
+        script: "latn"
+        norm: "savo minic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Саво Миниц"
+        script: "cyrl"
+        norm: "savo minic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Branko Blanuša"
+        script: "latn"
+        norm: "branko blanusa"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Бранко Блануша"
+        script: "cyrl"
+        norm: "branko blanusa"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Branko Blanusa"
+        script: "latn"
+        norm: "branko blanusa"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Бранко Блануса"
+        script: "cyrl"
+        norm: "branko blanusa"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "PRE"
+        script: "latn"
+        norm: "pre"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ПРЕ"
+        script: "cyrl"
+        norm: "pre"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "minic"
+    label: "Savo Minić"
+    type: "actor"
+    ij: null
+    aliases:
+      - text: "Savo Minić"
+        script: "latn"
+        norm: "savo minic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Саво Минић"
+        script: "cyrl"
+        norm: "savo minic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Savo Minic"
+        script: "latn"
+        norm: "savo minic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Саво Миниц"
+        script: "cyrl"
+        norm: "savo minic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Minić"
+        script: "latn"
+        norm: "minic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Минић"
+        script: "cyrl"
+        norm: "minic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Minic"
+        script: "latn"
+        norm: "minic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Миниц"
+        script: "cyrl"
+        norm: "minic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "PRE"
+        script: "latn"
+        norm: "pre"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ПРЕ"
+        script: "cyrl"
+        norm: "pre"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "predsjednistvo"
+    label: "Predsjedništvo BiH"
+    type: "race"
+    ij: null
+    aliases:
+      - text: "Predsjedništvo BiH"
+        script: "latn"
+        norm: "predsjednistvo bih"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Предсједништво БиХ"
+        script: "cyrl"
+        norm: "predsjednistvo bih"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Predsjednistvo BiH"
+        script: "latn"
+        norm: "predsjednistvo bih"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Предсједниство БиХ"
+        script: "cyrl"
+        norm: "predsjednistvo bih"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Cvijanović"
+        script: "latn"
+        norm: "cvijanovic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Цвијановић"
+        script: "cyrl"
+        norm: "cvijanovic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Cvijanovic"
+        script: "latn"
+        norm: "cvijanovic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Цвијановиц"
+        script: "cyrl"
+        norm: "cvijanovic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Božović"
+        script: "latn"
+        norm: "bozovic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Божовић"
+        script: "cyrl"
+        norm: "bozovic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Bozovic"
+        script: "latn"
+        norm: "bozovic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Бозовиц"
+        script: "cyrl"
+        norm: "bozovic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Vukanović"
+        script: "latn"
+        norm: "vukanovic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Вукановић"
+        script: "cyrl"
+        norm: "vukanovic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Vukanovic"
+        script: "latn"
+        norm: "vukanovic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Вукановиц"
+        script: "cyrl"
+        norm: "vukanovic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+  - key: "jorgic"
+    label: "Marko Jorgić"
+    type: "actor"
+    ij: null
+    aliases:
+      - text: "Marko Jorgić"
+        script: "latn"
+        norm: "marko jorgic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Марко Јоргић"
+        script: "cyrl"
+        norm: "marko jorgic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Marko Jorgic"
+        script: "latn"
+        norm: "marko jorgic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Марко Јоргиц"
+        script: "cyrl"
+        norm: "marko jorgic"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "PRE"
+        script: "latn"
+        norm: "pre"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ПРЕ"
+        script: "cyrl"
+        norm: "pre"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "MJ"
+        script: "latn"
+        norm: "mj"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "МЈ"
+        script: "cyrl"
+        norm: "mj"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "cik"
+    label: "CIK BiH"
+    type: "institution"
+    ij: null
+    aliases:
+      - text: "CIK"
+        script: "latn"
+        norm: "cik"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ЦИК"
+        script: "cyrl"
+        norm: "cik"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "Centralna izborna komisija"
+        script: "latn"
+        norm: "centralna izborna komisija"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Централна изборна комисија"
+        script: "cyrl"
+        norm: "centralna izborna komisija"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "IZB"
+        script: "latn"
+        norm: "izb"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ИЗБ"
+        script: "cyrl"
+        norm: "izb"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "izborni-proces"
+    label: "Izborni proces"
+    type: "institution"
+    ij: null
+    aliases:
+      - text: "izborni proces"
+        script: "latn"
+        norm: "izborni proces"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "изборни процес"
+        script: "cyrl"
+        norm: "izborni proces"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "biračko mjesto"
+        script: "latn"
+        norm: "biracko mjesto"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "бирачко мјесто"
+        script: "cyrl"
+        norm: "biracko mjesto"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "biracko mjesto"
+        script: "latn"
+        norm: "biracko mjesto"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "бирацко мјесто"
+        script: "cyrl"
+        norm: "biracko mjesto"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "IZB"
+        script: "latn"
+        norm: "izb"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ИЗБ"
+        script: "cyrl"
+        norm: "izb"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "CIK"
+        script: "latn"
+        norm: "cik"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ЦИК"
+        script: "cyrl"
+        norm: "cik"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "kompenzacione"
+    label: "Kompenzacione liste"
+    type: "model"
+    ij: null
+    aliases: []
+  - key: "vijece"
+    label: "Vijeće naroda RS"
+    type: "institution"
+    ij: null
+    aliases:
+      - text: "Vijeće naroda"
+        script: "latn"
+        norm: "vijece naroda"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Вијеће народа"
+        script: "cyrl"
+        norm: "vijece naroda"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Vijece naroda"
+        script: "latn"
+        norm: "vijece naroda"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Вијеце народа"
+        script: "cyrl"
+        norm: "vijece naroda"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "VN"
+        script: "latn"
+        norm: "vn"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ВН"
+        script: "cyrl"
+        norm: "vn"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "ohr"
+    label: "OHR"
+    type: "institution"
+    ij: null
+    aliases:
+      - text: "OHR"
+        script: "latn"
+        norm: "ohr"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ОХР"
+        script: "cyrl"
+        norm: "ohr"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "visoki predstavnik"
+        script: "latn"
+        norm: "visoki predstavnik"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "високи представник"
+        script: "cyrl"
+        norm: "visoki predstavnik"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Crishock"
+        script: "latn"
+        norm: "crishock"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Црисхоцк"
+        script: "cyrl"
+        norm: "crishock"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Schmidt"
+        script: "latn"
+        norm: "schmidt"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Сцхмидт"
+        script: "cyrl"
+        norm: "schmidt"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "INT"
+        script: "latn"
+        norm: "int"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ИНТ"
+        script: "cyrl"
+        norm: "int"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "beograd"
+    label: "Beograd / Srbija"
+    type: "external"
+    ij: null
+    aliases:
+      - text: "Vučić"
+        script: "latn"
+        norm: "vucic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Вучић"
+        script: "cyrl"
+        norm: "vucic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Vucic"
+        script: "latn"
+        norm: "vucic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Вуциц"
+        script: "cyrl"
+        norm: "vucic"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "BEO"
+        script: "latn"
+        norm: "beo"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "БЕО"
+        script: "cyrl"
+        norm: "beo"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "SRB"
+        script: "latn"
+        norm: "srb"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "СРБ"
+        script: "cyrl"
+        norm: "srb"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "finansiranje"
+    label: "Finansiranje kampanje"
+    type: "institution"
+    ij: null
+    aliases:
+      - text: "budžetskih sredstava"
+        script: "latn"
+        norm: "budzetskih sredstava"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "буџетских средстава"
+        script: "cyrl"
+        norm: "budzetskih sredstava"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "budzetskih sredstava"
+        script: "latn"
+        norm: "budzetskih sredstava"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "будзетских средстава"
+        script: "cyrl"
+        norm: "budzetskih sredstava"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "KM"
+        script: "latn"
+        norm: "km"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "КМ"
+        script: "cyrl"
+        norm: "km"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "mediji"
+    label: "Medijski signal"
+    type: "model"
+    ij: null
+    aliases:
+      - text: "MEDIA"
+        script: "latn"
+        norm: "media"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "МЕДИА"
+        script: "cyrl"
+        norm: "media"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "SOURCE"
+        script: "latn"
+        norm: "source"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "СОУРЦЕ"
+        script: "cyrl"
+        norm: "source"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "NOISE"
+        script: "latn"
+        norm: "noise"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "НОИСЕ"
+        script: "cyrl"
+        norm: "noise"
+        alias_class: "forte"
+        exact_word_uppercase: false
+  - key: "doboj"
+    label: "Doboj"
+    type: "territory"
+    ij: "IJ5"
+    aliases:
+      - text: "Doboj"
+        script: "latn"
+        norm: "doboj"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "Добој"
+        script: "cyrl"
+        norm: "doboj"
+        alias_class: "forte"
+        exact_word_uppercase: false
+  - key: "banjaluka"
+    label: "Banja Luka"
+    type: "territory"
+    ij: "IJ3"
+    aliases:
+      - text: "Banja Luka"
+        script: "latn"
+        norm: "banja luka"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "Бања Лука"
+        script: "cyrl"
+        norm: "banja luka"
+        alias_class: "frase"
+        exact_word_uppercase: false
+      - text: "BL"
+        script: "latn"
+        norm: "bl"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "БЛ"
+        script: "cyrl"
+        norm: "bl"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "teren-promjene"
+    label: "Promjene na terenu"
+    type: "territory"
+    ij: null
+    aliases:
+      - text: "GO"
+        script: "latn"
+        norm: "go"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ГО"
+        script: "cyrl"
+        norm: "go"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "IJ"
+        script: "latn"
+        norm: "ij"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ИЈ"
+        script: "cyrl"
+        norm: "ij"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "LHI"
+        script: "latn"
+        norm: "lhi"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ЛХИ"
+        script: "cyrl"
+        norm: "lhi"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "ij1"
+    label: "IJ1 · Prijedor"
+    type: "territory"
+    ij: "IJ1"
+    aliases:
+      - text: "IJ"
+        script: "latn"
+        norm: "ij"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ИЈ"
+        script: "cyrl"
+        norm: "ij"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "IJ1"
+        script: "latn"
+        norm: "ij1"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "ИЈ1"
+        script: "cyrl"
+        norm: "ij1"
+        alias_class: "forte"
+        exact_word_uppercase: false
+  - key: "ij2"
+    label: "IJ2 · Gradiška / Laktaši / Prnjavor / Srbac"
+    type: "territory"
+    ij: "IJ2"
+    aliases:
+      - text: "IJ"
+        script: "latn"
+        norm: "ij"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ИЈ"
+        script: "cyrl"
+        norm: "ij"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "IJ2"
+        script: "latn"
+        norm: "ij2"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "ИЈ2"
+        script: "cyrl"
+        norm: "ij2"
+        alias_class: "forte"
+        exact_word_uppercase: false
+  - key: "ij3"
+    label: "IJ3 · Banja Luka"
+    type: "territory"
+    ij: "IJ3"
+    aliases:
+      - text: "IJ"
+        script: "latn"
+        norm: "ij"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ИЈ"
+        script: "cyrl"
+        norm: "ij"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "IJ3"
+        script: "latn"
+        norm: "ij3"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "ИЈ3"
+        script: "cyrl"
+        norm: "ij3"
+        alias_class: "forte"
+        exact_word_uppercase: false
+  - key: "ij4"
+    label: "IJ4 · Derventa / Brod / Modriča / Vukosavlje"
+    type: "territory"
+    ij: "IJ4"
+    aliases:
+      - text: "IJ"
+        script: "latn"
+        norm: "ij"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ИЈ"
+        script: "cyrl"
+        norm: "ij"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "IJ4"
+        script: "latn"
+        norm: "ij4"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "ИЈ4"
+        script: "cyrl"
+        norm: "ij4"
+        alias_class: "forte"
+        exact_word_uppercase: false
+  - key: "ij5"
+    label: "IJ5 · Doboj / Teslić / Petrovo / Stanari"
+    type: "territory"
+    ij: "IJ5"
+    aliases:
+      - text: "IJ"
+        script: "latn"
+        norm: "ij"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ИЈ"
+        script: "cyrl"
+        norm: "ij"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+  - key: "ij6"
+    label: "IJ6 · Bijeljina / Brčko"
+    type: "territory"
+    ij: "IJ6"
+    aliases:
+      - text: "IJ"
+        script: "latn"
+        norm: "ij"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ИЈ"
+        script: "cyrl"
+        norm: "ij"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "IJ6"
+        script: "latn"
+        norm: "ij6"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "ИЈ6"
+        script: "cyrl"
+        norm: "ij6"
+        alias_class: "forte"
+        exact_word_uppercase: false
+  - key: "ij7"
+    label: "IJ7 · Zvornik"
+    type: "territory"
+    ij: "IJ7"
+    aliases:
+      - text: "IJ"
+        script: "latn"
+        norm: "ij"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ИЈ"
+        script: "cyrl"
+        norm: "ij"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "IJ7"
+        script: "latn"
+        norm: "ij7"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "ИЈ7"
+        script: "cyrl"
+        norm: "ij7"
+        alias_class: "forte"
+        exact_word_uppercase: false
+  - key: "ij8"
+    label: "IJ8 · Istočno Sarajevo"
+    type: "territory"
+    ij: "IJ8"
+    aliases:
+      - text: "IJ"
+        script: "latn"
+        norm: "ij"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ИЈ"
+        script: "cyrl"
+        norm: "ij"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "IJ8"
+        script: "latn"
+        norm: "ij8"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "ИЈ8"
+        script: "cyrl"
+        norm: "ij8"
+        alias_class: "forte"
+        exact_word_uppercase: false
+  - key: "ij9"
+    label: "IJ9 · Hercegovina"
+    type: "territory"
+    ij: "IJ9"
+    aliases:
+      - text: "IJ"
+        script: "latn"
+        norm: "ij"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "ИЈ"
+        script: "cyrl"
+        norm: "ij"
+        alias_class: "ambiguo"
+        exact_word_uppercase: true
+      - text: "IJ9"
+        script: "latn"
+        norm: "ij9"
+        alias_class: "forte"
+        exact_word_uppercase: false
+      - text: "ИЈ9"
+        script: "cyrl"
+        norm: "ij9"
+        alias_class: "forte"
+        exact_word_uppercase: false
+ij_names:
+  IJ1: "Prijedor"
+  IJ2: "Gradiška / Laktaši / Prnjavor / Srbac"
+  IJ3: "Banja Luka"
+  IJ4: "Derventa / Brod / Modriča / Vukosavlje"
+  IJ5: "Doboj / Teslić / Petrovo / Stanari"
+  IJ6: "Bijeljina / Brčko"
+  IJ7: "Zvornik"
+  IJ8: "Istočno Sarajevo"
+  IJ9: "Hercegovina"

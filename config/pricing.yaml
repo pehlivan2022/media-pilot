@@ -1,0 +1,18 @@
+# §1a, TASK_CONTROL_PLUGIN_E_DASHBOARD_APPLIKE_01: prezzi per modello usati da pilot/spend.py.
+# Letti il 2026-08-29 da: platform.claude.com (Anthropic, tramite skill claude-api del progetto,
+# cache 2026-06-24) e un aggregatore di terze parti per DeepSeek (api-docs.deepseek.com non e'
+# stato raggiungibile via ricerca diretta in questa sessione — verificare su
+# https://api-docs.deepseek.com/quick_start/pricing prima di fidarsi ciecamente se sono passati
+# mesi). Ricontrollare periodicamente: i prezzi cambiano.
+models:
+  claude-sonnet-5:
+    input_per_1m_usd: 2.00
+    output_per_1m_usd: 10.00
+  deepseek-v4-pro:
+    input_per_1m_usd: 0.435
+    output_per_1m_usd: 0.87
+
+# Tetto di spesa giornaliero in USD. null = nessun tetto (default, nessuna decisione di prodotto
+# presa qui). Se impostato, pilot/llm.py::llm() solleva RuntimeError PRIMA di chiamare l'API
+# quando la spesa di oggi (data/spend.jsonl) e' gia' >= questo valore — nessun degrado silenzioso.
+daily_usd_cap: null

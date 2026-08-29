@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>Golden set — revisione</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Arial, sans-serif; max-width: 980px; margin: 24px auto; padding: 0 16px; color: #1a1a1a; }
+  h1 { font-size: 18px; }
+  .bar { background: #eee; border-radius: 6px; overflow: hidden; height: 10px; margin: 8px 0 4px; }
+  .bar-fill { background: #4a7; height: 100%; }
+  .meta { color: #666; font-size: 13px; margin-bottom: 20px; }
+  .queue-label { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; color: #fff; }
+  .q1 { background: #c0392b; }
+  .q2 { background: #2980b9; }
+  .card { border: 1px solid #ddd; border-radius: 8px; padding: 16px; margin-top: 12px; }
+  .orig { font-size: 15px; line-height: 1.5; white-space: pre-wrap; background: #fafafa; padding: 10px; border-radius: 6px; }
+  .cols { display: flex; gap: 16px; margin-top: 12px; }
+  .col { flex: 1; border: 1px solid #eee; border-radius: 6px; padding: 10px; }
+  .col h3 { margin: 0 0 8px; font-size: 13px; }
+  .diff { background: #fff3cd; }
+  .key { font-size: 11px; color: #888; }
+  .val { font-size: 14px; margin-bottom: 6px; }
+  .gloss { font-style: italic; color: #333; }
+  a.url { font-size: 12px; }
+  .hint { margin-top: 16px; font-size: 13px; color: #555; background: #f5f5f5; padding: 8px 12px; border-radius: 6px; }
+  kbd { background: #333; color: #fff; padding: 1px 6px; border-radius: 3px; font-size: 12px; }
+  #other-box { display: none; margin-top: 10px; }
+  #other-box textarea { width: 100%; height: 60px; }
+  .done { text-align: center; padding: 60px 0; color: #555; }
+</style>
+</head>
+<body>
+<h1>Golden set — revisione umana</h1>
+<div class="bar"><div class="bar-fill" id="progress-fill" style="width:0%"></div></div>
+<div class="meta" id="progress-text">caricamento…</div>
+
+<div id="content"></div>
+
+<div class="hint">
+  <kbd>1</kbd> accetta A &nbsp; <kbd>2</kbd> accetta B &nbsp; <kbd>3</kbd> nessuna delle due (apre campo) &nbsp;
+  <kbd>spazio</kbd> conferma (solo coda controllo) &nbsp; <kbd>&larr;</kbd> indietro &nbsp; <kbd>s</kbd> salta
+</div>
+
+<script>
+let state = null;
+let currentQueue = null; // 'disagreement' | 'spotcheck'
+let currentItem = null;
+let history = [];
+
+async function loadState() {
+  const res = await fetch('/api/state');
+  state = await res.json();
+  renderProgress();
+  pickCurrent();
+  render();
+}
+
+function renderProgress() {
+  const totalDone = state.decided_disagreements + state.decided_spotcheck;
+  const totalNeeded = state.total_disagreements + state.total_spotcheck;
+  const pct = totalNeeded ? Math.round(100 * totalDone / totalNeeded) : 100;
+  document.getElementById('progress-fill').style.width = pct + '%';
+  document.getElementById('progress-text').textContent =
+    `${totalDone}/${totalNeeded} decisioni fatte — disaccordi rimasti: ${state.queue1_disagreement.length}, controllo rimasto: ${state.queue2_spotcheck.length}`;
+}
+
+function pickCurrent() {
+  if (state.queue1_disagreement.length > 0) {
+    currentQueue = 'disagreement';
+    currentItem = state.queue1_disagreement[0];
+  } else if (state.queue2_spotcheck.length > 0) {
+    currentQueue = 'spotcheck';
+    currentItem = state.queue2_spotcheck[0];
+  } else {
+    currentQueue = null;
+    currentItem = null;
+  }
+}
+
+function diffClass(a, b) {
+  return JSON.stringify(a) !== JSON.stringify(b) ? 'diff' : '';
+}
+
+function render() {
+  const c = document.getElementById('content');
+  const ob = document.getElementById('other-box');
+  if (ob) ob.style.display = 'none';
+  if (!currentItem) {
+    c.innerHTML = '<div class="done">Nessuna decisione rimasta. Golden set pronto per pilot.golden build.</div>';
+    return;
+  }
+  const label = currentQueue === 'disagreement'
+    ? '<span class="queue-label q1">CODA 1 — DISACCORDO</span>'
+    : '<span class="queue-label q2">CODA 2 — CONTROLLO</span>';
+
+  let orig = '', colsA = '', colsB = '';
+  if (currentItem.kind === 'annotation') {
+    orig = `<div class="orig">${escapeHtml(currentItem.title)}\n\n${escapeHtml(currentItem.text)}</div>
+      <p><a class="url" href="${currentItem.url}" target="_blank">${currentItem.url}</a></p>`;
+    colsA = renderAnnotationCol('A', currentItem.a, currentItem.b);
+    colsB = renderAnnotationCol('B', currentItem.b, currentItem.a);
+  } else {
+    orig = `<div class="orig"><b>A:</b> ${escapeHtml(currentItem.title_a)}\n${escapeHtml(currentItem.text_a)}
+<a class="url" href="${currentItem.url_a}" target="_blank">${currentItem.url_a}</a>
+
+<b>B:</b> ${escapeHtml(currentItem.title_b)}\n${escapeHtml(currentItem.text_b)}
+<a class="url" href="${currentItem.url_b}" target="_blank">${currentItem.url_b}</a></div>
+      <p class="key">blocking_score: ${currentItem.blocking_score}</p>`;
+    colsA = renderPairCol('A', currentItem.a, currentItem.b);
+    colsB = renderPairCol('B', currentItem.b, currentItem.a);
+  }
+
+  c.innerHTML = `
+    <div class="card">
+      ${label}
+      ${orig}
+      <div class="cols"><div class="col">${colsA}</div><div class="col">${colsB}</div></div>
+    </div>
+    <div id="other-box">
+      <label>Nessuna delle due — scrivi la decisione corretta:</label>
+      <textarea id="other-text"></textarea>
+      <button onclick="submitOther()">Conferma</button>
+    </div>`;
+}
+
+function renderAnnotationCol(name, x, other) {
+  return `<h3>Modello ${name} ${x.review ? '(parsing fallito)' : ''}</h3>
+    <div class="key">is_political</div><div class="val ${diffClass(x.is_political, other.is_political)}">${x.is_political}</div>
+    <div class="key">entities</div><div class="val ${diffClass(x.entities, other.entities)}">${(x.entities||[]).join(', ')}</div>
+    <div class="key">gloss_it</div><div class="val gloss">${escapeHtml(x.gloss_it || '')}</div>
+    <div class="key">confidence</div><div class="val">${x.confidence}</div>`;
+}
+
+function renderPairCol(name, x, other) {
+  return `<h3>Modello ${name} ${x.review ? '(parsing fallito)' : ''}</h3>
+    <div class="key">label</div><div class="val ${diffClass(x.label, other.label)}">${x.label}</div>
+    <div class="key">confidence</div><div class="val">${x.confidence}</div>`;
+}
+
+function escapeHtml(s) {
+  return (s || '').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+}
+
+async function decide(decision, otherValue) {
+  if (!currentItem) return;
+  const payload = { queue: currentQueue, item_id: currentItem.item_id, kind: currentItem.kind, decision };
+  if (otherValue !== undefined) payload.other_value = otherValue;
+  history.push({ queue: currentQueue, item: currentItem });
+  await fetch('/api/decide', { method: 'POST', body: JSON.stringify(payload) });
+  await loadState();
+}
+
+function submitOther() {
+  const text = document.getElementById('other-text').value;
+  decide('OTHER', text);
+}
+
+document.addEventListener('keydown', (e) => {
+  if (document.activeElement && document.activeElement.tagName === 'TEXTAREA') return;
+  if (e.key === '1') decide('A');
+  else if (e.key === '2') decide('B');
+  else if (e.key === '3') { document.getElementById('other-box').style.display = 'block'; }
+  else if (e.key === ' ' && currentQueue === 'spotcheck') { e.preventDefault(); decide('CONFIRMED'); }
+  else if (e.key === 's') decide('SKIPPED');
+  else if (e.key === 'ArrowLeft' && history.length) {
+    const prev = history.pop();
+    currentQueue = prev.queue; currentItem = prev.item; render();
+  }
+});
+
+loadState();
+setInterval(loadState, 15000);
+</script>
+</body>
+</html>

@@ -1,0 +1,513 @@
+# righe 1-18: generate da pilot/sources.py, audit in docs/SOURCE_AUDIT.csv (14 candidati provati).
+# righe 19-33: promosse da pilot/source_audit_v14.py (TASK_SOURCE_EXPANSION_DAILY_PILOT_01,
+# 2026-08-29), audit completo in docs/SOURCE_EXPANSION_AUDIT_01.csv (110 candidati v14 provati).
+sources:
+  - source_id: BIH_ELEC_002
+    name: "Koalicija Pod lupom"
+    feed_url: "https://podlupom.org/feed/"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: election_monitoring
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "ALL"
+    enabled: true
+    last_verified_at: "2026-08-27T01:05:01.315267Z"
+    items_7d_at_audit: 3
+    window_actual_days: 6
+    website_url: "https://podlupom.org/"
+  - source_id: POL_RS_001
+    name: "SNSD"
+    feed_url: "https://snsd.org/rss"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: party_official
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "ALL/IJ3"
+    enabled: true
+    last_verified_at: "2026-08-27T01:05:01.315267Z"
+    items_7d_at_audit: 10
+    window_actual_days: 12
+    website_url: "https://snsd.org/"
+  - source_id: RS_ENT_001
+    name: "RTRS"
+    feed_url: "https://www.rtrs.tv/vijesti/rss.php"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: media_public
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "ALL"
+    enabled: true
+    last_verified_at: "2026-08-27T01:05:01.315267Z"
+    items_7d_at_audit: 100
+    window_actual_days: 3
+    website_url: "https://www.rtrs.tv/"
+  - source_id: BIH_ELEC_003
+    name: "Transparency International BiH"
+    feed_url: null
+    fetch_mode: html
+    method: sitemap+html
+    language: sr
+    script: latn
+    source_type: ngo_monitoring
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "ALL"
+    enabled: true
+    last_verified_at: "2026-08-27T01:05:01.315267Z"
+    items_7d_at_audit: 2
+    window_actual_days: 6
+    website_url: "https://ti-bih.org/"
+  - source_id: RS_ENT_002
+    name: "ATV"
+    feed_url: "https://www.atvbl.rs/rss"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: media_tv
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "ALL"
+    enabled: true
+    last_verified_at: "2026-08-27T01:05:01.315267Z"
+    items_7d_at_audit: 100
+    window_actual_days: 7
+    website_url: "https://www.atvbl.rs/"
+  - source_id: RS_IJ_001
+    name: "BN / RTV BN"
+    feed_url: null
+    fetch_mode: html
+    method: sitemap+html  # verificato 2026-08-28: sitemap.xml (index standard) raggiungibile
+    language: sr
+    script: latn
+    source_type: media_tv
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "IJ6/ALL"
+    enabled: true
+    last_verified_at: "2026-08-27T01:05:01.315267Z"
+    items_7d_at_audit: 3
+    window_actual_days: 5
+    website_url: "https://www.rtvbn.com/"
+  - source_id: BL_IJ3_001
+    name: "Srpskainfo"
+    feed_url: "https://srpskainfo.com/category-feed/sve-vijesti/"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: media_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "IJ3/ALL"
+    enabled: true
+    last_verified_at: "2026-08-27T01:05:01.315267Z"
+    items_7d_at_audit: 50
+    window_actual_days: 10
+    website_url: "https://srpskainfo.com/"
+  - source_id: BL_IJ3_006
+    name: "Banjaluka24"
+    feed_url: "https://banjaluka-24.com/feed/"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: local_portal_fb
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "IJ3"
+    enabled: true
+    last_verified_at: "2026-08-27T01:05:01.315267Z"
+    items_7d_at_audit: 20
+    window_actual_days: 8
+    website_url: "https://banjaluka-24.com/"
+  - source_id: RS_IJ_013
+    name: "Dobojski.info"
+    feed_url: null
+    fetch_mode: html
+    method: wayback  # B2a 2026-08-28: nessun sitemap.xml stabile, ma Wayback CDX su dobojski.info verificato dal vivo (3 item in 30gg, 0 errori) — recuperata da MANUAL_ONLY
+    language: sr
+    script: latn
+    source_type: local_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "IJ5"
+    enabled: true  # riattivata: B2a l'ha recuperata via Wayback CDX
+    last_verified_at: "2026-08-27T01:05:01.315267Z"
+    items_7d_at_audit: 2
+    window_actual_days: 2
+    website_url: "https://www.dobojski.info/"
+  - source_id: RS_IJ_012
+    name: "Glas Regije"
+    feed_url: "https://glasregije.net/feed/"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: regional_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "IJ4/IJ5"
+    enabled: true
+    last_verified_at: "2026-08-27T01:05:01.315267Z"
+    items_7d_at_audit: 10
+    window_actual_days: 4
+    website_url: "https://glasregije.net/"
+  # §5b — aggiunte 2026-08-28: audit rilanciato senza quota su tutti i 25 candidati tier-1
+  # (prima si fermava a 10). 15 nuovi candidati provati, 7 pronti, aggiunti qui senza toccare
+  # le 10 righe sopra. Vedi docs/SOURCE_AUDIT.csv per tutti i 15, incl. gli 8 NOT_USEFUL/BLOCKED.
+  - source_id: BL_IJ3_002
+    name: "Nezavisne novine"
+    feed_url: "https://www.nezavisne.com/rss/najnovije"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: media_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "IJ3/ALL"
+    enabled: true
+    last_verified_at: "2026-08-27T23:09:31.898199Z"
+    items_7d_at_audit: 20
+    window_actual_days: 29
+    website_url: "https://www.nezavisne.com/"
+  - source_id: BL_IJ3_003
+    name: "Glas Srpske"
+    feed_url: null
+    fetch_mode: html
+    method: sitemap+html
+    language: sr
+    script: latn
+    source_type: media_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "IJ3/ALL"
+    enabled: true
+    last_verified_at: "2026-08-27T23:09:31.898199Z"
+    items_7d_at_audit: 3
+    window_actual_days: 2
+    website_url: "https://www.glassrpske.com/"
+  - source_id: BL_IJ3_007
+    name: "BL Portal"
+    feed_url: "https://www.bl-portal.com/rss"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: local_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "IJ3"
+    enabled: true
+    last_verified_at: "2026-08-27T23:09:31.898199Z"
+    items_7d_at_audit: 10
+    window_actual_days: 8
+    website_url: "https://www.bl-portal.com/"
+  - source_id: RS_IJ_014
+    name: "RTV Doboj"
+    feed_url: "https://rtvdoboj.org/feed/"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: local_tv_radio
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "IJ5"
+    enabled: true
+    last_verified_at: "2026-08-27T23:09:31.898199Z"
+    items_7d_at_audit: 10
+    window_actual_days: 11
+    website_url: "https://rtvdoboj.org/"
+  - source_id: RS_IJ_018
+    name: "InfoBijeljina"
+    feed_url: null
+    fetch_mode: html
+    method: html_home_links
+    language: sr
+    script: latn
+    source_type: local_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "IJ6"
+    enabled: true
+    last_verified_at: "2026-08-27T23:09:31.898199Z"
+    items_7d_at_audit: 6
+    window_actual_days: 0
+    website_url: "https://www.infobijeljina.com/"
+  - source_id: SRC_009
+    name: "N1 BiH"
+    feed_url: "https://n1info.ba/feed"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: media_tv
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "ALL"
+    enabled: true
+    last_verified_at: "2026-08-27T23:09:31.898199Z"
+    items_7d_at_audit: 50
+    window_actual_days: 2
+    website_url: "https://n1info.ba/"
+  - source_id: FBIH_001
+    name: "Klix.ba"
+    feed_url: "https://www.klix.ba/rss"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: media_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "ALL"
+    enabled: true
+    last_verified_at: "2026-08-27T23:09:31.898199Z"
+    items_7d_at_audit: 30
+    window_actual_days: 2
+    website_url: "https://www.klix.ba/"
+  # B2a — aggiunta 2026-08-28: Capital.ba era BLOCKED (HTTP 403 in diretta) nell'audit di FIX_01.
+  # Wayback CDX la recupera (403 non si applica alle pagine archiviate): 48 item verificati dal
+  # vivo in 30gg (54 candidati, 48 riusciti, 6 errori di connessione transitori). Query CDX su
+  # questo dominio lenta/instabile con filtro data stretto (504/timeout ripetuti), stabile con
+  # 'from' largo (inizio anno) + filtro lato client — vedi commento in pilot/collect.py.
+  - source_id: ECO_001
+    name: "Capital.ba"
+    feed_url: null
+    fetch_mode: html
+    method: wayback
+    language: sr
+    script: latn
+    source_type: economic_media
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "ALL"
+    enabled: true
+    last_verified_at: "2026-08-28T01:52:00Z"
+    items_7d_at_audit: 48
+    window_actual_days: 9
+    website_url: "https://capital.ba/"
+  # TASK_SOURCE_EXPANSION_DAILY_PILOT_01 — 2026-08-29: 15 fonti promosse dall'audit v14
+  # (docs/SOURCE_EXPANSION_AUDIT_01.csv, 51 candidati testati dal vivo, 22 READY_RSS/READY_SITEMAP,
+  # 15 abilitate per il tetto MAX 15 del task, 7 restano READY_NOT_ENABLED_YET). Selezione tra i 22
+  # READY per: priorita' Doboj/IJ5, copertura istituzionale/elettorale, copertura IJ nuove
+  # (IJ1/IJ2/IJ7/IJ8/IJ9 prima non coperte da nessuna fonte attiva), non solo volume.
+  - source_id: RS_IJ_015
+    name: "Granice Doboja"
+    feed_url: "https://granicedoboja.info/feed/"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: local_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "IJ5"
+    enabled: true
+    last_verified_at: "2026-08-29T00:00:00Z"
+    items_7d_at_audit: 6
+    window_actual_days: 4
+    website_url: "https://granicedoboja.info/"
+  - source_id: BIH_ELEC_005
+    name: "Istinomjer"
+    feed_url: null
+    fetch_mode: html
+    method: sitemap+html
+    language: sr
+    script: latn
+    source_type: election_monitoring
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "ALL"
+    enabled: true
+    last_verified_at: "2026-08-29T00:00:00Z"
+    items_7d_at_audit: 2
+    window_actual_days: 3
+    website_url: "https://istinomjer.ba/"
+  - source_id: SRC_001
+    name: "Detektor / BIRN BiH"
+    feed_url: "https://detektor.ba/rss"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: media_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "ALL"
+    enabled: true
+    last_verified_at: "2026-08-29T00:00:00Z"
+    items_7d_at_audit: 10
+    window_actual_days: 2
+    website_url: "https://detektor.ba/"
+  - source_id: BL_IJ3_005
+    name: "Buka"
+    feed_url: "https://6yka.com/feed/"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: local_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "IJ3/ALL"
+    enabled: true
+    last_verified_at: "2026-08-29T00:00:00Z"
+    items_7d_at_audit: 10
+    window_actual_days: 3
+    website_url: "https://6yka.com/"
+  - source_id: BL_IJ3_004
+    name: "Frontal.ba"
+    feed_url: "https://www.frontal.ba/feed/"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: local_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "IJ3/ALL"
+    enabled: true
+    last_verified_at: "2026-08-29T00:00:00Z"
+    items_7d_at_audit: 10
+    window_actual_days: 7
+    website_url: "https://www.frontal.ba/"
+  - source_id: ECO_002
+    name: "Akta.ba"
+    feed_url: null
+    fetch_mode: html
+    method: sitemap+html
+    language: sr
+    script: latn
+    source_type: economic_media
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "ALL"
+    enabled: true
+    last_verified_at: "2026-08-29T00:00:00Z"
+    items_7d_at_audit: 6
+    window_actual_days: 5
+    website_url: "https://www.akta.ba/"
+  - source_id: FBIH_003
+    name: "Oslobođenje"
+    feed_url: "https://www.oslobodjenje.ba/rss.xml"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: media_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "ALL"
+    enabled: true
+    last_verified_at: "2026-08-29T00:00:00Z"
+    items_7d_at_audit: 50
+    window_actual_days: 7
+    website_url: "https://www.oslobodjenje.ba/"
+  - source_id: RS_IJ_002
+    name: "InfoPrijedor"
+    feed_url: "https://infoprijedor.ba/feed/"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: local_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "IJ1"
+    enabled: true
+    last_verified_at: "2026-08-29T00:00:00Z"
+    items_7d_at_audit: 10
+    window_actual_days: 2
+    website_url: "https://infoprijedor.ba/"
+  - source_id: RS_IJ_005
+    name: "Micro Mreža"
+    feed_url: "https://micromreza.com/feed/"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: local_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "IJ2"
+    enabled: true
+    last_verified_at: "2026-08-29T00:00:00Z"
+    items_7d_at_audit: 10
+    window_actual_days: 7
+    website_url: "https://micromreza.com/"
+  - source_id: RS_IJ_021
+    name: "Zvornički.ba"
+    feed_url: "https://zvornicki.ba/feed/"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: local_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "IJ7"
+    enabled: true
+    last_verified_at: "2026-08-29T00:00:00Z"
+    items_7d_at_audit: 10
+    window_actual_days: 7
+    website_url: "https://zvornicki.ba/"
+  - source_id: RS_IJ_027
+    name: "Spin Info"
+    feed_url: "https://spin-portal.info/feed/"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: local_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "IJ8"
+    enabled: true
+    last_verified_at: "2026-08-29T00:00:00Z"
+    items_7d_at_audit: 5
+    window_actual_days: 7
+    website_url: "https://spin-portal.info/"
+  - source_id: RS_IJ_030
+    name: "Direkt Portal"
+    feed_url: "https://direkt-portal.com/feed/"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: local_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "IJ9"
+    enabled: true
+    last_verified_at: "2026-08-29T00:00:00Z"
+    items_7d_at_audit: 10
+    window_actual_days: 2
+    website_url: "https://direkt-portal.com/"
+  - source_id: RS_IJ_009
+    name: "Derventski List"
+    feed_url: "https://derventskilist.net/feed/"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: local_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "IJ4"
+    enabled: true
+    last_verified_at: "2026-08-29T00:00:00Z"
+    items_7d_at_audit: 10
+    window_actual_days: 7
+    website_url: "https://derventskilist.net/"
+  - source_id: FBIH_002
+    name: "Dnevni avaz"
+    feed_url: "https://avaz.ba/rss"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: media_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "ALL"
+    enabled: true
+    last_verified_at: "2026-08-29T00:00:00Z"
+    items_7d_at_audit: 10
+    window_actual_days: 3
+    website_url: "https://avaz.ba/"
+  - source_id: BL_IJ3_008
+    name: "Banjaluka.net"
+    feed_url: "https://banjaluka.net/rss"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: local_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "IJ3"
+    enabled: true
+    last_verified_at: "2026-08-29T00:00:00Z"
+    items_7d_at_audit: 10
+    window_actual_days: 3
+    website_url: "https://banjaluka.net/"
+count: 33

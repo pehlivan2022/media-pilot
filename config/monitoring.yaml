@@ -1,0 +1,141 @@
+# §C, MEDIA_PILOT_FINAL_HANDOFF.md: cosa monitorare, con quali fonti, quanto spesso. Un solo
+# file leggibile e modificabile a mano (§6/§30 dell'handoff) — non generato da uno script, a
+# differenza di entities.yaml/sources.yaml. `entities` sono chiavi REALI di config/entities.yaml
+# (mai inventate), `source_ids` sono REALI di config/sources.yaml. `pilot/run_monitor.py` legge
+# questo file per risolvere quali fonti raccogliere per una data priorita'/target — la stessa
+# fonte in piu' target viene raccolta UNA sola volta per esecuzione (§8: "1 fetch -> piu'
+# elaborazioni"), non duplicata.
+monitoring:
+  - id: us_core
+    enabled: true
+    label: "Ujedinjena Srpska - nucleo"
+    entities:
+      - us
+      - stevandic
+      - us-snsd
+      - us-sps
+    source_ids:
+      - POL_RS_001
+      - BL_IJ3_002
+      - RS_ENT_001
+      - RS_ENT_002
+    priority: high
+    runs_per_day: 12
+    history_days: 7
+
+  - id: doboj
+    enabled: true
+    label: "Doboj / IJ5"
+    entities:
+      - doboj
+      - obren
+      - josic
+      - ij5-konkurencija
+    source_ids:
+      - RS_IJ_014
+      - RS_IJ_013
+      - BL_IJ3_002
+    priority: high
+    runs_per_day: 8
+    history_days: 7
+
+  - id: institutions
+    enabled: true
+    label: "Istituzioni ed elezioni"
+    entities:
+      - ohr
+      - cik
+      - izborni-proces
+      - predsjednistvo
+      - predsjednik-rs
+    source_ids:
+      - BIH_ELEC_002
+      - BIH_ELEC_003
+      - SRC_009
+      - FBIH_001
+    priority: medium
+    runs_per_day: 6
+    history_days: 14
+
+  - id: opposition_competitors
+    enabled: true
+    label: "Opposizione e concorrenti di coalizione"
+    entities:
+      - opozicija
+      - sds
+      - sps
+      - sp-demos
+      - dns-nps
+      - snsd
+      - dodik
+    source_ids:
+      - BL_IJ3_001
+      - BL_IJ3_003
+      - BL_IJ3_006
+      - POL_RS_001
+    priority: medium
+    runs_per_day: 6
+    history_days: 7
+
+  - id: background
+    enabled: true
+    label: "Contesto politico-mediatico generale"
+    entities: []
+    source_ids:
+      - RS_IJ_001
+      - RS_IJ_012
+      - RS_IJ_018
+      - BL_IJ3_007
+      - ECO_001
+    priority: low
+    runs_per_day: 3
+    history_days: 30
+
+  # TASK_SOURCE_EXPANSION_DAILY_PILOT_01, 2026-08-29: profilo PILOT temporaneo, tutte le fonti
+  # abilitate 1x/giorno. Non sostituisce i target sopra (restano com'erano). history_days: 7 —
+  # le 15 fonti nuove non hanno storico, backfill "recent only" (§18 del task), non 30gg come i
+  # target esistenti. Uso: python -m pilot.run_monitor --target pilot_daily_all
+  - id: pilot_daily_all
+    enabled: true
+    label: "PILOT — tutte le fonti abilitate, 1x/giorno"
+    entities: []
+    source_ids:
+      - BIH_ELEC_002
+      - POL_RS_001
+      - RS_ENT_001
+      - BIH_ELEC_003
+      - RS_ENT_002
+      - RS_IJ_001
+      - BL_IJ3_001
+      - BL_IJ3_006
+      - RS_IJ_013
+      - RS_IJ_012
+      - BL_IJ3_002
+      - BL_IJ3_003
+      - BL_IJ3_007
+      - RS_IJ_014
+      - RS_IJ_018
+      - SRC_009
+      - FBIH_001
+      - ECO_001
+      - RS_IJ_015
+      - BIH_ELEC_005
+      - SRC_001
+      - BL_IJ3_005
+      - BL_IJ3_004
+      - ECO_002
+      - FBIH_003
+      - RS_IJ_002
+      - RS_IJ_005
+      - RS_IJ_021
+      - RS_IJ_027
+      - RS_IJ_030
+      - RS_IJ_009
+      - FBIH_002
+      - BL_IJ3_008
+    priority: pilot  # deliberatamente FUORI da high/medium/low: run_monitor.py --priority accetta
+    # solo quei 3 valori (argparse choices), quindi 'pilot' non puo' mai essere unito per sbaglio a
+    # un run --priority low (che prenderebbe anche 'background', 3x/giorno, violando l'1x/giorno
+    # del §26). Selezionabile solo con --target pilot_daily_all.
+    runs_per_day: 1
+    history_days: 7

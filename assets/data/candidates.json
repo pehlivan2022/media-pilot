@@ -1,0 +1,1118 @@
+{
+  "disclaimer_label": "candidatura dichiarata, fonte {source_name} del {fetched_at}",
+  "election_date": "2026-10-04",
+  "campaign_start": "2026-09-04",
+  "by_race": {
+    "nsrs": [
+      {
+        "name": "Mirsad Durakovic",
+        "party": "Koalicija za drzavu",
+        "unit": "IJ1",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Slobodan Javor",
+        "party": "SNSD",
+        "unit": "IJ1",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Aleksandar Jankovic",
+        "party": "PDP",
+        "unit": "IJ1",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Vladimir Copic",
+        "party": "SDS",
+        "unit": "IJ1",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Dusko Miletic",
+        "party": "SPS",
+        "unit": "IJ1",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Darko Banjac",
+        "party": "NPS",
+        "unit": "IJ1",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Maja Dragojevic-Stojic",
+        "party": "PSS",
+        "unit": "IJ1",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Miroslav Bojic",
+        "party": "SNSD",
+        "unit": "IJ2",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Sasa Ilic",
+        "party": "DNS-NPS",
+        "unit": "IJ2",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Milan Petkovic",
+        "party": "SDS",
+        "unit": "IJ2",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Radislav Doncic",
+        "party": "Narodni front",
+        "unit": "IJ2",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Igor Dodik",
+        "party": "SNSD",
+        "unit": "IJ3",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Drasko Stanivukovic",
+        "party": "PSS",
+        "unit": "IJ3",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Jelena Trivic",
+        "party": "Narodni front",
+        "unit": "IJ3",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Biljana Lukic",
+        "party": "SDS",
+        "unit": "IJ3",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Davor Strika",
+        "party": "SP-DEMOS",
+        "unit": "IJ3",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Goran Selak",
+        "party": "SPS",
+        "unit": "IJ3",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Tomislav Tomljanovic",
+        "party": "Koalicija za drzavu",
+        "unit": "IJ4",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Petar Jelic",
+        "party": "SNSD",
+        "unit": "IJ4",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Sasa Milicic",
+        "party": "SP-DEMOS",
+        "unit": "IJ4",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Jovica Radulovic",
+        "party": "SDS",
+        "unit": "IJ4",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Sevlid Hurtic",
+        "party": "Koalicija za drzavu",
+        "unit": "IJ5",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Danijel Josic",
+        "party": "SNSD",
+        "unit": "IJ5",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Sladan Jovic",
+        "party": "SP-DEMOS",
+        "unit": "IJ5",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Stojan Smiljanic",
+        "party": "SDS",
+        "unit": "IJ5",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Dragutin Skrebic",
+        "party": "SPS",
+        "unit": "IJ5",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Mikajlo Lazic",
+        "party": "SNSD",
+        "unit": "IJ6",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Petar Djokic",
+        "party": "SP",
+        "unit": "IJ6",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Diko Cvijetinovic",
+        "party": "DNS-NPS",
+        "unit": "IJ6",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Tomica Stojanovic",
+        "party": "SDS",
+        "unit": "IJ6",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Zoran Stevanovic",
+        "party": "SNSD",
+        "unit": "IJ7",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Edin Ramic",
+        "party": "Koalicija za drzavu",
+        "unit": "IJ7",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Boris Trninic",
+        "party": "DNS-NPS",
+        "unit": "IJ7",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Dragomir Vasic",
+        "party": "SDS",
+        "unit": "IJ7",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Petko Rankic",
+        "party": "SP-DEMOS",
+        "unit": "IJ7",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Aco Stanisic",
+        "party": "SNSD",
+        "unit": "IJ8",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Predrag Nesic",
+        "party": "DNS-NPS",
+        "unit": "IJ8",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Dejan Kojic",
+        "party": "PSS",
+        "unit": "IJ8",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Bojo Gasanovic",
+        "party": "SDS",
+        "unit": "IJ8",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Luka Petrovic",
+        "party": "SNSD",
+        "unit": "IJ9",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Ognjen Kuljic",
+        "party": "SP-DEMOS",
+        "unit": "IJ9",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Ognjen Bodiroga",
+        "party": "SDS",
+        "unit": "IJ9",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Maksim Skoko",
+        "party": "SPS",
+        "unit": "IJ9",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Nenad Mejakic",
+        "party": "Ujedinjena Srpska",
+        "unit": "IJ1",
+        "incumbent": false,
+        "source_url": "https://kozarski.com/u-izbornoj-jedinici-jedan-nadmece-se-17-kandidatskih-lista/",
+        "source_name": "Kozarski vjesnik / SRNA",
+        "fetched_at": "2026-08-20"
+      },
+      {
+        "name": "Aleksandar Trninic",
+        "party": "Ujedinjena Srpska",
+        "unit": "IJ2",
+        "incumbent": false,
+        "source_url": "https://lat.rtrs.tv/vijesti/vijest.php?id=657033",
+        "source_name": "RTRS / SRNA",
+        "fetched_at": "2026-08-20"
+      },
+      {
+        "name": "Nenad Stevandic",
+        "party": "Ujedinjena Srpska",
+        "unit": "IJ3",
+        "incumbent": false,
+        "source_url": "https://lat.rtrs.tv/vijesti/vijest.php?id=657125",
+        "source_name": "RTRS",
+        "fetched_at": "2026-08-21"
+      },
+      {
+        "name": "Nemanja Ivanovic",
+        "party": "Ujedinjena Srpska",
+        "unit": "IJ4",
+        "incumbent": false,
+        "source_url": "https://www.derventacafe.com/opsti-izbori-2026-donosimo-imena-kandidata-kojima-ce-dervencani-moci-dati-podrsku/",
+        "source_name": "Derventa Cafe / CIK",
+        "fetched_at": "2026-08-20"
+      },
+      {
+        "name": "Rade Tesic",
+        "party": "Ujedinjena Srpska",
+        "unit": "IJ5",
+        "incumbent": false,
+        "source_url": "https://lat.rtrs.tv/vijesti/vijest.php?id=657142",
+        "source_name": "RTRS / SRNA",
+        "fetched_at": "2026-08-21"
+      },
+      {
+        "name": "Milan Trninic",
+        "party": "Ujedinjena Srpska",
+        "unit": "IJ6",
+        "incumbent": false,
+        "source_url": "https://lat.rtrs.tv/vijesti/vijest.php?id=657239",
+        "source_name": "RTRS / SRNA",
+        "fetched_at": "2026-08-22"
+      },
+      {
+        "name": "Miladin Radovic",
+        "party": "Ujedinjena Srpska",
+        "unit": "IJ7",
+        "incumbent": false,
+        "source_url": "https://lat.rtrs.tv/vijesti/vijest.php?id=657249",
+        "source_name": "RTRS / SRNA",
+        "fetched_at": "2026-08-22"
+      },
+      {
+        "name": "Slavka Brezo",
+        "party": "Ujedinjena Srpska",
+        "unit": "IJ8",
+        "incumbent": false,
+        "source_url": "https://lat.rtrs.tv/vijesti/vijest.php?id=657326",
+        "source_name": "RTRS / SRNA",
+        "fetched_at": "2026-08-23"
+      },
+      {
+        "name": "Milan Kovac",
+        "party": "Ujedinjena Srpska",
+        "unit": "IJ9",
+        "incumbent": false,
+        "source_url": "https://lat.rtrs.tv/vijesti/vijest.php?id=657342",
+        "source_name": "RTRS / SRNA",
+        "fetched_at": "2026-08-23"
+      }
+    ],
+    "predsjednik_rs": [
+      {
+        "name": "Savo Minic",
+        "party": "SNSD",
+        "unit": null,
+        "incumbent": false,
+        "office_target": "predsjednik",
+        "current_office": "premijer RS",
+        "source_url": "https://www.izbori.ba/Default.aspx?CategoryID=1485&Lang=3",
+        "source_name": "CIK BiH / published candidate lists",
+        "fetched_at": "2026-08-19"
+      },
+      {
+        "name": "Branko Blanusa",
+        "party": "SDS",
+        "unit": null,
+        "incumbent": false,
+        "office_target": "predsjednik",
+        "source_url": "https://www.izbori.ba/Default.aspx?CategoryID=1485&Lang=3",
+        "source_name": "CIK BiH / published candidate lists",
+        "fetched_at": "2026-08-19"
+      },
+      {
+        "name": "Bogdan Jovanovic",
+        "party": "Stranka Zivot",
+        "unit": null,
+        "incumbent": false,
+        "office_target": "predsjednik",
+        "source_url": "https://www.izbori.ba/Default.aspx?CategoryID=1485&Lang=3",
+        "source_name": "CIK BiH / published candidate lists",
+        "fetched_at": "2026-08-19"
+      },
+      {
+        "name": "Ivan Begic",
+        "party": "SDP BiH",
+        "unit": null,
+        "incumbent": false,
+        "office_target": "potpredsjednik_hrvat",
+        "source_url": "https://www.izbori.ba/Default.aspx?CategoryID=1485&Lang=3",
+        "source_name": "CIK BiH / published candidate lists",
+        "fetched_at": "2026-08-19"
+      },
+      {
+        "name": "Igor Balukcic",
+        "party": "HDZ 1990",
+        "unit": null,
+        "incumbent": false,
+        "office_target": "potpredsjednik_hrvat",
+        "source_url": "https://www.izbori.ba/Default.aspx?CategoryID=1485&Lang=3",
+        "source_name": "CIK BiH / published candidate lists",
+        "fetched_at": "2026-08-19"
+      },
+      {
+        "name": "Franjo Jukic",
+        "party": "HDZ BiH koalicija",
+        "unit": null,
+        "incumbent": false,
+        "office_target": "potpredsjednik_hrvat",
+        "source_url": "https://www.izbori.ba/Default.aspx?CategoryID=1485&Lang=3",
+        "source_name": "CIK BiH / published candidate lists",
+        "fetched_at": "2026-08-19"
+      },
+      {
+        "name": "Ivo Kamenjasevic",
+        "party": "HSS",
+        "unit": null,
+        "incumbent": false,
+        "office_target": "potpredsjednik_hrvat",
+        "source_url": "https://www.izbori.ba/Default.aspx?CategoryID=1485&Lang=3",
+        "source_name": "CIK BiH / published candidate lists",
+        "fetched_at": "2026-08-19"
+      },
+      {
+        "name": "Marko Jorgic",
+        "party": "nezavisni",
+        "unit": null,
+        "incumbent": false,
+        "office_target": "potpredsjednik_hrvat",
+        "source_url": "https://www.izbori.ba/Default.aspx?CategoryID=1485&Lang=3",
+        "source_name": "CIK BiH / published candidate lists",
+        "fetched_at": "2026-08-19"
+      },
+      {
+        "name": "Ramiz Salkic",
+        "party": "SDA",
+        "unit": null,
+        "incumbent": false,
+        "office_target": "potpredsjednik_bosnjak",
+        "source_url": "https://www.izbori.ba/Default.aspx?CategoryID=1485&Lang=3",
+        "source_name": "CIK BiH / published candidate lists",
+        "fetched_at": "2026-08-19"
+      },
+      {
+        "name": "Begija Smajic",
+        "party": "SBiH",
+        "unit": null,
+        "incumbent": false,
+        "office_target": "potpredsjednik_bosnjak",
+        "source_url": "https://www.izbori.ba/Default.aspx?CategoryID=1485&Lang=3",
+        "source_name": "CIK BiH / published candidate lists",
+        "fetched_at": "2026-08-19"
+      },
+      {
+        "name": "Jusuf Arifagic",
+        "party": "NiP",
+        "unit": null,
+        "incumbent": false,
+        "office_target": "potpredsjednik_bosnjak",
+        "source_url": "https://www.izbori.ba/Default.aspx?CategoryID=1485&Lang=3",
+        "source_name": "CIK BiH / published candidate lists",
+        "fetched_at": "2026-08-19"
+      },
+      {
+        "name": "Camil Durakovic",
+        "party": "nezavisni",
+        "unit": null,
+        "incumbent": true,
+        "office_target": "potpredsjednik_bosnjak",
+        "source_url": "https://www.izbori.ba/Default.aspx?CategoryID=1485&Lang=3",
+        "source_name": "CIK BiH / published candidate lists",
+        "fetched_at": "2026-08-19"
+      }
+    ],
+    "predsjednistvo_bih": [
+      {
+        "name": "Zeljka Cvijanovic",
+        "party": "SNSD",
+        "unit": null,
+        "incumbent": true,
+        "current_office": "clanica Predsjednistva BiH",
+        "source_url": "https://www.izbori.ba/Default.aspx?CategoryID=1485&Lang=3",
+        "source_name": "CIK BiH / published candidate lists",
+        "fetched_at": "2026-08-19"
+      },
+      {
+        "name": "Marinko Bozovic",
+        "party": "SDS",
+        "unit": null,
+        "incumbent": false,
+        "source_url": "https://www.izbori.ba/Default.aspx?CategoryID=1485&Lang=3",
+        "source_name": "CIK BiH / published candidate lists",
+        "fetched_at": "2026-08-19"
+      },
+      {
+        "name": "Nebojsa Vukanovic",
+        "party": "Za pravdu i red",
+        "unit": null,
+        "incumbent": false,
+        "source_url": "https://www.izbori.ba/Default.aspx?CategoryID=1485&Lang=3",
+        "source_name": "CIK BiH / published candidate lists",
+        "fetched_at": "2026-08-19"
+      }
+    ]
+  },
+  "by_unit": {
+    "IJ1": [
+      {
+        "name": "Mirsad Durakovic",
+        "party": "Koalicija za drzavu",
+        "unit": "IJ1",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Slobodan Javor",
+        "party": "SNSD",
+        "unit": "IJ1",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Aleksandar Jankovic",
+        "party": "PDP",
+        "unit": "IJ1",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Vladimir Copic",
+        "party": "SDS",
+        "unit": "IJ1",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Dusko Miletic",
+        "party": "SPS",
+        "unit": "IJ1",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Darko Banjac",
+        "party": "NPS",
+        "unit": "IJ1",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Maja Dragojevic-Stojic",
+        "party": "PSS",
+        "unit": "IJ1",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Nenad Mejakic",
+        "party": "Ujedinjena Srpska",
+        "unit": "IJ1",
+        "incumbent": false,
+        "source_url": "https://kozarski.com/u-izbornoj-jedinici-jedan-nadmece-se-17-kandidatskih-lista/",
+        "source_name": "Kozarski vjesnik / SRNA",
+        "fetched_at": "2026-08-20"
+      }
+    ],
+    "IJ2": [
+      {
+        "name": "Miroslav Bojic",
+        "party": "SNSD",
+        "unit": "IJ2",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Sasa Ilic",
+        "party": "DNS-NPS",
+        "unit": "IJ2",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Milan Petkovic",
+        "party": "SDS",
+        "unit": "IJ2",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Radislav Doncic",
+        "party": "Narodni front",
+        "unit": "IJ2",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Aleksandar Trninic",
+        "party": "Ujedinjena Srpska",
+        "unit": "IJ2",
+        "incumbent": false,
+        "source_url": "https://lat.rtrs.tv/vijesti/vijest.php?id=657033",
+        "source_name": "RTRS / SRNA",
+        "fetched_at": "2026-08-20"
+      }
+    ],
+    "IJ3": [
+      {
+        "name": "Igor Dodik",
+        "party": "SNSD",
+        "unit": "IJ3",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Drasko Stanivukovic",
+        "party": "PSS",
+        "unit": "IJ3",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Jelena Trivic",
+        "party": "Narodni front",
+        "unit": "IJ3",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Biljana Lukic",
+        "party": "SDS",
+        "unit": "IJ3",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Davor Strika",
+        "party": "SP-DEMOS",
+        "unit": "IJ3",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Goran Selak",
+        "party": "SPS",
+        "unit": "IJ3",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Nenad Stevandic",
+        "party": "Ujedinjena Srpska",
+        "unit": "IJ3",
+        "incumbent": false,
+        "source_url": "https://lat.rtrs.tv/vijesti/vijest.php?id=657125",
+        "source_name": "RTRS",
+        "fetched_at": "2026-08-21"
+      }
+    ],
+    "IJ4": [
+      {
+        "name": "Tomislav Tomljanovic",
+        "party": "Koalicija za drzavu",
+        "unit": "IJ4",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Petar Jelic",
+        "party": "SNSD",
+        "unit": "IJ4",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Sasa Milicic",
+        "party": "SP-DEMOS",
+        "unit": "IJ4",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Jovica Radulovic",
+        "party": "SDS",
+        "unit": "IJ4",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Nemanja Ivanovic",
+        "party": "Ujedinjena Srpska",
+        "unit": "IJ4",
+        "incumbent": false,
+        "source_url": "https://www.derventacafe.com/opsti-izbori-2026-donosimo-imena-kandidata-kojima-ce-dervencani-moci-dati-podrsku/",
+        "source_name": "Derventa Cafe / CIK",
+        "fetched_at": "2026-08-20"
+      }
+    ],
+    "IJ5": [
+      {
+        "name": "Sevlid Hurtic",
+        "party": "Koalicija za drzavu",
+        "unit": "IJ5",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Danijel Josic",
+        "party": "SNSD",
+        "unit": "IJ5",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Sladan Jovic",
+        "party": "SP-DEMOS",
+        "unit": "IJ5",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Stojan Smiljanic",
+        "party": "SDS",
+        "unit": "IJ5",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Dragutin Skrebic",
+        "party": "SPS",
+        "unit": "IJ5",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Rade Tesic",
+        "party": "Ujedinjena Srpska",
+        "unit": "IJ5",
+        "incumbent": false,
+        "source_url": "https://lat.rtrs.tv/vijesti/vijest.php?id=657142",
+        "source_name": "RTRS / SRNA",
+        "fetched_at": "2026-08-21"
+      }
+    ],
+    "IJ6": [
+      {
+        "name": "Mikajlo Lazic",
+        "party": "SNSD",
+        "unit": "IJ6",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Petar Djokic",
+        "party": "SP",
+        "unit": "IJ6",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Diko Cvijetinovic",
+        "party": "DNS-NPS",
+        "unit": "IJ6",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Tomica Stojanovic",
+        "party": "SDS",
+        "unit": "IJ6",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Milan Trninic",
+        "party": "Ujedinjena Srpska",
+        "unit": "IJ6",
+        "incumbent": false,
+        "source_url": "https://lat.rtrs.tv/vijesti/vijest.php?id=657239",
+        "source_name": "RTRS / SRNA",
+        "fetched_at": "2026-08-22"
+      }
+    ],
+    "IJ7": [
+      {
+        "name": "Zoran Stevanovic",
+        "party": "SNSD",
+        "unit": "IJ7",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Edin Ramic",
+        "party": "Koalicija za drzavu",
+        "unit": "IJ7",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Boris Trninic",
+        "party": "DNS-NPS",
+        "unit": "IJ7",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Dragomir Vasic",
+        "party": "SDS",
+        "unit": "IJ7",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Petko Rankic",
+        "party": "SP-DEMOS",
+        "unit": "IJ7",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Miladin Radovic",
+        "party": "Ujedinjena Srpska",
+        "unit": "IJ7",
+        "incumbent": false,
+        "source_url": "https://lat.rtrs.tv/vijesti/vijest.php?id=657249",
+        "source_name": "RTRS / SRNA",
+        "fetched_at": "2026-08-22"
+      }
+    ],
+    "IJ8": [
+      {
+        "name": "Aco Stanisic",
+        "party": "SNSD",
+        "unit": "IJ8",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Predrag Nesic",
+        "party": "DNS-NPS",
+        "unit": "IJ8",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Dejan Kojic",
+        "party": "PSS",
+        "unit": "IJ8",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Bojo Gasanovic",
+        "party": "SDS",
+        "unit": "IJ8",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Slavka Brezo",
+        "party": "Ujedinjena Srpska",
+        "unit": "IJ8",
+        "incumbent": false,
+        "source_url": "https://lat.rtrs.tv/vijesti/vijest.php?id=657326",
+        "source_name": "RTRS / SRNA",
+        "fetched_at": "2026-08-23"
+      }
+    ],
+    "IJ9": [
+      {
+        "name": "Luka Petrovic",
+        "party": "SNSD",
+        "unit": "IJ9",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Ognjen Kuljic",
+        "party": "SP-DEMOS",
+        "unit": "IJ9",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Ognjen Bodiroga",
+        "party": "SDS",
+        "unit": "IJ9",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Maksim Skoko",
+        "party": "SPS",
+        "unit": "IJ9",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Milan Kovac",
+        "party": "Ujedinjena Srpska",
+        "unit": "IJ9",
+        "incumbent": false,
+        "source_url": "https://lat.rtrs.tv/vijesti/vijest.php?id=657342",
+        "source_name": "RTRS / SRNA",
+        "fetched_at": "2026-08-23"
+      }
+    ]
+  }
+}

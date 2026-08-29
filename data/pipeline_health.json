@@ -1,0 +1,23 @@
+{
+  "last_run": "2026-08-29T22:01:40.372137Z",
+  "run_finished_at": "2026-08-29T22:10:37.391775Z",
+  "ok": true,
+  "failed_stage": null,
+  "error": null,
+  "sources_enabled": 33,
+  "sources_ok": null,
+  "sources_failed": null,
+  "sources_failed_detail": null,
+  "sources_zero_items": null,
+  "items_per_source": null,
+  "new_items_this_run": 0,
+  "clean_total": 3712,
+  "dedup_total": 3042,
+  "clusters_total": 627,
+  "rassegna_total": 1080,
+  "trending_entities_registry": 55,
+  "trending_entities_active": 26,
+  "signal_candidates_total": 26,
+  "signal_review": 20,
+  "duration_sec": 537.0
+}

@@ -1,0 +1,987 @@
+[
+  {
+    "entity_id": "stevandic",
+    "label": "Nenad Stevandić",
+    "classification": "REVIEW",
+    "why_now": "momentum +196% vs normale; 5 fonti indipendenti nelle ultime 24h; 4 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "entities": [
+      "stevandic"
+    ],
+    "events": [
+      "CL-2026-0356",
+      "CL-2026-0361",
+      "CL-2026-0552"
+    ],
+    "metrics": {
+      "mentions_24h": 10,
+      "unique_events_24h": 4,
+      "unique_sources_24h": 5,
+      "momentum": 1.963,
+      "acceleration": 2.0,
+      "max_entity_salience": 1.65,
+      "max_co_entities_in_event": 12
+    },
+    "sources": [
+      "SRC_009"
+    ],
+    "evidence": [
+      "https://n1info.ba/video/dnevnik/dnevnik-podnesene-krivicne-prijave-protiv-dodika-stevandica-kosarca/",
+      "https://n1info.ba/vijesti/porazni-bilans-bh-pravosudja-ucestala-velicanja-zlocina-a-u-bih-do-sada-presudjene-samo-dvije-osobe/",
+      "https://6yka.com/bih/sdp-podnio-krivicne-prijave-protiv-dodika-kosarca-stevandica-i-stanivukovica-zbog-velicanja-mladica",
+      "https://n1info.ba/english/news/sdp-bih-officials-file-criminal-reports-against-senior-figures-over-ratko-mladic-public-statements/",
+      "https://www.klix.ba/vijesti/bih/zvanicnici-sdp-a-predali-krivicne-prijave-protiv-dodika-stevandica-stanivukovica-i-kosarca-zbog-velicanja-mladica/260828119",
+      "https://n1info.ba/vijesti/pred-tuzilastvom-bih-podnesene-krivicne-prijave-protiv-cetiri-osobe-zbog-negiranja-ratnih-zlocina-i-velicanja-ratnih-zlocinaca-ovo-je-tek-pocetak/",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=657961",
+      "https://n1info.ba/vijesti/javni-servis-rtrs-u-sluzbi-negiranja-pedeset-cetiri-objave-nijednom-genocid-ko-bi-mogao-odgovarati/",
+      "https://www.klix.ba/vijesti/bih/sta-ce-nam-zakon-ako-se-ne-primjenjuje-kod-otvorenog-velicanja-ratnog-zlocinca-ili-drzava-ili-anarhija/260828049",
+      "https://srpskainfo.com/author/srpskainfo/"
+    ],
+    "first_seen": "2026-08-28T09:58:27Z",
+    "last_seen": "2026-08-28T18:51:45Z",
+    "confidence": 1.0,
+    "confidence_components": {
+      "momentum": true,
+      "sources": true,
+      "events": true,
+      "salience": true,
+      "cross_entity": true
+    },
+    "provenance": "PILOT_RULES"
+  },
+  {
+    "entity_id": "us-snsd",
+    "label": "US ↔ SNSD",
+    "classification": "REVIEW",
+    "why_now": "momentum +87% vs normale; 11 fonti indipendenti nelle ultime 24h; 11 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "entities": [
+      "us-snsd"
+    ],
+    "events": [
+      "CL-2026-0215",
+      "CL-2026-0501",
+      "CL-2026-0494"
+    ],
+    "metrics": {
+      "mentions_24h": 21,
+      "unique_events_24h": 11,
+      "unique_sources_24h": 11,
+      "momentum": 0.867,
+      "acceleration": 3.0,
+      "max_entity_salience": 1.65,
+      "max_co_entities_in_event": 19
+    },
+    "sources": [
+      "BL_IJ3_004",
+      "BL_IJ3_008",
+      "FBIH_001"
+    ],
+    "evidence": [
+      "https://banjaluka.net/cvijanovic-snsd-ozbiljna-politicka-prica-30-godina-organizovana-snaga-u-ime-srpske",
+      "https://www.klix.ba/vijesti/bih/neocekivan-pozdrav-privukao-paznju-rukovali-se-dodik-i-blanusa/260828145",
+      "https://atvbl.rs/vijesti/hronika/objavljeni-detalji-optuznice-protiv-smrka-i-magle/2336345",
+      "https://www.oslobodjenje.ba/vijesti/bih/od-davola-on-voli-srbe-do-narodnog-heroja-ovako-je-dodik-nekada-govorio-o-mladicu",
+      "https://atvbl.rs/vijesti/republika-srpska/dodik-snsd-tokom-25-godina-nije-dozvolio-da-razocara-srpski-narod/2336330",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=658014",
+      "https://n1info.ba/vijesti/kapidzic-tvrdi-da-je-vlada-ks-koncert-prodigyja-platila-gotovo-800000-km-zasto-su-onda-gradjanima-naplacene-ulaznice/",
+      "https://6yka.com/bih/blagojevic-snsd-trazi-primjenu-smitovog-zakona-a-dodik-ga-je-osporavao-na-sudu",
+      "https://srpskainfo.com/politika/foto-rukovanje-koje-ce-pokrenuti-price-dodik-i-blanusa-oci-u-oci-pred-izbore/",
+      "https://www.frontal.ba/kategorija/featured/"
+    ],
+    "first_seen": "2026-08-28T12:00:07Z",
+    "last_seen": "2026-08-28T21:38:53Z",
+    "confidence": 1.0,
+    "confidence_components": {
+      "momentum": true,
+      "sources": true,
+      "events": true,
+      "salience": true,
+      "cross_entity": true
+    },
+    "provenance": "PILOT_RULES"
+  },
+  {
+    "entity_id": "snsd",
+    "label": "SNSD",
+    "classification": "REVIEW",
+    "why_now": "momentum +91% vs normale; 11 fonti indipendenti nelle ultime 24h; 11 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "entities": [
+      "snsd"
+    ],
+    "events": [
+      "CL-2026-0215",
+      "CL-2026-0501",
+      "CL-2026-0494"
+    ],
+    "metrics": {
+      "mentions_24h": 21,
+      "unique_events_24h": 11,
+      "unique_sources_24h": 11,
+      "momentum": 0.909,
+      "acceleration": 6.0,
+      "max_entity_salience": 1.65,
+      "max_co_entities_in_event": 19
+    },
+    "sources": [
+      "BL_IJ3_004",
+      "BL_IJ3_008",
+      "FBIH_001"
+    ],
+    "evidence": [
+      "https://banjaluka.net/cvijanovic-snsd-ozbiljna-politicka-prica-30-godina-organizovana-snaga-u-ime-srpske",
+      "https://www.klix.ba/vijesti/bih/neocekivan-pozdrav-privukao-paznju-rukovali-se-dodik-i-blanusa/260828145",
+      "https://atvbl.rs/vijesti/hronika/objavljeni-detalji-optuznice-protiv-smrka-i-magle/2336345",
+      "https://www.oslobodjenje.ba/vijesti/bih/od-davola-on-voli-srbe-do-narodnog-heroja-ovako-je-dodik-nekada-govorio-o-mladicu",
+      "https://atvbl.rs/vijesti/republika-srpska/dodik-snsd-tokom-25-godina-nije-dozvolio-da-razocara-srpski-narod/2336330",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=658014",
+      "https://n1info.ba/vijesti/kapidzic-tvrdi-da-je-vlada-ks-koncert-prodigyja-platila-gotovo-800000-km-zasto-su-onda-gradjanima-naplacene-ulaznice/",
+      "https://6yka.com/bih/blagojevic-snsd-trazi-primjenu-smitovog-zakona-a-dodik-ga-je-osporavao-na-sudu",
+      "https://srpskainfo.com/politika/foto-rukovanje-koje-ce-pokrenuti-price-dodik-i-blanusa-oci-u-oci-pred-izbore/",
+      "https://www.frontal.ba/kategorija/featured/"
+    ],
+    "first_seen": "2026-08-28T12:00:07Z",
+    "last_seen": "2026-08-28T21:38:53Z",
+    "confidence": 1.0,
+    "confidence_components": {
+      "momentum": true,
+      "sources": true,
+      "events": true,
+      "salience": true,
+      "cross_entity": true
+    },
+    "provenance": "PILOT_RULES"
+  },
+  {
+    "entity_id": "dodik",
+    "label": "Milorad Dodik",
+    "classification": "REVIEW",
+    "why_now": "momentum +92% vs normale; 12 fonti indipendenti nelle ultime 24h; 23 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "entities": [
+      "dodik"
+    ],
+    "events": [
+      "CL-2026-0215",
+      "CL-2026-0356",
+      "CL-2026-0361"
+    ],
+    "metrics": {
+      "mentions_24h": 42,
+      "unique_events_24h": 23,
+      "unique_sources_24h": 12,
+      "momentum": 0.92,
+      "acceleration": 2.667,
+      "max_entity_salience": 1.65,
+      "max_co_entities_in_event": 19
+    },
+    "sources": [
+      "BL_IJ3_004",
+      "SRC_009"
+    ],
+    "evidence": [
+      "https://banjaluka.net/cvijanovic-snsd-ozbiljna-politicka-prica-30-godina-organizovana-snaga-u-ime-srpske",
+      "https://www.klix.ba/vijesti/bih/neocekivan-pozdrav-privukao-paznju-rukovali-se-dodik-i-blanusa/260828145",
+      "https://n1info.ba/video/dnevnik/dnevnik-podnesene-krivicne-prijave-protiv-dodika-stevandica-kosarca/",
+      "https://atvbl.rs/vijesti/hronika/objavljeni-detalji-optuznice-protiv-smrka-i-magle/2336345",
+      "https://www.oslobodjenje.ba/vijesti/bih/od-davola-on-voli-srbe-do-narodnog-heroja-ovako-je-dodik-nekada-govorio-o-mladicu",
+      "https://n1info.ba/vijesti/porazni-bilans-bh-pravosudja-ucestala-velicanja-zlocina-a-u-bih-do-sada-presudjene-samo-dvije-osobe/",
+      "https://atvbl.rs/vijesti/republika-srpska/dodik-snsd-tokom-25-godina-nije-dozvolio-da-razocara-srpski-narod/2336330",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=658014",
+      "https://n1info.ba/vijesti/kapidzic-tvrdi-da-je-vlada-ks-koncert-prodigyja-platila-gotovo-800000-km-zasto-su-onda-gradjanima-naplacene-ulaznice/",
+      "https://6yka.com/bih/sdp-podnio-krivicne-prijave-protiv-dodika-kosarca-stevandica-i-stanivukovica-zbog-velicanja-mladica"
+    ],
+    "first_seen": "2026-08-28T12:00:07Z",
+    "last_seen": "2026-08-28T21:38:53Z",
+    "confidence": 1.0,
+    "confidence_components": {
+      "momentum": true,
+      "sources": true,
+      "events": true,
+      "salience": true,
+      "cross_entity": true
+    },
+    "provenance": "PILOT_RULES"
+  },
+  {
+    "entity_id": "sp-demos",
+    "label": "SP · DEMOS · NDP",
+    "classification": "REVIEW",
+    "why_now": "momentum +167% vs normale; 3 fonti indipendenti nelle ultime 24h; 3 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "entities": [
+      "sp-demos"
+    ],
+    "events": [
+      "CL-2026-0603",
+      "CL-2026-0517",
+      "CL-2026-0594"
+    ],
+    "metrics": {
+      "mentions_24h": 4,
+      "unique_events_24h": 3,
+      "unique_sources_24h": 3,
+      "momentum": 1.667,
+      "acceleration": 0.0,
+      "max_entity_salience": 1.25,
+      "max_co_entities_in_event": 19
+    },
+    "sources": [
+      "FBIH_001",
+      "RS_ENT_002"
+    ],
+    "evidence": [
+      "https://atvbl.rs/vijesti/ekonomija/minic-otvorio-novi-proizvodni-objekat-za-tov-pilica-u-preduzecu-andric-farm/2336234",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=657998",
+      "https://www.klix.ba/sport/nogomet/trener-psv-a-konacno-govorio-o-bajraktarevicu-nije-bilo-smisla-da-ga-ubacujemo/260828158",
+      "https://atvbl.rs/sport-1/kosarka/srbija-krece-u-odlucujucu-bitku-za-mundobasket/2335943"
+    ],
+    "first_seen": "2026-08-28T06:28:52Z",
+    "last_seen": "2026-08-28T15:40:41Z",
+    "confidence": 1.0,
+    "confidence_components": {
+      "momentum": true,
+      "sources": true,
+      "events": true,
+      "salience": true,
+      "cross_entity": true
+    },
+    "provenance": "PILOT_RULES"
+  },
+  {
+    "entity_id": "blanusa",
+    "label": "Branko Blanuša",
+    "classification": "REVIEW",
+    "why_now": "momentum +433% vs normale; 4 fonti indipendenti nelle ultime 24h; 2 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "entities": [
+      "blanusa"
+    ],
+    "events": [
+      "CL-2026-0361",
+      "CL-2026-0494"
+    ],
+    "metrics": {
+      "mentions_24h": 6,
+      "unique_events_24h": 2,
+      "unique_sources_24h": 4,
+      "momentum": 4.333,
+      "acceleration": 1.0,
+      "max_entity_salience": 0.9,
+      "max_co_entities_in_event": 19
+    },
+    "sources": [
+      "FBIH_001",
+      "RS_ENT_002"
+    ],
+    "evidence": [
+      "https://www.klix.ba/vijesti/bih/neocekivan-pozdrav-privukao-paznju-rukovali-se-dodik-i-blanusa/260828145",
+      "https://srpskainfo.com/politika/foto-rukovanje-koje-ce-pokrenuti-price-dodik-i-blanusa-oci-u-oci-pred-izbore/",
+      "https://atvbl.rs/vijesti/republika-srpska/dodik-nasa-je-obaveza-da-cuvamo-svoje-svetinje/2336063",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=657928",
+      "https://www.klix.ba/vijesti/bih/stanivukovic-blanusa-trivic-i-bozovic-prisustvovali-parastosu-za-ratnog-zlocinca-ratka-mladica/260828006",
+      "https://srpskainfo.com/author/srpskainfo/"
+    ],
+    "first_seen": "2026-08-28T10:11:30Z",
+    "last_seen": "2026-08-28T20:27:00Z",
+    "confidence": 1.0,
+    "confidence_components": {
+      "momentum": true,
+      "sources": true,
+      "events": true,
+      "salience": true,
+      "cross_entity": true
+    },
+    "provenance": "PILOT_RULES"
+  },
+  {
+    "entity_id": "sds",
+    "label": "SDS",
+    "classification": "REVIEW",
+    "why_now": "momentum +226% vs normale; 5 fonti indipendenti nelle ultime 24h; 6 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "entities": [
+      "sds"
+    ],
+    "events": [
+      "CL-2026-0494",
+      "CL-2026-0485",
+      "CL-2026-0361"
+    ],
+    "metrics": {
+      "mentions_24h": 11,
+      "unique_events_24h": 6,
+      "unique_sources_24h": 5,
+      "momentum": 2.259,
+      "acceleration": 3.0,
+      "max_entity_salience": 1.55,
+      "max_co_entities_in_event": 19
+    },
+    "sources": [
+      "FBIH_001",
+      "RS_ENT_001",
+      "RS_ENT_002"
+    ],
+    "evidence": [
+      "https://www.klix.ba/vijesti/bih/neocekivan-pozdrav-privukao-paznju-rukovali-se-dodik-i-blanusa/260828145",
+      "https://n1info.ba/vijesti/mup-rs-zavrsio-kdz-preglede-na-pet-lokacija-u-banjoj-luci-dojave-o-bombama-bile-lazne/",
+      "https://www.klix.ba/vijesti/bih/banja-luka-dojave-o-postavljenim-bombama-na-pet-lokacije-bile-su-lazne/260828192",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=658011",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=657992",
+      "https://srpskainfo.com/politika/foto-rukovanje-koje-ce-pokrenuti-price-dodik-i-blanusa-oci-u-oci-pred-izbore/",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=657986",
+      "https://atvbl.rs/vijesti/republika-srpska/dodik-nasa-je-obaveza-da-cuvamo-svoje-svetinje/2336063",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=657928",
+      "https://srpskainfo.com/author/srpskainfo/"
+    ],
+    "first_seen": "2026-08-28T10:11:30Z",
+    "last_seen": "2026-08-28T20:27:00Z",
+    "confidence": 1.0,
+    "confidence_components": {
+      "momentum": true,
+      "sources": true,
+      "events": true,
+      "salience": true,
+      "cross_entity": true
+    },
+    "provenance": "PILOT_RULES"
+  },
+  {
+    "entity_id": "stanivukovic",
+    "label": "Draško Stanivuković",
+    "classification": "REVIEW",
+    "why_now": "momentum +195% vs normale; 6 fonti indipendenti nelle ultime 24h; 7 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "entities": [
+      "stanivukovic"
+    ],
+    "events": [
+      "CL-2026-0361",
+      "CL-2026-0486",
+      "CL-2026-0507"
+    ],
+    "metrics": {
+      "mentions_24h": 14,
+      "unique_events_24h": 7,
+      "unique_sources_24h": 6,
+      "momentum": 1.947,
+      "acceleration": 1.0,
+      "max_entity_salience": 1.55,
+      "max_co_entities_in_event": 19
+    },
+    "sources": [
+      "BL_IJ3_003",
+      "BL_IJ3_006",
+      "SRC_009"
+    ],
+    "evidence": [
+      "https://www.klix.ba/vijesti/bih/neocekivan-pozdrav-privukao-paznju-rukovali-se-dodik-i-blanusa/260828145",
+      "https://banjaluka-24.com/stogodisnjica-hrama-u-josavci-stanivukovic-prisustvovao-proslavi-i-poslao-snaznu-poruku-o-ocuvanju-svetinja",
+      "https://n1info.ba/english/news/sdp-bih-officials-file-criminal-reports-against-senior-figures-over-ratko-mladic-public-statements/",
+      "https://banjaluka-24.com/da-smo-cekali-vlast-gradani-ne-bi-dobili-nista-20-godina-mirna-savic-banjac-brutalno-odgovorila-ministru-golubovicu-oko-skolskih-uniformi",
+      "https://banjaluka-24.com/otvorene-kancelarije-pss-a-u-stanarima-poruceno-da-nema-jake-srpske-bez-razvijenih-lokalnih-zajednica",
+      "https://atvbl.rs/vijesti/republika-srpska/dodik-nasa-je-obaveza-da-cuvamo-svoje-svetinje/2336063",
+      "https://banjaluka-24.com/kresojevic-optuzuje-vlast-nezakonitim-nametima-puni-budzet-iz-novcanika-penzionera",
+      "https://www.klix.ba/vijesti/bih/sta-ce-nam-zakon-ako-se-ne-primjenjuje-kod-otvorenog-velicanja-ratnog-zlocinca-ili-drzava-ili-anarhija/260828049",
+      "https://atvbl.rs/vijesti/banja-luka/da-li-se-banjalucani-pitaju-nesto/2335964",
+      "https://www.klix.ba/vijesti/bih/stanivukovic-blanusa-trivic-i-bozovic-prisustvovali-parastosu-za-ratnog-zlocinca-ratka-mladica/260828006"
+    ],
+    "first_seen": "2026-08-28T00:00:00Z",
+    "last_seen": "2026-08-28T20:27:00Z",
+    "confidence": 1.0,
+    "confidence_components": {
+      "momentum": true,
+      "sources": true,
+      "events": true,
+      "salience": true,
+      "cross_entity": true
+    },
+    "provenance": "PILOT_RULES"
+  },
+  {
+    "entity_id": "trivic",
+    "label": "Jelena Trivić",
+    "classification": "REVIEW",
+    "why_now": "momentum +433% vs normale; 4 fonti indipendenti nelle ultime 24h; 2 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "entities": [
+      "trivic"
+    ],
+    "events": [
+      "CL-2026-0521",
+      "CL-2026-0361"
+    ],
+    "metrics": {
+      "mentions_24h": 4,
+      "unique_events_24h": 2,
+      "unique_sources_24h": 4,
+      "momentum": 4.333,
+      "acceleration": 2.0,
+      "max_entity_salience": 1.65,
+      "max_co_entities_in_event": 19
+    },
+    "sources": [
+      "BL_IJ3_005",
+      "FBIH_001"
+    ],
+    "evidence": [
+      "https://6yka.com/bih/penzioneri-u-srpskoj-dvije-decenije-na-istom-prosjecna-penzija-i-dalje-pokriva-tek-cetvrtinu-potrosacke-korpe",
+      "https://banjaluka-24.com/punih-20-godina-na-ivici-egzistencije-penzija-u-srpskoj-pokriva-jedva-cetvrtinu-potrosacke-korpe",
+      "https://direkt-portal.com/penzionerima-u-rs-u-pred-izbore-stize-do-120-km-za-pomoc-izdvojeno-312-miliona-km",
+      "https://www.klix.ba/vijesti/bih/stanivukovic-blanusa-trivic-i-bozovic-prisustvovali-parastosu-za-ratnog-zlocinca-ratka-mladica/260828006"
+    ],
+    "first_seen": "2026-08-28T04:58:00Z",
+    "last_seen": "2026-08-28T19:30:00Z",
+    "confidence": 1.0,
+    "confidence_components": {
+      "momentum": true,
+      "sources": true,
+      "events": true,
+      "salience": true,
+      "cross_entity": true
+    },
+    "provenance": "PILOT_RULES"
+  },
+  {
+    "entity_id": "opozicija",
+    "label": "Opozicija · odnosi",
+    "classification": "REVIEW",
+    "why_now": "momentum +310% vs normale; 7 fonti indipendenti nelle ultime 24h; 13 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "entities": [
+      "opozicija"
+    ],
+    "events": [
+      "CL-2026-0494",
+      "CL-2026-0485",
+      "CL-2026-0486"
+    ],
+    "metrics": {
+      "mentions_24h": 20,
+      "unique_events_24h": 13,
+      "unique_sources_24h": 7,
+      "momentum": 3.103,
+      "acceleration": 3.0,
+      "max_entity_salience": 1.65,
+      "max_co_entities_in_event": 19
+    },
+    "sources": [
+      "BL_IJ3_003",
+      "FBIH_001",
+      "RS_ENT_001"
+    ],
+    "evidence": [
+      "https://www.klix.ba/vijesti/bih/neocekivan-pozdrav-privukao-paznju-rukovali-se-dodik-i-blanusa/260828145",
+      "https://n1info.ba/vijesti/mup-rs-zavrsio-kdz-preglede-na-pet-lokacija-u-banjoj-luci-dojave-o-bombama-bile-lazne/",
+      "https://www.klix.ba/vijesti/bih/banja-luka-dojave-o-postavljenim-bombama-na-pet-lokacije-bile-su-lazne/260828192",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=658011",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=657992",
+      "https://srpskainfo.com/politika/foto-rukovanje-koje-ce-pokrenuti-price-dodik-i-blanusa-oci-u-oci-pred-izbore/",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=657986",
+      "https://www.klix.ba/vijesti/bih/reakcije-na-smrt-ratka-mladica-pokazale-su-pravu-sliku-u-srbiji-i-rs-u-se-nikada-nisu-suocili-s-naslijedem-zlocina/260828061",
+      "https://banjaluka-24.com/da-smo-cekali-vlast-gradani-ne-bi-dobili-nista-20-godina-mirna-savic-banjac-brutalno-odgovorila-ministru-golubovicu-oko-skolskih-uniformi",
+      "https://banjaluka-24.com/otvorene-kancelarije-pss-a-u-stanarima-poruceno-da-nema-jake-srpske-bez-razvijenih-lokalnih-zajednica"
+    ],
+    "first_seen": "2026-08-28T00:00:00Z",
+    "last_seen": "2026-08-28T20:27:00Z",
+    "confidence": 1.0,
+    "confidence_components": {
+      "momentum": true,
+      "sources": true,
+      "events": true,
+      "salience": true,
+      "cross_entity": true
+    },
+    "provenance": "PILOT_RULES"
+  },
+  {
+    "entity_id": "ij5-konkurencija",
+    "label": "IJ5 · borba za mandat",
+    "classification": "REVIEW",
+    "why_now": "momentum +102% vs normale; 15 fonti indipendenti nelle ultime 24h; 35 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "entities": [
+      "ij5-konkurencija"
+    ],
+    "events": [
+      "CL-2026-0506",
+      "CL-2026-0215",
+      "CL-2026-0501"
+    ],
+    "metrics": {
+      "mentions_24h": 59,
+      "unique_events_24h": 35,
+      "unique_sources_24h": 15,
+      "momentum": 1.017,
+      "acceleration": 3.0,
+      "max_entity_salience": 1.65,
+      "max_co_entities_in_event": 19
+    },
+    "sources": [
+      "BL_IJ3_004",
+      "BL_IJ3_008",
+      "RS_IJ_012"
+    ],
+    "evidence": [
+      "https://banjaluka.net/cvijanovic-snsd-ozbiljna-politicka-prica-30-godina-organizovana-snaga-u-ime-srpske",
+      "https://www.klix.ba/vijesti/bih/neocekivan-pozdrav-privukao-paznju-rukovali-se-dodik-i-blanusa/260828145",
+      "https://www.oslobodjenje.ba/sport/fudbal/wwin-liga-bih/navijaci-bh-premijerligasa-napravili-skandal-sebe-nazvali-vojskom-ratka-denerala",
+      "https://atvbl.rs/vijesti/hronika/objavljeni-detalji-optuznice-protiv-smrka-i-magle/2336345",
+      "https://www.oslobodjenje.ba/vijesti/bih/od-davola-on-voli-srbe-do-narodnog-heroja-ovako-je-dodik-nekada-govorio-o-mladicu",
+      "https://glasregije.net/teslic-sve-je-spremno-za-29-ovnovijadu-video/60402",
+      "https://atvbl.rs/vijesti/republika-srpska/dodik-snsd-tokom-25-godina-nije-dozvolio-da-razocara-srpski-narod/2336330",
+      "https://glasregije.net/pozari-digli-vatrogasce-na-noge-u-vukosavlju-izgorio-drveni-objekat-u-stanarima-povrijedjena-jedna-osoba/60400",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=658014",
+      "https://6yka.com/bih/biraci-ce-uskoro-moci-isprobati-nove-izborne-tehnologije-evo-gdje-ce-biti-odrzane-simulacije"
+    ],
+    "first_seen": "2026-08-28T12:00:07Z",
+    "last_seen": "2026-08-28T21:38:53Z",
+    "confidence": 1.0,
+    "confidence_components": {
+      "momentum": true,
+      "sources": true,
+      "events": true,
+      "salience": true,
+      "cross_entity": true
+    },
+    "provenance": "PILOT_RULES"
+  },
+  {
+    "entity_id": "predsjednik-rs",
+    "label": "Predsjednik RS",
+    "classification": "REVIEW",
+    "why_now": "momentum +106% vs normale; 10 fonti indipendenti nelle ultime 24h; 8 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "entities": [
+      "predsjednik-rs"
+    ],
+    "events": [
+      "CL-2026-0361",
+      "CL-2026-0496",
+      "CL-2026-0494"
+    ],
+    "metrics": {
+      "mentions_24h": 17,
+      "unique_events_24h": 8,
+      "unique_sources_24h": 10,
+      "momentum": 1.061,
+      "acceleration": 3.0,
+      "max_entity_salience": 1.25,
+      "max_co_entities_in_event": 19
+    },
+    "sources": [
+      "FBIH_001",
+      "RS_ENT_001",
+      "RS_ENT_002"
+    ],
+    "evidence": [
+      "https://www.klix.ba/vijesti/bih/neocekivan-pozdrav-privukao-paznju-rukovali-se-dodik-i-blanusa/260828145",
+      "https://6yka.com/bih/penzioneri-u-srpskoj-dvije-decenije-na-istom-prosjecna-penzija-i-dalje-pokriva-tek-cetvrtinu-potrosacke-korpe",
+      "https://banjaluka-24.com/punih-20-godina-na-ivici-egzistencije-penzija-u-srpskoj-pokriva-jedva-cetvrtinu-potrosacke-korpe",
+      "https://atvbl.rs/vijesti/republika-srpska/minic-preduzece-andric-farm-pravi-primjer-kako-porodicni-biznis-moze-da-se-organizuje/2336261",
+      "https://atvbl.rs/vijesti/ekonomija/minic-otvorio-novi-proizvodni-objekat-za-tov-pilica-u-preduzecu-andric-farm/2336234",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=657998",
+      "https://srpskainfo.com/politika/foto-rukovanje-koje-ce-pokrenuti-price-dodik-i-blanusa-oci-u-oci-pred-izbore/",
+      "https://detektor.ba/2026/08/28/sjecanje-na-masakr-na-markalama-dio-sistemske-i-isplanirane-kampanje-terora",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=657959",
+      "https://atvbl.rs/vijesti/republika-srpska/dodik-nasa-je-obaveza-da-cuvamo-svoje-svetinje/2336063"
+    ],
+    "first_seen": "2026-08-28T10:11:30Z",
+    "last_seen": "2026-08-28T20:27:00Z",
+    "confidence": 1.0,
+    "confidence_components": {
+      "momentum": true,
+      "sources": true,
+      "events": true,
+      "salience": true,
+      "cross_entity": true
+    },
+    "provenance": "PILOT_RULES"
+  },
+  {
+    "entity_id": "minic",
+    "label": "Savo Minić",
+    "classification": "REVIEW",
+    "why_now": "momentum +105% vs normale; 9 fonti indipendenti nelle ultime 24h; 10 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "entities": [
+      "minic"
+    ],
+    "events": [
+      "CL-2026-0496",
+      "CL-2026-0603",
+      "CL-2026-0363"
+    ],
+    "metrics": {
+      "mentions_24h": 19,
+      "unique_events_24h": 10,
+      "unique_sources_24h": 9,
+      "momentum": 1.054,
+      "acceleration": 3.0,
+      "max_entity_salience": 1.65,
+      "max_co_entities_in_event": 19
+    },
+    "sources": [
+      "RS_ENT_002"
+    ],
+    "evidence": [
+      "https://www.klix.ba/vijesti/bih/neocekivan-pozdrav-privukao-paznju-rukovali-se-dodik-i-blanusa/260828145",
+      "https://6yka.com/bih/penzioneri-u-srpskoj-dvije-decenije-na-istom-prosjecna-penzija-i-dalje-pokriva-tek-cetvrtinu-potrosacke-korpe",
+      "https://banjaluka-24.com/punih-20-godina-na-ivici-egzistencije-penzija-u-srpskoj-pokriva-jedva-cetvrtinu-potrosacke-korpe",
+      "https://atvbl.rs/vijesti/republika-srpska/kuzmic-srpska-i-resorno-ministarstvo-posebno-ponosni-kada-vidi-da-ovakve-objekte-i-porodicne-farme/2336273",
+      "https://atvbl.rs/vijesti/republika-srpska/minic-preduzece-andric-farm-pravi-primjer-kako-porodicni-biznis-moze-da-se-organizuje/2336261",
+      "https://atvbl.rs/vijesti/ekonomija/minic-otvorio-novi-proizvodni-objekat-za-tov-pilica-u-preduzecu-andric-farm/2336234",
+      "https://atvbl.rs/vijesti/svijet/kralj-preminuo-u-35-godini-poceo-da-vlada-jos-kao-dijete/2336243",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=657998",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=657997",
+      "https://direkt-portal.com/curic-novi-pozar-se-krece-prema-plucima-trebinja-preusmjerene-snage"
+    ],
+    "first_seen": "2026-08-28T05:54:13Z",
+    "last_seen": "2026-08-28T20:27:00Z",
+    "confidence": 1.0,
+    "confidence_components": {
+      "momentum": true,
+      "sources": true,
+      "events": true,
+      "salience": true,
+      "cross_entity": true
+    },
+    "provenance": "PILOT_RULES"
+  },
+  {
+    "entity_id": "predsjednistvo",
+    "label": "Predsjedništvo BiH",
+    "classification": "REVIEW",
+    "why_now": "momentum +179% vs normale; 6 fonti indipendenti nelle ultime 24h; 11 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "entities": [
+      "predsjednistvo"
+    ],
+    "events": [
+      "CL-2026-0501",
+      "CL-2026-0361",
+      "CL-2026-0515"
+    ],
+    "metrics": {
+      "mentions_24h": 15,
+      "unique_events_24h": 11,
+      "unique_sources_24h": 6,
+      "momentum": 1.791,
+      "acceleration": 5.0,
+      "max_entity_salience": 1.65,
+      "max_co_entities_in_event": 19
+    },
+    "sources": [
+      "BL_IJ3_008",
+      "FBIH_001",
+      "SRC_009"
+    ],
+    "evidence": [
+      "https://banjaluka.net/cvijanovic-snsd-ozbiljna-politicka-prica-30-godina-organizovana-snaga-u-ime-srpske",
+      "https://www.klix.ba/vijesti/bih/neocekivan-pozdrav-privukao-paznju-rukovali-se-dodik-i-blanusa/260828145",
+      "https://www.klix.ba/vijesti/bih/bivsi-desnicarski-ministar-odbrane-grcke-odao-pocast-ratnom-zlocincu-ratku-mladicu/260828180",
+      "https://atvbl.rs/vijesti/republika-srpska/dodik-snsd-tokom-25-godina-nije-dozvolio-da-razocara-srpski-narod/2336330",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=658014",
+      "https://www.klix.ba/biznis/ekonomija/tunel-kvanj-probijen-no-dionicu-prema-mostaru-usporava-pitanje-vojne-imovine-predsjednistvo-bih-odlucuje-u-ponedjeljak/260828114",
+      "https://n1info.ba/kultura/predstava-smrt-u-dubrovniku-u-ponedjeljak-otvara-8-sarajevo-fest/",
+      "https://www.klix.ba/vijesti/bih/reakcije-na-smrt-ratka-mladica-pokazale-su-pravu-sliku-u-srbiji-i-rs-u-se-nikada-nisu-suocili-s-naslijedem-zlocina/260828061",
+      "https://n1info.ba/vijesti/vukanovic-o-mladicu-genocid-presutio-orica-predstavio-kao-osudjenika/",
+      "https://www.klix.ba/vijesti/bih/vukanovic-povezao-sudenje-s-naserom-oricem-i-govorio-o-hrabrosti-ratnog-zlocinca-mladica-na-frontu/260828025"
+    ],
+    "first_seen": "2026-08-28T04:58:00Z",
+    "last_seen": "2026-08-28T21:38:53Z",
+    "confidence": 1.0,
+    "confidence_components": {
+      "momentum": true,
+      "sources": true,
+      "events": true,
+      "salience": true,
+      "cross_entity": true
+    },
+    "provenance": "PILOT_RULES"
+  },
+  {
+    "entity_id": "cik",
+    "label": "CIK BiH",
+    "classification": "REVIEW",
+    "why_now": "3 fonti indipendenti nelle ultime 24h; 4 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "entities": [
+      "cik"
+    ],
+    "events": [
+      "CL-2026-0513",
+      "CL-2026-0521",
+      "CL-2026-0234"
+    ],
+    "metrics": {
+      "mentions_24h": 5,
+      "unique_events_24h": 4,
+      "unique_sources_24h": 3,
+      "momentum": 0.333,
+      "acceleration": 0.0,
+      "max_entity_salience": 1.65,
+      "max_co_entities_in_event": 19
+    },
+    "sources": [
+      "BIH_ELEC_002",
+      "BL_IJ3_005",
+      "RS_IJ_030"
+    ],
+    "evidence": [
+      "https://6yka.com/bih/biraci-ce-uskoro-moci-isprobati-nove-izborne-tehnologije-evo-gdje-ce-biti-odrzane-simulacije",
+      "https://6yka.com/bih/blagojevic-snsd-trazi-primjenu-smitovog-zakona-a-dodik-ga-je-osporavao-na-sudu",
+      "https://podlupom.org/press-kutak/vijesti/centralna-izborna-komisija-kaznila-sda-sa-4500-km-zbog-preuranjene-izborne-kampanje-2",
+      "https://direkt-portal.com/penzionerima-u-rs-u-pred-izbore-stize-do-120-km-za-pomoc-izdvojeno-312-miliona-km",
+      "https://podlupom.org/press-kutak/vijesti/centralna-izborna-komisija-kaznila-snsd-s-8-000-km-zbog-preuranjene-kampanje"
+    ],
+    "first_seen": "2026-08-28T06:56:17Z",
+    "last_seen": "2026-08-28T17:00:00Z",
+    "confidence": 0.8,
+    "confidence_components": {
+      "momentum": false,
+      "sources": true,
+      "events": true,
+      "salience": true,
+      "cross_entity": true
+    },
+    "provenance": "PILOT_RULES"
+  },
+  {
+    "entity_id": "izborni-proces",
+    "label": "Izborni proces",
+    "classification": "REVIEW",
+    "why_now": "momentum +65% vs normale; 5 fonti indipendenti nelle ultime 24h; 6 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "entities": [
+      "izborni-proces"
+    ],
+    "events": [
+      "CL-2026-0513",
+      "CL-2026-0521",
+      "CL-2026-0568"
+    ],
+    "metrics": {
+      "mentions_24h": 7,
+      "unique_events_24h": 6,
+      "unique_sources_24h": 5,
+      "momentum": 0.647,
+      "acceleration": 0.0,
+      "max_entity_salience": 1.65,
+      "max_co_entities_in_event": 19
+    },
+    "sources": [
+      "BIH_ELEC_002",
+      "RS_ENT_001",
+      "RS_IJ_030"
+    ],
+    "evidence": [
+      "https://n1info.ba/vijesti/gradjane-s-dvojnim-drzavljanstvom-u-banjoj-luci-kontaktiraju-zbog-glasanja-u-srbiji-crta-upozorava-na-pokusaj-izborne-manipulacije/",
+      "https://6yka.com/bih/blagojevic-snsd-trazi-primjenu-smitovog-zakona-a-dodik-ga-je-osporavao-na-sudu",
+      "https://n1info.ba/vijesti/dan-uzivo-otvara-li-mladiceva-smrt-nove-rasprave-o-revizionizmu-odgovornosti-i-istorijskom-pamcenju/",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=657966",
+      "https://podlupom.org/press-kutak/vijesti/centralna-izborna-komisija-kaznila-sda-sa-4500-km-zbog-preuranjene-izborne-kampanje-2",
+      "https://direkt-portal.com/penzionerima-u-rs-u-pred-izbore-stize-do-120-km-za-pomoc-izdvojeno-312-miliona-km",
+      "https://podlupom.org/press-kutak/vijesti/centralna-izborna-komisija-kaznila-snsd-s-8-000-km-zbog-preuranjene-kampanje"
+    ],
+    "first_seen": "2026-08-28T06:56:17Z",
+    "last_seen": "2026-08-28T16:35:47Z",
+    "confidence": 1.0,
+    "confidence_components": {
+      "momentum": true,
+      "sources": true,
+      "events": true,
+      "salience": true,
+      "cross_entity": true
+    },
+    "provenance": "PILOT_RULES"
+  },
+  {
+    "entity_id": "beograd",
+    "label": "Beograd / Srbija",
+    "classification": "REVIEW",
+    "why_now": "momentum +288% vs normale; 7 fonti indipendenti nelle ultime 24h; 15 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "entities": [
+      "beograd"
+    ],
+    "events": [
+      "CL-2026-0449",
+      "CL-2026-0215",
+      "CL-2026-0428"
+    ],
+    "metrics": {
+      "mentions_24h": 33,
+      "unique_events_24h": 15,
+      "unique_sources_24h": 7,
+      "momentum": 2.882,
+      "acceleration": 3.0,
+      "max_entity_salience": 1.65,
+      "max_co_entities_in_event": 11
+    },
+    "sources": [
+      "BL_IJ3_004",
+      "FBIH_001",
+      "SRC_009"
+    ],
+    "evidence": [
+      "https://www.klix.ba/sport/nogomet/bravo-majstore-nezaustaviljivi-jovo-lukic-zabio-dva-nova-gola-njegov-tim-na-kraju-porazen/260828207",
+      "https://www.klix.ba/vijesti/bih/zrak-u-sarajevu-sve-zagadeniji-zbog-prasine-iz-sahare/260828193",
+      "https://n1info.ba/vijesti/eurozastupnik-porucio-vlastima-u-srbiji-ako-organizujete-mladicevu-sahranu-to-ce-znaciti-da-se-niste-distancirali-od-politike-90-ih/",
+      "https://www.klix.ba/magazin/showbiz/joey-lawrence-tvrdi-da-njegove-starije-kcerke-slavu-smatraju-sramotnom-nisu-shvatale-sta-se-desava/260828178",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=658002",
+      "https://n1info.ba/vijesti/kosor-hrvatska-mora-blokirati-eu-put-srbiji-i-crnoj-gori-zbog-reakcija-na-smrt-osudjenog-krvnika-mladica/",
+      "https://www.klix.ba/sport/nogomet/trener-psv-a-konacno-govorio-o-bajraktarevicu-nije-bilo-smisla-da-ga-ubacujemo/260828158",
+      "https://banjaluka-24.com/vucic-bez-dlake-na-jeziku-nisu-htjeli-da-ga-puste-hag-je-zelio-da-mladic-umre-iza-resetaka",
+      "https://www.klix.ba/sport/nogomet/arsenal-odustao-od-alvareza-sada-zele-mladu-zvijezdu-reala/260828144",
+      "https://n1info.ba/english/news/vucic-teports-that-mladic-would-be-buried-with-highest-state-honors-were-lies/"
+    ],
+    "first_seen": "2026-08-28T12:00:07Z",
+    "last_seen": "2026-08-28T20:38:00Z",
+    "confidence": 1.0,
+    "confidence_components": {
+      "momentum": true,
+      "sources": true,
+      "events": true,
+      "salience": true,
+      "cross_entity": true
+    },
+    "provenance": "PILOT_RULES"
+  },
+  {
+    "entity_id": "finansiranje",
+    "label": "Finansiranje kampanje",
+    "classification": "REVIEW",
+    "why_now": "momentum +52% vs normale; 13 fonti indipendenti nelle ultime 24h; 22 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "entities": [
+      "finansiranje"
+    ],
+    "events": [
+      "CL-2026-0521",
+      "CL-2026-0496",
+      "CL-2026-0513"
+    ],
+    "metrics": {
+      "mentions_24h": 26,
+      "unique_events_24h": 22,
+      "unique_sources_24h": 13,
+      "momentum": 0.518,
+      "acceleration": 1.667,
+      "max_entity_salience": 1.65,
+      "max_co_entities_in_event": 19
+    },
+    "sources": [
+      "BIH_ELEC_002",
+      "BL_IJ3_005",
+      "RS_ENT_002"
+    ],
+    "evidence": [
+      "https://zvornicki.ba/t/obrazovanje/",
+      "https://atvbl.rs/vijesti/drustvo/upozorenje-za-gradjane-ne-unosite-podatke-siri-se-sms-sa-laznim-saobracajnim-kaznama/2336390",
+      "https://6yka.com/bih/penzioneri-u-srpskoj-dvije-decenije-na-istom-prosjecna-penzija-i-dalje-pokriva-tek-cetvrtinu-potrosacke-korpe",
+      "https://banjaluka-24.com/punih-20-godina-na-ivici-egzistencije-penzija-u-srpskoj-pokriva-jedva-cetvrtinu-potrosacke-korpe",
+      "https://atvbl.rs/vijesti/hronika/objavljeni-detalji-optuznice-protiv-smrka-i-magle/2336345",
+      "https://n1info.ba/vijesti/kapidzic-tvrdi-da-je-vlada-ks-koncert-prodigyja-platila-gotovo-800000-km-zasto-su-onda-gradjanima-naplacene-ulaznice/",
+      "https://srpskainfo.com/banjaluka/velika-investicija-u-pu-banjaluka-za-obnovu-objekta-izdvojena-ogromna-suma/",
+      "https://spin-portal.info/milionski-dugovi-prema-poreskoj-upravi-opstina-sokolac-ali-i-firma-savjetnika-gradonacelnika-istocnog-sarajeva-medju-duznicima",
+      "https://atvbl.rs/vijesti/gradovi-i-opstine/sekovici-plaketa-minicu-za-doprinos-razvoju-opstine/2336126",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=657983"
+    ],
+    "first_seen": "2026-08-28T07:21:55Z",
+    "last_seen": "2026-08-28T21:39:11Z",
+    "confidence": 1.0,
+    "confidence_components": {
+      "momentum": true,
+      "sources": true,
+      "events": true,
+      "salience": true,
+      "cross_entity": true
+    },
+    "provenance": "PILOT_RULES"
+  },
+  {
+    "entity_id": "doboj",
+    "label": "Doboj",
+    "classification": "REVIEW",
+    "why_now": "momentum +111% vs normale; 12 fonti indipendenti nelle ultime 24h; 25 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "entities": [
+      "doboj"
+    ],
+    "events": [
+      "CL-2026-0506",
+      "CL-2026-0167",
+      "CL-2026-0332"
+    ],
+    "metrics": {
+      "mentions_24h": 39,
+      "unique_events_24h": 25,
+      "unique_sources_24h": 12,
+      "momentum": 1.108,
+      "acceleration": 2.0,
+      "max_entity_salience": 1.65,
+      "max_co_entities_in_event": 12
+    },
+    "sources": [
+      "FBIH_001",
+      "RS_IJ_012",
+      "RS_IJ_014"
+    ],
+    "evidence": [
+      "https://www.oslobodjenje.ba/sport/fudbal/wwin-liga-bih/navijaci-bh-premijerligasa-napravili-skandal-sebe-nazvali-vojskom-ratka-denerala",
+      "https://glasregije.net/pozari-digli-vatrogasce-na-noge-u-vukosavlju-izgorio-drveni-objekat-u-stanarima-povrijedjena-jedna-osoba/60400",
+      "https://6yka.com/bih/biraci-ce-uskoro-moci-isprobati-nove-izborne-tehnologije-evo-gdje-ce-biti-odrzane-simulacije",
+      "https://glasregije.net/sudska-policija-u-doboju-uhapsila-osudjenika-po-potjernici/60397",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=658005",
+      "https://6yka.com/bih/blagojevic-snsd-trazi-primjenu-smitovog-zakona-a-dodik-ga-je-osporavao-na-sudu",
+      "https://www.klix.ba/vijesti/bih/sutra-opet-vruce-ali-nestabilno-vrijeme-praceno-pljuskovima-i-grmljavinom/260828162",
+      "https://srpskainfo.com/biznis/foto-od-alternativnog-goriva-do-energenta-buducnosti-cng-u-bosni-i-hercegovini-ulazi-u-novu-fazu-razvoja/",
+      "https://derventskilist.net/blog/",
+      "https://derventskilist.net/tag/%d0%b0%d1%83%d1%82%d0%be%d1%80-%d1%82%d0%b0%d1%82%d1%98%d0%b0%d0%bd%d0%b0-%d0%ba%d0%be%d1%98%d0%b8%d1%9b/"
+    ],
+    "first_seen": "2026-08-28T09:34:11Z",
+    "last_seen": "2026-08-28T19:16:35Z",
+    "confidence": 1.0,
+    "confidence_components": {
+      "momentum": true,
+      "sources": true,
+      "events": true,
+      "salience": true,
+      "cross_entity": true
+    },
+    "provenance": "PILOT_RULES"
+  },
+  {
+    "entity_id": "banjaluka",
+    "label": "Banja Luka",
+    "classification": "REVIEW",
+    "why_now": "momentum +185% vs normale; 10 fonti indipendenti nelle ultime 24h; 20 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "entities": [
+      "banjaluka"
+    ],
+    "events": [
+      "CL-2026-0585",
+      "CL-2026-0430",
+      "CL-2026-0286"
+    ],
+    "metrics": {
+      "mentions_24h": 26,
+      "unique_events_24h": 20,
+      "unique_sources_24h": 10,
+      "momentum": 1.849,
+      "acceleration": 6.0,
+      "max_entity_salience": 1.65,
+      "max_co_entities_in_event": 19
+    },
+    "sources": [
+      "RS_IJ_005",
+      "SRC_009"
+    ],
+    "evidence": [
+      "https://www.oslobodjenje.ba/vijesti/crna-hronika/slovenac-digao-na-noge-policiju-u-bi-h-nasuo-gorivo-u-vozilo-nije-platio-pa-pobjegao",
+      "https://atvbl.rs/vijesti/gradovi-i-opstine/ponovo-se-rasplamsao-pozar-na-trebevicu/2336375",
+      "https://n1info.ba/vijesti/mup-rs-zavrsio-kdz-preglede-na-pet-lokacija-u-banjoj-luci-dojave-o-bombama-bile-lazne/",
+      "https://www.klix.ba/vijesti/bih/banja-luka-dojave-o-postavljenim-bombama-na-pet-lokacije-bile-su-lazne/260828192",
+      "https://micromreza.com/kategorije/vijesti/drustvo/",
+      "https://micromreza.com/osumnjiceni-slovenac-za-kompjutersku-prevaru-ispitan-predlozen-pritvor",
+      "https://atvbl.rs/vijesti/hronika/laznim-linkovima-skidao-novac-zatrazen-pritvor-za-uhapsenog-zbog-prevare/2336285",
+      "https://www.klix.ba/vijesti/bih/sutra-opet-vruce-ali-nestabilno-vrijeme-praceno-pljuskovima-i-grmljavinom/260828162",
+      "https://srpskainfo.com/banjaluka/velika-investicija-u-pu-banjaluka-za-obnovu-objekta-izdvojena-ogromna-suma/",
+      "https://www.klix.ba/vijesti/bih/nemoc-zamaskirana-brutalnoscu-mladic-nije-bio-samo-ratni-zlocinac-vec-i-general-gubitnik-koji-je-gubio-sve-sto-je-zatekao/260828051"
+    ],
+    "first_seen": "2026-08-28T08:42:09Z",
+    "last_seen": "2026-08-28T20:35:43Z",
+    "confidence": 1.0,
+    "confidence_components": {
+      "momentum": true,
+      "sources": true,
+      "events": true,
+      "salience": true,
+      "cross_entity": true
+    },
+    "provenance": "PILOT_RULES"
+  }
+]

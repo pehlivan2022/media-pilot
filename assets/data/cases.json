@@ -1,0 +1,1776 @@
+[
+  {
+    "id": "NEW-03",
+    "menu": "news",
+    "date": "2026-05-12",
+    "title": "SAD najavljuju uži OHR mandat i domaću odgovornost: signalizuju uži mandat za narednog visokog predstavnika",
+    "modules": [
+      "OHR",
+      "INT",
+      "BEO"
+    ],
+    "risk": 5,
+    "opportunity": 3,
+    "wedge": 5,
+    "territory": "Beograd signal",
+    "owner": "rukovodstvo",
+    "deadline": "<6h",
+    "summary": "Reuters prenosi da SAD najavljuju ograničeniju ulogu narednog međunarodnog izaslanika u BiH; to mijenja prostor za političko tumačenje OHR-a, odgovornosti domaćih lidera i odnosa prema RS. Operativno: sad najavljuju uži ohr mandat i domaću odgovornost.",
+    "signal_to_vrh": true,
+    "signal_to_media": true,
+    "suggested_responses": [
+      "Zadržati institucionalni ton; ne praviti trijumfalizam oko odlaska ili smjene OHR-a.",
+      "Ako se šalje rukovodstvu, sažeti u tri reda: šta se desilo, rizik, preporučeni potez."
+    ],
+    "user_info": "Reuters prenosi da SAD najavljuju ograničeniju ulogu narednog međunarodnog izaslanika u BiH; to mijenja prostor za političko tumačenje OHR-a, odgovornosti domaćih lidera i odnosa prema RS. Operativno: sad najavljuju uži ohr mandat i domaću odgovornost. Predloženi nosilac: rukovodstvo.",
+    "input_news": [
+      "Reuters: SAD govore o ograničenijoj ulozi budućeg visokog predstavnika.",
+      "Tema se pojavljuje odmah nakon Schmidtove najave odlaska.",
+      "Za RS aktere to može biti argument o domaćoj odgovornosti, ali i izvor novog spina.",
+      "Scenario varijanta 3: SAD najavljuju uži OHR mandat i domaću odgovornost.",
+      "Meni: news; anchor: US-OHR-12MAY (Reuters)."
+    ],
+    "source_note": "May 2026 anchor: Reuters / US-OHR-12MAY",
+    "developer_info": {
+      "trigger_modules": [
+        "OHR",
+        "INT",
+        "BEO"
+      ],
+      "risk_score": 5,
+      "opportunity_score": 3,
+      "wedge_score": 5,
+      "route_owner": "rukovodstvo",
+      "create_case": true,
+      "human_review": true,
+      "go_feedback_required": false,
+      "public_response_blocked": true,
+      "work_order_default_recipient": "rukovodstvo",
+      "impact_windows": [
+        "+1h",
+        "+4h",
+        "+12h",
+        "+24h",
+        "+72h"
+      ],
+      "real_news_anchor": "US-OHR-12MAY",
+      "real_news_source": "Reuters",
+      "real_news_date": "2026-05-12"
+    },
+    "territory_raw": "Beograd signal",
+    "territory_ij": null,
+    "_seq": 2,
+    "race": null,
+    "task_ids": [
+      "TSK-NEW-03-Legal",
+      "TSK-NEW-03-VRH"
+    ]
+  },
+  {
+    "id": "NEW-07",
+    "menu": "news",
+    "date": "2026-05-20",
+    "title": "SAD najavljuju uži OHR mandat i domaću odgovornost: BiH raspisao opšte izbore za 4. oktobar 2026",
+    "modules": [
+      "OHR",
+      "INT",
+      "BEO"
+    ],
+    "risk": 4,
+    "opportunity": 4,
+    "wedge": 3,
+    "territory": "BiH / RS",
+    "owner": "rukovodstvo",
+    "deadline": "<6h",
+    "summary": "Centralna izborna komisija je raspisala opšte izbore za 4. oktobar 2026; oko 3,3 miliona birača bira Predsjedništvo BiH, državne i entitetske parlamente, Brčko i kantone. Operativno: sad najavljuju uži ohr mandat i domaću odgovornost.",
+    "signal_to_vrh": true,
+    "signal_to_media": true,
+    "suggested_responses": [
+      "Zadržati institucionalni ton; ne praviti trijumfalizam oko odlaska ili smjene OHR-a.",
+      "Ako se šalje rukovodstvu, sažeti u tri reda: šta se desilo, rizik, preporučeni potez."
+    ],
+    "user_info": "Centralna izborna komisija je raspisala opšte izbore za 4. oktobar 2026; oko 3,3 miliona birača bira Predsjedništvo BiH, državne i entitetske parlamente, Brčko i kantone. Operativno: sad najavljuju uži ohr mandat i domaću odgovornost. Predloženi nosilac: rukovodstvo.",
+    "input_news": [
+      "Reuters: izbori u BiH zakazani za 4. oktobar 2026.",
+      "Reuters navodi oko 3,3 miliona registrovanih birača.",
+      "Tema direktno aktivira module CIK, IZB, POS i kampanju u RS.",
+      "Scenario varijanta 7: SAD najavljuju uži OHR mandat i domaću odgovornost.",
+      "Meni: news; anchor: CIK-07MAY (Reuters)."
+    ],
+    "source_note": "May 2026 anchor: Reuters / CIK-07MAY",
+    "developer_info": {
+      "trigger_modules": [
+        "OHR",
+        "INT",
+        "BEO"
+      ],
+      "risk_score": 4,
+      "opportunity_score": 4,
+      "wedge_score": 3,
+      "route_owner": "rukovodstvo",
+      "create_case": true,
+      "human_review": true,
+      "go_feedback_required": false,
+      "public_response_blocked": true,
+      "work_order_default_recipient": "rukovodstvo",
+      "impact_windows": [
+        "+1h",
+        "+4h",
+        "+12h",
+        "+24h",
+        "+72h"
+      ],
+      "real_news_anchor": "CIK-07MAY",
+      "real_news_source": "Reuters",
+      "real_news_date": "2026-05-07"
+    },
+    "territory_raw": "BiH / RS",
+    "territory_ij": null,
+    "_seq": 6,
+    "race": null,
+    "task_ids": [
+      "TSK-NEW-07-Legal",
+      "TSK-NEW-07-VRH"
+    ]
+  },
+  {
+    "id": "LOC-03",
+    "menu": "local",
+    "date": "2026-05-14",
+    "title": "Doboj i Zvornik traže ranu provjeru biračkih odbora: signalizuju uži mandat za narednog visokog predstavnika",
+    "modules": [
+      "GO",
+      "POS",
+      "CIK"
+    ],
+    "risk": 4,
+    "opportunity": 3,
+    "wedge": 4,
+    "territory": "RS / lokalni odbori",
+    "owner": "GO + pravni tim",
+    "deadline": "<24h",
+    "summary": "Reuters prenosi da SAD najavljuju ograničeniju ulogu narednog međunarodnog izaslanika u BiH; to mijenja prostor za političko tumačenje OHR-a, odgovornosti domaćih lidera i odnosa prema RS. Operativno: doboj i zvornik traže ranu provjeru biračkih odbora.",
+    "signal_to_vrh": true,
+    "signal_to_media": true,
+    "suggested_responses": [
+      "Prvo dati tehničko-pravno objašnjenje; ne ulaziti u narativ da je proces unaprijed sporan.",
+      "Ako se šalje rukovodstvu, sažeti u tri reda: šta se desilo, rizik, preporučeni potez."
+    ],
+    "user_info": "Reuters prenosi da SAD najavljuju ograničeniju ulogu narednog međunarodnog izaslanika u BiH; to mijenja prostor za političko tumačenje OHR-a, odgovornosti domaćih lidera i odnosa prema RS. Operativno: doboj i zvornik traže ranu provjeru biračkih odbora. Predloženi nosilac: GO + pravni tim.",
+    "input_news": [
+      "Reuters: SAD govore o ograničenijoj ulozi budućeg visokog predstavnika.",
+      "Tema se pojavljuje odmah nakon Schmidtove najave odlaska.",
+      "Za RS aktere to može biti argument o domaćoj odgovornosti, ali i izvor novog spina.",
+      "Scenario varijanta 3: Doboj i Zvornik traže ranu provjeru biračkih odbora.",
+      "Meni: local; anchor: US-OHR-12MAY (Reuters)."
+    ],
+    "source_note": "May 2026 anchor: Reuters / US-OHR-12MAY",
+    "developer_info": {
+      "trigger_modules": [
+        "GO",
+        "POS",
+        "CIK"
+      ],
+      "risk_score": 4,
+      "opportunity_score": 3,
+      "wedge_score": 4,
+      "route_owner": "GO + pravni tim",
+      "create_case": true,
+      "human_review": true,
+      "go_feedback_required": true,
+      "public_response_blocked": false,
+      "work_order_default_recipient": "GO + pravni tim",
+      "impact_windows": [
+        "+1h",
+        "+4h",
+        "+12h",
+        "+24h",
+        "+72h"
+      ],
+      "real_news_anchor": "US-OHR-12MAY",
+      "real_news_source": "Reuters",
+      "real_news_date": "2026-05-12"
+    },
+    "territory_raw": "RS / lokalni odbori",
+    "territory_ij": null,
+    "_seq": 42,
+    "race": null,
+    "task_ids": [
+      "TSK-LOC-03-Legal",
+      "TSK-LOC-03-VRH",
+      "TSK-LOC-03-GO"
+    ]
+  },
+  {
+    "id": "LOC-07",
+    "menu": "local",
+    "date": "2026-05-22",
+    "title": "Doboj i Zvornik traže ranu provjeru biračkih odbora: BiH raspisao opšte izbore za 4. oktobar 2026",
+    "modules": [
+      "GO",
+      "POS",
+      "CIK"
+    ],
+    "risk": 4,
+    "opportunity": 4,
+    "wedge": 2,
+    "territory": "IJ 2 – Banja Luka",
+    "owner": "GO + pravni tim",
+    "deadline": "<24h",
+    "summary": "Centralna izborna komisija je raspisala opšte izbore za 4. oktobar 2026; oko 3,3 miliona birača bira Predsjedništvo BiH, državne i entitetske parlamente, Brčko i kantone. Operativno: doboj i zvornik traže ranu provjeru biračkih odbora.",
+    "signal_to_vrh": true,
+    "signal_to_media": true,
+    "suggested_responses": [
+      "Prvo dati tehničko-pravno objašnjenje; ne ulaziti u narativ da je proces unaprijed sporan.",
+      "Ako se šalje rukovodstvu, sažeti u tri reda: šta se desilo, rizik, preporučeni potez."
+    ],
+    "user_info": "Centralna izborna komisija je raspisala opšte izbore za 4. oktobar 2026; oko 3,3 miliona birača bira Predsjedništvo BiH, državne i entitetske parlamente, Brčko i kantone. Operativno: doboj i zvornik traže ranu provjeru biračkih odbora. Predloženi nosilac: GO + pravni tim.",
+    "input_news": [
+      "Reuters: izbori u BiH zakazani za 4. oktobar 2026.",
+      "Reuters navodi oko 3,3 miliona registrovanih birača.",
+      "Tema direktno aktivira module CIK, IZB, POS i kampanju u RS.",
+      "Scenario varijanta 7: Doboj i Zvornik traže ranu provjeru biračkih odbora.",
+      "Meni: local; anchor: CIK-07MAY (Reuters)."
+    ],
+    "source_note": "May 2026 anchor: Reuters / CIK-07MAY",
+    "developer_info": {
+      "trigger_modules": [
+        "GO",
+        "POS",
+        "CIK"
+      ],
+      "risk_score": 4,
+      "opportunity_score": 4,
+      "wedge_score": 2,
+      "route_owner": "GO + pravni tim",
+      "create_case": true,
+      "human_review": true,
+      "go_feedback_required": true,
+      "public_response_blocked": false,
+      "work_order_default_recipient": "GO + pravni tim",
+      "impact_windows": [
+        "+1h",
+        "+4h",
+        "+12h",
+        "+24h",
+        "+72h"
+      ],
+      "real_news_anchor": "CIK-07MAY",
+      "real_news_source": "Reuters",
+      "real_news_date": "2026-05-07"
+    },
+    "territory_raw": "IJ 2 – Banja Luka",
+    "territory_ij": "IJ3",
+    "_seq": 46,
+    "race": "nsrs",
+    "candidates": [
+      {
+        "name": "Igor Dodik",
+        "party": "SNSD",
+        "unit": "IJ3",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Nenad Stevandic",
+        "party": "Ujedinjena Srpska",
+        "unit": "IJ3",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Drasko Stanivukovic",
+        "party": "PSS",
+        "unit": "IJ3",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Jelena Trivic",
+        "party": "Narodni front",
+        "unit": "IJ3",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Biljana Lukic",
+        "party": "SDS",
+        "unit": "IJ3",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Davor Strika",
+        "party": "SP-DEMOS",
+        "unit": "IJ3",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Goran Selak",
+        "party": "SPS",
+        "unit": "IJ3",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      }
+    ],
+    "task_ids": [
+      "TSK-LOC-07-Legal",
+      "TSK-LOC-07-VRH",
+      "TSK-LOC-07-GO"
+    ]
+  },
+  {
+    "id": "CAS-01",
+    "menu": "case",
+    "date": "2026-05-14",
+    "title": "Case: izborni integritet i lokalni odbori: BiH raspisao opšte izbore za 4. oktobar 2026",
+    "modules": [
+      "CIK",
+      "GO",
+      "LEGAL"
+    ],
+    "risk": 4,
+    "opportunity": 3,
+    "wedge": 2,
+    "territory": "IJ 5 – Zvornik",
+    "owner": "pravni tim + media",
+    "deadline": "<4h",
+    "summary": "Centralna izborna komisija je raspisala opšte izbore za 4. oktobar 2026; oko 3,3 miliona birača bira Predsjedništvo BiH, državne i entitetske parlamente, Brčko i kantone. Operativno: case: izborni integritet i lokalni odbori.",
+    "signal_to_vrh": true,
+    "signal_to_media": true,
+    "suggested_responses": [
+      "Prvo dati tehničko-pravno objašnjenje; ne ulaziti u narativ da je proces unaprijed sporan.",
+      "Ako se šalje rukovodstvu, sažeti u tri reda: šta se desilo, rizik, preporučeni potez."
+    ],
+    "user_info": "Centralna izborna komisija je raspisala opšte izbore za 4. oktobar 2026; oko 3,3 miliona birača bira Predsjedništvo BiH, državne i entitetske parlamente, Brčko i kantone. Operativno: case: izborni integritet i lokalni odbori. Predloženi nosilac: pravni tim + media.",
+    "input_news": [
+      "Reuters: izbori u BiH zakazani za 4. oktobar 2026.",
+      "Reuters navodi oko 3,3 miliona registrovanih birača.",
+      "Tema direktno aktivira module CIK, IZB, POS i kampanju u RS.",
+      "Scenario varijanta 1: Case: izborni integritet i lokalni odbori.",
+      "Meni: case; anchor: CIK-07MAY (Reuters)."
+    ],
+    "source_note": "May 2026 anchor: Reuters / CIK-07MAY",
+    "developer_info": {
+      "trigger_modules": [
+        "CIK",
+        "GO",
+        "LEGAL"
+      ],
+      "risk_score": 4,
+      "opportunity_score": 3,
+      "wedge_score": 2,
+      "route_owner": "pravni tim + media",
+      "create_case": true,
+      "human_review": true,
+      "go_feedback_required": true,
+      "public_response_blocked": false,
+      "work_order_default_recipient": "pravni tim + media",
+      "impact_windows": [
+        "+1h",
+        "+4h",
+        "+12h",
+        "+24h",
+        "+72h"
+      ],
+      "real_news_anchor": "CIK-07MAY",
+      "real_news_source": "Reuters",
+      "real_news_date": "2026-05-07"
+    },
+    "territory_raw": "IJ 5 – Zvornik",
+    "territory_ij": "IJ7",
+    "_seq": 120,
+    "race": "nsrs",
+    "candidates": [
+      {
+        "name": "Zoran Stevanovic",
+        "party": "SNSD",
+        "unit": "IJ7",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Edin Ramic",
+        "party": "Koalicija za drzavu",
+        "unit": "IJ7",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Boris Trninic",
+        "party": "DNS-NPS",
+        "unit": "IJ7",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Dragomir Vasic",
+        "party": "SDS",
+        "unit": "IJ7",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Petko Rankic",
+        "party": "SP-DEMOS",
+        "unit": "IJ7",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      }
+    ],
+    "task_ids": [
+      "TSK-CAS-01-Legal",
+      "TSK-CAS-01-VRH",
+      "TSK-CAS-01-GO"
+    ]
+  },
+  {
+    "id": "CAS-02",
+    "menu": "case",
+    "date": "2026-05-16",
+    "title": "AP: Case: OHR tranzicija i javna linija",
+    "modules": [
+      "OHR",
+      "INT",
+      "VRH"
+    ],
+    "risk": 5,
+    "opportunity": 2,
+    "wedge": 3,
+    "territory": "Federacija / Sarajevo",
+    "owner": "rukovodstvo",
+    "deadline": "<2h",
+    "summary": "OHR je saopštio da Christian Schmidt odlazi nakon skoro pet godina, ali ostaje dok se ne imenuje nasljednik; tema otvara institucionalni vakuum i novu borbu oko legitimiteta OHR-a. Operativno: case: ohr tranzicija i javna linija.",
+    "signal_to_vrh": true,
+    "signal_to_media": true,
+    "suggested_responses": [
+      "Zadržati institucionalni ton; ne praviti trijumfalizam oko odlaska ili smjene OHR-a.",
+      "Ako se šalje rukovodstvu, sažeti u tri reda: šta se desilo, rizik, preporučeni potez."
+    ],
+    "user_info": "OHR je saopštio da Christian Schmidt odlazi nakon skoro pet godina, ali ostaje dok se ne imenuje nasljednik; tema otvara institucionalni vakuum i novu borbu oko legitimiteta OHR-a. Operativno: case: ohr tranzicija i javna linija. Predloženi nosilac: rukovodstvo.",
+    "input_news": [
+      "AP: Schmidt najavio da završava mandat visokog predstavnika.",
+      "AP navodi da ostaje do imenovanja nasljednika.",
+      "Tema se direktno vezuje za ranije sukobe OHR-a i rukovodstva RS.",
+      "Scenario varijanta 2: Case: OHR tranzicija i javna linija.",
+      "Meni: case; anchor: OHR-11MAY (AP)."
+    ],
+    "source_note": "May 2026 anchor: AP / OHR-11MAY",
+    "developer_info": {
+      "trigger_modules": [
+        "OHR",
+        "INT",
+        "VRH"
+      ],
+      "risk_score": 5,
+      "opportunity_score": 2,
+      "wedge_score": 3,
+      "route_owner": "rukovodstvo",
+      "create_case": true,
+      "human_review": true,
+      "go_feedback_required": true,
+      "public_response_blocked": true,
+      "work_order_default_recipient": "rukovodstvo",
+      "impact_windows": [
+        "+1h",
+        "+4h",
+        "+12h",
+        "+24h",
+        "+72h"
+      ],
+      "real_news_anchor": "OHR-11MAY",
+      "real_news_source": "AP",
+      "real_news_date": "2026-05-11"
+    },
+    "territory_raw": "Federacija / Sarajevo",
+    "territory_ij": null,
+    "_seq": 121,
+    "race": null,
+    "task_ids": [
+      "TSK-CAS-02-Legal",
+      "TSK-CAS-02-VRH"
+    ]
+  },
+  {
+    "id": "CAS-03",
+    "menu": "case",
+    "date": "2026-05-18",
+    "title": "Case: social spike oko “slabijeg OHR-a”: signalizuju uži mandat za narednog visokog predstavnika",
+    "modules": [
+      "OHR",
+      "SRE",
+      "MEDIA"
+    ],
+    "risk": 5,
+    "opportunity": 3,
+    "wedge": 4,
+    "territory": "Beograd signal",
+    "owner": "medijski tim",
+    "deadline": "<4h",
+    "summary": "Reuters prenosi da SAD najavljuju ograničeniju ulogu narednog međunarodnog izaslanika u BiH; to mijenja prostor za političko tumačenje OHR-a, odgovornosti domaćih lidera i odnosa prema RS. Operativno: case: social spike oko “slabijeg ohr-a”.",
+    "signal_to_vrh": true,
+    "signal_to_media": true,
+    "suggested_responses": [
+      "Zadržati institucionalni ton; ne praviti trijumfalizam oko odlaska ili smjene OHR-a.",
+      "Ako se šalje rukovodstvu, sažeti u tri reda: šta se desilo, rizik, preporučeni potez."
+    ],
+    "user_info": "Reuters prenosi da SAD najavljuju ograničeniju ulogu narednog međunarodnog izaslanika u BiH; to mijenja prostor za političko tumačenje OHR-a, odgovornosti domaćih lidera i odnosa prema RS. Operativno: case: social spike oko “slabijeg ohr-a”. Predloženi nosilac: medijski tim.",
+    "input_news": [
+      "Reuters: SAD govore o ograničenijoj ulozi budućeg visokog predstavnika.",
+      "Tema se pojavljuje odmah nakon Schmidtove najave odlaska.",
+      "Za RS aktere to može biti argument o domaćoj odgovornosti, ali i izvor novog spina.",
+      "Scenario varijanta 3: Case: social spike oko “slabijeg OHR-a”.",
+      "Meni: case; anchor: US-OHR-12MAY (Reuters)."
+    ],
+    "source_note": "May 2026 anchor: Reuters / US-OHR-12MAY",
+    "developer_info": {
+      "trigger_modules": [
+        "OHR",
+        "SRE",
+        "MEDIA"
+      ],
+      "risk_score": 5,
+      "opportunity_score": 3,
+      "wedge_score": 4,
+      "route_owner": "medijski tim",
+      "create_case": true,
+      "human_review": true,
+      "go_feedback_required": false,
+      "public_response_blocked": true,
+      "work_order_default_recipient": "medijski tim",
+      "impact_windows": [
+        "+1h",
+        "+4h",
+        "+12h",
+        "+24h",
+        "+72h"
+      ],
+      "real_news_anchor": "US-OHR-12MAY",
+      "real_news_source": "Reuters",
+      "real_news_date": "2026-05-12"
+    },
+    "territory_raw": "Beograd signal",
+    "territory_ij": null,
+    "_seq": 122,
+    "race": null,
+    "task_ids": [
+      "TSK-CAS-03-Media",
+      "TSK-CAS-03-Legal",
+      "TSK-CAS-03-VRH"
+    ]
+  },
+  {
+    "id": "CAS-04",
+    "menu": "case",
+    "date": "2026-05-20",
+    "title": "The Guardian: Case: međunarodni energetski okvir i RS pozicija",
+    "modules": [
+      "EKO",
+      "INT",
+      "FED"
+    ],
+    "risk": 5,
+    "opportunity": 2,
+    "wedge": 3,
+    "territory": "RS / lokalni odbori",
+    "owner": "analitičar + media",
+    "deadline": "<24h",
+    "summary": "Guardian je pisao o napetosti između međunarodnih pristupa prema BiH, Schmidtovoj zabrinutosti, RS potezima i američkom energetskom projektu; tema je pogodna za međunarodni framing i oprezan monitoring. Operativno: case: međunarodni energetski okvir i rs pozicija.",
+    "signal_to_vrh": true,
+    "signal_to_media": true,
+    "suggested_responses": [
+      "Razdvojiti energetsku sigurnost od dnevnog političkog prepucavanja; tražiti podatke prije reakcije.",
+      "Ako se šalje rukovodstvu, sažeti u tri reda: šta se desilo, rizik, preporučeni potez."
+    ],
+    "user_info": "Guardian je pisao o napetosti između međunarodnih pristupa prema BiH, Schmidtovoj zabrinutosti, RS potezima i američkom energetskom projektu; tema je pogodna za međunarodni framing i oprezan monitoring. Operativno: case: međunarodni energetski okvir i rs pozicija. Predloženi nosilac: analitičar + media.",
+    "input_news": [
+      "Guardian: Schmidt upozorava na ranjivost BiH nakon promjene pristupa SAD.",
+      "U tekstu se pominje američki gasni projekat i reakcije EU.",
+      "Tema spaja OHR, energetiku, Dodika i međunarodni pritisak.",
+      "Scenario varijanta 4: Case: međunarodni energetski okvir i RS pozicija.",
+      "Meni: case; anchor: GUARDIAN-12MAY (The Guardian)."
+    ],
+    "source_note": "May 2026 anchor: The Guardian / GUARDIAN-12MAY",
+    "developer_info": {
+      "trigger_modules": [
+        "EKO",
+        "INT",
+        "FED"
+      ],
+      "risk_score": 5,
+      "opportunity_score": 2,
+      "wedge_score": 3,
+      "route_owner": "analitičar + media",
+      "create_case": true,
+      "human_review": true,
+      "go_feedback_required": false,
+      "public_response_blocked": true,
+      "work_order_default_recipient": "analitičar + media",
+      "impact_windows": [
+        "+1h",
+        "+4h",
+        "+12h",
+        "+24h",
+        "+72h"
+      ],
+      "real_news_anchor": "GUARDIAN-12MAY",
+      "real_news_source": "The Guardian",
+      "real_news_date": "2026-05-12"
+    },
+    "territory_raw": "RS / lokalni odbori",
+    "territory_ij": null,
+    "_seq": 123,
+    "race": null,
+    "task_ids": [
+      "TSK-CAS-04-VRH"
+    ]
+  },
+  {
+    "id": "CAS-05",
+    "menu": "case",
+    "date": "2026-05-22",
+    "title": "Case: izborni integritet i lokalni odbori: kao predsjednik RS ulazi u majsku izbornu godinu sa Dodikovim nasljeđem",
+    "modules": [
+      "CIK",
+      "GO",
+      "LEGAL"
+    ],
+    "risk": 4,
+    "opportunity": 2,
+    "wedge": 3,
+    "territory": "BiH / međunarodno",
+    "owner": "pravni tim + media",
+    "deadline": "<4h",
+    "summary": "Siniša Karan je od februara predsjednik RS nakon ponovljenih izbora; u maju se ta činjenica pretače u kampanjsku dinamiku pred opšte izbore. Operativno: case: izborni integritet i lokalni odbori.",
+    "signal_to_vrh": true,
+    "signal_to_media": true,
+    "suggested_responses": [
+      "Prvo dati tehničko-pravno objašnjenje; ne ulaziti u narativ da je proces unaprijed sporan.",
+      "Ako se šalje rukovodstvu, sažeti u tri reda: šta se desilo, rizik, preporučeni potez."
+    ],
+    "user_info": "Siniša Karan je od februara predsjednik RS nakon ponovljenih izbora; u maju se ta činjenica pretače u kampanjsku dinamiku pred opšte izbore. Operativno: case: izborni integritet i lokalni odbori. Predloženi nosilac: pravni tim + media.",
+    "input_news": [
+      "Karan je stupio na dužnost predsjednika RS u februaru 2026.",
+      "Karan je kandidat SNSD-a koji je pobijedio u ponovljenom glasanju.",
+      "Majska tema: kako se novi predsjednik uklapa u opšte izbore 2026.",
+      "Scenario varijanta 5: Case: izborni integritet i lokalni odbori.",
+      "Meni: case; anchor: ELECTION-CONTEXT (Election context)."
+    ],
+    "source_note": "May 2026 anchor: Election context / ELECTION-CONTEXT",
+    "developer_info": {
+      "trigger_modules": [
+        "CIK",
+        "GO",
+        "LEGAL"
+      ],
+      "risk_score": 4,
+      "opportunity_score": 2,
+      "wedge_score": 3,
+      "route_owner": "pravni tim + media",
+      "create_case": true,
+      "human_review": true,
+      "go_feedback_required": true,
+      "public_response_blocked": false,
+      "work_order_default_recipient": "pravni tim + media",
+      "impact_windows": [
+        "+1h",
+        "+4h",
+        "+12h",
+        "+24h",
+        "+72h"
+      ],
+      "real_news_anchor": "ELECTION-CONTEXT",
+      "real_news_source": "Election context",
+      "real_news_date": "2026-05-14"
+    },
+    "territory_raw": "BiH / međunarodno",
+    "territory_ij": null,
+    "_seq": 124,
+    "race": null,
+    "task_ids": [
+      "TSK-CAS-05-Legal",
+      "TSK-CAS-05-VRH",
+      "TSK-CAS-05-GO"
+    ]
+  },
+  {
+    "id": "CAS-06",
+    "menu": "case",
+    "date": "2026-05-24",
+    "title": "AP / Guardian context: Case: OHR tranzicija i javna linija",
+    "modules": [
+      "OHR",
+      "INT",
+      "VRH"
+    ],
+    "risk": 5,
+    "opportunity": 3,
+    "wedge": 2,
+    "territory": "RS",
+    "owner": "rukovodstvo",
+    "deadline": "<2h",
+    "summary": "Krajem aprila potpisan je sporazum Hrvatske i BiH o gasnom interkonektoru; u maju tema ostaje u međunarodnom okviru kroz energetsku sigurnost, EU put i optužbe o netransparentnosti. Operativno: case: ohr tranzicija i javna linija.",
+    "signal_to_vrh": true,
+    "signal_to_media": true,
+    "suggested_responses": [
+      "Zadržati institucionalni ton; ne praviti trijumfalizam oko odlaska ili smjene OHR-a.",
+      "Ako se šalje rukovodstvu, sažeti u tri reda: šta se desilo, rizik, preporučeni potez."
+    ],
+    "user_info": "Krajem aprila potpisan je sporazum Hrvatske i BiH o gasnom interkonektoru; u maju tema ostaje u međunarodnom okviru kroz energetsku sigurnost, EU put i optužbe o netransparentnosti. Operativno: case: ohr tranzicija i javna linija. Predloženi nosilac: rukovodstvo.",
+    "input_news": [
+      "AP: Hrvatska i BiH potpisale sporazum o južnom interkonektoru.",
+      "Guardian temu povezuje sa širim međunarodnim pritiskom i promjenama oko OHR-a.",
+      "Za RS monitoring: energetika, EU, američki uticaj, Federacija.",
+      "Scenario varijanta 6: Case: OHR tranzicija i javna linija.",
+      "Meni: case; anchor: PIPELINE-APR-MAY (AP / Guardian context)."
+    ],
+    "source_note": "May 2026 anchor: AP / Guardian context / PIPELINE-APR-MAY",
+    "developer_info": {
+      "trigger_modules": [
+        "OHR",
+        "INT",
+        "VRH"
+      ],
+      "risk_score": 5,
+      "opportunity_score": 3,
+      "wedge_score": 2,
+      "route_owner": "rukovodstvo",
+      "create_case": true,
+      "human_review": true,
+      "go_feedback_required": false,
+      "public_response_blocked": true,
+      "work_order_default_recipient": "rukovodstvo",
+      "impact_windows": [
+        "+1h",
+        "+4h",
+        "+12h",
+        "+24h",
+        "+72h"
+      ],
+      "real_news_anchor": "PIPELINE-APR-MAY",
+      "real_news_source": "AP / Guardian context",
+      "real_news_date": "2026-05-15"
+    },
+    "territory_raw": "RS",
+    "territory_ij": null,
+    "_seq": 125,
+    "race": null,
+    "task_ids": [
+      "TSK-CAS-06-Legal",
+      "TSK-CAS-06-VRH"
+    ]
+  },
+  {
+    "id": "CAS-07",
+    "menu": "case",
+    "date": "2026-05-26",
+    "title": "Case: social spike oko “slabijeg OHR-a”: BiH raspisao opšte izbore za 4. oktobar 2026",
+    "modules": [
+      "OHR",
+      "SRE",
+      "MEDIA"
+    ],
+    "risk": 5,
+    "opportunity": 4,
+    "wedge": 2,
+    "territory": "BiH / RS",
+    "owner": "medijski tim",
+    "deadline": "<4h",
+    "summary": "Centralna izborna komisija je raspisala opšte izbore za 4. oktobar 2026; oko 3,3 miliona birača bira Predsjedništvo BiH, državne i entitetske parlamente, Brčko i kantone. Operativno: case: social spike oko “slabijeg ohr-a”.",
+    "signal_to_vrh": true,
+    "signal_to_media": true,
+    "suggested_responses": [
+      "Zadržati institucionalni ton; ne praviti trijumfalizam oko odlaska ili smjene OHR-a.",
+      "Ako se šalje rukovodstvu, sažeti u tri reda: šta se desilo, rizik, preporučeni potez."
+    ],
+    "user_info": "Centralna izborna komisija je raspisala opšte izbore za 4. oktobar 2026; oko 3,3 miliona birača bira Predsjedništvo BiH, državne i entitetske parlamente, Brčko i kantone. Operativno: case: social spike oko “slabijeg ohr-a”. Predloženi nosilac: medijski tim.",
+    "input_news": [
+      "Reuters: izbori u BiH zakazani za 4. oktobar 2026.",
+      "Reuters navodi oko 3,3 miliona registrovanih birača.",
+      "Tema direktno aktivira module CIK, IZB, POS i kampanju u RS.",
+      "Scenario varijanta 7: Case: social spike oko “slabijeg OHR-a”.",
+      "Meni: case; anchor: CIK-07MAY (Reuters)."
+    ],
+    "source_note": "May 2026 anchor: Reuters / CIK-07MAY",
+    "developer_info": {
+      "trigger_modules": [
+        "OHR",
+        "SRE",
+        "MEDIA"
+      ],
+      "risk_score": 5,
+      "opportunity_score": 4,
+      "wedge_score": 2,
+      "route_owner": "medijski tim",
+      "create_case": true,
+      "human_review": true,
+      "go_feedback_required": false,
+      "public_response_blocked": true,
+      "work_order_default_recipient": "medijski tim",
+      "impact_windows": [
+        "+1h",
+        "+4h",
+        "+12h",
+        "+24h",
+        "+72h"
+      ],
+      "real_news_anchor": "CIK-07MAY",
+      "real_news_source": "Reuters",
+      "real_news_date": "2026-05-07"
+    },
+    "territory_raw": "BiH / RS",
+    "territory_ij": null,
+    "_seq": 126,
+    "race": null,
+    "task_ids": [
+      "TSK-CAS-07-Media",
+      "TSK-CAS-07-Legal",
+      "TSK-CAS-07-VRH"
+    ]
+  },
+  {
+    "id": "CAS-08",
+    "menu": "case",
+    "date": "2026-05-06",
+    "title": "AP: Case: međunarodni energetski okvir i RS pozicija",
+    "modules": [
+      "EKO",
+      "INT",
+      "FED"
+    ],
+    "risk": 5,
+    "opportunity": 2,
+    "wedge": 3,
+    "territory": "IJ 2 – Banja Luka",
+    "owner": "analitičar + media",
+    "deadline": "<24h",
+    "summary": "OHR je saopštio da Christian Schmidt odlazi nakon skoro pet godina, ali ostaje dok se ne imenuje nasljednik; tema otvara institucionalni vakuum i novu borbu oko legitimiteta OHR-a. Operativno: case: međunarodni energetski okvir i rs pozicija.",
+    "signal_to_vrh": true,
+    "signal_to_media": true,
+    "suggested_responses": [
+      "Razdvojiti energetsku sigurnost od dnevnog političkog prepucavanja; tražiti podatke prije reakcije.",
+      "Ako se šalje rukovodstvu, sažeti u tri reda: šta se desilo, rizik, preporučeni potez."
+    ],
+    "user_info": "OHR je saopštio da Christian Schmidt odlazi nakon skoro pet godina, ali ostaje dok se ne imenuje nasljednik; tema otvara institucionalni vakuum i novu borbu oko legitimiteta OHR-a. Operativno: case: međunarodni energetski okvir i rs pozicija. Predloženi nosilac: analitičar + media.",
+    "input_news": [
+      "AP: Schmidt najavio da završava mandat visokog predstavnika.",
+      "AP navodi da ostaje do imenovanja nasljednika.",
+      "Tema se direktno vezuje za ranije sukobe OHR-a i rukovodstva RS.",
+      "Scenario varijanta 8: Case: međunarodni energetski okvir i RS pozicija.",
+      "Meni: case; anchor: OHR-11MAY (AP)."
+    ],
+    "source_note": "May 2026 anchor: AP / OHR-11MAY",
+    "developer_info": {
+      "trigger_modules": [
+        "EKO",
+        "INT",
+        "FED"
+      ],
+      "risk_score": 5,
+      "opportunity_score": 2,
+      "wedge_score": 3,
+      "route_owner": "analitičar + media",
+      "create_case": true,
+      "human_review": true,
+      "go_feedback_required": false,
+      "public_response_blocked": true,
+      "work_order_default_recipient": "analitičar + media",
+      "impact_windows": [
+        "+1h",
+        "+4h",
+        "+12h",
+        "+24h",
+        "+72h"
+      ],
+      "real_news_anchor": "OHR-11MAY",
+      "real_news_source": "AP",
+      "real_news_date": "2026-05-11"
+    },
+    "territory_raw": "IJ 2 – Banja Luka",
+    "territory_ij": "IJ3",
+    "_seq": 127,
+    "race": null,
+    "task_ids": [
+      "TSK-CAS-08-VRH"
+    ]
+  },
+  {
+    "id": "CAS-09",
+    "menu": "case",
+    "date": "2026-05-08",
+    "title": "Case: izborni integritet i lokalni odbori: signalizuju uži mandat za narednog visokog predstavnika",
+    "modules": [
+      "CIK",
+      "GO",
+      "LEGAL"
+    ],
+    "risk": 4,
+    "opportunity": 2,
+    "wedge": 4,
+    "territory": "IJ 3 – Doboj",
+    "owner": "pravni tim + media",
+    "deadline": "<4h",
+    "summary": "Reuters prenosi da SAD najavljuju ograničeniju ulogu narednog međunarodnog izaslanika u BiH; to mijenja prostor za političko tumačenje OHR-a, odgovornosti domaćih lidera i odnosa prema RS. Operativno: case: izborni integritet i lokalni odbori.",
+    "signal_to_vrh": true,
+    "signal_to_media": true,
+    "suggested_responses": [
+      "Prvo dati tehničko-pravno objašnjenje; ne ulaziti u narativ da je proces unaprijed sporan.",
+      "Ako se šalje rukovodstvu, sažeti u tri reda: šta se desilo, rizik, preporučeni potez."
+    ],
+    "user_info": "Reuters prenosi da SAD najavljuju ograničeniju ulogu narednog međunarodnog izaslanika u BiH; to mijenja prostor za političko tumačenje OHR-a, odgovornosti domaćih lidera i odnosa prema RS. Operativno: case: izborni integritet i lokalni odbori. Predloženi nosilac: pravni tim + media.",
+    "input_news": [
+      "Reuters: SAD govore o ograničenijoj ulozi budućeg visokog predstavnika.",
+      "Tema se pojavljuje odmah nakon Schmidtove najave odlaska.",
+      "Za RS aktere to može biti argument o domaćoj odgovornosti, ali i izvor novog spina.",
+      "Scenario varijanta 9: Case: izborni integritet i lokalni odbori.",
+      "Meni: case; anchor: US-OHR-12MAY (Reuters)."
+    ],
+    "source_note": "May 2026 anchor: Reuters / US-OHR-12MAY",
+    "developer_info": {
+      "trigger_modules": [
+        "CIK",
+        "GO",
+        "LEGAL"
+      ],
+      "risk_score": 4,
+      "opportunity_score": 2,
+      "wedge_score": 4,
+      "route_owner": "pravni tim + media",
+      "create_case": true,
+      "human_review": true,
+      "go_feedback_required": true,
+      "public_response_blocked": false,
+      "work_order_default_recipient": "pravni tim + media",
+      "impact_windows": [
+        "+1h",
+        "+4h",
+        "+12h",
+        "+24h",
+        "+72h"
+      ],
+      "real_news_anchor": "US-OHR-12MAY",
+      "real_news_source": "Reuters",
+      "real_news_date": "2026-05-12"
+    },
+    "territory_raw": "IJ 3 – Doboj",
+    "territory_ij": "IJ5",
+    "_seq": 128,
+    "race": "nsrs",
+    "candidates": [
+      {
+        "name": "Sevlid Hurtic",
+        "party": "Koalicija za drzavu",
+        "unit": "IJ5",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Danijel Josic",
+        "party": "SNSD",
+        "unit": "IJ5",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Sladan Jovic",
+        "party": "SP-DEMOS",
+        "unit": "IJ5",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Stojan Smiljanic",
+        "party": "SDS",
+        "unit": "IJ5",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      },
+      {
+        "name": "Dragutin Skrebic",
+        "party": "SPS",
+        "unit": "IJ5",
+        "incumbent": false,
+        "source_url": "https://www.zvornikdanas.com/2026/08/liste-za-nsrs-saznajte-ko-predvodi-liste-stranaka-po-izbornim-jedinicama/",
+        "source_name": "Zvornik Danas",
+        "fetched_at": "2026-08-18"
+      }
+    ],
+    "task_ids": [
+      "TSK-CAS-09-Legal",
+      "TSK-CAS-09-VRH",
+      "TSK-CAS-09-GO"
+    ]
+  },
+  {
+    "id": "CAS-10",
+    "menu": "case",
+    "date": "2026-05-10",
+    "title": "The Guardian: Case: OHR tranzicija i javna linija",
+    "modules": [
+      "OHR",
+      "INT",
+      "VRH"
+    ],
+    "risk": 5,
+    "opportunity": 2,
+    "wedge": 4,
+    "territory": "IJ 4 – Bijeljina",
+    "owner": "rukovodstvo",
+    "deadline": "<2h",
+    "summary": "Guardian je pisao o napetosti između međunarodnih pristupa prema BiH, Schmidtovoj zabrinutosti, RS potezima i američkom energetskom projektu; tema je pogodna za međunarodni framing i oprezan monitoring. Operativno: case: ohr tranzicija i javna linija.",
+    "signal_to_vrh": true,
+    "signal_to_media": true,
+    "suggested_responses": [
+      "Zadržati institucionalni ton; ne praviti trijumfalizam oko odlaska ili smjene OHR-a.",
+      "Ako se šalje rukovodstvu, sažeti u tri reda: šta se desilo, rizik, preporučeni potez."
+    ],
+    "user_info": "Guardian je pisao o napetosti između međunarodnih pristupa prema BiH, Schmidtovoj zabrinutosti, RS potezima i američkom energetskom projektu; tema je pogodna za međunarodni framing i oprezan monitoring. Operativno: case: ohr tranzicija i javna linija. Predloženi nosilac: rukovodstvo.",
+    "input_news": [
+      "Guardian: Schmidt upozorava na ranjivost BiH nakon promjene pristupa SAD.",
+      "U tekstu se pominje američki gasni projekat i reakcije EU.",
+      "Tema spaja OHR, energetiku, Dodika i međunarodni pritisak.",
+      "Scenario varijanta 10: Case: OHR tranzicija i javna linija.",
+      "Meni: case; anchor: GUARDIAN-12MAY (The Guardian)."
+    ],
+    "source_note": "May 2026 anchor: The Guardian / GUARDIAN-12MAY",
+    "developer_info": {
+      "trigger_modules": [
+        "OHR",
+        "INT",
+        "VRH"
+      ],
+      "risk_score": 5,
+      "opportunity_score": 2,
+      "wedge_score": 4,
+      "route_owner": "rukovodstvo",
+      "create_case": true,
+      "human_review": true,
+      "go_feedback_required": false,
+      "public_response_blocked": true,
+      "work_order_default_recipient": "rukovodstvo",
+      "impact_windows": [
+        "+1h",
+        "+4h",
+        "+12h",
+        "+24h",
+        "+72h"
+      ],
+      "real_news_anchor": "GUARDIAN-12MAY",
+      "real_news_source": "The Guardian",
+      "real_news_date": "2026-05-12"
+    },
+    "territory_raw": "IJ 4 – Bijeljina",
+    "territory_ij": "IJ6",
+    "_seq": 129,
+    "race": null,
+    "task_ids": [
+      "TSK-CAS-10-Legal",
+      "TSK-CAS-10-VRH"
+    ]
+  },
+  {
+    "id": "CAS-11",
+    "menu": "case",
+    "date": "2026-05-12",
+    "title": "Case: social spike oko “slabijeg OHR-a”: kao predsjednik RS ulazi u majsku izbornu godinu sa Dodikovim nasljeđem",
+    "modules": [
+      "OHR",
+      "SRE",
+      "MEDIA"
+    ],
+    "risk": 4,
+    "opportunity": 2,
+    "wedge": 2,
+    "territory": "IJ 5 – Zvornik",
+    "owner": "medijski tim",
+    "deadline": "<4h",
+    "summary": "Siniša Karan je od februara predsjednik RS nakon ponovljenih izbora; u maju se ta činjenica pretače u kampanjsku dinamiku pred opšte izbore. Operativno: case: social spike oko “slabijeg ohr-a”.",
+    "signal_to_vrh": true,
+    "signal_to_media": true,
+    "suggested_responses": [
+      "Zadržati institucionalni ton; ne praviti trijumfalizam oko odlaska ili smjene OHR-a.",
+      "Ako se šalje rukovodstvu, sažeti u tri reda: šta se desilo, rizik, preporučeni potez."
+    ],
+    "user_info": "Siniša Karan je od februara predsjednik RS nakon ponovljenih izbora; u maju se ta činjenica pretače u kampanjsku dinamiku pred opšte izbore. Operativno: case: social spike oko “slabijeg ohr-a”. Predloženi nosilac: medijski tim.",
+    "input_news": [
+      "Karan je stupio na dužnost predsjednika RS u februaru 2026.",
+      "Karan je kandidat SNSD-a koji je pobijedio u ponovljenom glasanju.",
+      "Majska tema: kako se novi predsjednik uklapa u opšte izbore 2026.",
+      "Scenario varijanta 11: Case: social spike oko “slabijeg OHR-a”.",
+      "Meni: case; anchor: ELECTION-CONTEXT (Election context)."
+    ],
+    "source_note": "May 2026 anchor: Election context / ELECTION-CONTEXT",
+    "developer_info": {
+      "trigger_modules": [
+        "OHR",
+        "SRE",
+        "MEDIA"
+      ],
+      "risk_score": 4,
+      "opportunity_score": 2,
+      "wedge_score": 2,
+      "route_owner": "medijski tim",
+      "create_case": true,
+      "human_review": true,
+      "go_feedback_required": false,
+      "public_response_blocked": true,
+      "work_order_default_recipient": "medijski tim",
+      "impact_windows": [
+        "+1h",
+        "+4h",
+        "+12h",
+        "+24h",
+        "+72h"
+      ],
+      "real_news_anchor": "ELECTION-CONTEXT",
+      "real_news_source": "Election context",
+      "real_news_date": "2026-05-14"
+    },
+    "territory_raw": "IJ 5 – Zvornik",
+    "territory_ij": "IJ7",
+    "_seq": 130,
+    "race": null,
+    "task_ids": [
+      "TSK-CAS-11-Media",
+      "TSK-CAS-11-Legal",
+      "TSK-CAS-11-VRH"
+    ]
+  },
+  {
+    "id": "CAS-12",
+    "menu": "case",
+    "date": "2026-05-14",
+    "title": "AP / Guardian context: Case: međunarodni energetski okvir i RS pozicija",
+    "modules": [
+      "EKO",
+      "INT",
+      "FED"
+    ],
+    "risk": 4,
+    "opportunity": 3,
+    "wedge": 2,
+    "territory": "Federacija / Sarajevo",
+    "owner": "analitičar + media",
+    "deadline": "<24h",
+    "summary": "Krajem aprila potpisan je sporazum Hrvatske i BiH o gasnom interkonektoru; u maju tema ostaje u međunarodnom okviru kroz energetsku sigurnost, EU put i optužbe o netransparentnosti. Operativno: case: međunarodni energetski okvir i rs pozicija.",
+    "signal_to_vrh": true,
+    "signal_to_media": true,
+    "suggested_responses": [
+      "Razdvojiti energetsku sigurnost od dnevnog političkog prepucavanja; tražiti podatke prije reakcije.",
+      "Ako se šalje rukovodstvu, sažeti u tri reda: šta se desilo, rizik, preporučeni potez."
+    ],
+    "user_info": "Krajem aprila potpisan je sporazum Hrvatske i BiH o gasnom interkonektoru; u maju tema ostaje u međunarodnom okviru kroz energetsku sigurnost, EU put i optužbe o netransparentnosti. Operativno: case: međunarodni energetski okvir i rs pozicija. Predloženi nosilac: analitičar + media.",
+    "input_news": [
+      "AP: Hrvatska i BiH potpisale sporazum o južnom interkonektoru.",
+      "Guardian temu povezuje sa širim međunarodnim pritiskom i promjenama oko OHR-a.",
+      "Za RS monitoring: energetika, EU, američki uticaj, Federacija.",
+      "Scenario varijanta 12: Case: međunarodni energetski okvir i RS pozicija.",
+      "Meni: case; anchor: PIPELINE-APR-MAY (AP / Guardian context)."
+    ],
+    "source_note": "May 2026 anchor: AP / Guardian context / PIPELINE-APR-MAY",
+    "developer_info": {
+      "trigger_modules": [
+        "EKO",
+        "INT",
+        "FED"
+      ],
+      "risk_score": 4,
+      "opportunity_score": 3,
+      "wedge_score": 2,
+      "route_owner": "analitičar + media",
+      "create_case": true,
+      "human_review": true,
+      "go_feedback_required": true,
+      "public_response_blocked": false,
+      "work_order_default_recipient": "analitičar + media",
+      "impact_windows": [
+        "+1h",
+        "+4h",
+        "+12h",
+        "+24h",
+        "+72h"
+      ],
+      "real_news_anchor": "PIPELINE-APR-MAY",
+      "real_news_source": "AP / Guardian context",
+      "real_news_date": "2026-05-15"
+    },
+    "territory_raw": "Federacija / Sarajevo",
+    "territory_ij": null,
+    "_seq": 131,
+    "race": null,
+    "task_ids": [
+      "TSK-CAS-12-VRH"
+    ]
+  },
+  {
+    "id": "CAS-13",
+    "menu": "case",
+    "date": "2026-05-16",
+    "title": "Case: izborni integritet i lokalni odbori: BiH raspisao opšte izbore za 4. oktobar 2026",
+    "modules": [
+      "CIK",
+      "GO",
+      "LEGAL"
+    ],
+    "risk": 4,
+    "opportunity": 3,
+    "wedge": 2,
+    "territory": "Beograd signal",
+    "owner": "pravni tim + media",
+    "deadline": "<4h",
+    "summary": "Centralna izborna komisija je raspisala opšte izbore za 4. oktobar 2026; oko 3,3 miliona birača bira Predsjedništvo BiH, državne i entitetske parlamente, Brčko i kantone. Operativno: case: izborni integritet i lokalni odbori.",
+    "signal_to_vrh": true,
+    "signal_to_media": true,
+    "suggested_responses": [
+      "Prvo dati tehničko-pravno objašnjenje; ne ulaziti u narativ da je proces unaprijed sporan.",
+      "Ako se šalje rukovodstvu, sažeti u tri reda: šta se desilo, rizik, preporučeni potez."
+    ],
+    "user_info": "Centralna izborna komisija je raspisala opšte izbore za 4. oktobar 2026; oko 3,3 miliona birača bira Predsjedništvo BiH, državne i entitetske parlamente, Brčko i kantone. Operativno: case: izborni integritet i lokalni odbori. Predloženi nosilac: pravni tim + media.",
+    "input_news": [
+      "Reuters: izbori u BiH zakazani za 4. oktobar 2026.",
+      "Reuters navodi oko 3,3 miliona registrovanih birača.",
+      "Tema direktno aktivira module CIK, IZB, POS i kampanju u RS.",
+      "Scenario varijanta 13: Case: izborni integritet i lokalni odbori.",
+      "Meni: case; anchor: CIK-07MAY (Reuters)."
+    ],
+    "source_note": "May 2026 anchor: Reuters / CIK-07MAY",
+    "developer_info": {
+      "trigger_modules": [
+        "CIK",
+        "GO",
+        "LEGAL"
+      ],
+      "risk_score": 4,
+      "opportunity_score": 3,
+      "wedge_score": 2,
+      "route_owner": "pravni tim + media",
+      "create_case": true,
+      "human_review": true,
+      "go_feedback_required": true,
+      "public_response_blocked": false,
+      "work_order_default_recipient": "pravni tim + media",
+      "impact_windows": [
+        "+1h",
+        "+4h",
+        "+12h",
+        "+24h",
+        "+72h"
+      ],
+      "real_news_anchor": "CIK-07MAY",
+      "real_news_source": "Reuters",
+      "real_news_date": "2026-05-07"
+    },
+    "territory_raw": "Beograd signal",
+    "territory_ij": null,
+    "_seq": 132,
+    "race": null,
+    "task_ids": [
+      "TSK-CAS-13-Legal",
+      "TSK-CAS-13-VRH",
+      "TSK-CAS-13-GO"
+    ]
+  },
+  {
+    "id": "CAS-14",
+    "menu": "case",
+    "date": "2026-05-18",
+    "title": "AP: Case: OHR tranzicija i javna linija",
+    "modules": [
+      "OHR",
+      "INT",
+      "VRH"
+    ],
+    "risk": 5,
+    "opportunity": 3,
+    "wedge": 3,
+    "territory": "RS / lokalni odbori",
+    "owner": "rukovodstvo",
+    "deadline": "<2h",
+    "summary": "OHR je saopštio da Christian Schmidt odlazi nakon skoro pet godina, ali ostaje dok se ne imenuje nasljednik; tema otvara institucionalni vakuum i novu borbu oko legitimiteta OHR-a. Operativno: case: ohr tranzicija i javna linija.",
+    "signal_to_vrh": true,
+    "signal_to_media": true,
+    "suggested_responses": [
+      "Zadržati institucionalni ton; ne praviti trijumfalizam oko odlaska ili smjene OHR-a.",
+      "Ako se šalje rukovodstvu, sažeti u tri reda: šta se desilo, rizik, preporučeni potez."
+    ],
+    "user_info": "OHR je saopštio da Christian Schmidt odlazi nakon skoro pet godina, ali ostaje dok se ne imenuje nasljednik; tema otvara institucionalni vakuum i novu borbu oko legitimiteta OHR-a. Operativno: case: ohr tranzicija i javna linija. Predloženi nosilac: rukovodstvo.",
+    "input_news": [
+      "AP: Schmidt najavio da završava mandat visokog predstavnika.",
+      "AP navodi da ostaje do imenovanja nasljednika.",
+      "Tema se direktno vezuje za ranije sukobe OHR-a i rukovodstva RS.",
+      "Scenario varijanta 14: Case: OHR tranzicija i javna linija.",
+      "Meni: case; anchor: OHR-11MAY (AP)."
+    ],
+    "source_note": "May 2026 anchor: AP / OHR-11MAY",
+    "developer_info": {
+      "trigger_modules": [
+        "OHR",
+        "INT",
+        "VRH"
+      ],
+      "risk_score": 5,
+      "opportunity_score": 3,
+      "wedge_score": 3,
+      "route_owner": "rukovodstvo",
+      "create_case": true,
+      "human_review": true,
+      "go_feedback_required": false,
+      "public_response_blocked": true,
+      "work_order_default_recipient": "rukovodstvo",
+      "impact_windows": [
+        "+1h",
+        "+4h",
+        "+12h",
+        "+24h",
+        "+72h"
+      ],
+      "real_news_anchor": "OHR-11MAY",
+      "real_news_source": "AP",
+      "real_news_date": "2026-05-11"
+    },
+    "territory_raw": "RS / lokalni odbori",
+    "territory_ij": null,
+    "_seq": 133,
+    "race": null,
+    "task_ids": [
+      "TSK-CAS-14-Legal",
+      "TSK-CAS-14-VRH"
+    ]
+  },
+  {
+    "id": "CAS-15",
+    "menu": "case",
+    "date": "2026-05-20",
+    "title": "Case: social spike oko “slabijeg OHR-a”: signalizuju uži mandat za narednog visokog predstavnika",
+    "modules": [
+      "OHR",
+      "SRE",
+      "MEDIA"
+    ],
+    "risk": 5,
+    "opportunity": 3,
+    "wedge": 5,
+    "territory": "BiH / međunarodno",
+    "owner": "medijski tim",
+    "deadline": "<4h",
+    "summary": "Reuters prenosi da SAD najavljuju ograničeniju ulogu narednog međunarodnog izaslanika u BiH; to mijenja prostor za političko tumačenje OHR-a, odgovornosti domaćih lidera i odnosa prema RS. Operativno: case: social spike oko “slabijeg ohr-a”.",
+    "signal_to_vrh": true,
+    "signal_to_media": true,
+    "suggested_responses": [
+      "Zadržati institucionalni ton; ne praviti trijumfalizam oko odlaska ili smjene OHR-a.",
+      "Ako se šalje rukovodstvu, sažeti u tri reda: šta se desilo, rizik, preporučeni potez."
+    ],
+    "user_info": "Reuters prenosi da SAD najavljuju ograničeniju ulogu narednog međunarodnog izaslanika u BiH; to mijenja prostor za političko tumačenje OHR-a, odgovornosti domaćih lidera i odnosa prema RS. Operativno: case: social spike oko “slabijeg ohr-a”. Predloženi nosilac: medijski tim.",
+    "input_news": [
+      "Reuters: SAD govore o ograničenijoj ulozi budućeg visokog predstavnika.",
+      "Tema se pojavljuje odmah nakon Schmidtove najave odlaska.",
+      "Za RS aktere to može biti argument o domaćoj odgovornosti, ali i izvor novog spina.",
+      "Scenario varijanta 15: Case: social spike oko “slabijeg OHR-a”.",
+      "Meni: case; anchor: US-OHR-12MAY (Reuters)."
+    ],
+    "source_note": "May 2026 anchor: Reuters / US-OHR-12MAY",
+    "developer_info": {
+      "trigger_modules": [
+        "OHR",
+        "SRE",
+        "MEDIA"
+      ],
+      "risk_score": 5,
+      "opportunity_score": 3,
+      "wedge_score": 5,
+      "route_owner": "medijski tim",
+      "create_case": true,
+      "human_review": true,
+      "go_feedback_required": false,
+      "public_response_blocked": true,
+      "work_order_default_recipient": "medijski tim",
+      "impact_windows": [
+        "+1h",
+        "+4h",
+        "+12h",
+        "+24h",
+        "+72h"
+      ],
+      "real_news_anchor": "US-OHR-12MAY",
+      "real_news_source": "Reuters",
+      "real_news_date": "2026-05-12"
+    },
+    "territory_raw": "BiH / međunarodno",
+    "territory_ij": null,
+    "_seq": 134,
+    "race": null,
+    "task_ids": [
+      "TSK-CAS-15-Media",
+      "TSK-CAS-15-Legal",
+      "TSK-CAS-15-VRH"
+    ]
+  },
+  {
+    "id": "CAS-16",
+    "menu": "case",
+    "date": "2026-05-22",
+    "title": "The Guardian: Case: međunarodni energetski okvir i RS pozicija",
+    "modules": [
+      "EKO",
+      "INT",
+      "FED"
+    ],
+    "risk": 5,
+    "opportunity": 2,
+    "wedge": 3,
+    "territory": "RS",
+    "owner": "analitičar + media",
+    "deadline": "<24h",
+    "summary": "Guardian je pisao o napetosti između međunarodnih pristupa prema BiH, Schmidtovoj zabrinutosti, RS potezima i američkom energetskom projektu; tema je pogodna za međunarodni framing i oprezan monitoring. Operativno: case: međunarodni energetski okvir i rs pozicija.",
+    "signal_to_vrh": true,
+    "signal_to_media": true,
+    "suggested_responses": [
+      "Razdvojiti energetsku sigurnost od dnevnog političkog prepucavanja; tražiti podatke prije reakcije.",
+      "Ako se šalje rukovodstvu, sažeti u tri reda: šta se desilo, rizik, preporučeni potez."
+    ],
+    "user_info": "Guardian je pisao o napetosti između međunarodnih pristupa prema BiH, Schmidtovoj zabrinutosti, RS potezima i američkom energetskom projektu; tema je pogodna za međunarodni framing i oprezan monitoring. Operativno: case: međunarodni energetski okvir i rs pozicija. Predloženi nosilac: analitičar + media.",
+    "input_news": [
+      "Guardian: Schmidt upozorava na ranjivost BiH nakon promjene pristupa SAD.",
+      "U tekstu se pominje američki gasni projekat i reakcije EU.",
+      "Tema spaja OHR, energetiku, Dodika i međunarodni pritisak.",
+      "Scenario varijanta 16: Case: međunarodni energetski okvir i RS pozicija.",
+      "Meni: case; anchor: GUARDIAN-12MAY (The Guardian)."
+    ],
+    "source_note": "May 2026 anchor: The Guardian / GUARDIAN-12MAY",
+    "developer_info": {
+      "trigger_modules": [
+        "EKO",
+        "INT",
+        "FED"
+      ],
+      "risk_score": 5,
+      "opportunity_score": 2,
+      "wedge_score": 3,
+      "route_owner": "analitičar + media",
+      "create_case": true,
+      "human_review": true,
+      "go_feedback_required": false,
+      "public_response_blocked": true,
+      "work_order_default_recipient": "analitičar + media",
+      "impact_windows": [
+        "+1h",
+        "+4h",
+        "+12h",
+        "+24h",
+        "+72h"
+      ],
+      "real_news_anchor": "GUARDIAN-12MAY",
+      "real_news_source": "The Guardian",
+      "real_news_date": "2026-05-12"
+    },
+    "territory_raw": "RS",
+    "territory_ij": null,
+    "_seq": 135,
+    "race": null,
+    "task_ids": [
+      "TSK-CAS-16-VRH"
+    ]
+  },
+  {
+    "id": "CAS-17",
+    "menu": "case",
+    "date": "2026-05-24",
+    "title": "Case: izborni integritet i lokalni odbori: kao predsjednik RS ulazi u majsku izbornu godinu sa Dodikovim nasljeđem",
+    "modules": [
+      "CIK",
+      "GO",
+      "LEGAL"
+    ],
+    "risk": 4,
+    "opportunity": 2,
+    "wedge": 2,
+    "territory": "BiH / RS",
+    "owner": "pravni tim + media",
+    "deadline": "<4h",
+    "summary": "Siniša Karan je od februara predsjednik RS nakon ponovljenih izbora; u maju se ta činjenica pretače u kampanjsku dinamiku pred opšte izbore. Operativno: case: izborni integritet i lokalni odbori.",
+    "signal_to_vrh": true,
+    "signal_to_media": true,
+    "suggested_responses": [
+      "Prvo dati tehničko-pravno objašnjenje; ne ulaziti u narativ da je proces unaprijed sporan.",
+      "Ako se šalje rukovodstvu, sažeti u tri reda: šta se desilo, rizik, preporučeni potez."
+    ],
+    "user_info": "Siniša Karan je od februara predsjednik RS nakon ponovljenih izbora; u maju se ta činjenica pretače u kampanjsku dinamiku pred opšte izbore. Operativno: case: izborni integritet i lokalni odbori. Predloženi nosilac: pravni tim + media.",
+    "input_news": [
+      "Karan je stupio na dužnost predsjednika RS u februaru 2026.",
+      "Karan je kandidat SNSD-a koji je pobijedio u ponovljenom glasanju.",
+      "Majska tema: kako se novi predsjednik uklapa u opšte izbore 2026.",
+      "Scenario varijanta 17: Case: izborni integritet i lokalni odbori.",
+      "Meni: case; anchor: ELECTION-CONTEXT (Election context)."
+    ],
+    "source_note": "May 2026 anchor: Election context / ELECTION-CONTEXT",
+    "developer_info": {
+      "trigger_modules": [
+        "CIK",
+        "GO",
+        "LEGAL"
+      ],
+      "risk_score": 4,
+      "opportunity_score": 2,
+      "wedge_score": 2,
+      "route_owner": "pravni tim + media",
+      "create_case": true,
+      "human_review": true,
+      "go_feedback_required": true,
+      "public_response_blocked": false,
+      "work_order_default_recipient": "pravni tim + media",
+      "impact_windows": [
+        "+1h",
+        "+4h",
+        "+12h",
+        "+24h",
+        "+72h"
+      ],
+      "real_news_anchor": "ELECTION-CONTEXT",
+      "real_news_source": "Election context",
+      "real_news_date": "2026-05-14"
+    },
+    "territory_raw": "BiH / RS",
+    "territory_ij": null,
+    "_seq": 136,
+    "race": null,
+    "task_ids": [
+      "TSK-CAS-17-Legal",
+      "TSK-CAS-17-VRH",
+      "TSK-CAS-17-GO"
+    ]
+  },
+  {
+    "id": "CAS-18",
+    "menu": "case",
+    "date": "2026-05-26",
+    "title": "AP / Guardian context: Case: OHR tranzicija i javna linija",
+    "modules": [
+      "OHR",
+      "INT",
+      "VRH"
+    ],
+    "risk": 4,
+    "opportunity": 2,
+    "wedge": 2,
+    "territory": "IJ 2 – Banja Luka",
+    "owner": "rukovodstvo",
+    "deadline": "<2h",
+    "summary": "Krajem aprila potpisan je sporazum Hrvatske i BiH o gasnom interkonektoru; u maju tema ostaje u međunarodnom okviru kroz energetsku sigurnost, EU put i optužbe o netransparentnosti. Operativno: case: ohr tranzicija i javna linija.",
+    "signal_to_vrh": true,
+    "signal_to_media": true,
+    "suggested_responses": [
+      "Zadržati institucionalni ton; ne praviti trijumfalizam oko odlaska ili smjene OHR-a.",
+      "Ako se šalje rukovodstvu, sažeti u tri reda: šta se desilo, rizik, preporučeni potez."
+    ],
+    "user_info": "Krajem aprila potpisan je sporazum Hrvatske i BiH o gasnom interkonektoru; u maju tema ostaje u međunarodnom okviru kroz energetsku sigurnost, EU put i optužbe o netransparentnosti. Operativno: case: ohr tranzicija i javna linija. Predloženi nosilac: rukovodstvo.",
+    "input_news": [
+      "AP: Hrvatska i BiH potpisale sporazum o južnom interkonektoru.",
+      "Guardian temu povezuje sa širim međunarodnim pritiskom i promjenama oko OHR-a.",
+      "Za RS monitoring: energetika, EU, američki uticaj, Federacija.",
+      "Scenario varijanta 18: Case: OHR tranzicija i javna linija.",
+      "Meni: case; anchor: PIPELINE-APR-MAY (AP / Guardian context)."
+    ],
+    "source_note": "May 2026 anchor: AP / Guardian context / PIPELINE-APR-MAY",
+    "developer_info": {
+      "trigger_modules": [
+        "OHR",
+        "INT",
+        "VRH"
+      ],
+      "risk_score": 4,
+      "opportunity_score": 2,
+      "wedge_score": 2,
+      "route_owner": "rukovodstvo",
+      "create_case": true,
+      "human_review": true,
+      "go_feedback_required": false,
+      "public_response_blocked": true,
+      "work_order_default_recipient": "rukovodstvo",
+      "impact_windows": [
+        "+1h",
+        "+4h",
+        "+12h",
+        "+24h",
+        "+72h"
+      ],
+      "real_news_anchor": "PIPELINE-APR-MAY",
+      "real_news_source": "AP / Guardian context",
+      "real_news_date": "2026-05-15"
+    },
+    "territory_raw": "IJ 2 – Banja Luka",
+    "territory_ij": "IJ3",
+    "_seq": 137,
+    "race": null,
+    "task_ids": [
+      "TSK-CAS-18-Legal",
+      "TSK-CAS-18-VRH"
+    ]
+  },
+  {
+    "id": "CAS-19",
+    "menu": "case",
+    "date": "2026-05-06",
+    "title": "Case: social spike oko “slabijeg OHR-a”: BiH raspisao opšte izbore za 4. oktobar 2026",
+    "modules": [
+      "OHR",
+      "SRE",
+      "MEDIA"
+    ],
+    "risk": 4,
+    "opportunity": 3,
+    "wedge": 2,
+    "territory": "IJ 3 – Doboj",
+    "owner": "medijski tim",
+    "deadline": "<4h",
+    "summary": "Centralna izborna komisija je raspisala opšte izbore za 4. oktobar 2026; oko 3,3 miliona birača bira Predsjedništvo BiH, državne i entitetske parlamente, Brčko i kantone. Operativno: case: social spike oko “slabijeg ohr-a”.",
+    "signal_to_vrh": true,
+    "signal_to_media": true,
+    "suggested_responses": [
+      "Zadržati institucionalni ton; ne praviti trijumfalizam oko odlaska ili smjene OHR-a.",
+      "Ako se šalje rukovodstvu, sažeti u tri reda: šta se desilo, rizik, preporučeni potez."
+    ],
+    "user_info": "Centralna izborna komisija je raspisala opšte izbore za 4. oktobar 2026; oko 3,3 miliona birača bira Predsjedništvo BiH, državne i entitetske parlamente, Brčko i kantone. Operativno: case: social spike oko “slabijeg ohr-a”. Predloženi nosilac: medijski tim.",
+    "input_news": [
+      "Reuters: izbori u BiH zakazani za 4. oktobar 2026.",
+      "Reuters navodi oko 3,3 miliona registrovanih birača.",
+      "Tema direktno aktivira module CIK, IZB, POS i kampanju u RS.",
+      "Scenario varijanta 19: Case: social spike oko “slabijeg OHR-a”.",
+      "Meni: case; anchor: CIK-07MAY (Reuters)."
+    ],
+    "source_note": "May 2026 anchor: Reuters / CIK-07MAY",
+    "developer_info": {
+      "trigger_modules": [
+        "OHR",
+        "SRE",
+        "MEDIA"
+      ],
+      "risk_score": 4,
+      "opportunity_score": 3,
+      "wedge_score": 2,
+      "route_owner": "medijski tim",
+      "create_case": true,
+      "human_review": true,
+      "go_feedback_required": false,
+      "public_response_blocked": true,
+      "work_order_default_recipient": "medijski tim",
+      "impact_windows": [
+        "+1h",
+        "+4h",
+        "+12h",
+        "+24h",
+        "+72h"
+      ],
+      "real_news_anchor": "CIK-07MAY",
+      "real_news_source": "Reuters",
+      "real_news_date": "2026-05-07"
+    },
+    "territory_raw": "IJ 3 – Doboj",
+    "territory_ij": "IJ5",
+    "_seq": 138,
+    "race": null,
+    "task_ids": [
+      "TSK-CAS-19-Media",
+      "TSK-CAS-19-Legal",
+      "TSK-CAS-19-VRH"
+    ]
+  },
+  {
+    "id": "CAS-20",
+    "menu": "case",
+    "date": "2026-05-08",
+    "title": "AP: Case: međunarodni energetski okvir i RS pozicija",
+    "modules": [
+      "EKO",
+      "INT",
+      "FED"
+    ],
+    "risk": 5,
+    "opportunity": 2,
+    "wedge": 4,
+    "territory": "IJ 4 – Bijeljina",
+    "owner": "analitičar + media",
+    "deadline": "<24h",
+    "summary": "OHR je saopštio da Christian Schmidt odlazi nakon skoro pet godina, ali ostaje dok se ne imenuje nasljednik; tema otvara institucionalni vakuum i novu borbu oko legitimiteta OHR-a. Operativno: case: međunarodni energetski okvir i rs pozicija.",
+    "signal_to_vrh": true,
+    "signal_to_media": true,
+    "suggested_responses": [
+      "Razdvojiti energetsku sigurnost od dnevnog političkog prepucavanja; tražiti podatke prije reakcije.",
+      "Ako se šalje rukovodstvu, sažeti u tri reda: šta se desilo, rizik, preporučeni potez."
+    ],
+    "user_info": "OHR je saopštio da Christian Schmidt odlazi nakon skoro pet godina, ali ostaje dok se ne imenuje nasljednik; tema otvara institucionalni vakuum i novu borbu oko legitimiteta OHR-a. Operativno: case: međunarodni energetski okvir i rs pozicija. Predloženi nosilac: analitičar + media.",
+    "input_news": [
+      "AP: Schmidt najavio da završava mandat visokog predstavnika.",
+      "AP navodi da ostaje do imenovanja nasljednika.",
+      "Tema se direktno vezuje za ranije sukobe OHR-a i rukovodstva RS.",
+      "Scenario varijanta 20: Case: međunarodni energetski okvir i RS pozicija.",
+      "Meni: case; anchor: OHR-11MAY (AP)."
+    ],
+    "source_note": "May 2026 anchor: AP / OHR-11MAY",
+    "developer_info": {
+      "trigger_modules": [
+        "EKO",
+        "INT",
+        "FED"
+      ],
+      "risk_score": 5,
+      "opportunity_score": 2,
+      "wedge_score": 4,
+      "route_owner": "analitičar + media",
+      "create_case": true,
+      "human_review": true,
+      "go_feedback_required": false,
+      "public_response_blocked": true,
+      "work_order_default_recipient": "analitičar + media",
+      "impact_windows": [
+        "+1h",
+        "+4h",
+        "+12h",
+        "+24h",
+        "+72h"
+      ],
+      "real_news_anchor": "OHR-11MAY",
+      "real_news_source": "AP",
+      "real_news_date": "2026-05-11"
+    },
+    "territory_raw": "IJ 4 – Bijeljina",
+    "territory_ij": "IJ6",
+    "_seq": 139,
+    "race": null,
+    "task_ids": [
+      "TSK-CAS-20-VRH"
+    ]
+  }
+]

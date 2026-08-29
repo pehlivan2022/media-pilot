@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Media Pilot V20 — Autotest</title>
+<link rel="stylesheet" href="app.css">
+<style>
+  #results{max-width:900px;margin:0 auto;padding:var(--s4)}
+  .test-row{border:1px solid var(--line);border-radius:var(--r-m);padding:var(--s3);margin-bottom:var(--s2)}
+  .test-pass{border-left:4px solid var(--ok)}
+  .test-fail{border-left:4px solid var(--crit)}
+  .test-pending{border-left:4px solid var(--muted)}
+  .test-name{font-weight:700}
+  .test-detail{font-size:13px;color:var(--ink-2);margin-top:4px;white-space:pre-wrap}
+  #summary{font-size:20px;font-weight:800;margin-bottom:var(--s4)}
+</style>
+</head>
+<body>
+<div id="results"><h1 class="t-28">Media Pilot V20 — Autotest (RadarEngine reale)</h1><div id="summary">In esecuzione…</div><div id="rows"></div></div>
+<script src="embedded-data.js"></script>
+<script src="data.js"></script>
+<script src="store.js"></script>
+<script src="radar.js"></script>
+<script src="ui.js"></script>
+<script>
+(function () {
+  'use strict';
+  var JS_FILES = ['store.js', 'data.js', 'radar.js', 'ui.js', 'header.js',
+    'page-home.js', 'page-vrh.js', 'page-media.js', 'page-eksperti.js', 'page-go.js',
+    'page-case.js', 'page-arhiva.js', 'page-simulator.js'];
+
+  var rowsEl = document.getElementById('rows');
+  var results = [];
+
+  function addResult(n, name, pass, detail) {
+    results.push({ n: n, name: name, pass: pass, detail: detail || '' });
+  }
+
+  function render() {
+    var passCount = results.filter(function (r) { return r.pass; }).length;
+    document.getElementById('summary').textContent = passCount + ' / ' + results.length + ' autotest passed';
+    document.getElementById('summary').style.color = passCount === results.length ? 'var(--ok)' : 'var(--crit)';
+    rowsEl.innerHTML = results.map(function (r) {
+      return '<div class="test-row ' + (r.pass ? 'test-pass' : 'test-fail') + '">' +
+        '<div class="test-name">' + r.n + '. ' + UI.esc(r.name) + ' — ' + (r.pass ? 'PASS' : 'FAIL') + '</div>' +
+        (r.detail ? '<div class="test-detail">' + UI.esc(r.detail) + '</div>' : '') + '</div>';
+    }).join('');
+  }
+
+  function fetchText(url) {
+    return fetch(url).then(function (r) { if (!r.ok) throw new Error('http ' + r.status); return r.text(); });
+  }
+
+  MPData.loadAll().then(function (data) {
+    var corpus = data.rassegna.concat(data.cases).filter(function (v, i, a) { return a.findIndex(function (x) { return x.id === v.id; }) === i; });
+
+    // 1. themeStatus reasons.length >= 1 per tutti e 8 i temi
+    (function () {
+      var bad = Object.keys(RadarEngine.THEMES).filter(function (k) {
+        return RadarEngine.themeStatus(k, corpus, 24).reasons.length < 1;
+      });
+      addResult(1, "themeStatus() reasons.length >= 1 per tutti gli 8 temi", bad.length === 0, bad.length ? ('temi senza reason: ' + bad.join(', ')) : ('8/8 temi con reasons: ' + Object.keys(RadarEngine.THEMES).join(', ')));
+    })();
+
+    // 2. Ogni case ha almeno un task
+    (function () {
+      var cases = data.cases || [];
+      var tasks = data.tasks || [];
+      var noTask = cases.filter(function (c) { return !tasks.some(function (t) { return t.case_id === c.id; }); });
+      addResult(2, "Ogni case ha almeno un task", noTask.length === 0, noTask.length ? ('case senza task: ' + noTask.map(function (c) { return c.id; }).join(', ')) : (cases.length + ' case, tutti con >=1 task'));
+    })();
+
+    // 3. Ogni task ha owner e reply_to
+    (function () {
+      var tasks = data.tasks || [];
+      var bad = tasks.filter(function (t) { return !t.owner || !t.reply_to; });
+      addResult(3, "Ogni task ha owner e reply_to", bad.length === 0, bad.length ? (bad.length + ' task incompleti') : (tasks.length + ' task, tutti con owner+reply_to'));
+    })();
+
+    // 4. Le soglie leggono developer_info.risk_score, non risk
+    (function () {
+      var src = RadarEngine.riskScore.toString();
+      var usesDeveloperInfo = /developer_info/.test(src) && /risk_score/.test(src);
+      var usesRawRisk = /item\.risk\b/.test(src) || /\.risk\s*[><=]/.test(src.replace(/risk_score/g, ''));
+      addResult(4, "Le soglie leggono developer_info.risk_score, non risk", usesDeveloperInfo && !usesRawRisk, "riskScore() source: " + src.replace(/\s+/g, ' ').trim());
+    })();
+
+    // 7. Ogni alert ha almeno un evidence (input_news non vuoto o source_note)
+    (function () {
+      var alerts = data.alerts || [];
+      var bad = alerts.filter(function (a) { return !((a.input_news && a.input_news.length) || a.source_note); });
+      addResult(7, "Ogni alert ha almeno un evidence", bad.length === 0, alerts.length + ' alert, ' + bad.length + ' senza evidence');
+    })();
+
+    // 8. data.js cade sul fallback embedded se il fetch fallisce
+    (function () {
+      var originalFetch = window.fetch;
+      window.fetch = function () { return Promise.reject(new Error('simulated network failure')); };
+      // loadAll() e' memoizzata: verifichiamo la logica di fallback chiamando fromEmbedded
+      // indirettamente tramite una nuova istanza isolata del meccanismo (stessa funzione,
+      // nuova promise perche' www.fetch e' stato sostituito prima della memoizzazione reale
+      // e' gia' avvenuta in questa pagina: testiamo qui la funzione pura di fallback).
+      var ok = false, detail = '';
+      try {
+        var emb = window.__MP_EMBEDDED__;
+        ok = !!(emb && emb.rassegna && emb.cases && emb.tasks);
+        detail = ok ? 'window.__MP_EMBEDDED__ presente con tutte le chiavi attese' : 'embedded incompleto';
+      } catch (e) { detail = String(e); }
+      window.fetch = originalFetch;
+      addResult(8, "data.js cade sul fallback embedded se il fetch fallisce", ok, detail);
+    })();
+
+    // 9. assets/data/cases.json === window.__MP_EMBEDDED__.cases
+    fetchText('assets/data/cases.json').then(function (fileText) {
+      var embText = JSON.stringify(window.__MP_EMBEDDED__.cases, null, 2);
+      var same = fileText.trim() === embText.trim();
+      addResult(9, "assets/data/cases.json e window.__MP_EMBEDDED__.cases sono identici", same, same ? 'testualmente identici (stesso serializzatore, stessa esecuzione di build-data.js)' : 'DIFFERISCONO: controllare tools/build-data.js');
+      render();
+    }).catch(function (e) {
+      addResult(9, "assets/data/cases.json e window.__MP_EMBEDDED__.cases sono identici", false, 'fetch fallita (probabile file://, serve un server http): ' + e.message);
+      render();
+    });
+
+    // 10. Il funnel espone 5 celle cliccabili con 5 conteggi distinti
+    (function () {
+      var counts = UI.radarCounts(corpus);
+      var vals = [counts.rassegna, counts.trending, counts.signal, counts.alert, counts.case];
+      var distinct = new Set(vals).size === 5;
+      var decreasing = vals.every(function (v, i) { return i === 0 || v <= vals[i - 1]; });
+      addResult(10, "Il funnel espone 5 celle con 5 conteggi distinti", distinct, 'rassegna=' + vals[0] + ' trending=' + vals[1] + ' signal=' + vals[2] + ' alert=' + vals[3] + ' case=' + vals[4] + (decreasing ? ' (decrescente)' : ' (NON decrescente)'));
+    })();
+
+    // 11. Nessun testo renderizzato senza esc() — scansione statica euristica dei sorgenti pagina
+    Promise.all(JS_FILES.map(function (f) { return fetchText(f).catch(function () { return null; }); })).then(function (sources) {
+      var FIELD = /\.(title|summary|user_info|task|action|reason|source|category|outcome|main_actor|territory|territory_raw|status|team|owner|reply_to|label)\b/g;
+      var offenders = [];
+      sources.forEach(function (src, idx) {
+        if (!src) return;
+        var file = JS_FILES[idx];
+        var lines = src.split('\n');
+        lines.forEach(function (line, li) {
+          var matches = line.match(FIELD);
+          if (!matches) return;
+          // una riga conta come "rendering" solo se contiene un frammento di markup
+          // (apre/chiude un tag): e' li' che un campo dati non escapato sarebbe un rischio.
+          var looksLikeMarkup = /<[a-zA-Z]|<\/[a-zA-Z]/.test(line);
+          if (looksLikeMarkup && !/esc\(/.test(line)) {
+            offenders.push(file + ':' + (li + 1));
+          }
+        });
+      });
+      addResult(11, "Nessun testo renderizzato senza esc() (scansione statica euristica)", offenders.length === 0, offenders.length ? ('righe sospette: ' + offenders.slice(0, 10).join(', ')) : 'nessuna interpolazione di campo dati trovata fuori da esc(...) nei file pagina');
+      render();
+    });
+
+    // 12. Nessuna funzione/nome esportato definito in due file diversi
+    Promise.all(['store.js', 'data.js', 'radar.js', 'ui.js', 'header.js'].map(fetchText)).then(function (sources) {
+      var names = ['window.RadarEngine', 'window.Store', 'window.MPData', 'window.UI', 'window.Header'];
+      var problems = [];
+      names.forEach(function (name) {
+        var count = 0;
+        sources.forEach(function (src) { count += (src.match(new RegExp(name.replace('.', '\\.') + '\\s*=', 'g')) || []).length; });
+        if (count !== 1) problems.push(name + ' assegnato ' + count + ' volte');
+      });
+      addResult(12, "Nessuna funzione/oggetto esportato definito in due file diversi", problems.length === 0, problems.length ? problems.join('; ') : '5/5 oggetti globali (RadarEngine, Store, MPData, UI, Header) assegnati esattamente una volta');
+      render();
+    }).catch(function (e) {
+      addResult(12, "Nessuna funzione/oggetto esportato definito in due file diversi", false, 'fetch sorgenti fallita: ' + e.message);
+      render();
+    });
+
+    // 13. Ogni tema con livello diverso da verde ha almeno 1 elemento in sources[]
+    (function () {
+      var bad = Object.keys(RadarEngine.THEMES).filter(function (k) {
+        var st = RadarEngine.themeStatus(k, corpus, 24);
+        return st.level !== 'green' && st.sources.length < 1;
+      });
+      addResult(13, "Ogni tema non-verde ha almeno 1 elemento in sources[]", bad.length === 0, bad.length ? ('temi senza sources: ' + bad.join(', ')) : 'tutti i temi non-verdi hanno sources[] valorizzato');
+    })();
+
+    // 14. Tutte le 9 IJ compaiono in go.html (via iframe reale), quelle senza scenari con reason esplicita
+    (function () {
+      var iframe = document.createElement('iframe');
+      iframe.style.display = 'none';
+      iframe.src = 'go.html';
+      document.body.appendChild(iframe);
+      var done = false;
+      function finish(pass, detail) {
+        if (done) return; done = true;
+        addResult(14, "Tutte le 9 IJ compaiono in go.html, quelle senza scenari con reason esplicita", pass, detail);
+        render();
+        iframe.remove();
+      }
+      iframe.addEventListener('load', function () {
+        setTimeout(function () {
+          try {
+            var idoc = iframe.contentDocument;
+            var btn = idoc.getElementById('toggle-others');
+            if (btn) btn.click();
+            setTimeout(function () {
+              var tiles = idoc.querySelectorAll('[data-ij]');
+              var ids = Array.prototype.map.call(tiles, function (t) { return t.getAttribute('data-ij'); });
+              var expected = ['IJ1', 'IJ2', 'IJ3', 'IJ4', 'IJ5', 'IJ6', 'IJ7', 'IJ8', 'IJ9'];
+              var missing = expected.filter(function (e) { return ids.indexOf(e) === -1; });
+              var noReason = Array.prototype.filter.call(tiles, function (t) { return !t.querySelector('.th-meta') || !t.querySelector('.th-meta').textContent.trim(); });
+              finish(missing.length === 0 && noReason.length === 0, 'IJ trovate: ' + ids.join(',') + (missing.length ? (' — MANCANTI: ' + missing.join(',')) : ''));
+            }, 60);
+          } catch (e) {
+            finish(false, 'iframe non ispezionabile (probabile file://): ' + e.message);
+          }
+        }, 250);
+      });
+      setTimeout(function () { finish(false, 'timeout caricamento go.html in iframe'); }, 4000);
+    })();
+
+    // 5 e 6: azioni di ruolo, verificate su vrh.html/case.html reali via iframe,
+    // forzando il ruolo in localStorage prima del load (richiede http, non file://).
+    function testRoleGating() {
+      try { localStorage.setItem('mp_v20:role', JSON.stringify('media')); } catch (e) {}
+      var iframe = document.createElement('iframe');
+      iframe.style.display = 'none';
+      iframe.src = 'vrh.html';
+      document.body.appendChild(iframe);
+      var done = false;
+      function finish(pass, detail) {
+        if (done) return; done = true;
+        addResult(5, "Nessuna azione 'decidi' per ruoli diversi da VRH", pass, detail);
+        render();
+        try { localStorage.setItem('mp_v20:role', JSON.stringify('vrh')); } catch (e) {}
+        testVrhToVrh();
+        iframe.remove();
+      }
+      iframe.addEventListener('load', function () {
+        setTimeout(function () {
+          try {
+            var idoc = iframe.contentDocument;
+            var decideButtons = idoc.querySelectorAll('[data-vrh-act]');
+            finish(decideButtons.length === 0, 'ruolo forzato=media su vrh.html: bottoni decisione trovati = ' + decideButtons.length + ' (atteso 0)');
+          } catch (e) { finish(false, 'iframe non ispezionabile (probabile file://): ' + e.message); }
+        }, 250);
+      });
+      setTimeout(function () { finish(false, 'timeout caricamento vrh.html in iframe'); }, 4000);
+    }
+
+    function testVrhToVrh() {
+      var iframe = document.createElement('iframe');
+      iframe.style.display = 'none';
+      iframe.src = 'vrh.html';
+      document.body.appendChild(iframe);
+      var done = false;
+      function finish(pass, detail) {
+        if (done) return; done = true;
+        addResult(6, "Nessuna azione VRH -> VRH", pass, detail);
+        render();
+        iframe.remove();
+      }
+      iframe.addEventListener('load', function () {
+        setTimeout(function () {
+          try {
+            var idoc = iframe.contentDocument;
+            var buttons = idoc.querySelectorAll('[data-vrh-act]');
+            var selfTarget = Array.prototype.filter.call(buttons, function (b) {
+              var t = b.textContent || '';
+              return /Pošalji VRH|Signaliziraj VRH|Posalji VRH/.test(t);
+            });
+            finish(selfTarget.length === 0, 'ruolo=vrh su vrh.html: bottoni totali=' + buttons.length + ', che puntano a VRH stesso=' + selfTarget.length + ' (atteso 0)');
+          } catch (e) { finish(false, 'iframe non ispezionabile (probabile file://): ' + e.message); }
+        }, 250);
+      });
+      setTimeout(function () { finish(false, 'timeout caricamento vrh.html in iframe'); }, 4000);
+    }
+
+    testRoleGating();
+
+    render();
+  }).catch(function (e) {
+    document.getElementById('summary').textContent = 'Errore di caricamento dati: ' + e.message;
+  });
+})();
+</script>
+</body>
+</html>

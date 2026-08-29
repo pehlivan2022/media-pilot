@@ -1,0 +1,36 @@
+# FIX 1a — dizionario di dominio politico per il filtro di rilevanza (pilot/entities.py).
+# Termini tematici, MAI identificatori di entita': un articolo passa il filtro se contiene un
+# alias forte/frase, oppure almeno 2 di questi termini (parola intera, senza distinzione di caso,
+# confrontati su testo normalizzato: cirillico->latino, senza diacritici).
+weak_keywords:
+  - izbori
+  - stranka
+  - kandidat
+  - poslanik
+  - vlada
+  - skupstina
+  - mandat
+  - koalicija
+  - glasanje
+  - lista
+  - sjednica
+  - opozicija
+  - vladajuca
+  - parlament
+  - ministar
+  - politicka
+  - referendum
+  - birac
+  - kampanja
+  - funkcija
+  - smjena
+  - imenovanje
+  - finansiranje
+  - kompenzacion
+  - skener
+  - biomet
+  - institucij
+  - sankcij
+  - ambasad
+  - diplomat
+  - protest
