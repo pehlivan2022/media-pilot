@@ -1,0 +1,172 @@
+name: Publish Pages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build _site
+        run: |
+          set -euo pipefail
+          mkdir -p _site/assets/icons _site/assets/data
+
+          PAGES="index.html us.html vrh.html media.html case.html eksperti.html konkurenti.html ostali.html arhiva.html go.html simulator.html"
+          for f in $PAGES; do cp "$f" _site/; done
+
+          cp app.css manifest.webmanifest sw.js pwa.js _site/
+
+          SHELL_JS="dashboard-config.js store.js radar.js data.js ui.js header.js embedded-data.js"
+          for f in $SHELL_JS; do cp "$f" _site/; done
+
+          PAGE_JS="page-home.js page-us.js page-vrh.js page-media.js page-case.js page-eksperti.js page-konkurenti.js page-ostali.js page-arhiva.js page-go.js page-simulator.js"
+          for f in $PAGE_JS; do cp "$f" _site/; done
+
+          cp assets/icons/*.png _site/assets/icons/
+
+          for f in assets/data/*.json; do
+            base=$(basename "$f")
+            # rassegna.json.demo-backup is not JSON and must never publish;
+            # candidates_source.json is a build input, not read by the dashboard (see docs/GITHUB_PAGES_DEPLOY_AUDIT.md)
+            [ "$base" = "candidates_source.json" ] && continue
+            cp "$f" _site/assets/data/
+          done
+
+          cp data/pipeline_health.json _site/assets/data/pipeline_health.json
+          touch _site/.nojekyll
+
+          echo "---- _site contents ----"
+          find _site -type f | sort
+
+      - name: Validate JSON payloads
+        run: |
+          set -euo pipefail
+          fail=0
+          for f in _site/assets/data/*.json; do
+            if [ ! -s "$f" ]; then
+              echo "::error file=$f::File is missing or zero bytes"
+              fail=1
+              continue
+            fi
+            if ! jq empty "$f" 2>/tmp/jqerr; then
+              echo "::error file=$f::Invalid JSON — $(cat /tmp/jqerr)"
+              fail=1
+            fi
+          done
+          if [ "$fail" -ne 0 ]; then
+            echo "One or more JSON files are invalid, empty, or missing — aborting deploy."
+            exit 1
+          fi
+          echo "All JSON payloads are valid."
+
+      - name: Generate deploy manifest
+        run: |
+          set -euo pipefail
+          files_json="[]"
+          for f in $(find _site/assets/data -name '*.json' | sort); do
+            name=$(basename "$f")
+            size=$(stat -c%s "$f")
+            sha=$(sha256sum "$f" | cut -d' ' -f1)
+            files_json=$(jq --arg name "$name" --argjson size "$size" --arg sha "$sha" \
+              '. + [{name:$name, size:$size, sha256:$sha}]' <<<"$files_json")
+          done
+          jq -n \
+            --arg generated_at "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+            --arg commit "$GITHUB_SHA" \
+            --argjson files "$files_json" \
+            '{generated_at:$generated_at, source:"github-actions", status:"ok", commit:$commit, files:$files}' \
+            > _site/assets/data/deploy-manifest.json
+          cat _site/assets/data/deploy-manifest.json
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    outputs:
+      page_url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  verify:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify live deployment
+        env:
+          BASE_URL: ${{ needs.deploy.outputs.page_url }}
+        run: |
+          set -euo pipefail
+          base="${BASE_URL%/}"
+          fail=0
+
+          check_200() {
+            local url="$1"
+            local code
+            code=$(curl -s -o /dev/null -w "%{http_code}" "$url")
+            if [ "$code" != "200" ]; then
+              echo "::error::$url returned HTTP $code"
+              fail=1
+              return 1
+            fi
+            echo "$url -> 200"
+            return 0
+          }
+
+          for page in index us vrh media case eksperti konkurenti ostali arhiva go simulator; do
+            check_200 "${base}/${page}.html" || true
+          done
+
+          check_200 "${base}/assets/data/deploy-manifest.json"
+          curl -sf -o /tmp/manifest.json "${base}/assets/data/deploy-manifest.json"
+
+          for name in rassegna.json trending.json signals.json pipeline_health.json; do
+            url="${base}/assets/data/${name}"
+            if ! check_200 "$url"; then
+              continue
+            fi
+            curl -s -o /tmp/live_file "$url"
+            live_sha=$(sha256sum /tmp/live_file | cut -d' ' -f1)
+            expected_sha=$(jq -r --arg n "$name" '.files[] | select(.name==$n) | .sha256' /tmp/manifest.json)
+            if [ -z "$expected_sha" ] || [ "$expected_sha" = "null" ]; then
+              echo "::error::$name not present in deploy-manifest.json"
+              fail=1
+              continue
+            fi
+            if [ "$live_sha" != "$expected_sha" ]; then
+              echo "::error::$name checksum mismatch: live=$live_sha expected=$expected_sha"
+              fail=1
+            else
+              echo "$name checksum OK ($live_sha)"
+            fi
+          done
+
+          if [ "$fail" -ne 0 ]; then
+            echo "Live verification failed."
+            exit 1
+          fi
+          echo "All live checks passed for ${base}/"
