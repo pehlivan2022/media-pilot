@@ -387,7 +387,7 @@
     "entity_id": "ij5-konkurencija",
     "label": "IJ5 · borba za mandat",
     "classification": "REVIEW",
-    "why_now": "10 fonti indipendenti nelle ultime 24h; 26 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "why_now": "momentum +52% vs normale; 11 fonti indipendenti nelle ultime 24h; 27 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
     "entities": [
       "ij5-konkurencija"
     ],
@@ -397,11 +397,11 @@
       "CL-2026-0232"
     ],
     "metrics": {
-      "mentions_24h": 38,
-      "unique_events_24h": 26,
-      "unique_sources_24h": 10,
-      "momentum": 0.483,
-      "acceleration": 1.333,
+      "mentions_24h": 39,
+      "unique_events_24h": 27,
+      "unique_sources_24h": 11,
+      "momentum": 0.515,
+      "acceleration": 1.667,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 17
     },
@@ -411,6 +411,7 @@
     ],
     "evidence": [
       "https://srpskainfo.com/author/sanja-dragic/",
+      "https://zvornicki.ba/t/bijeljina/",
       "https://www.klix.ba/vijesti/bih/crnadak-zabrinjavaju-me-poruke-iz-sarajeva-srpske-zrtve-su-manje-a-bosnjacki-generali-su-heroji/260830124",
       "https://atvbl.rs/vijesti/gradovi-i-opstine/heroji-se-bore-do-posljednjeg-atoma-primjer-iz-trebinja-je-dokaz-za-to/2337005",
       "https://atvbl.rs/vijesti/gradovi-i-opstine/ognjiste-ne-zaboravljaju-sabor-na-zijemljima-i-novi-put-ka-nevesinju/2337038",
@@ -418,14 +419,13 @@
       "https://www.rtrs.tv/vijesti/vijest.php?id=658207",
       "https://srpskainfo.com/author/knez/",
       "https://glasregije.net/rasvijetljen-pozar-u-doboju-poznat-identitet-osumnjicenog-za-unistavanje-vozila/60434",
-      "https://rtvdoboj.org/category/doboj/",
-      "https://www.rtrs.tv/vijesti/vijest.php?id=658195"
+      "https://rtvdoboj.org/category/doboj/"
     ],
     "first_seen": "2026-08-30T12:27:39Z",
     "last_seen": "2026-08-30T23:32:09Z",
-    "confidence": 0.8,
+    "confidence": 1.0,
     "confidence_components": {
-      "momentum": false,
+      "momentum": true,
       "sources": true,
       "events": true,
       "salience": true,
@@ -725,7 +725,7 @@
     "entity_id": "doboj",
     "label": "Doboj",
     "classification": "REVIEW",
-    "why_now": "8 fonti indipendenti nelle ultime 24h; 13 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "why_now": "9 fonti indipendenti nelle ultime 24h; 14 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
     "entities": [
       "doboj"
     ],
@@ -735,11 +735,11 @@
       "CL-2026-0175"
     ],
     "metrics": {
-      "mentions_24h": 21,
-      "unique_events_24h": 13,
-      "unique_sources_24h": 8,
-      "momentum": 0.235,
-      "acceleration": 2.0,
+      "mentions_24h": 22,
+      "unique_events_24h": 14,
+      "unique_sources_24h": 9,
+      "momentum": 0.285,
+      "acceleration": 3.0,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 17
     },
@@ -749,6 +749,7 @@
     ],
     "evidence": [
       "https://srpskainfo.com/author/sanja-dragic/",
+      "https://zvornicki.ba/t/bijeljina/",
       "https://atvbl.rs/vijesti/gradovi-i-opstine/heroji-se-bore-do-posljednjeg-atoma-primjer-iz-trebinja-je-dokaz-za-to/2337005",
       "https://www.rtrs.tv/vijesti/vijest.php?id=658207",
       "https://glasregije.net/rasvijetljen-pozar-u-doboju-poznat-identitet-osumnjicenog-za-unistavanje-vozila/60434",
@@ -756,8 +757,7 @@
       "https://www.rtrs.tv/vijesti/vijest.php?id=658195",
       "https://www.klix.ba/magazin/film-tv/hrvatsku-reporterku-ubola-osa-u-vrat-prilikom-javljanja-uzivo-boli-za-popidit/260830088",
       "https://srpskainfo.com/author/bojana-kljajic/",
-      "https://rtvdoboj.org/category/servisne-informacije/",
-      "https://rtvdoboj.org/category/vijesti/"
+      "https://rtvdoboj.org/category/servisne-informacije/"
     ],
     "first_seen": "2026-08-30T12:53:05Z",
     "last_seen": "2026-08-30T23:32:09Z",

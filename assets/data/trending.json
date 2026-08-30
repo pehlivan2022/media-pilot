@@ -722,11 +722,11 @@
   {
     "entity_id": "ij5-konkurencija",
     "label": "IJ5 · borba za mandat",
-    "mentions_24h": 38,
-    "unique_events_24h": 26,
-    "unique_sources_24h": 10,
-    "baseline_7d": 25.625,
-    "momentum": 0.483,
+    "mentions_24h": 39,
+    "unique_events_24h": 27,
+    "unique_sources_24h": 11,
+    "baseline_7d": 25.75,
+    "momentum": 0.515,
     "last_event_at": "2026-08-30T23:32:09Z",
     "top_events": [
       {
@@ -756,6 +756,7 @@
     ],
     "evidence": [
       "https://srpskainfo.com/author/sanja-dragic/",
+      "https://zvornicki.ba/t/bijeljina/",
       "https://www.klix.ba/vijesti/bih/crnadak-zabrinjavaju-me-poruke-iz-sarajeva-srpske-zrtve-su-manje-a-bosnjacki-generali-su-heroji/260830124",
       "https://atvbl.rs/vijesti/gradovi-i-opstine/heroji-se-bore-do-posljednjeg-atoma-primjer-iz-trebinja-je-dokaz-za-to/2337005",
       "https://atvbl.rs/vijesti/gradovi-i-opstine/ognjiste-ne-zaboravljaju-sabor-na-zijemljima-i-novi-put-ka-nevesinju/2337038",
@@ -763,18 +764,17 @@
       "https://www.rtrs.tv/vijesti/vijest.php?id=658207",
       "https://srpskainfo.com/author/knez/",
       "https://glasregije.net/rasvijetljen-pozar-u-doboju-poznat-identitet-osumnjicenog-za-unistavanje-vozila/60434",
-      "https://rtvdoboj.org/category/doboj/",
-      "https://www.rtrs.tv/vijesti/vijest.php?id=658195"
+      "https://rtvdoboj.org/category/doboj/"
     ]
   },
   {
     "entity_id": "doboj",
     "label": "Doboj",
-    "mentions_24h": 21,
-    "unique_events_24h": 13,
-    "unique_sources_24h": 8,
-    "baseline_7d": 17.0,
-    "momentum": 0.235,
+    "mentions_24h": 22,
+    "unique_events_24h": 14,
+    "unique_sources_24h": 9,
+    "baseline_7d": 17.125,
+    "momentum": 0.285,
     "last_event_at": "2026-08-30T23:32:09Z",
     "top_events": [
       {
@@ -804,6 +804,7 @@
     ],
     "evidence": [
       "https://srpskainfo.com/author/sanja-dragic/",
+      "https://zvornicki.ba/t/bijeljina/",
       "https://atvbl.rs/vijesti/gradovi-i-opstine/heroji-se-bore-do-posljednjeg-atoma-primjer-iz-trebinja-je-dokaz-za-to/2337005",
       "https://www.rtrs.tv/vijesti/vijest.php?id=658207",
       "https://glasregije.net/rasvijetljen-pozar-u-doboju-poznat-identitet-osumnjicenog-za-unistavanje-vozila/60434",
@@ -811,8 +812,7 @@
       "https://www.rtrs.tv/vijesti/vijest.php?id=658195",
       "https://www.klix.ba/magazin/film-tv/hrvatsku-reporterku-ubola-osa-u-vrat-prilikom-javljanja-uzivo-boli-za-popidit/260830088",
       "https://srpskainfo.com/author/bojana-kljajic/",
-      "https://rtvdoboj.org/category/servisne-informacije/",
-      "https://rtvdoboj.org/category/vijesti/"
+      "https://rtvdoboj.org/category/servisne-informacije/"
     ]
   },
   {
