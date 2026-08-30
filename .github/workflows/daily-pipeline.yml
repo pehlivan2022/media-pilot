@@ -1,0 +1,73 @@
+name: Daily Pipeline
+
+on:
+  workflow_dispatch:
+  schedule:
+    # ~06:00 and ~12:00 Europe/Sarajevo (UTC+1/+2), replacing the old Windows
+    # Task Scheduler trigger + catch-up. GitHub cron is UTC-fixed, no DST shift.
+    - cron: '0 5 * * *'
+    - cron: '0 11 * * *'
+
+concurrency:
+  group: daily-pipeline
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          path: code
+
+      - name: Checkout runtime-state
+        uses: actions/checkout@v4
+        with:
+          ref: runtime-state
+          path: state
+
+      - name: Restore data/raw and errors.jsonl from runtime-state
+        run: |
+          set -euo pipefail
+          mkdir -p code/data/raw
+          cp state/data/raw/*.jsonl code/data/raw/ 2>/dev/null || true
+          [ -f state/data/errors.jsonl ] && cp state/data/errors.jsonl code/data/errors.jsonl || true
+          echo "Restored $(ls code/data/raw/*.jsonl 2>/dev/null | wc -l) raw file(s)"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r code/requirements.txt
+
+      - name: Run pipeline
+        working-directory: code
+        run: python -m pilot.run_monitor --target pilot_daily_all
+
+      - name: Save runtime state
+        run: |
+          set -euo pipefail
+          cp code/data/raw/*.jsonl state/data/raw/
+          [ -f code/data/errors.jsonl ] && cp code/data/errors.jsonl state/data/errors.jsonl || true
+          cd state
+          git config user.name "media-pilot-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/raw data/errors.jsonl
+          git diff --cached --quiet || git commit -m "state: run $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push
+
+      - name: Commit dashboard outputs
+        working-directory: code
+        run: |
+          set -euo pipefail
+          git config user.name "media-pilot-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add assets/data/rassegna.json assets/data/signals.json assets/data/trending.json config/sources.yaml data/pipeline_health.json
+          git diff --cached --quiet || git commit -m "pipeline: run $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push
