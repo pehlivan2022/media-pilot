@@ -78,16 +78,25 @@ ma non necessario per la correttezza del dedup.
 ```
 data/raw/2026-08-27.jsonl    3.2 MB
 data/raw/2026-08-28.jsonl    6.1 MB
-data/raw/2026-08-29.jsonl   64.7 MB   <- crescita non lineare, da capire perché
-data/raw/ totale             71 MB (3 giorni)
+data/raw/2026-08-29.jsonl   64.7 MB   <- anomalia spiegata sotto
+data/raw/2026-08-30.jsonl    2.8 MB   <- run reale di oggi, finestra 7gg
 ```
 
-Con finestra di collezione `BACKFILL_DAYS_DEFAULT = 30` giorni e questo pattern di crescita, uno
-snapshot che copre l'intera finestra utile potrebbe arrivare a **diverse centinaia di MB, forse oltre
-1 GB**, prima che `STALE_DAYS=30` renda irrilevanti i file più vecchi. Nessun file individuale supera
-ancora i 100 MB (limite hard di GitHub per file), ma il singolo giorno 08-29 è già a 65 MB — un
-salto di scala che non ho ancora spiegato (non ho scavato nella causa, serve capire se è un pattern
-normale o un'anomalia di quel run specifico prima di dimensionare la persistenza).
+**Anomalia spiegata**: `data/scheduler_run.log` mostra che il run del 29/08 alle 06:00 è stato
+**interrotto (`^C`)** prima di completarsi, e quello del 30/08 (oggi, completato con successo) ha
+usato `finestra 7gg` — non i 30 giorni di `BACKFILL_DAYS_DEFAULT`, che è solo il fallback per un
+lancio manuale di `run_all.py` senza `--target`. Il vero target schedulato,
+`pilot_daily_all` (`config/monitoring.yaml` riga 141), ha **`history_days: 7`**. Il file da 64.7 MB
+è quasi certamente il risultato di un run interrotto lanciato con una finestra più ampia (30gg,
+probabile test manuale), non il comportamento normale del job delle 06:00.
+
+Con i tre run "normali" (3.2, 6.1, 2.8 MB) la crescita reale è **~3-6 MB/giorno**, non ~24 MB/giorno
+come sembrava dalla media dei 3 giorni iniziali. Su una finestra di 30 giorni (il margine più ampio,
+non i 7 effettivamente usati) questo dà una stima di **~90-180 MB non compressi**, molto meno dei
+"centinaia di MB, forse oltre 1 GB" ipotizzati prima di leggere il log — e JSON/testo comprime bene
+in `.tar.gz` (tipicamente 3-5×), quindi lo snapshot compresso è plausibilmente **~20-50 MB**. La
+strategia `runtime-state` a branch dedicato del task resta valida, nessun bisogno di Aruba per
+questo.
 
 `data/clean.jsonl` (138 MB, il file grande già segnalato nell'audit Pages FASE 1) **non ha bisogno
 di essere persistito**: è rigenerato ad ogni run da `data/raw/`, quindi trascinarlo tra i run
