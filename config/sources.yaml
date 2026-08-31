@@ -343,7 +343,7 @@ sources:
     enabled: true
     last_verified_at: "2026-08-29T00:00:00Z"
     items_7d_at_audit: 10
-    window_actual_days: 4
+    window_actual_days: 5
     website_url: "https://6yka.com/"
   - source_id: BL_IJ3_004
     name: "Frontal.ba"
