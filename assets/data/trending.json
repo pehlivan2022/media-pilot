@@ -10,7 +10,7 @@
     "last_event_at": "2026-08-30T07:44:03Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0277",
+        "cluster_id": "CL-2026-0288",
         "title": "OFK BRDO GOST “CRNOG VRHA”",
         "url": "https://infoprijedor.ba/ofk-brdo-gost-crnog-vrha",
         "source_id": "RS_IJ_002",
@@ -25,113 +25,43 @@
   {
     "entity_id": "sps",
     "label": "SPS · Goran Selak",
-    "mentions_24h": 6,
-    "unique_events_24h": 4,
-    "unique_sources_24h": 4,
+    "mentions_24h": 4,
+    "unique_events_24h": 3,
+    "unique_sources_24h": 3,
     "baseline_7d": 0.875,
-    "momentum": 5.857,
+    "momentum": 3.571,
     "last_event_at": "2026-08-30T21:40:00Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0148",
+        "cluster_id": "CL-2026-0159",
         "title": "Хиљаде посјетилаца похрлило Кочићевим Стричићима – обиљежен 61. \"Кочићев збор\"",
         "url": "https://atvbl.rs/vijesti/banja-luka/hiljade-posjetilaca-pohrlilo-kocicevim-stricicima-obiljezen-61-kocicev-zbor/2337035",
         "source_id": "RS_ENT_002",
         "published_at": "2026-08-30T20:37:00Z",
-        "n_items": 3
-      },
-      {
-        "cluster_id": "CL-2026-0250",
-        "title": "Истина о страдању Срба стиже до америчке јавности",
-        "url": "https://www.glassrpske.com/cir/novosti/politika/istina-o-stradanju-srba-stize-do-americke-javnosti/650081",
-        "source_id": "BL_IJ3_003",
-        "published_at": "2026-08-30T00:00:00Z",
-        "n_items": 1
-      },
-      {
-        "cluster_id": "CL-2026-0317",
-        "title": "DA SU IZBORI U SRBIJI SUTRA: Studentska lista na 48,5 odsto, Vučićeva SNS lista na 38,6",
-        "url": "https://6yka.com/region/da-su-izbori-u-srbiji-sutra-studentska-lista-na-485-odsto-vuciceva-sns-lista-na-386",
-        "source_id": "BL_IJ3_005",
-        "published_at": "2026-08-30T16:30:00Z",
-        "n_items": 1
-      }
-    ],
-    "evidence": [
-      "https://atvbl.rs/vijesti/bih/zahtjev-sda-i-df-stvar-politike-a-ne-struke/2337053",
-      "https://atvbl.rs/vijesti/banja-luka/hiljade-posjetilaca-pohrlilo-kocicevim-stricicima-obiljezen-61-kocicev-zbor/2337035",
-      "https://6yka.com/region/da-su-izbori-u-srbiji-sutra-studentska-lista-na-485-odsto-vuciceva-sns-lista-na-386",
-      "https://www.rtrs.tv/vijesti/vijest.php?id=658139",
-      "https://www.glassrpske.com/cir/novosti/politika/istina-o-stradanju-srba-stize-do-americke-javnosti/650081",
-      "https://www.glassrpske.com/cir/novosti/politika/selak-kocicev-duh-zivi-u-svima-nama-borba-za-slobodu-nam-je-urodjena/650043"
-    ]
-  },
-  {
-    "entity_id": "us-sps",
-    "label": "US ↔ SPS",
-    "mentions_24h": 6,
-    "unique_events_24h": 4,
-    "unique_sources_24h": 4,
-    "baseline_7d": 1.125,
-    "momentum": 4.333,
-    "last_event_at": "2026-08-30T21:40:00Z",
-    "top_events": [
-      {
-        "cluster_id": "CL-2026-0148",
-        "title": "Хиљаде посјетилаца похрлило Кочићевим Стричићима – обиљежен 61. \"Кочићев збор\"",
-        "url": "https://atvbl.rs/vijesti/banja-luka/hiljade-posjetilaca-pohrlilo-kocicevim-stricicima-obiljezen-61-kocicev-zbor/2337035",
-        "source_id": "RS_ENT_002",
-        "published_at": "2026-08-30T20:37:00Z",
-        "n_items": 3
-      },
-      {
-        "cluster_id": "CL-2026-0250",
-        "title": "Истина о страдању Срба стиже до америчке јавности",
-        "url": "https://www.glassrpske.com/cir/novosti/politika/istina-o-stradanju-srba-stize-do-americke-javnosti/650081",
-        "source_id": "BL_IJ3_003",
-        "published_at": "2026-08-30T00:00:00Z",
-        "n_items": 1
-      },
-      {
-        "cluster_id": "CL-2026-0317",
-        "title": "DA SU IZBORI U SRBIJI SUTRA: Studentska lista na 48,5 odsto, Vučićeva SNS lista na 38,6",
-        "url": "https://6yka.com/region/da-su-izbori-u-srbiji-sutra-studentska-lista-na-485-odsto-vuciceva-sns-lista-na-386",
-        "source_id": "BL_IJ3_005",
-        "published_at": "2026-08-30T16:30:00Z",
-        "n_items": 1
-      }
-    ],
-    "evidence": [
-      "https://atvbl.rs/vijesti/bih/zahtjev-sda-i-df-stvar-politike-a-ne-struke/2337053",
-      "https://atvbl.rs/vijesti/banja-luka/hiljade-posjetilaca-pohrlilo-kocicevim-stricicima-obiljezen-61-kocicev-zbor/2337035",
-      "https://6yka.com/region/da-su-izbori-u-srbiji-sutra-studentska-lista-na-485-odsto-vuciceva-sns-lista-na-386",
-      "https://www.rtrs.tv/vijesti/vijest.php?id=658139",
-      "https://www.glassrpske.com/cir/novosti/politika/istina-o-stradanju-srba-stize-do-americke-javnosti/650081",
-      "https://www.glassrpske.com/cir/novosti/politika/selak-kocicev-duh-zivi-u-svima-nama-borba-za-slobodu-nam-je-urodjena/650043"
-    ]
-  },
-  {
-    "entity_id": "josic",
-    "label": "Danijel Jošić",
-    "mentions_24h": 2,
-    "unique_events_24h": 1,
-    "unique_sources_24h": 2,
-    "baseline_7d": 0.375,
-    "momentum": 4.333,
-    "last_event_at": "2026-08-30T09:00:53Z",
-    "top_events": [
-      {
-        "cluster_id": "CL-2026-0257",
-        "title": "Обиљежен Дан несталих и погинулих у Петрову; Минић: Српска ће јачати своје капацитете да српске жртве не буду узалудне (ФОТО/ВИДЕО)",
-        "url": "https://www.rtrs.tv/vijesti/vijest.php?id=658158",
-        "source_id": "RS_ENT_001",
-        "published_at": "2026-08-30T09:00:53Z",
         "n_items": 2
+      },
+      {
+        "cluster_id": "CL-2026-0328",
+        "title": "DA SU IZBORI U SRBIJI SUTRA: Studentska lista na 48,5 odsto, Vučićeva SNS lista na 38,6",
+        "url": "https://6yka.com/region/da-su-izbori-u-srbiji-sutra-studentska-lista-na-485-odsto-vuciceva-sns-lista-na-386",
+        "source_id": "BL_IJ3_005",
+        "published_at": "2026-08-30T16:30:00Z",
+        "n_items": 1
+      },
+      {
+        "cluster_id": "CL-2026-0341",
+        "title": "Захтјев СДА и ДФ ствар политике, а не струке",
+        "url": "https://atvbl.rs/vijesti/bih/zahtjev-sda-i-df-stvar-politike-a-ne-struke/2337053",
+        "source_id": "RS_ENT_002",
+        "published_at": "2026-08-30T21:40:00Z",
+        "n_items": 1
       }
     ],
     "evidence": [
-      "https://www.rtrs.tv/vijesti/vijest.php?id=658158",
-      "https://www.glassrpske.com/cir/novosti/politika/minic-prisustvuje-parastosu-na-ozrenu-srpska-i-dalje-traga-za-1616-nestalih/650024"
+      "https://atvbl.rs/vijesti/bih/zahtjev-sda-i-df-stvar-politike-a-ne-struke/2337053",
+      "https://atvbl.rs/vijesti/banja-luka/hiljade-posjetilaca-pohrlilo-kocicevim-stricicima-obiljezen-61-kocicev-zbor/2337035",
+      "https://6yka.com/region/da-su-izbori-u-srbiji-sutra-studentska-lista-na-485-odsto-vuciceva-sns-lista-na-386",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=658139"
     ]
   },
   {
@@ -140,12 +70,12 @@
     "mentions_24h": 9,
     "unique_events_24h": 5,
     "unique_sources_24h": 4,
-    "baseline_7d": 2.0,
-    "momentum": 3.5,
+    "baseline_7d": 2.125,
+    "momentum": 3.235,
     "last_event_at": "2026-08-30T21:40:00Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0148",
+        "cluster_id": "CL-2026-0159",
         "title": "Хиљаде посјетилаца похрлило Кочићевим Стричићима – обиљежен 61. \"Кочићев збор\"",
         "url": "https://atvbl.rs/vijesti/banja-luka/hiljade-posjetilaca-pohrlilo-kocicevim-stricicima-obiljezen-61-kocicev-zbor/2337035",
         "source_id": "RS_ENT_002",
@@ -153,7 +83,7 @@
         "n_items": 4
       },
       {
-        "cluster_id": "CL-2026-0283",
+        "cluster_id": "CL-2026-0294",
         "title": "Stevandić opleo po Bošnjacima “PODMUKLI LICEMJERI, mi nismo orgijali na smrti Rasima Delića”",
         "url": "https://banjaluka-24.com/stevandic-opleo-po-bosnjacima-podmukli-licemjeri-mi-nismo-orgijali-na-smrti-rasima-delica",
         "source_id": "BL_IJ3_006",
@@ -161,7 +91,7 @@
         "n_items": 2
       },
       {
-        "cluster_id": "CL-2026-0257",
+        "cluster_id": "CL-2026-0268",
         "title": "Минић: Увијек ћемо се сјећати наших бораца и свих оних који су за Републику Српску дали живот",
         "url": "https://atvbl.rs/vijesti/republika-srpska/minic-uvijek-cemo-se-sjecati-nasih-boraca-i-svih-onih-koji-su-za-republiku-srpsku-dali-zivot/2336837",
         "source_id": "RS_ENT_002",
@@ -182,37 +112,178 @@
     ]
   },
   {
+    "entity_id": "us-sps",
+    "label": "US ↔ SPS",
+    "mentions_24h": 4,
+    "unique_events_24h": 3,
+    "unique_sources_24h": 3,
+    "baseline_7d": 1.125,
+    "momentum": 2.556,
+    "last_event_at": "2026-08-30T21:40:00Z",
+    "top_events": [
+      {
+        "cluster_id": "CL-2026-0159",
+        "title": "Хиљаде посјетилаца похрлило Кочићевим Стричићима – обиљежен 61. \"Кочићев збор\"",
+        "url": "https://atvbl.rs/vijesti/banja-luka/hiljade-posjetilaca-pohrlilo-kocicevim-stricicima-obiljezen-61-kocicev-zbor/2337035",
+        "source_id": "RS_ENT_002",
+        "published_at": "2026-08-30T20:37:00Z",
+        "n_items": 2
+      },
+      {
+        "cluster_id": "CL-2026-0328",
+        "title": "DA SU IZBORI U SRBIJI SUTRA: Studentska lista na 48,5 odsto, Vučićeva SNS lista na 38,6",
+        "url": "https://6yka.com/region/da-su-izbori-u-srbiji-sutra-studentska-lista-na-485-odsto-vuciceva-sns-lista-na-386",
+        "source_id": "BL_IJ3_005",
+        "published_at": "2026-08-30T16:30:00Z",
+        "n_items": 1
+      },
+      {
+        "cluster_id": "CL-2026-0341",
+        "title": "Захтјев СДА и ДФ ствар политике, а не струке",
+        "url": "https://atvbl.rs/vijesti/bih/zahtjev-sda-i-df-stvar-politike-a-ne-struke/2337053",
+        "source_id": "RS_ENT_002",
+        "published_at": "2026-08-30T21:40:00Z",
+        "n_items": 1
+      }
+    ],
+    "evidence": [
+      "https://atvbl.rs/vijesti/bih/zahtjev-sda-i-df-stvar-politike-a-ne-struke/2337053",
+      "https://atvbl.rs/vijesti/banja-luka/hiljade-posjetilaca-pohrlilo-kocicevim-stricicima-obiljezen-61-kocicev-zbor/2337035",
+      "https://6yka.com/region/da-su-izbori-u-srbiji-sutra-studentska-lista-na-485-odsto-vuciceva-sns-lista-na-386",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=658139"
+    ]
+  },
+  {
+    "entity_id": "stanivukovic",
+    "label": "Draško Stanivuković",
+    "mentions_24h": 6,
+    "unique_events_24h": 5,
+    "unique_sources_24h": 3,
+    "baseline_7d": 2.125,
+    "momentum": 1.824,
+    "last_event_at": "2026-08-30T18:09:46Z",
+    "top_events": [
+      {
+        "cluster_id": "CL-2026-0159",
+        "title": "Stanivuković o Petru Kočiću \"Njegova riječ živi među Srbima, gdje god bili\"",
+        "url": "https://srpskainfo.com/banjaluka/stanivukovic-o-petru-kocicu-njegova-rijec-zivi-ma-gdje-god-srpski-narod-bio/",
+        "source_id": "BL_IJ3_001",
+        "published_at": "2026-08-30T13:06:13Z",
+        "n_items": 2
+      },
+      {
+        "cluster_id": "CL-2026-0303",
+        "title": "STANIVUKOVIĆ “Slobodu koju danas živimo dugujemo i njihovoj žrtvi”",
+        "url": "https://banjaluka-24.com/stanivukovic-slobodu-koju-danas-zivimo-dugujemo-i-njihovoj-zrtvi",
+        "source_id": "BL_IJ3_006",
+        "published_at": "2026-08-30T10:16:36Z",
+        "n_items": 1
+      },
+      {
+        "cluster_id": "CL-2026-0266",
+        "title": "BURNO U HAN PIJESKU! Savčić pita zašto nema BORS-a na Saboru boraca",
+        "url": "https://banjaluka-24.com/burno-u-han-pijesku-savcic-pita-zasto-nema-bors-a-na-saboru-boraca",
+        "source_id": "BL_IJ3_006",
+        "published_at": "2026-08-30T13:38:30Z",
+        "n_items": 1
+      }
+    ],
+    "evidence": [
+      "https://www.nezavisne.com/novosti/banjaluka/Banjaluka-dobila-pamp-trek-stazu-FOTO/980171",
+      "https://banjaluka-24.com/vise-od-500-poklona-sutra-centralni-dogadaj-velikog-pocetka-u-banjaluci",
+      "https://banjaluka-24.com/burno-u-han-pijesku-savcic-pita-zasto-nema-bors-a-na-saboru-boraca",
+      "https://srpskainfo.com/banjaluka/stanivukovic-o-petru-kocicu-njegova-rijec-zivi-ma-gdje-god-srpski-narod-bio/",
+      "https://banjaluka-24.com/svecano-i-dostojanstveno-u-stricicima-blanusa-i-stanivukovic-obiljezili-kocicev-zbor",
+      "https://banjaluka-24.com/stanivukovic-slobodu-koju-danas-zivimo-dugujemo-i-njihovoj-zrtvi"
+    ]
+  },
+  {
+    "entity_id": "dns-nps",
+    "label": "DNS · NPS",
+    "mentions_24h": 2,
+    "unique_events_24h": 2,
+    "unique_sources_24h": 2,
+    "baseline_7d": 0.75,
+    "momentum": 1.667,
+    "last_event_at": "2026-08-30T21:40:00Z",
+    "top_events": [
+      {
+        "cluster_id": "CL-2026-0331",
+        "title": "Snježana Karić - Srpskainfo",
+        "url": "https://srpskainfo.com/author/snjezana-karic/",
+        "source_id": "BL_IJ3_001",
+        "published_at": "2026-08-30T19:14:40Z",
+        "n_items": 1
+      },
+      {
+        "cluster_id": "CL-2026-0341",
+        "title": "Захтјев СДА и ДФ ствар политике, а не струке",
+        "url": "https://atvbl.rs/vijesti/bih/zahtjev-sda-i-df-stvar-politike-a-ne-struke/2337053",
+        "source_id": "RS_ENT_002",
+        "published_at": "2026-08-30T21:40:00Z",
+        "n_items": 1
+      }
+    ],
+    "evidence": [
+      "https://atvbl.rs/vijesti/bih/zahtjev-sda-i-df-stvar-politike-a-ne-struke/2337053",
+      "https://srpskainfo.com/author/snjezana-karic/"
+    ]
+  },
+  {
+    "entity_id": "josic",
+    "label": "Danijel Jošić",
+    "mentions_24h": 1,
+    "unique_events_24h": 1,
+    "unique_sources_24h": 1,
+    "baseline_7d": 0.375,
+    "momentum": 1.667,
+    "last_event_at": "2026-08-30T09:00:53Z",
+    "top_events": [
+      {
+        "cluster_id": "CL-2026-0268",
+        "title": "Обиљежен Дан несталих и погинулих у Петрову; Минић: Српска ће јачати своје капацитете да српске жртве не буду узалудне (ФОТО/ВИДЕО)",
+        "url": "https://www.rtrs.tv/vijesti/vijest.php?id=658158",
+        "source_id": "RS_ENT_001",
+        "published_at": "2026-08-30T09:00:53Z",
+        "n_items": 1
+      }
+    ],
+    "evidence": [
+      "https://www.rtrs.tv/vijesti/vijest.php?id=658158"
+    ]
+  },
+  {
     "entity_id": "minic",
     "label": "Savo Minić",
-    "mentions_24h": 21,
-    "unique_events_24h": 10,
-    "unique_sources_24h": 6,
+    "mentions_24h": 16,
+    "unique_events_24h": 8,
+    "unique_sources_24h": 5,
     "baseline_7d": 6.625,
-    "momentum": 2.17,
+    "momentum": 1.415,
     "last_event_at": "2026-08-30T19:23:00Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0255",
-        "title": "Минић: За Републику Српску морамо да наставимо да се боримо",
-        "url": "https://atvbl.rs/vijesti/republika-srpska/minic-za-republiku-srpsku-moramo-da-nastavimo-da-se-borimo/2336894",
-        "source_id": "RS_ENT_002",
-        "published_at": "2026-08-30T14:53:00Z",
-        "n_items": 7
-      },
-      {
-        "cluster_id": "CL-2026-0257",
+        "cluster_id": "CL-2026-0268",
         "title": "У Петрову обиљежен Дан несталих: Мајке немају гдје упалити свијећу",
         "url": "https://atvbl.rs/vijesti/republika-srpska/u-petrovu-obiljezen-dan-nestalih-majke-nemaju-gdje-upaliti-svijecu/2337023",
         "source_id": "RS_ENT_002",
         "published_at": "2026-08-30T19:23:00Z",
-        "n_items": 6
+        "n_items": 5
       },
       {
-        "cluster_id": "CL-2026-0252",
-        "title": "Минић у Козарској Дубици на 25. Купу Српске у гађању летећих мета",
-        "url": "https://www.glassrpske.com/cir/novosti/politika/minic-u-kozarskoj-dubici-na-25-kupu-srpske-u-gadjanju-letecih-meta/650066",
-        "source_id": "BL_IJ3_003",
-        "published_at": "2026-08-30T00:00:00Z",
+        "cluster_id": "CL-2026-0266",
+        "title": "Минић: За Републику Српску морамо да наставимо да се боримо",
+        "url": "https://atvbl.rs/vijesti/republika-srpska/minic-za-republiku-srpsku-moramo-da-nastavimo-da-se-borimo/2336894",
+        "source_id": "RS_ENT_002",
+        "published_at": "2026-08-30T14:53:00Z",
+        "n_items": 5
+      },
+      {
+        "cluster_id": "CL-2026-0276",
+        "title": "Додик: Непријатељи рушили српске светиње желећи да сруше постојање српског народа",
+        "url": "https://atvbl.rs/vijesti/republika-srpska/dodik-neprijatelji-rusili-srpske-svetinje-zeleci-da-sruse-postojanje-srpskog-naroda/2336825",
+        "source_id": "RS_ENT_002",
+        "published_at": "2026-08-30T10:21:05Z",
         "n_items": 1
       }
     ],
@@ -232,35 +303,35 @@
   {
     "entity_id": "predsjednik-rs",
     "label": "Predsjednik RS",
-    "mentions_24h": 17,
-    "unique_events_24h": 6,
-    "unique_sources_24h": 6,
+    "mentions_24h": 12,
+    "unique_events_24h": 4,
+    "unique_sources_24h": 5,
     "baseline_7d": 5.375,
-    "momentum": 2.163,
+    "momentum": 1.233,
     "last_event_at": "2026-08-30T19:23:00Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0255",
-        "title": "Минић: За Републику Српску морамо да наставимо да се боримо",
-        "url": "https://atvbl.rs/vijesti/republika-srpska/minic-za-republiku-srpsku-moramo-da-nastavimo-da-se-borimo/2336894",
-        "source_id": "RS_ENT_002",
-        "published_at": "2026-08-30T14:53:00Z",
-        "n_items": 7
-      },
-      {
-        "cluster_id": "CL-2026-0257",
+        "cluster_id": "CL-2026-0268",
         "title": "У Петрову обиљежен Дан несталих: Мајке немају гдје упалити свијећу",
         "url": "https://atvbl.rs/vijesti/republika-srpska/u-petrovu-obiljezen-dan-nestalih-majke-nemaju-gdje-upaliti-svijecu/2337023",
         "source_id": "RS_ENT_002",
         "published_at": "2026-08-30T19:23:00Z",
-        "n_items": 6
+        "n_items": 5
       },
       {
-        "cluster_id": "CL-2026-0252",
-        "title": "Минић у Козарској Дубици на 25. Купу Српске у гађању летећих мета",
-        "url": "https://www.glassrpske.com/cir/novosti/politika/minic-u-kozarskoj-dubici-na-25-kupu-srpske-u-gadjanju-letecih-meta/650066",
-        "source_id": "BL_IJ3_003",
-        "published_at": "2026-08-30T00:00:00Z",
+        "cluster_id": "CL-2026-0266",
+        "title": "Минић: За Републику Српску морамо да наставимо да се боримо",
+        "url": "https://atvbl.rs/vijesti/republika-srpska/minic-za-republiku-srpsku-moramo-da-nastavimo-da-se-borimo/2336894",
+        "source_id": "RS_ENT_002",
+        "published_at": "2026-08-30T14:53:00Z",
+        "n_items": 5
+      },
+      {
+        "cluster_id": "CL-2026-0186",
+        "title": "VIJESTI Archives - RTV Doboj",
+        "url": "https://rtvdoboj.org/category/vijesti/",
+        "source_id": "RS_IJ_014",
+        "published_at": "2026-08-30T12:48:27Z",
         "n_items": 1
       }
     ],
@@ -278,57 +349,45 @@
     ]
   },
   {
-    "entity_id": "stanivukovic",
-    "label": "Draško Stanivuković",
-    "mentions_24h": 6,
-    "unique_events_24h": 5,
-    "unique_sources_24h": 3,
-    "baseline_7d": 2.0,
-    "momentum": 2.0,
-    "last_event_at": "2026-08-30T18:09:46Z",
+    "entity_id": "sds",
+    "label": "SDS",
+    "mentions_24h": 2,
+    "unique_events_24h": 2,
+    "unique_sources_24h": 2,
+    "baseline_7d": 1.0,
+    "momentum": 1.0,
+    "last_event_at": "2026-08-30T16:48:52Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0148",
-        "title": "Stanivuković o Petru Kočiću \"Njegova riječ živi među Srbima, gdje god bili\"",
-        "url": "https://srpskainfo.com/banjaluka/stanivukovic-o-petru-kocicu-njegova-rijec-zivi-ma-gdje-god-srpski-narod-bio/",
-        "source_id": "BL_IJ3_001",
-        "published_at": "2026-08-30T13:06:13Z",
-        "n_items": 2
-      },
-      {
-        "cluster_id": "CL-2026-0292",
-        "title": "STANIVUKOVIĆ “Slobodu koju danas živimo dugujemo i njihovoj žrtvi”",
-        "url": "https://banjaluka-24.com/stanivukovic-slobodu-koju-danas-zivimo-dugujemo-i-njihovoj-zrtvi",
+        "cluster_id": "CL-2026-0159",
+        "title": "SVEČANO I DOSTOJANSTVENO U STRIČIĆIMA! Blanuša i Stanivuković obilježili Kočićev zbor",
+        "url": "https://banjaluka-24.com/svecano-i-dostojanstveno-u-stricicima-blanusa-i-stanivukovic-obiljezili-kocicev-zbor",
         "source_id": "BL_IJ3_006",
-        "published_at": "2026-08-30T10:16:36Z",
+        "published_at": "2026-08-30T12:45:10Z",
         "n_items": 1
       },
       {
-        "cluster_id": "CL-2026-0255",
-        "title": "BURNO U HAN PIJESKU! Savčić pita zašto nema BORS-a na Saboru boraca",
-        "url": "https://banjaluka-24.com/burno-u-han-pijesku-savcic-pita-zasto-nema-bors-a-na-saboru-boraca",
-        "source_id": "BL_IJ3_006",
-        "published_at": "2026-08-30T13:38:30Z",
+        "cluster_id": "CL-2026-0329",
+        "title": "Boris Knežević - Srpskainfo",
+        "url": "https://srpskainfo.com/author/knez/",
+        "source_id": "BL_IJ3_001",
+        "published_at": "2026-08-30T16:48:52Z",
         "n_items": 1
       }
     ],
     "evidence": [
-      "https://www.nezavisne.com/novosti/banjaluka/Banjaluka-dobila-pamp-trek-stazu-FOTO/980171",
-      "https://banjaluka-24.com/vise-od-500-poklona-sutra-centralni-dogadaj-velikog-pocetka-u-banjaluci",
-      "https://banjaluka-24.com/burno-u-han-pijesku-savcic-pita-zasto-nema-bors-a-na-saboru-boraca",
-      "https://srpskainfo.com/banjaluka/stanivukovic-o-petru-kocicu-njegova-rijec-zivi-ma-gdje-god-srpski-narod-bio/",
-      "https://banjaluka-24.com/svecano-i-dostojanstveno-u-stricicima-blanusa-i-stanivukovic-obiljezili-kocicev-zbor",
-      "https://banjaluka-24.com/stanivukovic-slobodu-koju-danas-zivimo-dugujemo-i-njihovoj-zrtvi"
+      "https://srpskainfo.com/author/knez/",
+      "https://banjaluka-24.com/svecano-i-dostojanstveno-u-stricicima-blanusa-i-stanivukovic-obiljezili-kocicev-zbor"
     ]
   },
   {
     "entity_id": "beograd",
     "label": "Beograd / Srbija",
-    "mentions_24h": 13,
-    "unique_events_24h": 10,
-    "unique_sources_24h": 6,
-    "baseline_7d": 4.875,
-    "momentum": 1.667,
+    "mentions_24h": 10,
+    "unique_events_24h": 7,
+    "unique_sources_24h": 5,
+    "baseline_7d": 5.125,
+    "momentum": 0.951,
     "last_event_at": "2026-08-30T19:30:00Z",
     "top_events": [
       {
@@ -340,7 +399,7 @@
         "n_items": 3
       },
       {
-        "cluster_id": "CL-2026-0289",
+        "cluster_id": "CL-2026-0300",
         "title": "Вучић: Расим Делић је био зликовац, чији су муџахедини одсијецали главе Србима",
         "url": "https://www.rtrs.tv/vijesti/vijest.php?id=658161",
         "source_id": "RS_ENT_001",
@@ -348,11 +407,11 @@
         "n_items": 2
       },
       {
-        "cluster_id": "CL-2026-0215",
-        "title": "Хаг породицу генерала Младића држи у неизвјесности",
-        "url": "https://www.glassrpske.com/cir/novosti/politika/hag-porodicu-generala-mladica-drzi-u-neizvjesnosti/650077",
-        "source_id": "BL_IJ3_003",
-        "published_at": "2026-08-30T00:00:00Z",
+        "cluster_id": "CL-2026-0297",
+        "title": "Вучић: За мање од двије године отворили смо 212 километара ауто-путева и брзих саобраћајница (ВИДЕО)",
+        "url": "https://www.rtrs.tv/vijesti/vijest.php?id=658154",
+        "source_id": "RS_ENT_001",
+        "published_at": "2026-08-30T08:48:27Z",
         "n_items": 1
       }
     ],
@@ -370,70 +429,6 @@
     ]
   },
   {
-    "entity_id": "dns-nps",
-    "label": "DNS · NPS",
-    "mentions_24h": 2,
-    "unique_events_24h": 2,
-    "unique_sources_24h": 2,
-    "baseline_7d": 0.75,
-    "momentum": 1.667,
-    "last_event_at": "2026-08-30T21:40:00Z",
-    "top_events": [
-      {
-        "cluster_id": "CL-2026-0320",
-        "title": "Snježana Karić - Srpskainfo",
-        "url": "https://srpskainfo.com/author/snjezana-karic/",
-        "source_id": "BL_IJ3_001",
-        "published_at": "2026-08-30T19:14:40Z",
-        "n_items": 1
-      },
-      {
-        "cluster_id": "CL-2026-0330",
-        "title": "Захтјев СДА и ДФ ствар политике, а не струке",
-        "url": "https://atvbl.rs/vijesti/bih/zahtjev-sda-i-df-stvar-politike-a-ne-struke/2337053",
-        "source_id": "RS_ENT_002",
-        "published_at": "2026-08-30T21:40:00Z",
-        "n_items": 1
-      }
-    ],
-    "evidence": [
-      "https://atvbl.rs/vijesti/bih/zahtjev-sda-i-df-stvar-politike-a-ne-struke/2337053",
-      "https://srpskainfo.com/author/snjezana-karic/"
-    ]
-  },
-  {
-    "entity_id": "sds",
-    "label": "SDS",
-    "mentions_24h": 2,
-    "unique_events_24h": 2,
-    "unique_sources_24h": 2,
-    "baseline_7d": 1.0,
-    "momentum": 1.0,
-    "last_event_at": "2026-08-30T16:48:52Z",
-    "top_events": [
-      {
-        "cluster_id": "CL-2026-0148",
-        "title": "SVEČANO I DOSTOJANSTVENO U STRIČIĆIMA! Blanuša i Stanivuković obilježili Kočićev zbor",
-        "url": "https://banjaluka-24.com/svecano-i-dostojanstveno-u-stricicima-blanusa-i-stanivukovic-obiljezili-kocicev-zbor",
-        "source_id": "BL_IJ3_006",
-        "published_at": "2026-08-30T12:45:10Z",
-        "n_items": 1
-      },
-      {
-        "cluster_id": "CL-2026-0318",
-        "title": "Boris Knežević - Srpskainfo",
-        "url": "https://srpskainfo.com/author/knez/",
-        "source_id": "BL_IJ3_001",
-        "published_at": "2026-08-30T16:48:52Z",
-        "n_items": 1
-      }
-    ],
-    "evidence": [
-      "https://srpskainfo.com/author/knez/",
-      "https://banjaluka-24.com/svecano-i-dostojanstveno-u-stricicima-blanusa-i-stanivukovic-obiljezili-kocicev-zbor"
-    ]
-  },
-  {
     "entity_id": "opozicija",
     "label": "Opozicija · odnosi",
     "mentions_24h": 4,
@@ -444,7 +439,7 @@
     "last_event_at": "2026-08-30T16:48:52Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0292",
+        "cluster_id": "CL-2026-0303",
         "title": "STANIVUKOVIĆ “Slobodu koju danas živimo dugujemo i njihovoj žrtvi”",
         "url": "https://banjaluka-24.com/stanivukovic-slobodu-koju-danas-zivimo-dugujemo-i-njihovoj-zrtvi",
         "source_id": "BL_IJ3_006",
@@ -452,7 +447,7 @@
         "n_items": 1
       },
       {
-        "cluster_id": "CL-2026-0148",
+        "cluster_id": "CL-2026-0159",
         "title": "SVEČANO I DOSTOJANSTVENO U STRIČIĆIMA! Blanuša i Stanivuković obilježili Kočićev zbor",
         "url": "https://banjaluka-24.com/svecano-i-dostojanstveno-u-stricicima-blanusa-i-stanivukovic-obiljezili-kocicev-zbor",
         "source_id": "BL_IJ3_006",
@@ -460,7 +455,7 @@
         "n_items": 1
       },
       {
-        "cluster_id": "CL-2026-0255",
+        "cluster_id": "CL-2026-0266",
         "title": "BURNO U HAN PIJESKU! Savčić pita zašto nema BORS-a na Saboru boraca",
         "url": "https://banjaluka-24.com/burno-u-han-pijesku-savcic-pita-zasto-nema-bors-a-na-saboru-boraca",
         "source_id": "BL_IJ3_006",
@@ -478,11 +473,11 @@
   {
     "entity_id": "snsd",
     "label": "SNSD",
-    "mentions_24h": 14,
-    "unique_events_24h": 12,
-    "unique_sources_24h": 8,
-    "baseline_7d": 8.25,
-    "momentum": 0.697,
+    "mentions_24h": 13,
+    "unique_events_24h": 11,
+    "unique_sources_24h": 7,
+    "baseline_7d": 8.5,
+    "momentum": 0.529,
     "last_event_at": "2026-08-30T21:06:00Z",
     "top_events": [
       {
@@ -494,19 +489,19 @@
         "n_items": 3
       },
       {
-        "cluster_id": "CL-2026-0266",
-        "title": "На данашњи дан почела НАТО агресија на Српску",
-        "url": "https://www.glassrpske.com/cir/magazin/istorija/na-danasnji-dan-pocela-nato-agresija-na-srpsku/650018",
-        "source_id": "BL_IJ3_003",
-        "published_at": "2026-08-30T00:00:00Z",
-        "n_items": 1
-      },
-      {
-        "cluster_id": "CL-2026-0274",
+        "cluster_id": "CL-2026-0285",
         "title": "Додик: СНСД има четири јасна циља који су важни за будућност Републике Српске",
         "url": "https://www.rtrs.tv/vijesti/vijest.php?id=658131",
         "source_id": "RS_ENT_001",
         "published_at": "2026-08-30T06:00:05Z",
+        "n_items": 1
+      },
+      {
+        "cluster_id": "CL-2026-0276",
+        "title": "Додик у манастиру Карановац присуствовао освештању звона",
+        "url": "https://atvbl.rs/vijesti/republika-srpska/dodik-u-manastiru-karanovac-prisustvovao-osvestanju-zvona/2336792",
+        "source_id": "RS_ENT_002",
+        "published_at": "2026-08-30T07:45:36Z",
         "n_items": 1
       }
     ],
@@ -521,16 +516,61 @@
       "https://atvbl.rs/vijesti/gradovi-i-opstine/igor-dodik-i-srdjan-amidzic-na-zijemljima-obisli-pocetak-radova-na-asfaltiranju-puta/2336780",
       "https://atvbl.rs/vijesti/republika-srpska/dodik-u-manastiru-karanovac-prisustvovao-osvestanju-zvona/2336792",
       "https://www.frontal.ba/kategorija/featured/"
+    ]
+  },
+  {
+    "entity_id": "banjaluka",
+    "label": "Banja Luka",
+    "mentions_24h": 7,
+    "unique_events_24h": 7,
+    "unique_sources_24h": 4,
+    "baseline_7d": 4.625,
+    "momentum": 0.514,
+    "last_event_at": "2026-08-30T20:55:00Z",
+    "top_events": [
+      {
+        "cluster_id": "CL-2026-0004",
+        "title": "I narednih dana nas očekuju vrućine u BiH: Temperature i do 39 °C, tek ponegdje mogući pljuskovi",
+        "url": "https://www.klix.ba/vijesti/bih/i-narednih-dana-nas-ocekuju-vrucine-u-bih-temperature-i-do-39-c-tek-ponegdje-moguci-pljuskovi/260830024",
+        "source_id": "FBIH_001",
+        "published_at": "2026-08-30T06:56:00Z",
+        "n_items": 1
+      },
+      {
+        "cluster_id": "CL-2026-0313",
+        "title": "Направите природни освјеживач за ормар помоћу само два састојка",
+        "url": "https://atvbl.rs/magazin/savjeti/napravite-prirodni-osvjezivac-za-ormar-pomocu-samo-dva-sastojka/2336912",
+        "source_id": "RS_ENT_002",
+        "published_at": "2026-08-30T13:28:53Z",
+        "n_items": 1
+      },
+      {
+        "cluster_id": "CL-2026-0316",
+        "title": "VIŠE OD 500 POKLONA! Sutra centralni događaj „Velikog početka“ u Banjaluci",
+        "url": "https://banjaluka-24.com/vise-od-500-poklona-sutra-centralni-dogadaj-velikog-pocetka-u-banjaluci",
+        "source_id": "BL_IJ3_006",
+        "published_at": "2026-08-30T14:00:59Z",
+        "n_items": 1
+      }
+    ],
+    "evidence": [
+      "https://atvbl.rs/vijesti/svijet/ukrao-avion-i-krenuo-prema-nuklearki/2337041",
+      "https://www.klix.ba/biznis/investicije/obisli-smo-radove-na-dijelu-xii-transverzale-u-sarajevu-pogledajte-kako-izgleda-cesta-koja-ce-spajati-stup-i-aerodrom/260830102",
+      "https://atvbl.rs/vijesti/banja-luka/ovi-dijelovi-banjaluke-sutra-ostaju-bez-struje-31/2336903",
+      "https://micromreza.com/kategorije/vijesti/drustvo/",
+      "https://banjaluka-24.com/vise-od-500-poklona-sutra-centralni-dogadaj-velikog-pocetka-u-banjaluci",
+      "https://atvbl.rs/magazin/savjeti/napravite-prirodni-osvjezivac-za-ormar-pomocu-samo-dva-sastojka/2336912",
+      "https://www.klix.ba/vijesti/bih/i-narednih-dana-nas-ocekuju-vrucine-u-bih-temperature-i-do-39-c-tek-ponegdje-moguci-pljuskovi/260830024"
     ]
   },
   {
     "entity_id": "us-snsd",
     "label": "US ↔ SNSD",
-    "mentions_24h": 14,
-    "unique_events_24h": 12,
-    "unique_sources_24h": 8,
-    "baseline_7d": 8.375,
-    "momentum": 0.672,
+    "mentions_24h": 13,
+    "unique_events_24h": 11,
+    "unique_sources_24h": 7,
+    "baseline_7d": 8.625,
+    "momentum": 0.507,
     "last_event_at": "2026-08-30T21:06:00Z",
     "top_events": [
       {
@@ -542,19 +582,19 @@
         "n_items": 3
       },
       {
-        "cluster_id": "CL-2026-0266",
-        "title": "На данашњи дан почела НАТО агресија на Српску",
-        "url": "https://www.glassrpske.com/cir/magazin/istorija/na-danasnji-dan-pocela-nato-agresija-na-srpsku/650018",
-        "source_id": "BL_IJ3_003",
-        "published_at": "2026-08-30T00:00:00Z",
-        "n_items": 1
-      },
-      {
-        "cluster_id": "CL-2026-0274",
+        "cluster_id": "CL-2026-0285",
         "title": "Додик: СНСД има четири јасна циља који су важни за будућност Републике Српске",
         "url": "https://www.rtrs.tv/vijesti/vijest.php?id=658131",
         "source_id": "RS_ENT_001",
         "published_at": "2026-08-30T06:00:05Z",
+        "n_items": 1
+      },
+      {
+        "cluster_id": "CL-2026-0276",
+        "title": "Додик у манастиру Карановац присуствовао освештању звона",
+        "url": "https://atvbl.rs/vijesti/republika-srpska/dodik-u-manastiru-karanovac-prisustvovao-osvestanju-zvona/2336792",
+        "source_id": "RS_ENT_002",
+        "published_at": "2026-08-30T07:45:36Z",
         "n_items": 1
       }
     ],
@@ -572,22 +612,54 @@
     ]
   },
   {
-    "entity_id": "dodik",
-    "label": "Milorad Dodik",
-    "mentions_24h": 25,
-    "unique_events_24h": 18,
-    "unique_sources_24h": 9,
-    "baseline_7d": 15.0,
-    "momentum": 0.667,
-    "last_event_at": "2026-08-30T21:25:13Z",
+    "entity_id": "mediji",
+    "label": "Medijski signal",
+    "mentions_24h": 2,
+    "unique_events_24h": 2,
+    "unique_sources_24h": 2,
+    "baseline_7d": 1.375,
+    "momentum": 0.455,
+    "last_event_at": "2026-08-30T14:13:09Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0265",
-        "title": "Освештана звона у манастиру Крановац из периода Стефана Драгутина",
-        "url": "https://atvbl.rs/vijesti/gradovi-i-opstine/osvestana-zvona-u-manastiru-kranovac-iz-perioda-stefana-dragutina/2337032",
-        "source_id": "RS_ENT_002",
-        "published_at": "2026-08-30T19:34:53Z",
-        "n_items": 5
+        "cluster_id": "CL-2026-0284",
+        "title": "Пуцњава на журци у Швајцарској, има жртава (ВИДЕО)",
+        "url": "https://www.rtrs.tv/vijesti/vijest.php?id=658130",
+        "source_id": "RS_ENT_001",
+        "published_at": "2026-08-30T05:54:39Z",
+        "n_items": 1
+      },
+      {
+        "cluster_id": "CL-2026-0319",
+        "title": "Sedmero poginulih prilikom prevrtanja putničkog broda s 267 ljudi kod Sjevernog Kipra",
+        "url": "https://n1info.ba/svijet/sedmero-poginulih-prilikom-prevrtanja-putnickog-broda-s-267-ljudi-kod-sjevernog-kipra",
+        "source_id": "SRC_009",
+        "published_at": "2026-08-30T14:13:09Z",
+        "n_items": 1
+      }
+    ],
+    "evidence": [
+      "https://n1info.ba/svijet/sedmero-poginulih-prilikom-prevrtanja-putnickog-broda-s-267-ljudi-kod-sjevernog-kipra",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=658130"
+    ]
+  },
+  {
+    "entity_id": "ij5-konkurencija",
+    "label": "IJ5 · borba za mandat",
+    "mentions_24h": 39,
+    "unique_events_24h": 31,
+    "unique_sources_24h": 10,
+    "baseline_7d": 27.125,
+    "momentum": 0.438,
+    "last_event_at": "2026-08-31T00:04:30Z",
+    "top_events": [
+      {
+        "cluster_id": "CL-2026-0186",
+        "title": "DOBOJ Archives - RTV Doboj",
+        "url": "https://rtvdoboj.org/category/doboj/",
+        "source_id": "RS_IJ_014",
+        "published_at": "2026-08-30T16:00:00Z",
+        "n_items": 3
       },
       {
         "cluster_id": "CL-2026-0011",
@@ -598,7 +670,55 @@
         "n_items": 3
       },
       {
-        "cluster_id": "CL-2026-0257",
+        "cluster_id": "CL-2026-0180",
+        "title": "SERVISNE INFORMACIJE Archives - RTV Doboj",
+        "url": "https://rtvdoboj.org/category/servisne-informacije/",
+        "source_id": "RS_IJ_014",
+        "published_at": "2026-08-30T12:53:05Z",
+        "n_items": 2
+      }
+    ],
+    "evidence": [
+      "https://rtvdoboj.org/snimljen-novi-elektricni-vw-tiguan-potpuno-drugaciji-od-ostalih",
+      "https://rtvdoboj.org/samsung-odustao-od-ogromne-baterije-za-novi-ultra-sta-je-razlog",
+      "https://rtvdoboj.org/anker-puni-sve-odjednom-ali-kupci-imaju-jednu-veliku-zamjerku",
+      "https://rtvdoboj.org/borove-iglice-pomijesajte-sa-solju-i-dobicete-trik-za-3-problema-u-kuci",
+      "https://rtvdoboj.org/kada-je-najbolje-vrijeme-za-pravljenje-tursije",
+      "https://rtvdoboj.org/studija-pokazala-koje-bolesti-i-povrede-postaju-ucestalije-tokom-velikih-vrucina",
+      "https://rtvdoboj.org/moze-li-krckanje-prstiju-da-bude-stetno",
+      "https://srpskainfo.com/author/sanja-dragic/",
+      "https://zvornicki.ba/t/bijeljina/",
+      "https://www.klix.ba/vijesti/bih/crnadak-zabrinjavaju-me-poruke-iz-sarajeva-srpske-zrtve-su-manje-a-bosnjacki-generali-su-heroji/260830124"
+    ]
+  },
+  {
+    "entity_id": "dodik",
+    "label": "Milorad Dodik",
+    "mentions_24h": 22,
+    "unique_events_24h": 16,
+    "unique_sources_24h": 8,
+    "baseline_7d": 15.625,
+    "momentum": 0.408,
+    "last_event_at": "2026-08-30T21:25:13Z",
+    "top_events": [
+      {
+        "cluster_id": "CL-2026-0276",
+        "title": "Освештана звона у манастиру Крановац из периода Стефана Драгутина",
+        "url": "https://atvbl.rs/vijesti/gradovi-i-opstine/osvestana-zvona-u-manastiru-kranovac-iz-perioda-stefana-dragutina/2337032",
+        "source_id": "RS_ENT_002",
+        "published_at": "2026-08-30T19:34:53Z",
+        "n_items": 4
+      },
+      {
+        "cluster_id": "CL-2026-0011",
+        "title": "Featured Archives – Frontal",
+        "url": "https://www.frontal.ba/kategorija/featured/",
+        "source_id": "BL_IJ3_004",
+        "published_at": "2026-08-30T07:03:29Z",
+        "n_items": 3
+      },
+      {
+        "cluster_id": "CL-2026-0268",
         "title": "У Петрову обиљежен Дан несталих: Мајке немају гдје упалити свијећу",
         "url": "https://atvbl.rs/vijesti/republika-srpska/u-petrovu-obiljezen-dan-nestalih-majke-nemaju-gdje-upaliti-svijecu/2337023",
         "source_id": "RS_ENT_002",
@@ -620,35 +740,51 @@
     ]
   },
   {
-    "entity_id": "mediji",
-    "label": "Medijski signal",
-    "mentions_24h": 2,
-    "unique_events_24h": 2,
-    "unique_sources_24h": 2,
-    "baseline_7d": 1.25,
-    "momentum": 0.6,
-    "last_event_at": "2026-08-30T14:13:09Z",
+    "entity_id": "doboj",
+    "label": "Doboj",
+    "mentions_24h": 25,
+    "unique_events_24h": 20,
+    "unique_sources_24h": 8,
+    "baseline_7d": 18.125,
+    "momentum": 0.379,
+    "last_event_at": "2026-08-31T00:04:30Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0273",
-        "title": "Пуцњава на журци у Швајцарској, има жртава (ВИДЕО)",
-        "url": "https://www.rtrs.tv/vijesti/vijest.php?id=658130",
-        "source_id": "RS_ENT_001",
-        "published_at": "2026-08-30T05:54:39Z",
-        "n_items": 1
+        "cluster_id": "CL-2026-0186",
+        "title": "DOBOJ Archives - RTV Doboj",
+        "url": "https://rtvdoboj.org/category/doboj/",
+        "source_id": "RS_IJ_014",
+        "published_at": "2026-08-30T16:00:00Z",
+        "n_items": 3
       },
       {
-        "cluster_id": "CL-2026-0308",
-        "title": "Sedmero poginulih prilikom prevrtanja putničkog broda s 267 ljudi kod Sjevernog Kipra",
-        "url": "https://n1info.ba/svijet/sedmero-poginulih-prilikom-prevrtanja-putnickog-broda-s-267-ljudi-kod-sjevernog-kipra",
-        "source_id": "SRC_009",
-        "published_at": "2026-08-30T14:13:09Z",
-        "n_items": 1
+        "cluster_id": "CL-2026-0180",
+        "title": "SERVISNE INFORMACIJE Archives - RTV Doboj",
+        "url": "https://rtvdoboj.org/category/servisne-informacije/",
+        "source_id": "RS_IJ_014",
+        "published_at": "2026-08-30T12:53:05Z",
+        "n_items": 2
+      },
+      {
+        "cluster_id": "CL-2026-0213",
+        "title": "RASVIJETLJEN POŽAR U DOBOJU: Poznat identitet osumnjičenog za uništavanje vozila",
+        "url": "https://glasregije.net/rasvijetljen-pozar-u-doboju-poznat-identitet-osumnjicenog-za-unistavanje-vozila/60434",
+        "source_id": "RS_IJ_012",
+        "published_at": "2026-08-30T16:00:29Z",
+        "n_items": 2
       }
     ],
     "evidence": [
-      "https://n1info.ba/svijet/sedmero-poginulih-prilikom-prevrtanja-putnickog-broda-s-267-ljudi-kod-sjevernog-kipra",
-      "https://www.rtrs.tv/vijesti/vijest.php?id=658130"
+      "https://rtvdoboj.org/snimljen-novi-elektricni-vw-tiguan-potpuno-drugaciji-od-ostalih",
+      "https://rtvdoboj.org/samsung-odustao-od-ogromne-baterije-za-novi-ultra-sta-je-razlog",
+      "https://rtvdoboj.org/anker-puni-sve-odjednom-ali-kupci-imaju-jednu-veliku-zamjerku",
+      "https://rtvdoboj.org/borove-iglice-pomijesajte-sa-solju-i-dobicete-trik-za-3-problema-u-kuci",
+      "https://rtvdoboj.org/kada-je-najbolje-vrijeme-za-pravljenje-tursije",
+      "https://rtvdoboj.org/studija-pokazala-koje-bolesti-i-povrede-postaju-ucestalije-tokom-velikih-vrucina",
+      "https://rtvdoboj.org/moze-li-krckanje-prstiju-da-bude-stetno",
+      "https://srpskainfo.com/author/sanja-dragic/",
+      "https://zvornicki.ba/t/bijeljina/",
+      "https://atvbl.rs/vijesti/gradovi-i-opstine/heroji-se-bore-do-posljednjeg-atoma-primjer-iz-trebinja-je-dokaz-za-to/2337005"
     ]
   },
   {
@@ -657,12 +793,12 @@
     "mentions_24h": 1,
     "unique_events_24h": 1,
     "unique_sources_24h": 1,
-    "baseline_7d": 0.625,
-    "momentum": 0.6,
+    "baseline_7d": 0.875,
+    "momentum": 0.143,
     "last_event_at": "2026-08-30T16:30:00Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0317",
+        "cluster_id": "CL-2026-0328",
         "title": "DA SU IZBORI U SRBIJI SUTRA: Studentska lista na 48,5 odsto, Vučićeva SNS lista na 38,6",
         "url": "https://6yka.com/region/da-su-izbori-u-srbiji-sutra-studentska-lista-na-485-odsto-vuciceva-sns-lista-na-386",
         "source_id": "BL_IJ3_005",
@@ -675,158 +811,17 @@
     ]
   },
   {
-    "entity_id": "banjaluka",
-    "label": "Banja Luka",
-    "mentions_24h": 7,
-    "unique_events_24h": 7,
-    "unique_sources_24h": 4,
-    "baseline_7d": 4.5,
-    "momentum": 0.556,
-    "last_event_at": "2026-08-30T20:55:00Z",
-    "top_events": [
-      {
-        "cluster_id": "CL-2026-0004",
-        "title": "I narednih dana nas očekuju vrućine u BiH: Temperature i do 39 °C, tek ponegdje mogući pljuskovi",
-        "url": "https://www.klix.ba/vijesti/bih/i-narednih-dana-nas-ocekuju-vrucine-u-bih-temperature-i-do-39-c-tek-ponegdje-moguci-pljuskovi/260830024",
-        "source_id": "FBIH_001",
-        "published_at": "2026-08-30T06:56:00Z",
-        "n_items": 1
-      },
-      {
-        "cluster_id": "CL-2026-0302",
-        "title": "Направите природни освјеживач за ормар помоћу само два састојка",
-        "url": "https://atvbl.rs/magazin/savjeti/napravite-prirodni-osvjezivac-za-ormar-pomocu-samo-dva-sastojka/2336912",
-        "source_id": "RS_ENT_002",
-        "published_at": "2026-08-30T13:28:53Z",
-        "n_items": 1
-      },
-      {
-        "cluster_id": "CL-2026-0305",
-        "title": "VIŠE OD 500 POKLONA! Sutra centralni događaj „Velikog početka“ u Banjaluci",
-        "url": "https://banjaluka-24.com/vise-od-500-poklona-sutra-centralni-dogadaj-velikog-pocetka-u-banjaluci",
-        "source_id": "BL_IJ3_006",
-        "published_at": "2026-08-30T14:00:59Z",
-        "n_items": 1
-      }
-    ],
-    "evidence": [
-      "https://atvbl.rs/vijesti/svijet/ukrao-avion-i-krenuo-prema-nuklearki/2337041",
-      "https://www.klix.ba/biznis/investicije/obisli-smo-radove-na-dijelu-xii-transverzale-u-sarajevu-pogledajte-kako-izgleda-cesta-koja-ce-spajati-stup-i-aerodrom/260830102",
-      "https://atvbl.rs/vijesti/banja-luka/ovi-dijelovi-banjaluke-sutra-ostaju-bez-struje-31/2336903",
-      "https://micromreza.com/kategorije/vijesti/drustvo/",
-      "https://banjaluka-24.com/vise-od-500-poklona-sutra-centralni-dogadaj-velikog-pocetka-u-banjaluci",
-      "https://atvbl.rs/magazin/savjeti/napravite-prirodni-osvjezivac-za-ormar-pomocu-samo-dva-sastojka/2336912",
-      "https://www.klix.ba/vijesti/bih/i-narednih-dana-nas-ocekuju-vrucine-u-bih-temperature-i-do-39-c-tek-ponegdje-moguci-pljuskovi/260830024"
-    ]
-  },
-  {
-    "entity_id": "ij5-konkurencija",
-    "label": "IJ5 · borba za mandat",
-    "mentions_24h": 39,
-    "unique_events_24h": 27,
-    "unique_sources_24h": 11,
-    "baseline_7d": 25.75,
-    "momentum": 0.515,
-    "last_event_at": "2026-08-30T23:32:09Z",
-    "top_events": [
-      {
-        "cluster_id": "CL-2026-0257",
-        "title": "DOBOJ: Filipović: Potražuje se još 13 lica",
-        "url": "https://rtvdoboj.org/doboj-filipovic-potrazuje-se-jos-13-lica",
-        "source_id": "RS_IJ_014",
-        "published_at": "2026-08-30T12:27:39Z",
-        "n_items": 3
-      },
-      {
-        "cluster_id": "CL-2026-0169",
-        "title": "SERVISNE INFORMACIJE Archives - RTV Doboj",
-        "url": "https://rtvdoboj.org/category/servisne-informacije/",
-        "source_id": "RS_IJ_014",
-        "published_at": "2026-08-30T12:53:05Z",
-        "n_items": 3
-      },
-      {
-        "cluster_id": "CL-2026-0232",
-        "title": "Пожари на више локација у околини Требиња и даље активни, али ситуација је стабилна (ФОТО/ВИДЕО)",
-        "url": "https://www.rtrs.tv/vijesti/vijest.php?id=658207",
-        "source_id": "RS_ENT_001",
-        "published_at": "2026-08-30T16:56:20Z",
-        "n_items": 3
-      }
-    ],
-    "evidence": [
-      "https://srpskainfo.com/author/sanja-dragic/",
-      "https://zvornicki.ba/t/bijeljina/",
-      "https://www.klix.ba/vijesti/bih/crnadak-zabrinjavaju-me-poruke-iz-sarajeva-srpske-zrtve-su-manje-a-bosnjacki-generali-su-heroji/260830124",
-      "https://atvbl.rs/vijesti/gradovi-i-opstine/heroji-se-bore-do-posljednjeg-atoma-primjer-iz-trebinja-je-dokaz-za-to/2337005",
-      "https://atvbl.rs/vijesti/gradovi-i-opstine/ognjiste-ne-zaboravljaju-sabor-na-zijemljima-i-novi-put-ka-nevesinju/2337038",
-      "https://srpskainfo.com/author/snjezana-karic/",
-      "https://www.rtrs.tv/vijesti/vijest.php?id=658207",
-      "https://srpskainfo.com/author/knez/",
-      "https://glasregije.net/rasvijetljen-pozar-u-doboju-poznat-identitet-osumnjicenog-za-unistavanje-vozila/60434",
-      "https://rtvdoboj.org/category/doboj/"
-    ]
-  },
-  {
-    "entity_id": "doboj",
-    "label": "Doboj",
-    "mentions_24h": 22,
-    "unique_events_24h": 14,
-    "unique_sources_24h": 9,
-    "baseline_7d": 17.125,
-    "momentum": 0.285,
-    "last_event_at": "2026-08-30T23:32:09Z",
-    "top_events": [
-      {
-        "cluster_id": "CL-2026-0169",
-        "title": "SERVISNE INFORMACIJE Archives - RTV Doboj",
-        "url": "https://rtvdoboj.org/category/servisne-informacije/",
-        "source_id": "RS_IJ_014",
-        "published_at": "2026-08-30T12:53:05Z",
-        "n_items": 3
-      },
-      {
-        "cluster_id": "CL-2026-0232",
-        "title": "Пожари на више локација у околини Требиња и даље активни, али ситуација је стабилна (ФОТО/ВИДЕО)",
-        "url": "https://www.rtrs.tv/vijesti/vijest.php?id=658207",
-        "source_id": "RS_ENT_001",
-        "published_at": "2026-08-30T16:56:20Z",
-        "n_items": 3
-      },
-      {
-        "cluster_id": "CL-2026-0175",
-        "title": "DOBOJ Archives - RTV Doboj",
-        "url": "https://rtvdoboj.org/category/doboj/",
-        "source_id": "RS_IJ_014",
-        "published_at": "2026-08-30T16:00:00Z",
-        "n_items": 3
-      }
-    ],
-    "evidence": [
-      "https://srpskainfo.com/author/sanja-dragic/",
-      "https://zvornicki.ba/t/bijeljina/",
-      "https://atvbl.rs/vijesti/gradovi-i-opstine/heroji-se-bore-do-posljednjeg-atoma-primjer-iz-trebinja-je-dokaz-za-to/2337005",
-      "https://www.rtrs.tv/vijesti/vijest.php?id=658207",
-      "https://glasregije.net/rasvijetljen-pozar-u-doboju-poznat-identitet-osumnjicenog-za-unistavanje-vozila/60434",
-      "https://rtvdoboj.org/category/doboj/",
-      "https://www.rtrs.tv/vijesti/vijest.php?id=658195",
-      "https://www.klix.ba/magazin/film-tv/hrvatsku-reporterku-ubola-osa-u-vrat-prilikom-javljanja-uzivo-boli-za-popidit/260830088",
-      "https://srpskainfo.com/author/bojana-kljajic/",
-      "https://rtvdoboj.org/category/servisne-informacije/"
-    ]
-  },
-  {
     "entity_id": "finansiranje",
     "label": "Finansiranje kampanje",
-    "mentions_24h": 14,
-    "unique_events_24h": 12,
-    "unique_sources_24h": 10,
-    "baseline_7d": 11.5,
-    "momentum": 0.217,
+    "mentions_24h": 13,
+    "unique_events_24h": 11,
+    "unique_sources_24h": 9,
+    "baseline_7d": 11.625,
+    "momentum": 0.118,
     "last_event_at": "2026-08-30T23:32:09Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0155",
+        "cluster_id": "CL-2026-0166",
         "title": "Centralna izborna komisija Bosne i Hercegovine kaznila je SNSD sa 4 hiljade maraka zbog preuranjene izborne kampanje",
         "url": "https://podlupom.org/press-kutak/vijesti/centralna-izborna-komisija-bosne-i-hercegovine-kaznila-je-snsd-sa-4-hiljade-maraka-zbog-preuranjene-izborne-kampanje-2",
         "source_id": "BIH_ELEC_002",
@@ -834,7 +829,7 @@
         "n_items": 2
       },
       {
-        "cluster_id": "CL-2026-0281",
+        "cluster_id": "CL-2026-0292",
         "title": "Огњиште не заборављају: Сабор на Зијемљима и нови пут ка Невесињу",
         "url": "https://atvbl.rs/vijesti/gradovi-i-opstine/ognjiste-ne-zaboravljaju-sabor-na-zijemljima-i-novi-put-ka-nevesinju/2337038",
         "source_id": "RS_ENT_002",
@@ -842,11 +837,11 @@
         "n_items": 2
       },
       {
-        "cluster_id": "CL-2026-0259",
-        "title": "У овом граду у Српској продата само три стана",
-        "url": "https://www.glassrpske.com/cir/ekonomija/privreda/u-ovom-gradu-u-srpskoj-prodata-samo-tri-stana/650009",
-        "source_id": "BL_IJ3_003",
-        "published_at": "2026-08-30T00:00:00Z",
+        "cluster_id": "CL-2026-0011",
+        "title": "Republika Srpska Archives – Frontal",
+        "url": "https://www.frontal.ba/kategorija/vijesti-kat/republikasrpska/",
+        "source_id": "BL_IJ3_004",
+        "published_at": "2026-08-30T07:03:29Z",
         "n_items": 1
       }
     ],
@@ -874,7 +869,7 @@
     "last_event_at": "2026-08-30T19:30:00Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0257",
+        "cluster_id": "CL-2026-0268",
         "title": "Почело обиљежавање Дана несталих и погинулих у Петрову",
         "url": "https://www.rtrs.tv/vijesti/vijest.php?id=658144",
         "source_id": "RS_ENT_001",
@@ -882,7 +877,7 @@
         "n_items": 1
       },
       {
-        "cluster_id": "CL-2026-0155",
+        "cluster_id": "CL-2026-0166",
         "title": "Centralna izborna komisija Bosne i Hercegovine kaznila je SNSD sa 4 hiljade maraka zbog preuranjene izborne kampanje",
         "url": "https://podlupom.org/press-kutak/vijesti/centralna-izborna-komisija-bosne-i-hercegovine-kaznila-je-snsd-sa-4-hiljade-maraka-zbog-preuranjene-izborne-kampanje-2",
         "source_id": "BIH_ELEC_002",
@@ -890,7 +885,7 @@
         "n_items": 1
       },
       {
-        "cluster_id": "CL-2026-0321",
+        "cluster_id": "CL-2026-0332",
         "title": "Puljić o američkom dolarskom pristupu: \"Trumpovi ljudi štite Dodika, koji ih, naravno, plaća debelo\"",
         "url": "https://n1info.ba/svijet/puljic-o-americkom-dolarskom-pristupu-trumpovi-ljudi-stite-dodika-koji-ih-naravno-placa-debelo",
         "source_id": "SRC_009",
@@ -905,29 +900,6 @@
     ]
   },
   {
-    "entity_id": "mandati-us",
-    "label": "Mandatni radar US",
-    "mentions_24h": 1,
-    "unique_events_24h": 1,
-    "unique_sources_24h": 1,
-    "baseline_7d": 1.0,
-    "momentum": 0.0,
-    "last_event_at": "2026-08-30T19:34:09Z",
-    "top_events": [
-      {
-        "cluster_id": "CL-2026-0281",
-        "title": "Огњиште не заборављају: Сабор на Зијемљима и нови пут ка Невесињу",
-        "url": "https://atvbl.rs/vijesti/gradovi-i-opstine/ognjiste-ne-zaboravljaju-sabor-na-zijemljima-i-novi-put-ka-nevesinju/2337038",
-        "source_id": "RS_ENT_002",
-        "published_at": "2026-08-30T19:34:09Z",
-        "n_items": 1
-      }
-    ],
-    "evidence": [
-      "https://atvbl.rs/vijesti/gradovi-i-opstine/ognjiste-ne-zaboravljaju-sabor-na-zijemljima-i-novi-put-ka-nevesinju/2337038"
-    ]
-  },
-  {
     "entity_id": "cik",
     "label": "CIK BiH",
     "mentions_24h": 3,
@@ -938,7 +910,7 @@
     "last_event_at": "2026-08-30T19:56:31Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0155",
+        "cluster_id": "CL-2026-0166",
         "title": "Centralna izborna komisija Bosne i Hercegovine kaznila je SNSD sa 4 hiljade maraka zbog preuranjene izborne kampanje",
         "url": "https://podlupom.org/press-kutak/vijesti/centralna-izborna-komisija-bosne-i-hercegovine-kaznila-je-snsd-sa-4-hiljade-maraka-zbog-preuranjene-izborne-kampanje-2",
         "source_id": "BIH_ELEC_002",
@@ -946,7 +918,7 @@
         "n_items": 2
       },
       {
-        "cluster_id": "CL-2026-0324",
+        "cluster_id": "CL-2026-0335",
         "title": "Bajke Trojke za građane: Cijena peleta i do 895 KM, gdje je Delićeva peletara",
         "url": "https://avaz.ba/vijesti/bih/1069000/bajke-trojke-za-gradjane-cijena-peleta-i-do-895-km-gdje-je-deliceva-peletara",
         "source_id": "FBIH_002",
@@ -961,6 +933,29 @@
     ]
   },
   {
+    "entity_id": "mandati-us",
+    "label": "Mandatni radar US",
+    "mentions_24h": 1,
+    "unique_events_24h": 1,
+    "unique_sources_24h": 1,
+    "baseline_7d": 1.125,
+    "momentum": -0.111,
+    "last_event_at": "2026-08-30T19:34:09Z",
+    "top_events": [
+      {
+        "cluster_id": "CL-2026-0292",
+        "title": "Огњиште не заборављају: Сабор на Зијемљима и нови пут ка Невесињу",
+        "url": "https://atvbl.rs/vijesti/gradovi-i-opstine/ognjiste-ne-zaboravljaju-sabor-na-zijemljima-i-novi-put-ka-nevesinju/2337038",
+        "source_id": "RS_ENT_002",
+        "published_at": "2026-08-30T19:34:09Z",
+        "n_items": 1
+      }
+    ],
+    "evidence": [
+      "https://atvbl.rs/vijesti/gradovi-i-opstine/ognjiste-ne-zaboravljaju-sabor-na-zijemljima-i-novi-put-ka-nevesinju/2337038"
+    ]
+  },
+  {
     "entity_id": "izborni-proces",
     "label": "Izborni proces",
     "mentions_24h": 2,
@@ -971,7 +966,7 @@
     "last_event_at": "2026-08-30T12:40:15Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0155",
+        "cluster_id": "CL-2026-0166",
         "title": "Centralna izborna komisija Bosne i Hercegovine kaznila je SNSD sa 4 hiljade maraka zbog preuranjene izborne kampanje",
         "url": "https://podlupom.org/press-kutak/vijesti/centralna-izborna-komisija-bosne-i-hercegovine-kaznila-je-snsd-sa-4-hiljade-maraka-zbog-preuranjene-izborne-kampanje-2",
         "source_id": "BIH_ELEC_002",

@@ -3,20 +3,20 @@
     "entity_id": "stevandic",
     "label": "Nenad Stevandić",
     "classification": "REVIEW",
-    "why_now": "momentum +350% vs normale; 4 fonti indipendenti nelle ultime 24h; 5 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "why_now": "momentum +324% vs normale; 4 fonti indipendenti nelle ultime 24h; 5 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
     "entities": [
       "stevandic"
     ],
     "events": [
-      "CL-2026-0148",
-      "CL-2026-0283",
-      "CL-2026-0257"
+      "CL-2026-0159",
+      "CL-2026-0294",
+      "CL-2026-0268"
     ],
     "metrics": {
       "mentions_24h": 9,
       "unique_events_24h": 5,
       "unique_sources_24h": 4,
-      "momentum": 3.5,
+      "momentum": 3.235,
       "acceleration": 2.0,
       "max_entity_salience": 1.25,
       "max_co_entities_in_event": 17
@@ -52,28 +52,28 @@
     "entity_id": "us-snsd",
     "label": "US ↔ SNSD",
     "classification": "REVIEW",
-    "why_now": "momentum +67% vs normale; 8 fonti indipendenti nelle ultime 24h; 12 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "why_now": "momentum +51% vs normale; 7 fonti indipendenti nelle ultime 24h; 11 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
     "entities": [
       "us-snsd"
     ],
     "events": [
       "CL-2026-0011",
-      "CL-2026-0266",
-      "CL-2026-0274"
+      "CL-2026-0285",
+      "CL-2026-0276"
     ],
     "metrics": {
-      "mentions_24h": 14,
-      "unique_events_24h": 12,
-      "unique_sources_24h": 8,
-      "momentum": 0.672,
-      "acceleration": 2.0,
+      "mentions_24h": 13,
+      "unique_events_24h": 11,
+      "unique_sources_24h": 7,
+      "momentum": 0.507,
+      "acceleration": 1.0,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 17
     },
     "sources": [
-      "BL_IJ3_003",
       "BL_IJ3_004",
-      "RS_ENT_001"
+      "RS_ENT_001",
+      "RS_ENT_002"
     ],
     "evidence": [
       "https://www.klix.ba/vijesti/bih/crnadak-zabrinjavaju-me-poruke-iz-sarajeva-srpske-zrtve-su-manje-a-bosnjacki-generali-su-heroji/260830124",
@@ -87,7 +87,7 @@
       "https://atvbl.rs/vijesti/republika-srpska/dodik-u-manastiru-karanovac-prisustvovao-osvestanju-zvona/2336792",
       "https://www.frontal.ba/kategorija/featured/"
     ],
-    "first_seen": "2026-08-30T00:00:00Z",
+    "first_seen": "2026-08-30T06:00:05Z",
     "last_seen": "2026-08-30T21:06:00Z",
     "confidence": 1.0,
     "confidence_components": {
@@ -103,26 +103,25 @@
     "entity_id": "us-sps",
     "label": "US ↔ SPS",
     "classification": "REVIEW",
-    "why_now": "momentum +433% vs normale; 4 fonti indipendenti nelle ultime 24h; 4 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "why_now": "momentum +256% vs normale; 3 fonti indipendenti nelle ultime 24h; 3 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
     "entities": [
       "us-sps"
     ],
     "events": [
-      "CL-2026-0148",
-      "CL-2026-0250",
-      "CL-2026-0317"
+      "CL-2026-0159",
+      "CL-2026-0328",
+      "CL-2026-0341"
     ],
     "metrics": {
-      "mentions_24h": 6,
-      "unique_events_24h": 4,
-      "unique_sources_24h": 4,
-      "momentum": 4.333,
+      "mentions_24h": 4,
+      "unique_events_24h": 3,
+      "unique_sources_24h": 3,
+      "momentum": 2.556,
       "acceleration": 2.0,
       "max_entity_salience": 1.55,
       "max_co_entities_in_event": 10
     },
     "sources": [
-      "BL_IJ3_003",
       "BL_IJ3_005",
       "RS_ENT_002"
     ],
@@ -130,11 +129,9 @@
       "https://atvbl.rs/vijesti/bih/zahtjev-sda-i-df-stvar-politike-a-ne-struke/2337053",
       "https://atvbl.rs/vijesti/banja-luka/hiljade-posjetilaca-pohrlilo-kocicevim-stricicima-obiljezen-61-kocicev-zbor/2337035",
       "https://6yka.com/region/da-su-izbori-u-srbiji-sutra-studentska-lista-na-485-odsto-vuciceva-sns-lista-na-386",
-      "https://www.rtrs.tv/vijesti/vijest.php?id=658139",
-      "https://www.glassrpske.com/cir/novosti/politika/istina-o-stradanju-srba-stize-do-americke-javnosti/650081",
-      "https://www.glassrpske.com/cir/novosti/politika/selak-kocicev-duh-zivi-u-svima-nama-borba-za-slobodu-nam-je-urodjena/650043"
+      "https://www.rtrs.tv/vijesti/vijest.php?id=658139"
     ],
-    "first_seen": "2026-08-30T00:00:00Z",
+    "first_seen": "2026-08-30T16:30:00Z",
     "last_seen": "2026-08-30T21:40:00Z",
     "confidence": 1.0,
     "confidence_components": {
@@ -150,28 +147,28 @@
     "entity_id": "snsd",
     "label": "SNSD",
     "classification": "REVIEW",
-    "why_now": "momentum +70% vs normale; 8 fonti indipendenti nelle ultime 24h; 12 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "why_now": "momentum +53% vs normale; 7 fonti indipendenti nelle ultime 24h; 11 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
     "entities": [
       "snsd"
     ],
     "events": [
       "CL-2026-0011",
-      "CL-2026-0266",
-      "CL-2026-0274"
+      "CL-2026-0285",
+      "CL-2026-0276"
     ],
     "metrics": {
-      "mentions_24h": 14,
-      "unique_events_24h": 12,
-      "unique_sources_24h": 8,
-      "momentum": 0.697,
-      "acceleration": 2.0,
+      "mentions_24h": 13,
+      "unique_events_24h": 11,
+      "unique_sources_24h": 7,
+      "momentum": 0.529,
+      "acceleration": 1.0,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 17
     },
     "sources": [
-      "BL_IJ3_003",
       "BL_IJ3_004",
-      "RS_ENT_001"
+      "RS_ENT_001",
+      "RS_ENT_002"
     ],
     "evidence": [
       "https://www.klix.ba/vijesti/bih/crnadak-zabrinjavaju-me-poruke-iz-sarajeva-srpske-zrtve-su-manje-a-bosnjacki-generali-su-heroji/260830124",
@@ -185,7 +182,7 @@
       "https://atvbl.rs/vijesti/republika-srpska/dodik-u-manastiru-karanovac-prisustvovao-osvestanju-zvona/2336792",
       "https://www.frontal.ba/kategorija/featured/"
     ],
-    "first_seen": "2026-08-30T00:00:00Z",
+    "first_seen": "2026-08-30T06:00:05Z",
     "last_seen": "2026-08-30T21:06:00Z",
     "confidence": 1.0,
     "confidence_components": {
@@ -201,21 +198,21 @@
     "entity_id": "dodik",
     "label": "Milorad Dodik",
     "classification": "REVIEW",
-    "why_now": "momentum +67% vs normale; 9 fonti indipendenti nelle ultime 24h; 18 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "why_now": "8 fonti indipendenti nelle ultime 24h; 16 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
     "entities": [
       "dodik"
     ],
     "events": [
-      "CL-2026-0265",
+      "CL-2026-0276",
       "CL-2026-0011",
-      "CL-2026-0257"
+      "CL-2026-0268"
     ],
     "metrics": {
-      "mentions_24h": 25,
-      "unique_events_24h": 18,
-      "unique_sources_24h": 9,
-      "momentum": 0.667,
-      "acceleration": 2.0,
+      "mentions_24h": 22,
+      "unique_events_24h": 16,
+      "unique_sources_24h": 8,
+      "momentum": 0.408,
+      "acceleration": 1.0,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 17
     },
@@ -237,9 +234,9 @@
     ],
     "first_seen": "2026-08-30T07:03:29Z",
     "last_seen": "2026-08-30T21:25:13Z",
-    "confidence": 1.0,
+    "confidence": 0.8,
     "confidence_components": {
-      "momentum": true,
+      "momentum": false,
       "sources": true,
       "events": true,
       "salience": true,
@@ -251,26 +248,25 @@
     "entity_id": "sps",
     "label": "SPS · Goran Selak",
     "classification": "REVIEW",
-    "why_now": "momentum +586% vs normale; 4 fonti indipendenti nelle ultime 24h; 4 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "why_now": "momentum +357% vs normale; 3 fonti indipendenti nelle ultime 24h; 3 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
     "entities": [
       "sps"
     ],
     "events": [
-      "CL-2026-0148",
-      "CL-2026-0250",
-      "CL-2026-0317"
+      "CL-2026-0159",
+      "CL-2026-0328",
+      "CL-2026-0341"
     ],
     "metrics": {
-      "mentions_24h": 6,
-      "unique_events_24h": 4,
-      "unique_sources_24h": 4,
-      "momentum": 5.857,
+      "mentions_24h": 4,
+      "unique_events_24h": 3,
+      "unique_sources_24h": 3,
+      "momentum": 3.571,
       "acceleration": 2.0,
       "max_entity_salience": 0.75,
       "max_co_entities_in_event": 8
     },
     "sources": [
-      "BL_IJ3_003",
       "BL_IJ3_005",
       "RS_ENT_002"
     ],
@@ -278,11 +274,9 @@
       "https://atvbl.rs/vijesti/bih/zahtjev-sda-i-df-stvar-politike-a-ne-struke/2337053",
       "https://atvbl.rs/vijesti/banja-luka/hiljade-posjetilaca-pohrlilo-kocicevim-stricicima-obiljezen-61-kocicev-zbor/2337035",
       "https://6yka.com/region/da-su-izbori-u-srbiji-sutra-studentska-lista-na-485-odsto-vuciceva-sns-lista-na-386",
-      "https://www.rtrs.tv/vijesti/vijest.php?id=658139",
-      "https://www.glassrpske.com/cir/novosti/politika/istina-o-stradanju-srba-stize-do-americke-javnosti/650081",
-      "https://www.glassrpske.com/cir/novosti/politika/selak-kocicev-duh-zivi-u-svima-nama-borba-za-slobodu-nam-je-urodjena/650043"
+      "https://www.rtrs.tv/vijesti/vijest.php?id=658139"
     ],
-    "first_seen": "2026-08-30T00:00:00Z",
+    "first_seen": "2026-08-30T16:30:00Z",
     "last_seen": "2026-08-30T21:40:00Z",
     "confidence": 1.0,
     "confidence_components": {
@@ -298,20 +292,20 @@
     "entity_id": "stanivukovic",
     "label": "Draško Stanivuković",
     "classification": "REVIEW",
-    "why_now": "momentum +200% vs normale; 3 fonti indipendenti nelle ultime 24h; 5 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "why_now": "momentum +182% vs normale; 3 fonti indipendenti nelle ultime 24h; 5 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
     "entities": [
       "stanivukovic"
     ],
     "events": [
-      "CL-2026-0148",
-      "CL-2026-0292",
-      "CL-2026-0255"
+      "CL-2026-0159",
+      "CL-2026-0303",
+      "CL-2026-0266"
     ],
     "metrics": {
       "mentions_24h": 6,
       "unique_events_24h": 5,
       "unique_sources_24h": 3,
-      "momentum": 2.0,
+      "momentum": 1.824,
       "acceleration": 0.0,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 17
@@ -349,9 +343,9 @@
       "opozicija"
     ],
     "events": [
-      "CL-2026-0292",
-      "CL-2026-0148",
-      "CL-2026-0255"
+      "CL-2026-0303",
+      "CL-2026-0159",
+      "CL-2026-0266"
     ],
     "metrics": {
       "mentions_24h": 4,
@@ -387,45 +381,45 @@
     "entity_id": "ij5-konkurencija",
     "label": "IJ5 · borba za mandat",
     "classification": "REVIEW",
-    "why_now": "momentum +52% vs normale; 11 fonti indipendenti nelle ultime 24h; 27 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "why_now": "10 fonti indipendenti nelle ultime 24h; 31 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
     "entities": [
       "ij5-konkurencija"
     ],
     "events": [
-      "CL-2026-0257",
-      "CL-2026-0169",
-      "CL-2026-0232"
+      "CL-2026-0186",
+      "CL-2026-0011",
+      "CL-2026-0180"
     ],
     "metrics": {
       "mentions_24h": 39,
-      "unique_events_24h": 27,
-      "unique_sources_24h": 11,
-      "momentum": 0.515,
-      "acceleration": 1.667,
+      "unique_events_24h": 31,
+      "unique_sources_24h": 10,
+      "momentum": 0.438,
+      "acceleration": 3.333,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 17
     },
     "sources": [
-      "RS_ENT_001",
+      "BL_IJ3_004",
       "RS_IJ_014"
     ],
     "evidence": [
+      "https://rtvdoboj.org/snimljen-novi-elektricni-vw-tiguan-potpuno-drugaciji-od-ostalih",
+      "https://rtvdoboj.org/samsung-odustao-od-ogromne-baterije-za-novi-ultra-sta-je-razlog",
+      "https://rtvdoboj.org/anker-puni-sve-odjednom-ali-kupci-imaju-jednu-veliku-zamjerku",
+      "https://rtvdoboj.org/borove-iglice-pomijesajte-sa-solju-i-dobicete-trik-za-3-problema-u-kuci",
+      "https://rtvdoboj.org/kada-je-najbolje-vrijeme-za-pravljenje-tursije",
+      "https://rtvdoboj.org/studija-pokazala-koje-bolesti-i-povrede-postaju-ucestalije-tokom-velikih-vrucina",
+      "https://rtvdoboj.org/moze-li-krckanje-prstiju-da-bude-stetno",
       "https://srpskainfo.com/author/sanja-dragic/",
       "https://zvornicki.ba/t/bijeljina/",
-      "https://www.klix.ba/vijesti/bih/crnadak-zabrinjavaju-me-poruke-iz-sarajeva-srpske-zrtve-su-manje-a-bosnjacki-generali-su-heroji/260830124",
-      "https://atvbl.rs/vijesti/gradovi-i-opstine/heroji-se-bore-do-posljednjeg-atoma-primjer-iz-trebinja-je-dokaz-za-to/2337005",
-      "https://atvbl.rs/vijesti/gradovi-i-opstine/ognjiste-ne-zaboravljaju-sabor-na-zijemljima-i-novi-put-ka-nevesinju/2337038",
-      "https://srpskainfo.com/author/snjezana-karic/",
-      "https://www.rtrs.tv/vijesti/vijest.php?id=658207",
-      "https://srpskainfo.com/author/knez/",
-      "https://glasregije.net/rasvijetljen-pozar-u-doboju-poznat-identitet-osumnjicenog-za-unistavanje-vozila/60434",
-      "https://rtvdoboj.org/category/doboj/"
+      "https://www.klix.ba/vijesti/bih/crnadak-zabrinjavaju-me-poruke-iz-sarajeva-srpske-zrtve-su-manje-a-bosnjacki-generali-su-heroji/260830124"
     ],
-    "first_seen": "2026-08-30T12:27:39Z",
-    "last_seen": "2026-08-30T23:32:09Z",
-    "confidence": 1.0,
+    "first_seen": "2026-08-30T07:03:29Z",
+    "last_seen": "2026-08-31T00:04:30Z",
+    "confidence": 0.8,
     "confidence_components": {
-      "momentum": true,
+      "momentum": false,
       "sources": true,
       "events": true,
       "salience": true,
@@ -437,27 +431,27 @@
     "entity_id": "predsjednik-rs",
     "label": "Predsjednik RS",
     "classification": "REVIEW",
-    "why_now": "momentum +216% vs normale; 6 fonti indipendenti nelle ultime 24h; 6 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "why_now": "momentum +123% vs normale; 5 fonti indipendenti nelle ultime 24h; 4 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
     "entities": [
       "predsjednik-rs"
     ],
     "events": [
-      "CL-2026-0255",
-      "CL-2026-0257",
-      "CL-2026-0252"
+      "CL-2026-0268",
+      "CL-2026-0266",
+      "CL-2026-0186"
     ],
     "metrics": {
-      "mentions_24h": 17,
-      "unique_events_24h": 6,
-      "unique_sources_24h": 6,
-      "momentum": 2.163,
+      "mentions_24h": 12,
+      "unique_events_24h": 4,
+      "unique_sources_24h": 5,
+      "momentum": 1.233,
       "acceleration": 0.0,
       "max_entity_salience": 1.25,
       "max_co_entities_in_event": 9
     },
     "sources": [
-      "BL_IJ3_003",
-      "RS_ENT_002"
+      "RS_ENT_002",
+      "RS_IJ_014"
     ],
     "evidence": [
       "https://atvbl.rs/vijesti/republika-srpska/u-petrovu-obiljezen-dan-nestalih-majke-nemaju-gdje-upaliti-svijecu/2337023",
@@ -471,7 +465,7 @@
       "https://atvbl.rs/vijesti/republika-srpska/minic-uvijek-cemo-se-sjecati-nasih-boraca-i-svih-onih-koji-su-za-republiku-srpsku-dali-zivot/2336837",
       "https://www.rtrs.tv/vijesti/vijest.php?id=658163"
     ],
-    "first_seen": "2026-08-30T00:00:00Z",
+    "first_seen": "2026-08-30T12:48:27Z",
     "last_seen": "2026-08-30T19:23:00Z",
     "confidence": 1.0,
     "confidence_components": {
@@ -487,26 +481,25 @@
     "entity_id": "minic",
     "label": "Savo Minić",
     "classification": "REVIEW",
-    "why_now": "momentum +217% vs normale; 6 fonti indipendenti nelle ultime 24h; 10 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "why_now": "momentum +142% vs normale; 5 fonti indipendenti nelle ultime 24h; 8 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
     "entities": [
       "minic"
     ],
     "events": [
-      "CL-2026-0255",
-      "CL-2026-0257",
-      "CL-2026-0252"
+      "CL-2026-0268",
+      "CL-2026-0266",
+      "CL-2026-0276"
     ],
     "metrics": {
-      "mentions_24h": 21,
-      "unique_events_24h": 10,
-      "unique_sources_24h": 6,
-      "momentum": 2.17,
+      "mentions_24h": 16,
+      "unique_events_24h": 8,
+      "unique_sources_24h": 5,
+      "momentum": 1.415,
       "acceleration": 0.0,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 17
     },
     "sources": [
-      "BL_IJ3_003",
       "RS_ENT_002"
     ],
     "evidence": [
@@ -521,7 +514,7 @@
       "https://atvbl.rs/sport-1/fudbal/nova-projekcija-ce-obradovati-navijace-borca/2336909",
       "https://rtvdoboj.org/category/vijesti/"
     ],
-    "first_seen": "2026-08-30T00:00:00Z",
+    "first_seen": "2026-08-30T10:21:05Z",
     "last_seen": "2026-08-30T19:23:00Z",
     "confidence": 1.0,
     "confidence_components": {
@@ -542,9 +535,9 @@
       "predsjednistvo"
     ],
     "events": [
-      "CL-2026-0257",
-      "CL-2026-0155",
-      "CL-2026-0321"
+      "CL-2026-0268",
+      "CL-2026-0166",
+      "CL-2026-0332"
     ],
     "metrics": {
       "mentions_24h": 3,
@@ -586,15 +579,15 @@
       "cik"
     ],
     "events": [
-      "CL-2026-0155",
-      "CL-2026-0324"
+      "CL-2026-0166",
+      "CL-2026-0335"
     ],
     "metrics": {
       "mentions_24h": 3,
       "unique_events_24h": 2,
       "unique_sources_24h": 2,
       "momentum": -0.04,
-      "acceleration": 1.0,
+      "acceleration": 0.0,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 17
     },
@@ -623,26 +616,25 @@
     "entity_id": "beograd",
     "label": "Beograd / Srbija",
     "classification": "REVIEW",
-    "why_now": "momentum +167% vs normale; 6 fonti indipendenti nelle ultime 24h; 10 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "why_now": "momentum +95% vs normale; 5 fonti indipendenti nelle ultime 24h; 7 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
     "entities": [
       "beograd"
     ],
     "events": [
       "CL-2026-0011",
-      "CL-2026-0289",
-      "CL-2026-0215"
+      "CL-2026-0300",
+      "CL-2026-0297"
     ],
     "metrics": {
-      "mentions_24h": 13,
-      "unique_events_24h": 10,
-      "unique_sources_24h": 6,
-      "momentum": 1.667,
+      "mentions_24h": 10,
+      "unique_events_24h": 7,
+      "unique_sources_24h": 5,
+      "momentum": 0.951,
       "acceleration": 0.0,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 17
     },
     "sources": [
-      "BL_IJ3_003",
       "BL_IJ3_004",
       "RS_ENT_001"
     ],
@@ -658,7 +650,7 @@
       "https://www.frontal.ba/kategorija/vijesti-kat/kultura/",
       "https://www.frontal.ba/kategorija/vijesti-kat/republikasrpska/"
     ],
-    "first_seen": "2026-08-30T00:00:00Z",
+    "first_seen": "2026-08-30T07:03:29Z",
     "last_seen": "2026-08-30T19:30:00Z",
     "confidence": 1.0,
     "confidence_components": {
@@ -674,27 +666,27 @@
     "entity_id": "finansiranje",
     "label": "Finansiranje kampanje",
     "classification": "REVIEW",
-    "why_now": "10 fonti indipendenti nelle ultime 24h; 12 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "why_now": "9 fonti indipendenti nelle ultime 24h; 11 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
     "entities": [
       "finansiranje"
     ],
     "events": [
-      "CL-2026-0155",
-      "CL-2026-0281",
-      "CL-2026-0259"
+      "CL-2026-0166",
+      "CL-2026-0292",
+      "CL-2026-0011"
     ],
     "metrics": {
-      "mentions_24h": 14,
-      "unique_events_24h": 12,
-      "unique_sources_24h": 10,
-      "momentum": 0.217,
-      "acceleration": 2.0,
+      "mentions_24h": 13,
+      "unique_events_24h": 11,
+      "unique_sources_24h": 9,
+      "momentum": 0.118,
+      "acceleration": 1.0,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 17
     },
     "sources": [
       "BIH_ELEC_002",
-      "BL_IJ3_003",
+      "BL_IJ3_004",
       "RS_ENT_002"
     ],
     "evidence": [
@@ -709,7 +701,7 @@
       "https://zvornicki.ba/t/obrazovanje/",
       "https://www.rtrs.tv/vijesti/vijest.php?id=658150"
     ],
-    "first_seen": "2026-08-30T00:00:00Z",
+    "first_seen": "2026-08-30T07:03:29Z",
     "last_seen": "2026-08-30T23:32:09Z",
     "confidence": 0.8,
     "confidence_components": {
@@ -725,42 +717,42 @@
     "entity_id": "doboj",
     "label": "Doboj",
     "classification": "REVIEW",
-    "why_now": "9 fonti indipendenti nelle ultime 24h; 14 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "why_now": "8 fonti indipendenti nelle ultime 24h; 20 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
     "entities": [
       "doboj"
     ],
     "events": [
-      "CL-2026-0169",
-      "CL-2026-0232",
-      "CL-2026-0175"
+      "CL-2026-0186",
+      "CL-2026-0180",
+      "CL-2026-0213"
     ],
     "metrics": {
-      "mentions_24h": 22,
-      "unique_events_24h": 14,
-      "unique_sources_24h": 9,
-      "momentum": 0.285,
-      "acceleration": 3.0,
+      "mentions_24h": 25,
+      "unique_events_24h": 20,
+      "unique_sources_24h": 8,
+      "momentum": 0.379,
+      "acceleration": 9.0,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 17
     },
     "sources": [
-      "RS_ENT_001",
+      "RS_IJ_012",
       "RS_IJ_014"
     ],
     "evidence": [
+      "https://rtvdoboj.org/snimljen-novi-elektricni-vw-tiguan-potpuno-drugaciji-od-ostalih",
+      "https://rtvdoboj.org/samsung-odustao-od-ogromne-baterije-za-novi-ultra-sta-je-razlog",
+      "https://rtvdoboj.org/anker-puni-sve-odjednom-ali-kupci-imaju-jednu-veliku-zamjerku",
+      "https://rtvdoboj.org/borove-iglice-pomijesajte-sa-solju-i-dobicete-trik-za-3-problema-u-kuci",
+      "https://rtvdoboj.org/kada-je-najbolje-vrijeme-za-pravljenje-tursije",
+      "https://rtvdoboj.org/studija-pokazala-koje-bolesti-i-povrede-postaju-ucestalije-tokom-velikih-vrucina",
+      "https://rtvdoboj.org/moze-li-krckanje-prstiju-da-bude-stetno",
       "https://srpskainfo.com/author/sanja-dragic/",
       "https://zvornicki.ba/t/bijeljina/",
-      "https://atvbl.rs/vijesti/gradovi-i-opstine/heroji-se-bore-do-posljednjeg-atoma-primjer-iz-trebinja-je-dokaz-za-to/2337005",
-      "https://www.rtrs.tv/vijesti/vijest.php?id=658207",
-      "https://glasregije.net/rasvijetljen-pozar-u-doboju-poznat-identitet-osumnjicenog-za-unistavanje-vozila/60434",
-      "https://rtvdoboj.org/category/doboj/",
-      "https://www.rtrs.tv/vijesti/vijest.php?id=658195",
-      "https://www.klix.ba/magazin/film-tv/hrvatsku-reporterku-ubola-osa-u-vrat-prilikom-javljanja-uzivo-boli-za-popidit/260830088",
-      "https://srpskainfo.com/author/bojana-kljajic/",
-      "https://rtvdoboj.org/category/servisne-informacije/"
+      "https://atvbl.rs/vijesti/gradovi-i-opstine/heroji-se-bore-do-posljednjeg-atoma-primjer-iz-trebinja-je-dokaz-za-to/2337005"
     ],
     "first_seen": "2026-08-30T12:53:05Z",
-    "last_seen": "2026-08-30T23:32:09Z",
+    "last_seen": "2026-08-31T00:04:30Z",
     "confidence": 0.8,
     "confidence_components": {
       "momentum": false,
@@ -775,20 +767,20 @@
     "entity_id": "banjaluka",
     "label": "Banja Luka",
     "classification": "REVIEW",
-    "why_now": "momentum +56% vs normale; 4 fonti indipendenti nelle ultime 24h; 7 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
+    "why_now": "momentum +51% vs normale; 4 fonti indipendenti nelle ultime 24h; 7 eventi distinti; entita' primaria/in titolo in almeno un articolo; co-occorre con altre entita' tracciate nello stesso articolo",
     "entities": [
       "banjaluka"
     ],
     "events": [
       "CL-2026-0004",
-      "CL-2026-0302",
-      "CL-2026-0305"
+      "CL-2026-0313",
+      "CL-2026-0316"
     ],
     "metrics": {
       "mentions_24h": 7,
       "unique_events_24h": 7,
       "unique_sources_24h": 4,
-      "momentum": 0.556,
+      "momentum": 0.514,
       "acceleration": 1.0,
       "max_entity_salience": 1.25,
       "max_co_entities_in_event": 17

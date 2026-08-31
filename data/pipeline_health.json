@@ -1,48 +1,22 @@
 {
-  "last_run": "2026-08-30T23:04:34.771339Z",
-  "run_finished_at": "2026-08-30T23:54:02.460969Z",
+  "last_run": "2026-08-30T23:55:19.622238Z",
+  "run_finished_at": "2026-08-31T00:49:51.281812Z",
   "ok": true,
   "failed_stage": null,
   "error": null,
   "sources_enabled": 33,
-  "sources_ok": 19,
+  "sources_ok": 25,
   "sources_failed": [
     "BL_IJ3_002",
-    "BL_IJ3_006",
     "BL_IJ3_007",
-    "ECO_001",
     "FBIH_002",
     "FBIH_003",
-    "RS_ENT_001",
     "RS_IJ_002",
     "RS_IJ_009",
-    "RS_IJ_012",
-    "RS_IJ_013",
     "RS_IJ_018",
-    "RS_IJ_030",
-    "SRC_001"
+    "RS_IJ_030"
   ],
   "sources_failed_detail": {
-    "RS_ENT_001": {
-      "count": 1,
-      "last_kind": "FETCH_ERROR",
-      "last_message": "<urlopen error [Errno 111] Connection refused> https://web.archive.org/cdx/search/cdx?url=www.rtrs.tv/*&output=json&fl=original,timestamp&collapse=urlkey&filter=statuscode:200&limit=5000&from=20260101"
-    },
-    "BL_IJ3_006": {
-      "count": 1,
-      "last_kind": "FETCH_ERROR",
-      "last_message": "<urlopen error [Errno 111] Connection refused> https://web.archive.org/cdx/search/cdx?url=banjaluka-24.com/*&output=json&fl=original,timestamp&collapse=urlkey&filter=statuscode:200&limit=5000&from=20260101"
-    },
-    "RS_IJ_013": {
-      "count": 1,
-      "last_kind": "FETCH_ERROR",
-      "last_message": "<urlopen error [Errno 111] Connection refused> https://web.archive.org/cdx/search/cdx?url=www.dobojski.info/*&output=json&fl=original,timestamp&collapse=urlkey&filter=statuscode:200&limit=5000&from=20260101"
-    },
-    "RS_IJ_012": {
-      "count": 1,
-      "last_kind": "FETCH_ERROR",
-      "last_message": "<urlopen error [Errno 111] Connection refused> https://web.archive.org/cdx/search/cdx?url=glasregije.net/*&output=json&fl=original,timestamp&collapse=urlkey&filter=statuscode:200&limit=5000&from=20260101"
-    },
     "BL_IJ3_002": {
       "count": 3,
       "last_kind": "OUT_OF_WINDOW",
@@ -51,37 +25,27 @@
     "BL_IJ3_007": {
       "count": 1,
       "last_kind": "FETCH_ERROR",
-      "last_message": "<urlopen error [Errno 111] Connection refused> https://web.archive.org/cdx/search/cdx?url=www.bl-portal.com/*&output=json&fl=original,timestamp&collapse=urlkey&filter=statuscode:200&limit=5000&from=20260101"
+      "last_message": "The read operation timed out https://web.archive.org/cdx/search/cdx?url=www.bl-portal.com/*&output=json&fl=original,timestamp&collapse=urlkey&filter=statuscode:200&limit=5000&from=20260101"
     },
     "RS_IJ_018": {
       "count": 1,
       "last_kind": "PARSE_ERROR",
       "last_message": "MANUAL_ONLY: nessun sitemap.xml stabile verificato per questa fonte (§4/§5b), nessun parser di paginazione su misura per policy del task"
     },
-    "ECO_001": {
-      "count": 1,
-      "last_kind": "FETCH_ERROR",
-      "last_message": "<urlopen error [Errno 111] Connection refused> https://web.archive.org/cdx/search/cdx?url=capital.ba/*&output=json&fl=original,timestamp&collapse=urlkey&filter=statuscode:200&limit=5000&from=20260101"
-    },
-    "SRC_001": {
-      "count": 1,
-      "last_kind": "FETCH_ERROR",
-      "last_message": "<urlopen error [Errno 111] Connection refused> https://web.archive.org/cdx/search/cdx?url=detektor.ba/*&output=json&fl=original,timestamp&collapse=urlkey&filter=statuscode:200&limit=5000&from=20260101"
-    },
     "FBIH_003": {
       "count": 1,
       "last_kind": "FETCH_ERROR",
       "last_message": "The read operation timed out https://web.archive.org/cdx/search/cdx?url=www.oslobodjenje.ba/*&output=json&fl=original,timestamp&collapse=urlkey&filter=statuscode:200&limit=5000&from=20260101"
     },
+    "RS_IJ_002": {
+      "count": 3,
+      "last_kind": "OUT_OF_WINDOW",
+      "last_message": "published_at=2026-06-30T00:00:00Z"
+    },
     "RS_IJ_030": {
       "count": 1,
       "last_kind": "FETCH_ERROR",
-      "last_message": "<urlopen error [Errno 111] Connection refused> https://web.archive.org/cdx/search/cdx?url=direkt-portal.com/*&output=json&fl=original,timestamp&collapse=urlkey&filter=statuscode:200&limit=5000&from=20260101"
-    },
-    "RS_IJ_002": {
-      "count": 2,
-      "last_kind": "OUT_OF_WINDOW",
-      "last_message": "published_at=2026-06-30T00:00:00Z"
+      "last_message": "The read operation timed out https://web.archive.org/cdx/search/cdx?url=direkt-portal.com/*&output=json&fl=original,timestamp&collapse=urlkey&filter=statuscode:200&limit=5000&from=20260101"
     },
     "RS_IJ_009": {
       "count": 1,
@@ -121,12 +85,12 @@
     "ECO_001": 0,
     "RS_IJ_015": 5,
     "BIH_ELEC_005": 33,
-    "SRC_001": 10,
+    "SRC_001": 61,
     "BL_IJ3_005": 110,
     "BL_IJ3_004": 45,
     "ECO_002": 100,
     "FBIH_003": 50,
-    "RS_IJ_002": 11,
+    "RS_IJ_002": 10,
     "RS_IJ_005": 100,
     "RS_IJ_021": 100,
     "RS_IJ_027": 20,
@@ -135,14 +99,14 @@
     "FBIH_002": 110,
     "BL_IJ3_008": 110
   },
-  "new_items_this_run": 1749,
-  "clean_total": 1805,
-  "dedup_total": 1492,
-  "clusters_total": 334,
-  "rassegna_total": 507,
+  "new_items_this_run": 1799,
+  "clean_total": 1865,
+  "dedup_total": 1541,
+  "clusters_total": 352,
+  "rassegna_total": 527,
   "trending_entities_registry": 55,
   "trending_entities_active": 25,
   "signal_candidates_total": 25,
   "signal_review": 17,
-  "duration_sec": 2967.7
+  "duration_sec": 3271.7
 }

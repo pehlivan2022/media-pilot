@@ -213,7 +213,7 @@ sources:
     enabled: true
     last_verified_at: "2026-08-27T23:09:31.898199Z"
     items_7d_at_audit: 10
-    window_actual_days: 5
+    window_actual_days: 6
     website_url: "https://rtvdoboj.org/"
   - source_id: RS_IJ_018
     name: "InfoBijeljina"
@@ -328,7 +328,7 @@ sources:
     enabled: true
     last_verified_at: "2026-08-29T00:00:00Z"
     items_7d_at_audit: 10
-    window_actual_days: 3
+    window_actual_days: 7
     website_url: "https://detektor.ba/"
   - source_id: BL_IJ3_005
     name: "Buka"
