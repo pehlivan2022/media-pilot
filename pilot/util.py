@@ -6,7 +6,7 @@ import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
-from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
+from urllib.parse import parse_qsl, quote, urlencode, urlsplit, urlunsplit
 
 USER_AGENT = "MediaPilotBot/0.1 (research pilot; contact hotelitaliapalace@gmail.com)"
 
@@ -26,6 +26,11 @@ def fetch(url, timeout=15, retries=2, headers=None):
     req_headers = {"User-Agent": USER_AGENT}
     if headers:
         req_headers.update(headers)
+    # sitemap <loc> entries occasionally carry raw non-ASCII characters (unencoded slugs) that
+    # http.client's request line can't encode as ascii and crashes the whole run (verified live,
+    # 2026-08-31: '₂' from a sitemap URL killed collect() at source 22/33) - quote() with
+    # '%' in safe leaves already-percent-encoded URLs untouched.
+    url = quote(url, safe="%/:?&=@!$'()*+,;#~")
     last_err = None
     for attempt in range(retries + 1):
         try:
