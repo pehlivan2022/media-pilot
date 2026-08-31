@@ -35,7 +35,12 @@ MOMENTUM_SIGNAL_MIN = 0.5
 SOURCES_SIGNAL_MIN = 3
 EVENTS_SIGNAL_MIN = 2
 SALIENCE_SIGNAL_MIN = 1.0
-CO_ENTITY_SIGNAL_MIN = 2
+# TASK_FASE3_NEXT §G, 2026-09-01: CO_ENTITY_SIGNAL_MIN removed. Measured on real data (28 signal
+# candidates, fresh data/raw): max_co_entities_in_event never dropped below 6, because
+# config/entities.yaml's 55 curated entities routinely co-occur in the same BiH political story -
+# no threshold in the observed range would make this component ever fire false. A constant
+# component is noise pretending to be a signal (task's own words); removed per the task's
+# explicit escape hatch rather than left as dead weight in confidence_components.
 
 
 def load_trending_rows():
@@ -67,8 +72,6 @@ def _why_now(components_fired, trend):
         parts.append(f"{trend['unique_events_24h']} eventi distinti")
     if components_fired["salience"]:
         parts.append("entita' primaria/in titolo in almeno un articolo")
-    if components_fired["cross_entity"]:
-        parts.append("co-occorre con altre entita' tracciate nello stesso articolo")
     if not parts:
         parts.append(f"{trend['mentions_24h']} menzioni nelle ultime 24h, nessun'altra soglia superata")
     return "; ".join(parts)
@@ -86,7 +89,6 @@ def build_signal_candidates(trending_rows, salience_by_key):
             "sources": trend["unique_sources_24h"] >= SOURCES_SIGNAL_MIN,
             "events": trend["unique_events_24h"] >= EVENTS_SIGNAL_MIN,
             "salience": sal["max_salience"] >= SALIENCE_SIGNAL_MIN or sal["any_primary"],
-            "cross_entity": sal["max_co_entities"] >= CO_ENTITY_SIGNAL_MIN,
         }
         confidence = round(sum(components_fired.values()) / len(components_fired), 3)
         classification = (

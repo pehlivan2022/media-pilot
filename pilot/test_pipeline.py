@@ -393,6 +393,9 @@ def test_16_signal_candidate_review_needs_multiple_real_signals():
     silent = _trend_row("obren", mentions_24h=0)
     salience_by_key = {"dodik": {"max_salience": 1.3, "any_primary": True, "max_co_entities": 3},
                         "minic": {"max_salience": 0.3, "any_primary": False, "max_co_entities": 0}}
+    # max_co_entities kept in the fixture even though cross_entity no longer reads it (§G,
+    # removed as a structurally-constant component) - build_signal_candidates still expects the
+    # key to exist in salience_by_key's dict shape.
     candidates = signals_mod.build_signal_candidates([hot, quiet, silent], salience_by_key)
     by_id = {c["entity_id"]: c for c in candidates}
     assert "obren" not in by_id, "un'entita' senza mention nelle ultime 24h non deve produrre un Signal"
