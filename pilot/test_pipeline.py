@@ -416,6 +416,36 @@ def test_17_run_monitor_dedupes_shared_source_across_targets():
     assert set(matched) == {"a", "b"}, "il target disabilitato non deve essere selezionato"
 
 
+def test_19_sitemap_backfill_excludes_already_known_canonicals():
+    """TASK_FASE3_NEXT §F (A2): senza exclude_canonical, il backfill riseleziona sempre la stessa
+    finestra recente del sitemap invece di avanzare nella storia gia' nota."""
+    from datetime import datetime, timezone
+    from unittest.mock import patch
+
+    sitemap_xml = b"""<?xml version="1.0"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://example.test/old-article</loc><lastmod>2026-08-20T10:00:00Z</lastmod></url>
+  <url><loc>https://example.test/new-article</loc><lastmod>2026-08-21T10:00:00Z</lastmod></url>
+</urlset>"""
+    article_html = b"<html><head><title>t</title></head><body>x</body></html>"
+
+    def fake_fetch(url, timeout=15, retries=2, headers=None):
+        body = sitemap_xml if url.endswith("sitemap.xml") else article_html
+        return 200, {}, body
+
+    source = {"source_id": "TST", "website_url": "https://example.test", "language": "sr"}
+    window_start = datetime(2000, 1, 1, tzinfo=timezone.utc)
+    already_known = {collect_mod.canonicalize_url("https://example.test/old-article")}
+
+    with patch.object(collect_mod, "fetch", side_effect=fake_fetch):
+        items, errors = collect_mod.collect_from_sitemap_backfill(source, window_start,
+                                                                    exclude_canonical=already_known)
+
+    urls = {it["final_url"] for it in items}
+    assert "https://example.test/new-article" in urls, "l'articolo non ancora noto va incluso"
+    assert "https://example.test/old-article" not in urls, "l'articolo gia' in data/raw/ non va rifetchato"
+
+
 def test_18_collect_skips_history_supplement_once_window_is_full():
     """TASK_FASE2_COMPLETAMENTO §A1: senza questo guard, ogni run rifaceva il supplemento
     wayback/sitemap per ogni fonte RSS a prescindere da data/raw/ gia' presente (~50min)."""

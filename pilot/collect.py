@@ -440,6 +440,24 @@ def collect(days=BACKFILL_DAYS_DEFAULT, supplement_history=True, only_source_ids
     if only_source_ids is not None:
         sources = [s for s in sources if s["source_id"] in only_source_ids]
     window_start = datetime.now(timezone.utc) - timedelta(days=days)
+
+    # TASK_FASE3_NEXT §F (A2): stessa scansione di data/raw/*.jsonl gia' fatta comunque per il
+    # dedup in scrittura (misurata 0.52s su 1808 righe) - anticipata qui per riuso, non ripetuta.
+    # existing_canonicals alimenta exclude_canonical del supplemento: senza, ogni run rifaceva
+    # fino a MAX_BACKFILL_URLS fetch per fonte, riselezionando sempre la stessa finestra recente
+    # del sitemap/CDX invece di avanzare nella storia.
+    RAW_DIR.mkdir(parents=True, exist_ok=True)
+    existing_ids = set()
+    existing_canonicals = set()
+    for path in RAW_DIR.glob("*.jsonl"):
+        for line in path.read_text(encoding="utf-8").splitlines():
+            if not line.strip():
+                continue
+            rec = json.loads(line)
+            existing_ids.add(rec["raw_id"])
+            if rec.get("final_url"):
+                existing_canonicals.add(rec["final_url"])
+
     all_items = []
     per_source_counts = {}
     for source in sources:
@@ -453,8 +471,11 @@ def collect(days=BACKFILL_DAYS_DEFAULT, supplement_history=True, only_source_ids
         # B1: il feed RSS copre poche decine di entry recenti, non 30 giorni. Supplemento
         # silenzioso (sitemap se c'e', altrimenti Wayback CDX) SOLO per le fonti rss-primarie:
         # le altre gia' usano sitemap/wayback come metodo principale, non serve raddoppiare.
+        # A1 (window_actual_days) e A2 (exclude_canonical) sono complementari, non alternative:
+        # A1 salta del tutto le fonti gia' piene, A2 fa avanzare le altre invece di ripetersi.
         if is_rss and supplement_history and _needs_history_supplement(source, days):
-            sup_items, sup_errors = collect_supplemental_history(source, window_start)
+            sup_items, sup_errors = collect_supplemental_history(source, window_start,
+                                                                   exclude_canonical=existing_canonicals)
             existing_urls = {it["raw_id"] for it in items}
             items = items + [it for it in sup_items if it["raw_id"] not in existing_urls]
             errors = errors + sup_errors
@@ -465,15 +486,9 @@ def collect(days=BACKFILL_DAYS_DEFAULT, supplement_history=True, only_source_ids
             log_error(kind, sid, url, msg)
         print(f"{sid:16s} -> {len(items):4d} item, {len(errors)} errori")
 
-    RAW_DIR.mkdir(parents=True, exist_ok=True)
     out_path = RAW_DIR / f"{datetime.now(timezone.utc).date().isoformat()}.jsonl"
     # dedup contro TUTTI i raw/*.jsonl (non solo il file di oggi): collect gira piu' volte al
     # giorno e su piu' giorni durante l'accumulo, e un raw_id gia' scritto ieri non va riscritto oggi.
-    existing_ids = set()
-    for path in RAW_DIR.glob("*.jsonl"):
-        for line in path.read_text(encoding="utf-8").splitlines():
-            if line.strip():
-                existing_ids.add(json.loads(line)["raw_id"])
     with open(out_path, "a", encoding="utf-8") as f:
         written = 0
         for item in all_items:
