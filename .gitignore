@@ -4,3 +4,5 @@ __pycache__/
 *.zip
 data/*
 !data/pipeline_health.json
+!data/golden/
+!data/fixtures/

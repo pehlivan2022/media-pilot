@@ -422,6 +422,15 @@ def write_window_actual_days(window_by_source):
     SOURCES_YAML.write_text("\n".join(out), encoding="utf-8", newline="\n")
 
 
+def _needs_history_supplement(source, days):
+    """TASK_FASE2_COMPLETAMENTO §A1: salta il supplemento (wayback/sitemap, fino a
+    MAX_BACKFILL_URLS fetch) se la fonte ha gia' `window_actual_days` (calcolato sull'ultimo
+    run da compute_window_actual_days) >= alla finestra richiesta. Senza questo, ogni run
+    rifaceva il supplemento per ogni fonte RSS a prescindere, anche quando il dedup in
+    scrittura li avrebbe scartati comunque (~50min anziche' pochi minuti su un run gia' pieno)."""
+    return source.get("window_actual_days", 0) < days
+
+
 def collect(days=BACKFILL_DAYS_DEFAULT, supplement_history=True, only_source_ids=None):
     """`only_source_ids` (opzionale): raccoglie solo queste fonti invece di tutte le abilitate —
     usato da `pilot/run_monitor.py` (config/monitoring.yaml) per rispettare frequenze diverse per
@@ -444,7 +453,7 @@ def collect(days=BACKFILL_DAYS_DEFAULT, supplement_history=True, only_source_ids
         # B1: il feed RSS copre poche decine di entry recenti, non 30 giorni. Supplemento
         # silenzioso (sitemap se c'e', altrimenti Wayback CDX) SOLO per le fonti rss-primarie:
         # le altre gia' usano sitemap/wayback come metodo principale, non serve raddoppiare.
-        if is_rss and supplement_history:
+        if is_rss and supplement_history and _needs_history_supplement(source, days):
             sup_items, sup_errors = collect_supplemental_history(source, window_start)
             existing_urls = {it["raw_id"] for it in items}
             items = items + [it for it in sup_items if it["raw_id"] not in existing_urls]
@@ -480,7 +489,7 @@ def collect(days=BACKFILL_DAYS_DEFAULT, supplement_history=True, only_source_ids
     write_window_actual_days(window_by_source)
     print(f"window_actual_days aggiornato in config/sources.yaml: {window_by_source}")
 
-    return all_items, per_source_counts
+    return all_items, per_source_counts, written
 
 
 def main():

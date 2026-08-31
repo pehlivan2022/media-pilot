@@ -8,6 +8,7 @@ import trafilatura
 
 from pilot import ask as ask_mod
 from pilot import clean as clean_mod
+from pilot import collect as collect_mod
 from pilot import dedup as dedup_mod
 from pilot import entities as entities_mod
 from pilot import entity_salience as salience_mod
@@ -413,6 +414,15 @@ def test_17_run_monitor_dedupes_shared_source_across_targets():
     sids, matched = run_monitor_mod.resolve_source_ids(targets, priorities=["high"])
     assert sids == {"S1", "S2", "S3"}, "S2 condiviso da a/b deve comparire una volta sola"
     assert set(matched) == {"a", "b"}, "il target disabilitato non deve essere selezionato"
+
+
+def test_18_collect_skips_history_supplement_once_window_is_full():
+    """TASK_FASE2_COMPLETAMENTO §A1: senza questo guard, ogni run rifaceva il supplemento
+    wayback/sitemap per ogni fonte RSS a prescindere da data/raw/ gia' presente (~50min)."""
+    assert collect_mod._needs_history_supplement({"window_actual_days": 3}, days=7) is True
+    assert collect_mod._needs_history_supplement({"window_actual_days": 7}, days=7) is False
+    assert collect_mod._needs_history_supplement({"window_actual_days": 10}, days=7) is False
+    assert collect_mod._needs_history_supplement({}, days=7) is True, "fonte mai vista -> supplemento"
 
 
 def run_all():

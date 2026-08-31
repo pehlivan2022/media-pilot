@@ -1,0 +1,544 @@
+[
+  {
+    "raw_id": "ccfe382f824454b668c874c4",
+    "title": "Превозници најавили протест испред зграде ЕУ у Сарајеву",
+    "url": "https://atvbl.rs/vijesti/bih/prevoznici-najavili-protest-ispred-zgrade-eu-u-sarajevu/2334512",
+    "source_id": "RS_ENT_002",
+    "published_at": "2026-08-25T15:18:00Z",
+    "cluster_id_pipeline": "CL-2026-0036",
+    "modules_pipeline": [
+      "beograd",
+      "predsjednistvo"
+    ],
+    "cluster_expected": "CL-2026-0036",
+    "entities_expected": [
+      "beograd",
+      "predsjednistvo"
+    ],
+    "duplicate_expected": false,
+    "note": "cluster corretto: protest prevoznika ispred zgrade EU Sarajevo"
+  },
+  {
+    "raw_id": "53081f3639dda3aa17428ed0",
+    "title": "У понедјељак протест возача испред зграде ЕУ у Сарајеву",
+    "url": "https://atvbl.rs/vijesti/republika-srpska/u-ponedjeljak-protest-vozaca-ispred-zgrade-eu-u-sarajevu/2335112",
+    "source_id": "RS_ENT_002",
+    "published_at": "2026-08-26T19:50:00Z",
+    "cluster_id_pipeline": "CL-2026-0036",
+    "modules_pipeline": [
+      "predsjednistvo"
+    ],
+    "cluster_expected": "CL-2026-0036",
+    "entities_expected": [
+      "predsjednistvo"
+    ],
+    "duplicate_expected": false,
+    "note": "cluster corretto: protest prevoznika ispred zgrade EU Sarajevo"
+  },
+  {
+    "raw_id": "52224bbbfa0a2534f5d79fc2",
+    "title": "OKUPLJENO VIŠE OD 100 IZLAGAČA Minić otvorio Festival domaćih proizvoda u Banjaluci",
+    "url": "https://srpskainfo.com/drustvo/okupljeno-vise-od-100-izlagaca-minic-otvorio-festival-domacih-proizvoda-u-banjaluci/",
+    "source_id": "BL_IJ3_001",
+    "published_at": "2026-08-25T22:00:00Z",
+    "cluster_id_pipeline": "CL-2026-0077",
+    "modules_pipeline": [],
+    "cluster_expected": "CL-2026-0077",
+    "entities_expected": [],
+    "duplicate_expected": false,
+    "note": "cluster corretto: Minic otvorio Festival domacih proizvoda Banjaluka"
+  },
+  {
+    "raw_id": "b0801ec4371aeadbb4964f53",
+    "title": "Минић у Бањалуци отворио девети Фестивал домаћих производа",
+    "url": "https://atvbl.rs/vijesti/republika-srpska/minic-u-banjaluci-otvorio-deveti-festival-domacih-proizvoda/2335121",
+    "source_id": "RS_ENT_002",
+    "published_at": "2026-08-26T20:14:00Z",
+    "cluster_id_pipeline": "CL-2026-0077",
+    "modules_pipeline": [
+      "minic",
+      "predsjednik-rs"
+    ],
+    "cluster_expected": "CL-2026-0077",
+    "entities_expected": [
+      "minic",
+      "predsjednik-rs"
+    ],
+    "duplicate_expected": false,
+    "note": "cluster corretto: Minic otvorio Festival domacih proizvoda Banjaluka"
+  },
+  {
+    "raw_id": "60abd8a51d523fc4e62cee90",
+    "title": "Из Хага још нема љекарских извјештаја о стању генерала, рок продужен за још 24 часа",
+    "url": "http://www.rtrs.tv:443/vijesti/vijest.php?id=657668",
+    "source_id": "RS_ENT_001",
+    "published_at": "2026-08-26T10:50:53Z",
+    "cluster_id_pipeline": "CL-2026-0154",
+    "modules_pipeline": [],
+    "cluster_expected": "CL-2026-0154",
+    "entities_expected": [],
+    "duplicate_expected": false,
+    "note": "cluster corretto: izvjestaj o generalu iz Haga"
+  },
+  {
+    "raw_id": "7b1d33f96791874fba2f566c",
+    "title": "Из Хага још нема љекарских извјештаја о стању генерала Младића",
+    "url": "https://atvbl.rs/vijesti/republika-srpska/iz-haga-jos-nema-ljekarskih-izvjestaja-o-stanju-generala-mladica/2335100",
+    "source_id": "RS_ENT_002",
+    "published_at": "2026-08-26T19:21:00Z",
+    "cluster_id_pipeline": "CL-2026-0154",
+    "modules_pipeline": [
+      "beograd",
+      "sps",
+      "us-sps"
+    ],
+    "cluster_expected": "CL-2026-0154",
+    "entities_expected": [
+      "beograd",
+      "sps",
+      "us-sps"
+    ],
+    "duplicate_expected": false,
+    "note": "cluster corretto: izvjestaj o generalu iz Haga"
+  },
+  {
+    "raw_id": "59594f9dc62119e837457cb7",
+    "title": "Трудница из Требиња транспортована хеликоптером у Бањалуку",
+    "url": "http://www.rtrs.tv:443/vijesti/vijest.php?id=657687",
+    "source_id": "RS_ENT_001",
+    "published_at": "2026-08-26T13:34:42Z",
+    "cluster_id_pipeline": "CL-2026-0176",
+    "modules_pipeline": [],
+    "cluster_expected": "CL-2026-0176",
+    "entities_expected": [],
+    "duplicate_expected": false,
+    "note": "cluster corretto: trudnica transportovana helikopterom Banjaluka"
+  },
+  {
+    "raw_id": "f2dc83bbd67f5b8bda12d535",
+    "title": "Транспортована трудница из Требиња у Бањалуку",
+    "url": "https://atvbl.rs/vijesti/republika-srpska/transportovana-trudnica-iz-trebinja-u-banjaluku/2335019",
+    "source_id": "RS_ENT_002",
+    "published_at": "2026-08-26T15:52:00Z",
+    "cluster_id_pipeline": "CL-2026-0176",
+    "modules_pipeline": [
+      "beograd"
+    ],
+    "cluster_expected": "CL-2026-0176",
+    "entities_expected": [
+      "beograd"
+    ],
+    "duplicate_expected": false,
+    "note": "cluster corretto: trudnica transportovana helikopterom Banjaluka"
+  },
+  {
+    "raw_id": "4153f452667d0b364241bc15",
+    "title": "ГИК Добој ће предати пријаву ЦИК-у због трговине члановима бирачких одбора између Странке за БиХ и СДС-а",
+    "url": "https://atvbl.rs/vijesti/bih/gik-doboj-ce-predati-prijavu-cik-u-zbog-trgovine-clanovima-birackih-odbora-izmedju-stranke-za-bih-i-sds-a/2334392",
+    "source_id": "RS_ENT_002",
+    "published_at": "2026-08-25T12:04:00Z",
+    "cluster_id_pipeline": "CL-2026-0031",
+    "modules_pipeline": [
+      "cik",
+      "doboj",
+      "ij5-konkurencija",
+      "izborni-proces",
+      "opozicija",
+      "predsjednistvo",
+      "sds"
+    ],
+    "cluster_expected": "GOLD-VULIC-GIK-DOBOJ",
+    "entities_expected": [
+      "cik",
+      "doboj",
+      "ij5-konkurencija",
+      "izborni-proces",
+      "opozicija",
+      "predsjednistvo",
+      "sds"
+    ],
+    "duplicate_expected": false,
+    "note": "stessa vicenda (accusa GIK Doboj), la pipeline li ha separati in 4 cluster: miss di recall"
+  },
+  {
+    "raw_id": "912a9f1a25114db42a205f6c",
+    "title": "Вулић: Приговор ГИК Добој због сумње у трговање бирачким мјестима",
+    "url": "http://www.rtrs.tv:443/vijesti/vijest.php?id=657646",
+    "source_id": "RS_ENT_001",
+    "published_at": "2026-08-26T08:15:56Z",
+    "cluster_id_pipeline": "CL-2026-0129",
+    "modules_pipeline": [
+      "doboj",
+      "ij5-konkurencija",
+      "predsjednistvo",
+      "snsd",
+      "us-snsd"
+    ],
+    "cluster_expected": "GOLD-VULIC-GIK-DOBOJ",
+    "entities_expected": [
+      "doboj",
+      "ij5-konkurencija",
+      "predsjednistvo",
+      "snsd",
+      "us-snsd"
+    ],
+    "duplicate_expected": false,
+    "note": "stessa vicenda (accusa GIK Doboj), la pipeline li ha separati in 4 cluster: miss di recall"
+  },
+  {
+    "raw_id": "556409eb69b5566f7a2b8d08",
+    "title": "Вулић поднијела приговор ГИК-у Добој: \"Изборни процес није ничија политичка прћија\"",
+    "url": "https://atvbl.rs/vijesti/bih/vulic-podnijela-prigovor-gik-u-doboj-izborni-proces-nije-nicija-politicka-prcija/2334830",
+    "source_id": "RS_ENT_002",
+    "published_at": "2026-08-26T10:21:00Z",
+    "cluster_id_pipeline": "CL-2026-0149",
+    "modules_pipeline": [
+      "cik",
+      "doboj",
+      "ij5-konkurencija",
+      "izborni-proces",
+      "opozicija",
+      "predsjednistvo",
+      "sds",
+      "snsd",
+      "us-snsd"
+    ],
+    "cluster_expected": "GOLD-VULIC-GIK-DOBOJ",
+    "entities_expected": [
+      "cik",
+      "doboj",
+      "ij5-konkurencija",
+      "izborni-proces",
+      "opozicija",
+      "predsjednistvo",
+      "sds",
+      "snsd",
+      "us-snsd"
+    ],
+    "duplicate_expected": false,
+    "note": "stessa vicenda (accusa GIK Doboj), la pipeline li ha separati in 4 cluster: miss di recall"
+  },
+  {
+    "raw_id": "280646ac7c75ecf4b90c2c1c",
+    "title": "Ковачевић: ЦИК хитно да одговори на пријаву Вулићеве (ВИДЕО)",
+    "url": "http://www.rtrs.tv:443/vijesti/vijest.php?id=657669",
+    "source_id": "RS_ENT_001",
+    "published_at": "2026-08-26T10:57:26Z",
+    "cluster_id_pipeline": "CL-2026-0155",
+    "modules_pipeline": [
+      "cik",
+      "doboj",
+      "ij5-konkurencija",
+      "izborni-proces",
+      "predsjednistvo",
+      "snsd",
+      "us-snsd"
+    ],
+    "cluster_expected": "GOLD-VULIC-GIK-DOBOJ",
+    "entities_expected": [
+      "cik",
+      "doboj",
+      "ij5-konkurencija",
+      "izborni-proces",
+      "predsjednistvo",
+      "snsd",
+      "us-snsd"
+    ],
+    "duplicate_expected": false,
+    "note": "stessa vicenda (accusa GIK Doboj), la pipeline li ha separati in 4 cluster: miss di recall"
+  },
+  {
+    "raw_id": "844f00e228e0dacbd83f4558",
+    "title": "Ђоковић стигао у Њујорк",
+    "url": "https://atvbl.rs/sport-1/tenis/djokovic-stigao-u-njujork/2333330",
+    "source_id": "RS_ENT_002",
+    "published_at": "2026-08-23T09:15:00Z",
+    "cluster_id_pipeline": "CL-2026-0008",
+    "modules_pipeline": [
+      "ij5-konkurencija",
+      "mandati-us",
+      "stevandic",
+      "us",
+      "us-snsd",
+      "us-sps"
+    ],
+    "cluster_expected": "CL-2026-0008",
+    "entities_expected": [],
+    "duplicate_expected": false,
+    "note": "falso positivo: 'US' (US Open tennis) matcha entita' politiche"
+  },
+  {
+    "raw_id": "3cf645a054b57a4d08859ea7",
+    "title": "Србин освојио невјероватан поен! Из безизлазне ситуације направио спектакл",
+    "url": "https://atvbl.rs/sport-1/tenis/srbin-osvojio-nevjerovatan-poen-iz-bezizlazne-situacije-napravio-spektakl/2334452",
+    "source_id": "RS_ENT_002",
+    "published_at": "2026-08-25T13:29:00Z",
+    "cluster_id_pipeline": "CL-2026-0033",
+    "modules_pipeline": [
+      "ij5-konkurencija",
+      "mandati-us",
+      "stevandic",
+      "us",
+      "us-snsd",
+      "us-sps"
+    ],
+    "cluster_expected": "CL-2026-0033",
+    "entities_expected": [],
+    "duplicate_expected": false,
+    "note": "falso positivo: 'US' (US Open tennis) matcha entita' politiche"
+  },
+  {
+    "raw_id": "a67015834bff2e8726e5eae9",
+    "title": "Малољетна улази у ријалити, ни школу није завршила: Мајка потписала сагласност",
+    "url": "https://atvbl.rs/magazin/scena/maloljetna-ulazi-u-rijaliti-ni-skolu-nije-zavrsila-majka-potpisala-saglasnost/2334803",
+    "source_id": "RS_ENT_002",
+    "published_at": "2026-08-26T09:31:00Z",
+    "cluster_id_pipeline": "CL-2026-0138",
+    "modules_pipeline": [
+      "beograd"
+    ],
+    "cluster_expected": "CL-2026-0138",
+    "entities_expected": [
+      "beograd"
+    ],
+    "duplicate_expected": false,
+    "note": "campione casuale, confermato a mano"
+  },
+  {
+    "raw_id": "31116148cce6a00adcd7a786",
+    "title": "ISTORIJSKI BUM U PALAMA! Kojić otkrio kapitalne projekte koji potpuno mijenjaju izgled opštine!",
+    "url": "https://banjaluka-24.com/istorijski-bum-u-palama-kojic-otkrio-kapitalne-projekte-koji-potpuno-mijenjaju-izgled-opstine/",
+    "source_id": "BL_IJ3_006",
+    "published_at": "2026-08-26T09:38:47Z",
+    "cluster_id_pipeline": "CL-2026-0139",
+    "modules_pipeline": [
+      "beograd",
+      "finansiranje"
+    ],
+    "cluster_expected": "CL-2026-0139",
+    "entities_expected": [
+      "beograd",
+      "finansiranje"
+    ],
+    "duplicate_expected": false,
+    "note": "campione casuale, confermato a mano"
+  },
+  {
+    "raw_id": "c10745c3794e45a317b2a4b6",
+    "title": "\"Smatram da svako dijete treba da ima oca\" Aneli Ahmić po prvi put progovorila o susretu Asmina i male Nore",
+    "url": "https://srpskainfo.com/zabava/smatram-da-svako-dijete-treba-da-ima-oca-aneli-ahmic-po-prvi-put-progovorila-o-susretu-asmina-i-male-nore/",
+    "source_id": "BL_IJ3_001",
+    "published_at": "2026-08-25T22:00:00Z",
+    "cluster_id_pipeline": "CL-2026-0080",
+    "modules_pipeline": [
+      "beograd"
+    ],
+    "cluster_expected": "CL-2026-0080",
+    "entities_expected": [
+      "beograd"
+    ],
+    "duplicate_expected": false,
+    "note": "campione casuale, confermato a mano"
+  },
+  {
+    "raw_id": "c2dd5e29b7f2b0b4dfb36337",
+    "title": "Цицовић: \"Кочићевим даном у Београду\" чувамо заједничко памћење и његујемо културне везе",
+    "url": "http://www.rtrs.tv:443/vijesti/vijest.php?id=657679",
+    "source_id": "RS_ENT_001",
+    "published_at": "2026-08-26T12:06:58Z",
+    "cluster_id_pipeline": "CL-2026-0166",
+    "modules_pipeline": [
+      "beograd"
+    ],
+    "cluster_expected": "CL-2026-0166",
+    "entities_expected": [
+      "beograd"
+    ],
+    "duplicate_expected": false,
+    "note": "campione casuale, confermato a mano"
+  },
+  {
+    "raw_id": "f7f14139f94de67965a9c441",
+    "title": "Поново активна два пожара на Требевићу",
+    "url": "https://atvbl.rs/vijesti/drustvo/ponovo-aktivna-dva-pozara-na-trebevicu/2335097",
+    "source_id": "RS_ENT_002",
+    "published_at": "2026-08-26T19:19:00Z",
+    "cluster_id_pipeline": "CL-2026-0225",
+    "modules_pipeline": [
+      "finansiranje",
+      "predsjednistvo"
+    ],
+    "cluster_expected": "CL-2026-0225",
+    "entities_expected": [
+      "finansiranje",
+      "predsjednistvo"
+    ],
+    "duplicate_expected": false,
+    "note": "campione casuale, confermato a mano"
+  },
+  {
+    "raw_id": "c0aa56260ddd1a4de9c71734",
+    "title": "„SRBI NISU DUŽNI DA TRPE ZLOSTAVLJANJE“ Dodik istakao da su zaposleni iz RS u zajedničkim institucijama izloženi PRITISCIMA",
+    "url": "https://srpskainfo.com/politika/srbi-nisu-duzni-da-trpe-zlostavljanje-dodik-istakao-da-su-zaposleni-iz-rs-u-zajednickim-institucijama-izlozeni-pritiscima/",
+    "source_id": "BL_IJ3_001",
+    "published_at": "2026-08-25T22:00:00Z",
+    "cluster_id_pipeline": "CL-2026-0074",
+    "modules_pipeline": [
+      "predsjednik-rs"
+    ],
+    "cluster_expected": "CL-2026-0074",
+    "entities_expected": [
+      "predsjednik-rs"
+    ],
+    "duplicate_expected": false,
+    "note": "campione casuale, confermato a mano"
+  },
+  {
+    "raw_id": "1414c10b09132cfb53c5355c",
+    "title": "(FOTO) \"Tek kasnije sam shvatio razmjere tragedije\" Hrvat BIO NA GRANICI Nepala i Kine samo 48 sati prije katastrofe",
+    "url": "https://srpskainfo.com/svijet/foto-tek-kasnije-sam-shvatio-razmjere-tragedije-hrvat-bio-na-granici-nepala-i-kine-samo-48-sati-prije-katastrofe/",
+    "source_id": "BL_IJ3_001",
+    "published_at": "2026-08-25T22:00:00Z",
+    "cluster_id_pipeline": "CL-2026-0065",
+    "modules_pipeline": [],
+    "cluster_expected": "CL-2026-0065",
+    "entities_expected": [],
+    "duplicate_expected": false,
+    "note": "campione casuale, confermato a mano"
+  },
+  {
+    "raw_id": "5aeb4402ff46514bc0d6dc1c",
+    "title": "KREMLJ PREKINUO ĆUTANJE! Otkriveno da li se šef CIA-e u Moskvi tajno sastao sa Putinom!",
+    "url": "https://banjaluka-24.com/kremlj-prekinuo-cutanje-otkriveno-da-li-se-sef-cia-e-u-moskvi-tajno-sastao-sa-putinom/",
+    "source_id": "BL_IJ3_006",
+    "published_at": "2026-08-26T16:00:45Z",
+    "cluster_id_pipeline": "CL-2026-0199",
+    "modules_pipeline": [],
+    "cluster_expected": "CL-2026-0199",
+    "entities_expected": [],
+    "duplicate_expected": false,
+    "note": "campione casuale, confermato a mano"
+  },
+  {
+    "raw_id": "d5c8bc5b3552eebec82a33b6",
+    "title": "(VIDEO, FOTO) LJUDI ZATRPANI ŽIVI, IMA 100 MRTVIH Bujične poplave gutaju sve pred sobom, čitava naselja NESTALA sa lica zemlje u sekundi",
+    "url": "https://srpskainfo.com/svijet/video-foto-ljudi-zatrpani-zivi-ima-100-mrtvih-bujicne-poplave-gutaju-sve-pred-sobom-citava-naselja-nestala-sa-lica-zemlje-u-sekundi/",
+    "source_id": "BL_IJ3_001",
+    "published_at": "2026-08-25T22:00:00Z",
+    "cluster_id_pipeline": "CL-2026-0088",
+    "modules_pipeline": [],
+    "cluster_expected": "CL-2026-0088",
+    "entities_expected": [],
+    "duplicate_expected": false,
+    "note": "campione casuale, confermato a mano"
+  },
+  {
+    "raw_id": "d976cef52e95f065d3e212c3",
+    "title": "(FOTO) Napisala sve što joj je na duši: Marija Šerifović zaintrigirala objavom \"Samo poželiš da staneš\"",
+    "url": "https://srpskainfo.com/zabava/foto-napisala-sve-sto-joj-je-na-dusi-marija-serifovic-zaintrigirala-objavom-samo-pozelis-da-stanes/",
+    "source_id": "BL_IJ3_001",
+    "published_at": "2026-08-25T22:00:00Z",
+    "cluster_id_pipeline": "CL-2026-0058",
+    "modules_pipeline": [],
+    "cluster_expected": "CL-2026-0058",
+    "entities_expected": [],
+    "duplicate_expected": false,
+    "note": "campione casuale, confermato a mano"
+  },
+  {
+    "raw_id": "a4ad9dbf055c18963fe0e6b5",
+    "title": "(FOTO) Žive u luksuznoj vili od 13,5 miliona dolara: Jelena Janković krije supruga kao zmija noge, evo ko je uspješni doktor s kojim ima kćerku",
+    "url": "https://srpskainfo.com/zabava/foto-zive-u-luksuznoj-vili-od-135-miliona-dolara-jelena-jankovic-krije-supruga-kao-zmija-noge-evo-ko-je-uspjesni-doktor-s-kojim-ima-kcerku/",
+    "source_id": "BL_IJ3_001",
+    "published_at": "2026-08-25T22:00:00Z",
+    "cluster_id_pipeline": "CL-2026-0086",
+    "modules_pipeline": [],
+    "cluster_expected": "CL-2026-0086",
+    "entities_expected": [],
+    "duplicate_expected": false,
+    "note": "campione casuale, confermato a mano"
+  },
+  {
+    "raw_id": "8ece12a4dc7756a4380591da",
+    "title": "Појели заражено месо, настао хаос: Проглашена епидемија",
+    "url": "https://atvbl.rs/vijesti/svijet/pojeli-zarazeno-meso-nastao-haos-proglasena-epidemija/2335157",
+    "source_id": "RS_ENT_002",
+    "published_at": "2026-08-26T21:57:00Z",
+    "cluster_id_pipeline": "CL-2026-0236",
+    "modules_pipeline": [],
+    "cluster_expected": "CL-2026-0236",
+    "entities_expected": [],
+    "duplicate_expected": false,
+    "note": "campione casuale, confermato a mano"
+  },
+  {
+    "raw_id": "ffcf4534d0a343ba806cc85a",
+    "title": "\"Vatra izbila na dva mjesta\" Vukadin potvrdio da su na Trebeviću aktivna nova požarišta",
+    "url": "https://srpskainfo.com/drustvo/vatra-izbila-na-dva-mjesta-vukadin-potvrdio-da-su-na-trebevicu-aktivna-nova-pozarista/",
+    "source_id": "BL_IJ3_001",
+    "published_at": "2026-08-25T22:00:00Z",
+    "cluster_id_pipeline": "CL-2026-0096",
+    "modules_pipeline": [],
+    "cluster_expected": "CL-2026-0096",
+    "entities_expected": [],
+    "duplicate_expected": false,
+    "note": "campione casuale, confermato a mano"
+  },
+  {
+    "raw_id": "e3b5d7b53f18b4993e0994da",
+    "title": "(FOTO) Ređa samo desetke: Marija Kulić se pohvalila najmlađom kćerkom i njenim uspjehom na fakultetu",
+    "url": "https://srpskainfo.com/zabava/redja-samo-desetke-marija-kulic-se-pohvalila-najmladjom-kcerkom-i-njenim-uspjehom-na-fakultetu/",
+    "source_id": "BL_IJ3_001",
+    "published_at": "2026-08-25T22:00:00Z",
+    "cluster_id_pipeline": "CL-2026-0073",
+    "modules_pipeline": [],
+    "cluster_expected": "CL-2026-0073",
+    "entities_expected": [],
+    "duplicate_expected": false,
+    "note": "campione casuale, confermato a mano"
+  },
+  {
+    "raw_id": "8ff17dadffd51f86fe08dadd",
+    "title": "Наставак истраге у предмету Доња Јабланица: Полиција изузима документацију фирми из неколико кантона",
+    "url": "https://atvbl.rs/vijesti/hronika/nastavak-istrage-u-predmetu-donja-jablanica-policija-izuzima-dokumentaciju-firmi-iz-nekoliko-kantona/2334866",
+    "source_id": "RS_ENT_002",
+    "published_at": "2026-08-26T11:10:00Z",
+    "cluster_id_pipeline": "CL-2026-0158",
+    "modules_pipeline": [
+      "doboj",
+      "ij5-konkurencija",
+      "predsjednistvo"
+    ],
+    "cluster_expected": "CL-2026-0158",
+    "entities_expected": [
+      "doboj",
+      "ij5-konkurencija",
+      "predsjednistvo"
+    ],
+    "duplicate_expected": false,
+    "note": "campione casuale, confermato a mano"
+  },
+  {
+    "raw_id": "ff308b32dd3d9a5ec6d1343c",
+    "title": "Pod lupom upozorava na neujednačenu praksu sankcionisanja zloupotrebe djece u političke svrhe",
+    "url": "https://podlupom.org/press-kutak/vijesti/pod-lupom-upozorava-na-neujednacenu-praksu-sankcionisanja-zloupotrebe-djece-u-politicke-svrhe/",
+    "source_id": "BIH_ELEC_002",
+    "published_at": "2026-08-20T07:21:46Z",
+    "cluster_id_pipeline": "CL-2026-0001",
+    "modules_pipeline": [
+      "cik",
+      "finansiranje",
+      "izborni-proces",
+      "predsjednistvo"
+    ],
+    "cluster_expected": "CL-2026-0001",
+    "entities_expected": [
+      "cik",
+      "finansiranje",
+      "izborni-proces",
+      "predsjednistvo"
+    ],
+    "duplicate_expected": false,
+    "note": "campione casuale, confermato a mano"
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "planned_quotas": {
+    "political": 20,
+    "duplicate": 20,
+    "event": 20,
+    "non_political": 20,
+    "cyr_latn": 10,
+    "ambiguous": 10
+  },
+  "actual_available": {
+    "duplicate": 2,
+    "event": 13,
+    "cyr_latn_pairs_available": 10,
+    "ambiguous": 23
+  },
+  "shortfall_redistributed": {
+    "total_shortfall": 30,
+    "extra_political": 15,
+    "extra_non_political": 15
+  },
+  "final_count": 100,
+  "category_counts": {
+    "duplicate": 2,
+    "event": 13,
+    "ambiguous": 10,
+    "non_political": 37,
+    "cyr_latn": 5,
+    "political": 25,
+    "filler_political_or_non_political": 8
+  }
+}

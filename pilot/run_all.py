@@ -60,7 +60,7 @@ def run(days=collect.BACKFILL_DAYS_DEFAULT, do_collect=True, only_source_ids=Non
     t0 = time.time()
     run_start_iso = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
     sources_enabled = len(collect.load_sources()) if only_source_ids is None else len(only_source_ids)
-    s = {"raw_items": [], "per_source": {}, "cleaned": [], "deduped": [], "clusters": [],
+    s = {"raw_items": [], "per_source": {}, "items_written": 0, "cleaned": [], "deduped": [], "clusters": [],
          "scored_items": [], "trending_rows": [], "trending_active": [], "signal_rows": [],
          "signal_review": [], "entries": []}
     ok, failed_stage, error_message = True, None, None
@@ -68,7 +68,7 @@ def run(days=collect.BACKFILL_DAYS_DEFAULT, do_collect=True, only_source_ids=Non
     try:
         if do_collect:
             print("=== collect ===")
-            s["raw_items"], s["per_source"] = collect.collect(days=days, only_source_ids=only_source_ids)
+            s["raw_items"], s["per_source"], s["items_written"] = collect.collect(days=days, only_source_ids=only_source_ids)
             if not s["raw_items"]:
                 _stop("collect")
         else:
@@ -142,7 +142,9 @@ def _write_health(t0, run_start_iso, sources_enabled, do_collect, s, ok, failed_
         "sources_failed_detail": error_detail if do_collect else None,
         "sources_zero_items": sorted(sid for sid, n in per_source.items() if n == 0) if do_collect else None,
         "items_per_source": per_source if do_collect else None,
-        "new_items_this_run": len(s["raw_items"]),
+        "new_items_this_run": len(s["raw_items"]),  # item SCARICATI, non scritti - vedi items_written
+        "items_fetched": len(s["raw_items"]),
+        "items_written": s["items_written"],
         "clean_total": len(s["cleaned"]), "dedup_total": len(s["deduped"]), "clusters_total": len(s["clusters"]),
         "rassegna_total": len(s["entries"]), "trending_entities_registry": len(s["trending_rows"]),
         "trending_entities_active": len(s["trending_active"]),
