@@ -160,24 +160,33 @@ BiH/RS su questo insieme di entità.
 ### Raccomandazione, non decisione presa
 
 - `momentum`/`sources`/`events`: **nessuna azione**, già calibrati abbastanza da discriminare.
-- `salience`: il vincolo strutturale è il tetto a 1.65 e l'`or any_primary` che aggira la soglia
-  del tutto per 5/28 casi. Rialzare `SALIENCE_SIGNAL_MIN` da solo non risolve (resterebbe ~82%
-  true); andrebbe tolto l'`or any_primary` E allargato il range della metrica stessa (es. non
-  saturare la ripetizione a 0.5, o pesare diversamente centralità/primarietà) — è una modifica
-  alla formula di `entity_salience.py`, non alla soglia di `signals.py`, e serve comunque
-  un'etichetta per sapere DOVE tagliare.
-- `cross_entity`: coerente con la via di uscita che il task stesso prevede al punto 3 — **soglia
-  non applicabile, il task autorizza la rimozione se resta sempre vero dopo il tentativo di
-  taratura**. Qui il tentativo (osservare il range reale) mostra che nessuna soglia nell'intervallo
-  osservato può funzionare. Non l'ho rimosso: è una modifica di codice/schema (`signals.py`,
-  `assets/data/signals.json`, eventuale UI che legge `confidence_components.cross_entity`) che
-  richiede conferma esplicita prima di toccarla.
+- `salience`: **lasciato invariato**, stesso problema di `cross_entity` ma la correzione è una
+  modifica alla formula di `entity_salience.py` (togliere l'`or any_primary`, allargare il range
+  oltre il tetto 1.65), non una cancellazione — e serve comunque sapere DOVE tagliare, cosa che
+  senza un'etichetta di signal-worthiness non si può stabilire senza indovinare.
+- `cross_entity`: **rimosso** (commit `666832a`). Coerente con la via di uscita che il task
+  stesso prevede al punto 3: soglia non applicabile, nessun valore nell'intervallo osservato
+  (6–22) avrebbe mai potuto far scattare `false`. Prima di applicare la rimozione ho simulato
+  l'effetto sui 28 candidati reali: `confidence` ricalcolata su 4 componenti invece di 5 non
+  cambia `classification` per **0/28** — non è un componente che stava proteggendo o gonfiando
+  artificialmente la lista REVIEW attuale, stava solo aggiungendo +0.2 costante a ogni punteggio
+  senza mai discriminare nulla. Nessun consumer frontend/dashboard legge
+  `confidence_components.cross_entity` (verificato). 27/27 test verdi.
 
 ### Non fatto in questa sessione
 
 - `docs/SIGNAL_CALIBRATION.md` — non scritto: avrebbe dovuto contenere soglie numeriche calibrate
   su golden, che non esistono. Scriverlo con numeri indovinati avrebbe prodotto un documento che
   una sessione futura avrebbe citato come "calibrato" quando non lo è.
-- Rimozione di `cross_entity` o modifica di `salience` — decisioni in sospeso, non implementate.
+- Modifica della formula di `entity_salience.py` per `salience` — decisione in sospeso, non
+  implementata (serve sapere dove tagliare, non solo che va tagliato).
 - Creazione di un dataset di etichette signal-worthiness — proposta, non fatta (è lavoro
   dell'utente/analista, non sintetizzabile).
+
+### Criterio di accettazione del task originale — verdetto aggiornato dopo `666832a`
+
+- "almeno 3 componenti su 5 cambiano stato in ≥1 entità" → **soddisfatto** (momentum/sources/
+  events, mai saturi sui dati freschi) — ma il layer segnali ha ora solo 4 componenti, non 5, per
+  la rimozione di `cross_entity`.
+- "`classification` produce ≥2 valori distinti" → **soddisfatto** (REVIEW/MONITORING, 22/6 sui
+  dati freschi), confermato anche dopo la rimozione (0/28 classificazioni cambiate).
