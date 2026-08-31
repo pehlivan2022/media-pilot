@@ -63,6 +63,7 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add data/raw data/errors.jsonl
           git diff --cached --quiet || git commit -m "state: run $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git pull --rebase origin runtime-state
           git push
 
       - name: Commit dashboard outputs
@@ -73,4 +74,5 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add assets/data/rassegna.json assets/data/signals.json assets/data/trending.json config/sources.yaml data/pipeline_health.json
           git diff --cached --quiet || git commit -m "pipeline: run $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git pull --rebase origin master
           git push
