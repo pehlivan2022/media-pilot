@@ -8,6 +8,7 @@ import json
 import re
 import time
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urlsplit
@@ -21,6 +22,12 @@ from pilot.util import FetchError, canonicalize_url, fetch, has_cyrillic, parse_
 _SITEMAP_NS = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
 MAX_LEAF_SITEMAPS = 6
 MAX_BACKFILL_URLS = 100
+# TASK_FASE3_NEXT §F follow-up, 2026-08-31: run 33442356029 (A1+A2, no crash) still took 2338.9s
+# for duration_sec ~= items_fetched(1250) * 1.87s/item - every URL was fetched sequentially, one
+# HTTP GET at a time. I/O-bound (network wait, not CPU), so threads give near-linear speedup
+# without adding a dependency. 8 concurrent requests to the SAME host is well within normal
+# browser/crawler etiquette.
+BACKFILL_FETCH_WORKERS = 8
 BACKFILL_DAYS_DEFAULT = 30  # B1: 30 giorni di storia sulle fonti gia' validate, non piu' solo 7
 # B2a/B1.2: dagli URL Wayback CDX vanno escluse le pagine indice/data/categoria/paginazione
 # (es. "/2026/08/01/", "/page/2/", "/category/x/") e tenuti solo quelli con uno slug che sembra
@@ -201,19 +208,19 @@ def collect_from_sitemap_backfill(source, window_start, exclude_canonical=None):
         if len(page_urls) >= MAX_BACKFILL_URLS:
             break
 
-    for url, lastmod in page_urls[:MAX_BACKFILL_URLS]:
+    def _fetch_one(url_lastmod):
+        url, lastmod = url_lastmod
         try:
             fstatus, _fh, fbody = fetch(url, timeout=15, retries=2)
         except FetchError as e:
-            errors.append((e.kind, url, str(e)))
-            continue
+            return ("error", (e.kind, url, str(e)))
         html_text = fbody.decode("utf-8", "ignore")
         text = trafilatura.extract(html_text, url=url) or ""
         meta = trafilatura.extract_metadata(html_text)
         title = (meta.title if meta else "") or ""
         canonical = canonicalize_url(url)
         raw_id = sha256_hex(canonical)[:24]
-        items.append({
+        return ("item", {
             "raw_id": raw_id, "source_id": source["source_id"], "url": url, "final_url": canonical,
             "title": title.strip(), "author": (meta.author if meta else None) or None,
             "text": text, "published_at": lastmod,
@@ -221,6 +228,10 @@ def collect_from_sitemap_backfill(source, window_start, exclude_canonical=None):
             "language": source.get("language", "sr"), "script": detect_script(text or title),
             "http_status": fstatus, "content_hash": sha256_hex(text) if text else "",
         })
+
+    with ThreadPoolExecutor(max_workers=BACKFILL_FETCH_WORKERS) as ex:
+        for kind, payload in ex.map(_fetch_one, page_urls[:MAX_BACKFILL_URLS]):
+            (items if kind == "item" else errors).append(payload)
     return items, errors
 
 
@@ -283,7 +294,8 @@ def collect_from_wayback_cdx(source, window_start, window_end=None, cdx_timeout=
             continue
         candidates.append((original, ts))
 
-    for original, ts in candidates[:MAX_BACKFILL_URLS]:
+    def _fetch_one(original_ts):
+        original, ts = original_ts
         html_text, http_status, via_wayback = None, None, False
         try:
             fstatus, _fh, fbody = fetch(original, timeout=15, retries=1)
@@ -296,15 +308,14 @@ def collect_from_wayback_cdx(source, window_start, window_end=None, cdx_timeout=
                 fstatus, _fh, fbody = fetch(wb_url, timeout=20, retries=1)
                 html_text, http_status, via_wayback = fbody.decode("utf-8", "ignore"), fstatus, True
             except FetchError as e:
-                errors.append((e.kind, original, str(e)))
-                continue
+                return ("error", (e.kind, original, str(e)))
         text = trafilatura.extract(html_text, url=original) or ""
         if len(text) < 200:
-            continue
+            return ("skip", None)
         meta = trafilatura.extract_metadata(html_text)
         title = (meta.title if meta else "") or ""
         if not title.strip():
-            continue  # nessun titolo estratto: pagina non-articolo sfuggita al filtro URL
+            return ("skip", None)  # nessun titolo estratto: pagina non-articolo sfuggita al filtro URL
         published = parse_date_to_utc(getattr(meta, "date", None)) if meta and getattr(meta, "date", None) else None
         if not published:
             # ts e' il momento dell'ARCHIVIAZIONE, non della pubblicazione: usato solo come ultima
@@ -315,7 +326,7 @@ def collect_from_wayback_cdx(source, window_start, window_end=None, cdx_timeout=
                 published = None
         canonical = canonicalize_url(original)
         raw_id = sha256_hex(canonical)[:24]
-        items.append({
+        return ("item", {
             "raw_id": raw_id, "source_id": source["source_id"], "url": original, "final_url": canonical,
             "title": title.strip(), "author": (meta.author if meta else None) or None,
             "text": text, "published_at": published,
@@ -324,6 +335,13 @@ def collect_from_wayback_cdx(source, window_start, window_end=None, cdx_timeout=
             "http_status": http_status, "content_hash": sha256_hex(text) if text else "",
             "via_wayback": via_wayback,
         })
+
+    with ThreadPoolExecutor(max_workers=BACKFILL_FETCH_WORKERS) as ex:
+        for kind, payload in ex.map(_fetch_one, candidates[:MAX_BACKFILL_URLS]):
+            if kind == "item":
+                items.append(payload)
+            elif kind == "error":
+                errors.append(payload)
     return items, errors
 
 
