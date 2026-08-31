@@ -2,11 +2,14 @@ name: Daily Pipeline
 
 on:
   workflow_dispatch:
-  schedule:
-    # ~06:00 and ~12:00 Europe/Sarajevo (UTC+1/+2), replacing the old Windows
-    # Task Scheduler trigger + catch-up. GitHub cron is UTC-fixed, no DST shift.
-    - cron: '0 5 * * *'
-    - cron: '0 11 * * *'
+  # schedule disabled 2026-08-31: the 2-run test showed run 2 (54m59s) was
+  # SLOWER than run 1 (49m52s), not incremental — collect_supplemental_history()
+  # re-fetches up to 100 URLs per RSS source every run regardless of existing
+  # data/raw/ history (see docs/TASK_FASE2_COMPLETAMENTO.md TASK A/B). Re-enable
+  # once that fix is verified on Actions, to avoid 2x ~55min full crawls/day.
+  # schedule:
+  #   - cron: '0 5 * * *'
+  #   - cron: '0 11 * * *'
 
 concurrency:
   group: daily-pipeline
