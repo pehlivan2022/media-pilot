@@ -245,3 +245,47 @@ cap tagliata) mentre `duration_sec` è sceso solo 230s — coerente con la nota 
 l'unica leva, ma resta l'unica disponibile nel perimetro di questo task — proseguo con run 3
 (budget 3/3) invece di fermarmi qui, perché il calcolo lascia un margine plausibile (non certo)
 di arrivare sotto 1200 con un taglio ulteriore.
+
+### Run 3 (finale, budget 3/3) — commit `e51a693`, run Actions `33462832943`
+
+| metrica | valore | criterio | esito |
+|---|---|---|---|
+| `duration_sec` | 1682.1 | < 1200 | **FAIL** (+40%) |
+| `sources_failed` | 18 | ≤ 15 | **FAIL** (peggiorato da 15) |
+| `items_fetched` | 660 | calo netto da 1250 | OK (−47%) |
+| `items_written` | 45 | — (criterio ritirato) | — |
+| fonti `window_actual_days ≥ 7` | 11/33 | in salita da 10 | OK (invariato da run 1/2) |
+
+Cap 30→15 (−50%) ha tagliato `duration_sec` solo dell'1.6% (1709.0→1682.1) e ha **peggiorato**
+`sources_failed` (15→18, +3 fonti in più falliscono — probabile: con meno URL disponibili alcune
+fonti sitemap/wayback non trovano più abbastanza pagina utile entro il cap e falliscono su
+condizioni che a cap più alto non incontravano). Il cap è arrivato al suo punto di rendimenti
+negativi: taglia sempre meno tempo e rompe sempre più fonti. Budget di 3 run esaurito con
+`duration_sec` ancora sopra il target in tutti e tre i run.
+
+**Decisione finale sul cap:** `MAX_BACKFILL_URLS` riportato a **30** (il valore misurato migliore
+sulle due metriche seguite, non un nuovo tentativo — run 2 batte sia run 1 che run 3 su
+`sources_failed`, ed è quasi pari a run 3 su `duration_sec`). Non è "continuare a tarare": è
+scegliere il migliore fra i tre valori già misurati, non cercarne uno nuovo.
+
+### Verdetto TASK F — target `duration_sec` < 1200 NON raggiunto
+
+Confermata la diagnosi che il gate era la causa principale del comportamento *peggiore* (avrebbe
+rifatto backfill per sempre, su ogni fonte, senza convergenza) — quella parte del fix è corretta e
+resta in produzione (`BACKFILL_TARGET_DAYS = 7`, verificato che il conteggio fonti a `≥7gg` sale
+nel tempo, 10→11/33 in 3 run). Ma il gate da solo non basta a portare `duration_sec` sotto 1200 in
+un singolo giorno: con `window_actual_days` ancora basso per 22/33 fonti, la maggior parte del
+tempo viene ancora dal fetch primario (RSS/HTML) e dal backfill che il gate non ha ancora spento.
+La leva `MAX_BACKFILL_URLS` ha rendimenti decrescenti già a cap=30 e diventa controproducente a
+cap=15. Il resto del tempo (~1400-1700s) è pavimento strutturale: fetch di ~30 fonti (RSS + HTML)
+più dedup/cluster/LLM su un corpus di ~3500 articoli puliti — nessuna delle leve in scope per
+questo task lo riduce ulteriormente senza toccare concorrenza (esclusa per l'esito noto di
+`9d4f2a1`) o il numero di fonti (fuori scope, STEP 4 le aumenta).
+
+**Aperto per una sessione futura:** il gate convergerà da solo col cron acceso (STEP 5) — ogni
+run che passa sposta più fonti sopra `≥7gg`, quindi `duration_sec` scenderà nei prossimi giorni
+senza altro intervento. Se serve un target *immediato* sotto 1200s, le opzioni fuori scope qui
+sono: dividere le fonti su più run schedulati (mattina/sera), o reintrodurre concorrenza con un
+numero di worker più basso (2-3) e backoff verificato — non tentato in questa sessione perché
+fuori budget e perché il task vieta esplicitamente di rimettere mano alla concorrenza senza aver
+isolato la causa del crollo `9d4f2a1`.
