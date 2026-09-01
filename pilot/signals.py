@@ -88,7 +88,7 @@ def build_signal_candidates(trending_rows, salience_by_key):
             "momentum": trend["momentum"] is not None and trend["momentum"] >= MOMENTUM_SIGNAL_MIN,
             "sources": trend["unique_sources_24h"] >= SOURCES_SIGNAL_MIN,
             "events": trend["unique_events_24h"] >= EVENTS_SIGNAL_MIN,
-            "salience": sal["max_salience"] >= SALIENCE_SIGNAL_MIN or sal["any_primary"],
+            "salience": sal["max_salience"] >= SALIENCE_SIGNAL_MIN,
         }
         confidence = round(sum(components_fired.values()) / len(components_fired), 3)
         classification = (

@@ -289,3 +289,63 @@ sono: dividere le fonti su più run schedulati (mattina/sera), o reintrodurre co
 numero di worker più basso (2-3) e backoff verificato — non tentato in questa sessione perché
 fuori budget e perché il task vieta esplicitamente di rimettere mano alla concorrenza senza aver
 isolato la causa del crollo `9d4f2a1`.
+
+---
+
+## TASK_FASE4_CHIUSURA STEP 3 — `salience`: correzione strutturale, nessun run Actions
+
+**Override esplicito dell'utente (2026-09-01, in `TASK_FASE4_CHIUSURA.md`):** il divieto di
+ricalibrare `salience` senza golden data (`TASK_FASE3_NEXT.md`/`TASK_FASE4_NEXT.md §3`) è
+revocato per questo task. Nessun golden set di signal-worthiness creato: questa è una correzione
+**strutturale al gate**, non una calibrazione.
+
+### Dati usati: sincronizzati da `runtime-state`, non lo stato locale stantio
+
+Trappola evitata (segnalata dall'advisor prima di misurare): `data/raw/` locale era rimasto fermo
+a 3284 righe (stato pre-sessione), mentre i tre run Actions di STEP 2 avevano scritto fino a 3626
+righe su `origin/runtime-state` (branch separato da `master`, dove il workflow salva `data/raw` e
+`errors.jsonl`). Misurare la distribuzione sui dati vecchi avrebbe calibrato/valutato una soglia
+su un corpus che non corrisponde più a quello reale. Sincronizzati i tre file `data/raw/*.jsonl`
+da `origin/runtime-state` (`git show origin/runtime-state:data/raw/<file> > data/raw/<file>`)
+prima di rigenerare con `python -m pilot.run_all --no-collect`.
+
+### Fix (commit successivo)
+
+Rimossa `or sal["any_primary"]` da `signals.py:91` (linea originale, ora `pilot/signals.py`).
+`is_primary_in_event` resta scritto in `entity_salience.jsonl` (esce dal gate del Signal, non dal
+dataset — `entity_salience.py` invariato).
+
+### Numeri: stesso corpus fresco, prima/dopo il fix (27 signal candidates)
+
+| | `salience` true | `salience` false | % true |
+|---|---|---|---|
+| PRIMA (`or any_primary`) | 27 | 0 | 100.0% |
+| DOPO (solo `max_salience >= SALIENCE_SIGNAL_MIN`) | 22 | 5 | **81.5%** |
+
+5/27 candidati passano da `salience=true` a `false` grazie alla rimozione dell'`or`. Effetto su
+`classification` (ricalcolata sullo stesso corpus, stessi altri 3 componenti invariati):
+
+| | REVIEW | MONITORING |
+|---|---|---|
+| PRIMA | 21 | 6 |
+| DOPO | 20 | 7 |
+
+1 candidato passa da REVIEW a MONITORING (confidence scesa sotto 0.6 per la perdita del
+componente salience).
+
+### `SALIENCE_SIGNAL_MIN` NON alzato — criterio del task non raggiunto
+
+Il task chiedeva di alzare la soglia alla mediana osservata **solo se** `salience` resta true su
+**≥90%** dei candidati dopo la rimozione dell'`or`. Misurato: 81.5% (22/27), sotto la soglia del
+90% — il ramo "alza alla mediana" non si applica. La rimozione dell'`or` da sola è già sufficiente
+a far discriminare il componente; non serve toccare `SALIENCE_SIGNAL_MIN` (resta `1.0`). Nota per
+completezza: la distribuzione di `max_entity_salience` resta ammassata al tetto 1.65 (16/27 valori
+esattamente al tetto, mediana 1.65) — il problema di range descritto in TASK G persiste e resta
+un limite noto della formula in `entity_salience.py`, ma non blocca più il gate grazie all'`or`
+rimosso, quindi non richiede azione in questo task.
+
+### Test
+
+`python -m pilot.test_pipeline` → 27/27 verdi, **nessuna modifica necessaria**: `test_16` usa una
+fixture (`dodik`, `max_salience: 1.3`) che supera comunque `SALIENCE_SIGNAL_MIN = 1.0` senza
+l'`or any_primary`, quindi l'asserzione `confidence == 1.0` restava valida a soglia invariata.
