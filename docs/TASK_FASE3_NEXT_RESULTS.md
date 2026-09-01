@@ -225,3 +225,23 @@ corretta a runtime dall'utente — sbagliata per costruzione, perché gate+cap r
 `duration_sec` ancora ben sopra target ma nessun segnale di rottura (fonti fallite in linea,
 fetch in calo, finestra che converge) → ramo "ancora alto ma sano" del task: run 2 con
 `MAX_BACKFILL_URLS = 30` invece di fermarsi o investigare un crash che non c'è.
+
+### Run 2 — commit `f5c366f`, run Actions `33460839212`
+
+| metrica | valore | criterio | esito |
+|---|---|---|---|
+| `duration_sec` | 1709.0 | < 1200 | **FAIL** (+42%) |
+| `sources_failed` | 15 | ≤ 15 | OK (al limite) |
+| `items_fetched` | 762 | calo netto da 1250 | OK (−39%) |
+| `items_written` | 92 | — (criterio ritirato) | — |
+| fonti `window_actual_days ≥ 7` | 11/33 | in salita da 10 | OK (invariato da run 1, ma sopra baseline) |
+
+Rendimenti decrescenti: cap 50→30 (−40%) ha tagliato `duration_sec` solo del 12% (1939.6→1709.0).
+Il log Actions non espone timestamp per-fonte (stdout consegnato in blocco a fine step), ma il
+confronto numerico è comunque leggibile: `items_fetched` è sceso 921→762 (−159, ~8 item/unità di
+cap tagliata) mentre `duration_sec` è sceso solo 230s — coerente con la nota di `9d4f2a1`
+(`duration_sec ≈ items_fetched × 1.87s/item`): a 762 item quella stima dà ~1425s, il resto
+(~284s) è overhead fisso (dedup/cluster/LLM/retry) che il cap non tocca. Il cap non è quindi
+l'unica leva, ma resta l'unica disponibile nel perimetro di questo task — proseguo con run 3
+(budget 3/3) invece di fermarmi qui, perché il calcolo lascia un margine plausibile (non certo)
+di arrivare sotto 1200 con un taglio ulteriore.

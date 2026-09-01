@@ -21,7 +21,7 @@ from pilot.util import FetchError, canonicalize_url, fetch, has_cyrillic, parse_
 
 _SITEMAP_NS = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
 MAX_LEAF_SITEMAPS = 6
-MAX_BACKFILL_URLS = 30
+MAX_BACKFILL_URLS = 15
 # TASK_FASE3_NEXT §F follow-up, 2026-08-31: run 33442356029 (A1+A2, no crash) still took 2338.9s
 # for duration_sec ~= items_fetched(1250) * 1.87s/item - every URL was fetched sequentially, one
 # HTTP GET at a time. I/O-bound (network wait, not CPU), so threads give near-linear speedup
