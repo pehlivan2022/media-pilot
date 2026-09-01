@@ -1,4 +1,5 @@
 """assert puri, nessun framework di fixture. Eseguibile con `pytest` o `python -m pilot.test_pipeline`."""
+import json
 import os
 import sqlite3
 from pathlib import Path
@@ -447,6 +448,51 @@ def test_19_sitemap_backfill_excludes_already_known_canonicals():
     urls = {it["final_url"] for it in items}
     assert "https://example.test/new-article" in urls, "l'articolo non ancora noto va incluso"
     assert "https://example.test/old-article" not in urls, "l'articolo gia' in data/raw/ non va rifetchato"
+
+
+def test_20_collect_survives_unexpected_exception_on_one_source():
+    """TASK_FASE4_CHIUSURA STEP 4, 2026-09-01 (run 33465875073 crash): un'eccezione non prevista
+    (es. JSONDecodeError da una risposta CDX troncata) su UNA fonte non deve far crashare
+    l'intero collect() - le altre fonti devono comunque scrivere i loro item, e l'errore va
+    loggato con un URL vero (non il source_id) nel campo url."""
+    import tempfile
+    from unittest.mock import patch
+
+    sources = [
+        {"source_id": "BOOM", "fetch_mode": "rss", "feed_url": "https://boom.test/feed",
+         "website_url": "https://boom.test/", "language": "sr"},
+        {"source_id": "OK", "fetch_mode": "rss", "feed_url": "https://ok.test/feed",
+         "website_url": "https://ok.test/", "language": "sr"},
+    ]
+
+    def fake_collect_from_rss(source, window_start):
+        if source["source_id"] == "BOOM":
+            raise ValueError("boom: simulated JSONDecodeError-like crash")
+        return [{"raw_id": "ok-1", "source_id": "OK", "final_url": "https://ok.test/a"}], []
+
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp_path = Path(tmp)
+        raw_dir = tmp_path / "raw"
+        sources_yaml = tmp_path / "sources.yaml"
+        errors_jsonl = tmp_path / "errors.jsonl"
+        sources_yaml.write_text("sources: []\ncount: 0\n", encoding="utf-8")
+
+        with patch.object(collect_mod, "RAW_DIR", raw_dir), \
+             patch.object(collect_mod, "SOURCES_YAML", sources_yaml), \
+             patch.object(collect_mod, "ERRORS_JSONL", errors_jsonl), \
+             patch.object(collect_mod, "load_sources", return_value=sources), \
+             patch.object(collect_mod, "collect_from_rss", side_effect=fake_collect_from_rss):
+            all_items, per_source_counts, written = collect_mod.collect(supplement_history=False)
+
+        assert per_source_counts["BOOM"] == 0, "la fonte rotta non deve produrre item"
+        assert per_source_counts["OK"] == 1, "la fonte sana deve raccogliere comunque"
+        assert written == 1
+
+        error_lines = [json.loads(l) for l in errors_jsonl.read_text(encoding="utf-8").splitlines() if l.strip()]
+        boom_errors = [e for e in error_lines if e["source_id"] == "BOOM"]
+        assert len(boom_errors) == 1
+        assert boom_errors[0]["url"] == "https://boom.test/", "url deve essere l'url reale della fonte, non il source_id"
+        assert "ValueError" in boom_errors[0]["message"]
 
 
 def test_18_collect_skips_history_supplement_once_window_is_full():

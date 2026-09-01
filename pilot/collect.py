@@ -252,7 +252,15 @@ def _cdx_query(domain, date_from=None, date_to=None, limit=3000, timeout=45):
         params += f"&to={date_to}"
     url = f"https://web.archive.org/cdx/search/cdx?{params}"
     _status, _h, body = fetch(url, timeout=timeout, retries=0)
-    data = json.loads(body) if body else []
+    try:
+        data = json.loads(body) if body else []
+    except json.JSONDecodeError as e:
+        # verificato dal vivo, TASK_FASE4_CHIUSURA STEP 4, 2026-09-01 (run 33465875073): la CDX
+        # API a volte tronca la risposta a meta' JSON (nessun errore HTTP, corpo troncato) -
+        # json.loads() non e' un FetchError, quindi non veniva preso dagli except esistenti e
+        # mandava in crash l'intero collect() su una fonte sola, stesso pattern del bug unicode
+        # (commit 128713a).
+        raise FetchError("FETCH_ERROR", f"CDX response non e' JSON valido: {e}") from e
     return data[1:] if data else []  # riga 0 e' l'header ["original","timestamp"]
 
 
@@ -485,22 +493,33 @@ def collect(days=BACKFILL_DAYS_DEFAULT, supplement_history=True, only_source_ids
     for source in sources:
         sid = source["source_id"]
         is_rss = source.get("fetch_mode") == "rss" and source.get("feed_url")
-        if is_rss:
-            items, errors = collect_from_rss(source, window_start)
-        else:
-            items, errors = collect_from_html_source(source, window_start)
+        try:
+            if is_rss:
+                items, errors = collect_from_rss(source, window_start)
+            else:
+                items, errors = collect_from_html_source(source, window_start)
 
-        # B1: il feed RSS copre poche decine di entry recenti, non 30 giorni. Supplemento
-        # silenzioso (sitemap se c'e', altrimenti Wayback CDX) SOLO per le fonti rss-primarie:
-        # le altre gia' usano sitemap/wayback come metodo principale, non serve raddoppiare.
-        # A1 (window_actual_days) e A2 (exclude_canonical) sono complementari, non alternative:
-        # A1 salta del tutto le fonti gia' piene, A2 fa avanzare le altre invece di ripetersi.
-        if is_rss and supplement_history and _needs_history_supplement(source, BACKFILL_TARGET_DAYS):
-            sup_items, sup_errors = collect_supplemental_history(source, window_start,
-                                                                   exclude_canonical=existing_canonicals)
-            existing_urls = {it["raw_id"] for it in items}
-            items = items + [it for it in sup_items if it["raw_id"] not in existing_urls]
-            errors = errors + sup_errors
+            # B1: il feed RSS copre poche decine di entry recenti, non 30 giorni. Supplemento
+            # silenzioso (sitemap se c'e', altrimenti Wayback CDX) SOLO per le fonti rss-primarie:
+            # le altre gia' usano sitemap/wayback come metodo principale, non serve raddoppiare.
+            # A1 (window_actual_days) e A2 (exclude_canonical) sono complementari, non alternative:
+            # A1 salta del tutto le fonti gia' piene, A2 fa avanzare le altre invece di ripetersi.
+            if is_rss and supplement_history and _needs_history_supplement(source, BACKFILL_TARGET_DAYS):
+                sup_items, sup_errors = collect_supplemental_history(source, window_start,
+                                                                       exclude_canonical=existing_canonicals)
+                existing_urls = {it["raw_id"] for it in items}
+                items = items + [it for it in sup_items if it["raw_id"] not in existing_urls]
+                errors = errors + sup_errors
+        except Exception as e:
+            # TASK_FASE4_CHIUSURA STEP 4, 2026-09-01 (run 33465875073): un'eccezione non prevista
+            # su UNA fonte (finora visto: UnicodeEncodeError da un URL sitemap, JSONDecodeError da
+            # una risposta CDX troncata) mandava in crash l'intero collect(), su tutte le fonti
+            # gia' raccolte in quel run - contro il contratto dichiarato dal modulo (vedi docstring
+            # in cima al file: "una fonte rotta non blocca le altre"). Guardia qui, non nel singolo
+            # punto che ha fatto scoprire il bug: root cause e' "una fonte puo' fallire in modi non
+            # ancora visti", non lo specifico tipo di eccezione.
+            url = source.get("website_url") or source.get("feed_url") or ""
+            items, errors = [], [("FETCH_ERROR", url, f"{type(e).__name__}: {e}")]
 
         per_source_counts[sid] = len(items)
         all_items.extend(items)
