@@ -21,14 +21,18 @@ from pilot.util import FetchError, canonicalize_url, fetch, has_cyrillic, parse_
 
 _SITEMAP_NS = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
 MAX_LEAF_SITEMAPS = 6
-MAX_BACKFILL_URLS = 100
+MAX_BACKFILL_URLS = 50
 # TASK_FASE3_NEXT §F follow-up, 2026-08-31: run 33442356029 (A1+A2, no crash) still took 2338.9s
 # for duration_sec ~= items_fetched(1250) * 1.87s/item - every URL was fetched sequentially, one
 # HTTP GET at a time. I/O-bound (network wait, not CPU), so threads give near-linear speedup
 # without adding a dependency. 8 concurrent requests to the SAME host is well within normal
 # browser/crawler etiquette.
-BACKFILL_FETCH_WORKERS = 8
+# TASK_FASE4_CHIUSURA §1, 2026-09-01: il run 9d4f2a1 a 8 worker ha fatto crollare items_written
+# 1055 -> 340 e la causa non e' stata isolata. Torna a 1: elimina la concorrenza come variabile
+# non spiegata invece di tararla.
+BACKFILL_FETCH_WORKERS = 1
 BACKFILL_DAYS_DEFAULT = 30  # B1: 30 giorni di storia sulle fonti gia' validate, non piu' solo 7
+BACKFILL_TARGET_DAYS = 7  # finestra che consideriamo "abbastanza": oltre questa il supplemento si spegne
 # B2a/B1.2: dagli URL Wayback CDX vanno escluse le pagine indice/data/categoria/paginazione
 # (es. "/2026/08/01/", "/page/2/", "/category/x/") e tenuti solo quelli con uno slug che sembra
 # un vero articolo (parole-unite-da-trattini nell'ultimo segmento).
@@ -491,7 +495,7 @@ def collect(days=BACKFILL_DAYS_DEFAULT, supplement_history=True, only_source_ids
         # le altre gia' usano sitemap/wayback come metodo principale, non serve raddoppiare.
         # A1 (window_actual_days) e A2 (exclude_canonical) sono complementari, non alternative:
         # A1 salta del tutto le fonti gia' piene, A2 fa avanzare le altre invece di ripetersi.
-        if is_rss and supplement_history and _needs_history_supplement(source, days):
+        if is_rss and supplement_history and _needs_history_supplement(source, BACKFILL_TARGET_DAYS):
             sup_items, sup_errors = collect_supplemental_history(source, window_start,
                                                                    exclude_canonical=existing_canonicals)
             existing_urls = {it["raw_id"] for it in items}
