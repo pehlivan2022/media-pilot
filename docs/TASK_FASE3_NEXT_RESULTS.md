@@ -349,3 +349,45 @@ rimosso, quindi non richiede azione in questo task.
 `python -m pilot.test_pipeline` → 27/27 verdi, **nessuna modifica necessaria**: `test_16` usa una
 fixture (`dodik`, `max_salience: 1.3`) che supera comunque `SALIENCE_SIGNAL_MIN = 1.0` senza
 l'`or any_primary`, quindi l'asserzione `confidence == 1.0` restava valida a soglia invariata.
+
+---
+
+## TASK_FASE4_CHIUSURA STEP 4 — 7 nuove fonti abilitate su 13 candidate
+
+Delle 13 `READY_NOT_ENABLED_YET` in `docs/SOURCE_EXPANSION_AUDIT_01.csv`, 6 usano
+`fetch_method_found: html_home_links`: scartate a monte, non per raggiungibilità ma perché
+`pilot/collect.py:collect_from_html_source` dispatcha solo su `method` contenente `"sitemap"` o
+`"wayback"` — `html_home_links` non è un metodo che il collector sa eseguire, e implementarlo è
+un cambio di codice fuori dallo scope di questo task (fonte: nota della stessa audit riga per
+riga, confermata leggendo `collect.py:352-361`). Scartate: RS_IJ_016 (Teslić Danas), RS_IJ_029
+(TrebinjeLive), RS_IJ_025 (Katera), RS_IJ_031 (Herceg TV), POL_RS_013 (SDA), SRC_004 (Mondo.ba).
+
+Le restanti 7 (metodo `rss` o `sitemap`, compatibili col collector com'è) sono state riverificate
+dal vivo (`pilot.util.fetch`, script usa-e-getta non committato) prima di abilitarle — tutte
+rispondono HTTP 200 con contenuto valido, nessuna morta:
+
+| source_id | nome | metodo | esito riverifica |
+|---|---|---|---|
+| BL_IJ3_009 | Banjaluka.com | rss | OK, 10 entry |
+| RS_IJ_008 | Prnjavor.info | rss | OK, 10 entry |
+| RS_IJ_022 | Zvornik Danas | rss | OK, 18 entry |
+| SRC_010 | Istraga.ba | rss | OK, 10 entry |
+| RS_IJ_003 | Kozarski vjesnik | rss | OK, 10 entry |
+| FBIH_004 | Raport.ba | rss | OK, 10 entry |
+| RS_IJ_026 | Palelive | sitemap (`sitemap_index.xml`, non il default `/sitemap.xml`) | OK, 30 item verificati con `collect_from_sitemap_backfill` in locale |
+
+Abilitate tutte e 7 via `python -m pilot.manage add-source ... --target pilot_daily_all` (aggiunge
+sia a `config/sources.yaml` che a `config/monitoring.yaml`). Corretti a mano due difetti del CLI
+non pensato per questo caso: `source_type` di default è `manual_add` (non classificato come
+"local"/"news" da `score.py:_MENU_PREFIX`, finirebbe nel menu sbagliato della dashboard) →
+impostato `media_portal` per coerenza con le fonti locali già attive dello stesso tipo;
+`website_url` di default combacia con `feed_url` invece dell'homepage → corretto sulle 7. Per
+Palelive (unica non-RSS) il CLI non supporta `method: sitemap` con URL non-default: aggiunto a
+mano `sitemap_url: "https://www.palelive.com/sitemap_index.xml"` dopo la generazione via CLI.
+
+`config/sources.yaml`: 33 → 40 fonti. `python -m pilot.test_pipeline` → 27/27 verdi.
+
+**Nota per lo STEP successivo:** le 6 fonti `html_home_links` restano `READY_NOT_ENABLED_YET` —
+se servono in futuro, serve prima un metodo di raccolta HTML da homepage in `collect.py` (fuori
+scope qui, e in tensione con la policy §4 del progetto "niente parser di paginazione su misura per
+fonte").
