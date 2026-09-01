@@ -510,4 +510,110 @@ sources:
     items_7d_at_audit: 10
     window_actual_days: 4
     website_url: "https://banjaluka.net/"
-count: 33
+  - source_id: BL_IJ3_009
+    name: "Banjaluka.com"
+    feed_url: "https://www.banjaluka.com/rss"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: media_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "ALL"
+    enabled: true
+    last_verified_at: null  # aggiunta via pilot.manage, mai verificata dal vivo
+    items_7d_at_audit: null
+    window_actual_days: null
+    website_url: "https://www.banjaluka.com/"
+  - source_id: RS_IJ_008
+    name: "Prnjavor.info"
+    feed_url: "https://www.prnjavor.info/feed/"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: media_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "ALL"
+    enabled: true
+    last_verified_at: null  # aggiunta via pilot.manage, mai verificata dal vivo
+    items_7d_at_audit: null
+    window_actual_days: null
+    website_url: "https://www.prnjavor.info/"
+  - source_id: RS_IJ_022
+    name: "Zvornik Danas"
+    feed_url: "https://www.zvornikdanas.com/feed/"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: media_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "ALL"
+    enabled: true
+    last_verified_at: null  # aggiunta via pilot.manage, mai verificata dal vivo
+    items_7d_at_audit: null
+    window_actual_days: null
+    website_url: "https://www.zvornikdanas.com/"
+  - source_id: SRC_010
+    name: "Istraga.ba"
+    feed_url: "https://istraga.ba/feed/"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: media_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "ALL"
+    enabled: true
+    last_verified_at: null  # aggiunta via pilot.manage, mai verificata dal vivo
+    items_7d_at_audit: null
+    window_actual_days: null
+    website_url: "https://istraga.ba/"
+  - source_id: RS_IJ_003
+    name: "Kozarski vjesnik"
+    feed_url: "https://kozarski.com/feed/"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: media_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "ALL"
+    enabled: true
+    last_verified_at: null  # aggiunta via pilot.manage, mai verificata dal vivo
+    items_7d_at_audit: null
+    window_actual_days: null
+    website_url: "https://kozarski.com/"
+  - source_id: FBIH_004
+    name: "Raport.ba"
+    feed_url: "https://raport.ba/feed.rss"
+    fetch_mode: rss
+    method: rss
+    language: sr
+    script: latn
+    source_type: media_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "ALL"
+    enabled: true
+    last_verified_at: null  # aggiunta via pilot.manage, mai verificata dal vivo
+    items_7d_at_audit: null
+    window_actual_days: null
+    website_url: "https://raport.ba/"
+  - source_id: RS_IJ_026
+    name: "Palelive"
+    feed_url: null
+    fetch_mode: html
+    method: sitemap
+    sitemap_url: "https://www.palelive.com/sitemap_index.xml"  # non /sitemap.xml (default), audit 01 riga RS_IJ_026
+    language: sr
+    script: latn
+    source_type: media_portal
+    owner_group: null  # non verificato, vedi napomena registry
+    territory: "ALL"
+    enabled: true
+    last_verified_at: null  # aggiunta via pilot.manage, mai verificata dal vivo
+    items_7d_at_audit: null
+    window_actual_days: null
+    website_url: "https://www.palelive.com/"
+count: 40

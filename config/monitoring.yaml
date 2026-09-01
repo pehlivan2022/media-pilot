@@ -133,6 +133,13 @@ monitoring:
       - RS_IJ_009
       - FBIH_002
       - BL_IJ3_008
+      - BL_IJ3_009
+      - RS_IJ_008
+      - RS_IJ_022
+      - SRC_010
+      - RS_IJ_003
+      - FBIH_004
+      - RS_IJ_026
     priority: pilot  # deliberatamente FUORI da high/medium/low: run_monitor.py --priority accetta
     # solo quei 3 valori (argparse choices), quindi 'pilot' non puo' mai essere unito per sbaglio a
     # un run --priority low (che prenderebbe anche 'background', 3x/giorno, violando l'1x/giorno
