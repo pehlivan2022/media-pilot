@@ -243,7 +243,7 @@ sources:
     enabled: true
     last_verified_at: "2026-08-27T23:09:31.898199Z"
     items_7d_at_audit: 50
-    window_actual_days: 3
+    window_actual_days: 11
     website_url: "https://n1info.ba/"
   - source_id: FBIH_001
     name: "Klix.ba"
@@ -523,7 +523,7 @@ sources:
     enabled: true
     last_verified_at: null  # aggiunta via pilot.manage, mai verificata dal vivo
     items_7d_at_audit: null
-    window_actual_days: null
+    window_actual_days: 0
     website_url: "https://www.banjaluka.com/"
   - source_id: RS_IJ_008
     name: "Prnjavor.info"
@@ -538,7 +538,7 @@ sources:
     enabled: true
     last_verified_at: null  # aggiunta via pilot.manage, mai verificata dal vivo
     items_7d_at_audit: null
-    window_actual_days: null
+    window_actual_days: 0
     website_url: "https://www.prnjavor.info/"
   - source_id: RS_IJ_022
     name: "Zvornik Danas"
@@ -553,7 +553,7 @@ sources:
     enabled: true
     last_verified_at: null  # aggiunta via pilot.manage, mai verificata dal vivo
     items_7d_at_audit: null
-    window_actual_days: null
+    window_actual_days: 0
     website_url: "https://www.zvornikdanas.com/"
   - source_id: SRC_010
     name: "Istraga.ba"
@@ -568,7 +568,7 @@ sources:
     enabled: true
     last_verified_at: null  # aggiunta via pilot.manage, mai verificata dal vivo
     items_7d_at_audit: null
-    window_actual_days: null
+    window_actual_days: 0
     website_url: "https://istraga.ba/"
   - source_id: RS_IJ_003
     name: "Kozarski vjesnik"
@@ -583,7 +583,7 @@ sources:
     enabled: true
     last_verified_at: null  # aggiunta via pilot.manage, mai verificata dal vivo
     items_7d_at_audit: null
-    window_actual_days: null
+    window_actual_days: 0
     website_url: "https://kozarski.com/"
   - source_id: FBIH_004
     name: "Raport.ba"
@@ -598,7 +598,7 @@ sources:
     enabled: true
     last_verified_at: null  # aggiunta via pilot.manage, mai verificata dal vivo
     items_7d_at_audit: null
-    window_actual_days: null
+    window_actual_days: 0
     website_url: "https://raport.ba/"
   - source_id: RS_IJ_026
     name: "Palelive"
@@ -614,6 +614,6 @@ sources:
     enabled: true
     last_verified_at: null  # aggiunta via pilot.manage, mai verificata dal vivo
     items_7d_at_audit: null
-    window_actual_days: null
+    window_actual_days: 5
     website_url: "https://www.palelive.com/"
 count: 40

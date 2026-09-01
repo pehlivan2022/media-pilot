@@ -10,7 +10,7 @@
     "last_event_at": "2026-08-31T11:42:43Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0492",
+        "cluster_id": "CL-2026-0498",
         "title": "(FOTO) Šta je Stevandić rekao direktoru Kancelarije Ambasade SAD u Banjaluci",
         "url": "https://srpskainfo.com/politika/sta-je-stevandic-rekao-direktoru-kancelarije-ambasade-sad-u-banjaluci/",
         "source_id": "BL_IJ3_001",
@@ -33,7 +33,7 @@
     "last_event_at": "2026-08-31T11:42:43Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0492",
+        "cluster_id": "CL-2026-0498",
         "title": "(FOTO) Šta je Stevandić rekao direktoru Kancelarije Ambasade SAD u Banjaluci",
         "url": "https://srpskainfo.com/politika/sta-je-stevandic-rekao-direktoru-kancelarije-ambasade-sad-u-banjaluci/",
         "source_id": "BL_IJ3_001",
@@ -74,12 +74,12 @@
     "mentions_24h": 9,
     "unique_events_24h": 7,
     "unique_sources_24h": 6,
-    "baseline_7d": 2.625,
-    "momentum": 2.429,
+    "baseline_7d": 2.75,
+    "momentum": 2.273,
     "last_event_at": "2026-08-31T20:07:00Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0462",
+        "cluster_id": "CL-2026-0469",
         "title": "Afera u Mađarskoj: Orbanova kći organizirala zabavu koja će građane stajati osam miliona eura",
         "url": "https://n1info.ba/svijet/afera-u-madjarskoj-orbanova-kci-organizirala-zabavu-koja-ce-gradjane-stajati-osam-miliona-eura",
         "source_id": "SRC_009",
@@ -87,7 +87,7 @@
         "n_items": 3
       },
       {
-        "cluster_id": "CL-2026-0453",
+        "cluster_id": "CL-2026-0460",
         "title": "Motorola najavila novi Razr smartphone ukrašen Swarovski kristalima",
         "url": "https://www.klix.ba/scitech/tehnologija/motorola-najavila-novi-razr-smartphone-ukrasen-swarovski-kristalima/260831046",
         "source_id": "FBIH_001",
@@ -95,7 +95,7 @@
         "n_items": 1
       },
       {
-        "cluster_id": "CL-2026-0458",
+        "cluster_id": "CL-2026-0465",
         "title": "POVRATAK Nakon četvrt vijeka iz Amerike u Bileću",
         "url": "https://direkt-portal.com/povratak-nakon-cetvrt-vijeka-iz-amerike-u-bilecu",
         "source_id": "RS_IJ_030",
@@ -126,7 +126,7 @@
     "last_event_at": "2026-08-31T17:05:15Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0492",
+        "cluster_id": "CL-2026-0498",
         "title": "(FOTO) Šta je Stevandić rekao direktoru Kancelarije Ambasade SAD u Banjaluci",
         "url": "https://srpskainfo.com/politika/sta-je-stevandic-rekao-direktoru-kancelarije-ambasade-sad-u-banjaluci/",
         "source_id": "BL_IJ3_001",
@@ -134,7 +134,7 @@
         "n_items": 2
       },
       {
-        "cluster_id": "CL-2026-0502",
+        "cluster_id": "CL-2026-0508",
         "title": "Nove tenzije pred izbore: Safet Kešo o Srebrenici, „Herceg-Bosni“, trećem entitetu i budućnosti BiH",
         "url": "https://n1info.ba/video/dan-uzivo/nove-tenzije-pred-izbore-safet-keso-o-srebrenici-herceg-bosni-trecem-entitetu-i-buducnosti-bih",
         "source_id": "SRC_009",
@@ -142,7 +142,7 @@
         "n_items": 2
       },
       {
-        "cluster_id": "CL-2026-0459",
+        "cluster_id": "CL-2026-0466",
         "title": "Borovina, Kokeza, Mrakić: Pontonski mostovi između PSS-a i struktura iz Srbije",
         "url": "https://spin-portal.info/borovina-kokeza-mrakic-pontonski-mostovi-izmedju-pss-a-i-struktura-iz-srbije",
         "source_id": "RS_IJ_027",
@@ -171,7 +171,7 @@
     "last_event_at": "2026-08-31T19:15:00Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0492",
+        "cluster_id": "CL-2026-0498",
         "title": "(FOTO) Šta je Stevandić rekao direktoru Kancelarije Ambasade SAD u Banjaluci",
         "url": "https://srpskainfo.com/politika/sta-je-stevandic-rekao-direktoru-kancelarije-ambasade-sad-u-banjaluci/",
         "source_id": "BL_IJ3_001",
@@ -179,7 +179,7 @@
         "n_items": 2
       },
       {
-        "cluster_id": "CL-2026-0497",
+        "cluster_id": "CL-2026-0503",
         "title": "Salkić traži reakciju zbog veličanja zločinca Mladića: Skupovi nisu bezazleni, šutnja institucija ohrabruje ekstremiste",
         "url": "https://n1info.ba/vijesti/salkic-trazi-reakciju-zbog-velicanja-zlocinca-mladica-skupovi-nisu-bezazleni-sutnja-institucija-ohrabruje-ekstremiste",
         "source_id": "SRC_009",
@@ -187,7 +187,7 @@
         "n_items": 1
       },
       {
-        "cluster_id": "CL-2026-0414",
+        "cluster_id": "CL-2026-0422",
         "title": "Једнократне помоћи за студенте и ученике, трудницама сигурност и заштита",
         "url": "https://atvbl.rs/vijesti/republika-srpska/jednokratne-pomoci-za-studente-i-ucenike-trudnicama-sigurnost-i-zastita/2337398",
         "source_id": "RS_ENT_002",
@@ -208,12 +208,12 @@
     "mentions_24h": 14,
     "unique_events_24h": 12,
     "unique_sources_24h": 8,
-    "baseline_7d": 5.875,
-    "momentum": 1.383,
+    "baseline_7d": 6.125,
+    "momentum": 1.286,
     "last_event_at": "2026-08-31T20:16:00Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0503",
+        "cluster_id": "CL-2026-0509",
         "title": "U NPS otvoren 8. Sarajevo Fest:  Prve večeri publika uživala u predstavi \"Smrt u Dubrovniku\"",
         "url": "https://www.klix.ba/magazin/kultura/u-nps-otvoren-8-sarajevo-fest-prve-veceri-publika-uzivala-u-predstavi-smrt-u-dubrovniku/260831197",
         "source_id": "FBIH_001",
@@ -229,7 +229,7 @@
         "n_items": 1
       },
       {
-        "cluster_id": "CL-2026-0444",
+        "cluster_id": "CL-2026-0452",
         "title": "",
         "url": "https://avaz.ba/sitemap-server.xml/2022-1.xml",
         "source_id": "FBIH_002",
@@ -256,8 +256,8 @@
     "mentions_24h": 8,
     "unique_events_24h": 8,
     "unique_sources_24h": 6,
-    "baseline_7d": 3.5,
-    "momentum": 1.286,
+    "baseline_7d": 3.625,
+    "momentum": 1.207,
     "last_event_at": "2026-08-31T19:44:04Z",
     "top_events": [
       {
@@ -269,7 +269,7 @@
         "n_items": 1
       },
       {
-        "cluster_id": "CL-2026-0426",
+        "cluster_id": "CL-2026-0434",
         "title": "Prvačići će danas dobiti po 100 KM, evo šta sleduje ostalim đacima",
         "url": "https://srpskainfo.com/banjaluka/srecno-i-uspjesno-prvacici-ce-danas-dobiti-po-100-km-evo-sta-sleduje-ostalim-djacima/",
         "source_id": "BL_IJ3_001",
@@ -277,7 +277,7 @@
         "n_items": 1
       },
       {
-        "cluster_id": "CL-2026-0459",
+        "cluster_id": "CL-2026-0466",
         "title": "Borovina, Kokeza, Mrakić: Pontonski mostovi između PSS-a i struktura iz Srbije",
         "url": "https://spin-portal.info/borovina-kokeza-mrakic-pontonski-mostovi-izmedju-pss-a-i-struktura-iz-srbije",
         "source_id": "RS_IJ_027",
@@ -302,12 +302,12 @@
     "mentions_24h": 28,
     "unique_events_24h": 25,
     "unique_sources_24h": 11,
-    "baseline_7d": 12.75,
-    "momentum": 1.196,
+    "baseline_7d": 12.875,
+    "momentum": 1.175,
     "last_event_at": "2026-08-31T20:05:00Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0492",
+        "cluster_id": "CL-2026-0498",
         "title": "(FOTO) Šta je Stevandić rekao direktoru Kancelarije Ambasade SAD u Banjaluci",
         "url": "https://srpskainfo.com/politika/sta-je-stevandic-rekao-direktoru-kancelarije-ambasade-sad-u-banjaluci/",
         "source_id": "BL_IJ3_001",
@@ -315,7 +315,7 @@
         "n_items": 2
       },
       {
-        "cluster_id": "CL-2026-0414",
+        "cluster_id": "CL-2026-0422",
         "title": "Једнократне помоћи за студенте и ученике, трудницама сигурност и заштита",
         "url": "https://atvbl.rs/vijesti/republika-srpska/jednokratne-pomoci-za-studente-i-ucenike-trudnicama-sigurnost-i-zastita/2337398",
         "source_id": "RS_ENT_002",
@@ -323,7 +323,7 @@
         "n_items": 2
       },
       {
-        "cluster_id": "CL-2026-0413",
+        "cluster_id": "CL-2026-0421",
         "title": "Dodik tvrdi da je protiv građana RS podneseno 55.000 krivičnih prijava zbog veličanja ratnog zločinca Mladića",
         "url": "https://n1info.ba/vijesti/dodik-tvrdi-da-je-protiv-gradjana-rs-podneseno-55000-krivicnih-prijava-zbog-velicanja-ratnog-zlocinca-mladica",
         "source_id": "SRC_009",
@@ -350,12 +350,12 @@
     "mentions_24h": 28,
     "unique_events_24h": 25,
     "unique_sources_24h": 11,
-    "baseline_7d": 12.75,
-    "momentum": 1.196,
+    "baseline_7d": 12.875,
+    "momentum": 1.175,
     "last_event_at": "2026-08-31T20:05:00Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0492",
+        "cluster_id": "CL-2026-0498",
         "title": "(FOTO) Šta je Stevandić rekao direktoru Kancelarije Ambasade SAD u Banjaluci",
         "url": "https://srpskainfo.com/politika/sta-je-stevandic-rekao-direktoru-kancelarije-ambasade-sad-u-banjaluci/",
         "source_id": "BL_IJ3_001",
@@ -363,7 +363,7 @@
         "n_items": 2
       },
       {
-        "cluster_id": "CL-2026-0414",
+        "cluster_id": "CL-2026-0422",
         "title": "Једнократне помоћи за студенте и ученике, трудницама сигурност и заштита",
         "url": "https://atvbl.rs/vijesti/republika-srpska/jednokratne-pomoci-za-studente-i-ucenike-trudnicama-sigurnost-i-zastita/2337398",
         "source_id": "RS_ENT_002",
@@ -371,7 +371,7 @@
         "n_items": 2
       },
       {
-        "cluster_id": "CL-2026-0413",
+        "cluster_id": "CL-2026-0421",
         "title": "Dodik tvrdi da je protiv građana RS podneseno 55.000 krivičnih prijava zbog veličanja ratnog zločinca Mladića",
         "url": "https://n1info.ba/vijesti/dodik-tvrdi-da-je-protiv-gradjana-rs-podneseno-55000-krivicnih-prijava-zbog-velicanja-ratnog-zlocinca-mladica",
         "source_id": "SRC_009",
@@ -398,12 +398,12 @@
     "mentions_24h": 9,
     "unique_events_24h": 7,
     "unique_sources_24h": 5,
-    "baseline_7d": 4.375,
-    "momentum": 1.057,
+    "baseline_7d": 4.5,
+    "momentum": 1.0,
     "last_event_at": "2026-08-31T16:01:43Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0397",
+        "cluster_id": "CL-2026-0406",
         "title": "Biometrija na biračkim mjestima i skeniranje listića: Kako će izgledati novi izborni proces u BiH",
         "url": "https://n1info.ba/video/dan-uzivo/biometrija-na-birackim-mjestima-i-skeniranje-listica-kako-ce-izgledati-novi-izborni-proces-u-bih",
         "source_id": "SRC_009",
@@ -419,7 +419,7 @@
         "n_items": 1
       },
       {
-        "cluster_id": "CL-2026-0473",
+        "cluster_id": "CL-2026-0479",
         "title": "Обавјештење кандидатима СНСД-а",
         "url": "https://snsd.org/izborne-kampanje/opsti-izbori-2026/obavjestenje-kandidatima/",
         "source_id": "POL_RS_001",
@@ -440,15 +440,56 @@
     ]
   },
   {
-    "entity_id": "trivic",
-    "label": "Jelena Trivić",
-    "mentions_24h": 1,
-    "unique_events_24h": 1,
-    "unique_sources_24h": 1,
-    "baseline_7d": 0.5,
-    "momentum": 1.0,
-    "last_event_at": "2026-08-31T06:33:40Z",
+    "entity_id": "sp-demos",
+    "label": "SP · DEMOS · NDP",
+    "mentions_24h": 3,
+    "unique_events_24h": 2,
+    "unique_sources_24h": 2,
+    "baseline_7d": 1.625,
+    "momentum": 0.846,
+    "last_event_at": "2026-08-31T21:51:00Z",
     "top_events": [
+      {
+        "cluster_id": "CL-2026-0525",
+        "title": "Američki kongresmen o najavi sahrane Mladića uz državne počasti: Kao da ih Njemačka daje Hitleru",
+        "url": "https://www.klix.ba/vijesti/svijet/americki-kongresmen-o-najavi-sahrane-mladica-uz-drzavne-pocasti-kao-da-ih-njemacka-daje-hitleru/260831207",
+        "source_id": "FBIH_001",
+        "published_at": "2026-08-31T21:51:00Z",
+        "n_items": 2
+      },
+      {
+        "cluster_id": "CL-2026-0466",
+        "title": "Borovina, Kokeza, Mrakić: Pontonski mostovi između PSS-a i struktura iz Srbije",
+        "url": "https://spin-portal.info/borovina-kokeza-mrakic-pontonski-mostovi-izmedju-pss-a-i-struktura-iz-srbije",
+        "source_id": "RS_IJ_027",
+        "published_at": "2026-08-31T08:23:31Z",
+        "n_items": 1
+      }
+    ],
+    "evidence": [
+      "https://www.klix.ba/vijesti/svijet/americki-kongresmen-o-najavi-sahrane-mladica-uz-drzavne-pocasti-kao-da-ih-njemacka-daje-hitleru/260831207",
+      "https://www.klix.ba/sport/kosarka/kosarkasi-bih-se-fotografisali-s-lazicevim-dresom-savez-poslao-snaznu-poruku-uoci-duela-s-litvanijom/260831159",
+      "https://spin-portal.info/borovina-kokeza-mrakic-pontonski-mostovi-izmedju-pss-a-i-struktura-iz-srbije"
+    ]
+  },
+  {
+    "entity_id": "cik",
+    "label": "CIK BiH",
+    "mentions_24h": 8,
+    "unique_events_24h": 6,
+    "unique_sources_24h": 5,
+    "baseline_7d": 4.375,
+    "momentum": 0.829,
+    "last_event_at": "2026-08-31T16:01:43Z",
+    "top_events": [
+      {
+        "cluster_id": "CL-2026-0406",
+        "title": "Biometrija na biračkim mjestima i skeniranje listića: Kako će izgledati novi izborni proces u BiH",
+        "url": "https://n1info.ba/video/dan-uzivo/biometrija-na-birackim-mjestima-i-skeniranje-listica-kako-ce-izgledati-novi-izborni-proces-u-bih",
+        "source_id": "SRC_009",
+        "published_at": "2026-08-31T16:01:43Z",
+        "n_items": 3
+      },
       {
         "cluster_id": "CL-2026-0014",
         "title": "Koalicija Draško Stanivuković – Pokret Sigurna Srpska kažnjena zbog preuranjene izborne kampanje sa 3.000 KM",
@@ -456,9 +497,24 @@
         "source_id": "BIH_ELEC_002",
         "published_at": "2026-08-31T06:33:40Z",
         "n_items": 1
+      },
+      {
+        "cluster_id": "CL-2026-0479",
+        "title": "Обавјештење кандидатима СНСД-а",
+        "url": "https://snsd.org/izborne-kampanje/opsti-izbori-2026/obavjestenje-kandidatima/",
+        "source_id": "POL_RS_001",
+        "published_at": "2026-08-31T09:47:26Z",
+        "n_items": 1
       }
     ],
     "evidence": [
+      "https://n1info.ba/video/dan-uzivo/biometrija-na-birackim-mjestima-i-skeniranje-listica-kako-ce-izgledati-novi-izborni-proces-u-bih",
+      "https://www.klix.ba/vijesti/bih/otvorena-konferencija-o-izbornim-tehnologijama-u-bih-obratio-se-soreca-nova-oprema-ce-smanjiti-manipulacije/260831149",
+      "https://podlupom.org/press-kutak/vijesti/centralna-izborna-komisija-kaznila-snsd-sa-6-000-km-zbog-zloupotrebe-djeteta-i-preuranjene-kampanje",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=658307",
+      "https://www.rtrs.tv/vijesti/vijest.php?id=658274",
+      "https://n1info.ba/vijesti/predstavnici-eu-i-cik-a-tvrde-stvoreni-preduslovi-za-najpostenije-izbore-u-bih-do-sada/",
+      "https://snsd.org/izborne-kampanje/opsti-izbori-2026/obavjestenje-kandidatima/",
       "https://podlupom.org/press-kutak/vijesti/koalicija-drasko-stanivukovic-pokret-sigurna-srpska-kaznjena-zbog-preuranjene-izborne-kampanje-sa-3-000-km-2"
     ]
   },
@@ -468,12 +524,12 @@
     "mentions_24h": 45,
     "unique_events_24h": 38,
     "unique_sources_24h": 13,
-    "baseline_7d": 23.875,
-    "momentum": 0.885,
+    "baseline_7d": 24.625,
+    "momentum": 0.827,
     "last_event_at": "2026-08-31T20:05:00Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0413",
+        "cluster_id": "CL-2026-0421",
         "title": "Dodik tvrdi da je protiv građana RS podneseno 55.000 krivičnih prijava zbog veličanja ratnog zločinca Mladića",
         "url": "https://n1info.ba/vijesti/dodik-tvrdi-da-je-protiv-gradjana-rs-podneseno-55000-krivicnih-prijava-zbog-velicanja-ratnog-zlocinca-mladica",
         "source_id": "SRC_009",
@@ -481,7 +537,7 @@
         "n_items": 3
       },
       {
-        "cluster_id": "CL-2026-0486",
+        "cluster_id": "CL-2026-0492",
         "title": "Milorad Dodik poručio da podržava novu saobraćajnicu od Čelinca do Banjaluke",
         "url": "https://srpskainfo.com/politika/nastavljamo-da-gradimo-dodik-porucio-da-podrzava-novu-saobracajnicu-od-celinca-do-banjaluke/",
         "source_id": "BL_IJ3_001",
@@ -489,7 +545,7 @@
         "n_items": 2
       },
       {
-        "cluster_id": "CL-2026-0492",
+        "cluster_id": "CL-2026-0498",
         "title": "(FOTO) Šta je Stevandić rekao direktoru Kancelarije Ambasade SAD u Banjaluci",
         "url": "https://srpskainfo.com/politika/sta-je-stevandic-rekao-direktoru-kancelarije-ambasade-sad-u-banjaluci/",
         "source_id": "BL_IJ3_001",
@@ -511,85 +567,6 @@
     ]
   },
   {
-    "entity_id": "cik",
-    "label": "CIK BiH",
-    "mentions_24h": 8,
-    "unique_events_24h": 6,
-    "unique_sources_24h": 5,
-    "baseline_7d": 4.25,
-    "momentum": 0.882,
-    "last_event_at": "2026-08-31T16:01:43Z",
-    "top_events": [
-      {
-        "cluster_id": "CL-2026-0397",
-        "title": "Biometrija na biračkim mjestima i skeniranje listića: Kako će izgledati novi izborni proces u BiH",
-        "url": "https://n1info.ba/video/dan-uzivo/biometrija-na-birackim-mjestima-i-skeniranje-listica-kako-ce-izgledati-novi-izborni-proces-u-bih",
-        "source_id": "SRC_009",
-        "published_at": "2026-08-31T16:01:43Z",
-        "n_items": 3
-      },
-      {
-        "cluster_id": "CL-2026-0014",
-        "title": "Koalicija Draško Stanivuković – Pokret Sigurna Srpska kažnjena zbog preuranjene izborne kampanje sa 3.000 KM",
-        "url": "https://podlupom.org/press-kutak/vijesti/koalicija-drasko-stanivukovic-pokret-sigurna-srpska-kaznjena-zbog-preuranjene-izborne-kampanje-sa-3-000-km-2",
-        "source_id": "BIH_ELEC_002",
-        "published_at": "2026-08-31T06:33:40Z",
-        "n_items": 1
-      },
-      {
-        "cluster_id": "CL-2026-0473",
-        "title": "Обавјештење кандидатима СНСД-а",
-        "url": "https://snsd.org/izborne-kampanje/opsti-izbori-2026/obavjestenje-kandidatima/",
-        "source_id": "POL_RS_001",
-        "published_at": "2026-08-31T09:47:26Z",
-        "n_items": 1
-      }
-    ],
-    "evidence": [
-      "https://n1info.ba/video/dan-uzivo/biometrija-na-birackim-mjestima-i-skeniranje-listica-kako-ce-izgledati-novi-izborni-proces-u-bih",
-      "https://www.klix.ba/vijesti/bih/otvorena-konferencija-o-izbornim-tehnologijama-u-bih-obratio-se-soreca-nova-oprema-ce-smanjiti-manipulacije/260831149",
-      "https://podlupom.org/press-kutak/vijesti/centralna-izborna-komisija-kaznila-snsd-sa-6-000-km-zbog-zloupotrebe-djeteta-i-preuranjene-kampanje",
-      "https://www.rtrs.tv/vijesti/vijest.php?id=658307",
-      "https://www.rtrs.tv/vijesti/vijest.php?id=658274",
-      "https://n1info.ba/vijesti/predstavnici-eu-i-cik-a-tvrde-stvoreni-preduslovi-za-najpostenije-izbore-u-bih-do-sada/",
-      "https://snsd.org/izborne-kampanje/opsti-izbori-2026/obavjestenje-kandidatima/",
-      "https://podlupom.org/press-kutak/vijesti/koalicija-drasko-stanivukovic-pokret-sigurna-srpska-kaznjena-zbog-preuranjene-izborne-kampanje-sa-3-000-km-2"
-    ]
-  },
-  {
-    "entity_id": "sp-demos",
-    "label": "SP · DEMOS · NDP",
-    "mentions_24h": 3,
-    "unique_events_24h": 2,
-    "unique_sources_24h": 2,
-    "baseline_7d": 1.625,
-    "momentum": 0.846,
-    "last_event_at": "2026-08-31T21:51:00Z",
-    "top_events": [
-      {
-        "cluster_id": "CL-2026-0519",
-        "title": "Američki kongresmen o najavi sahrane Mladića uz državne počasti: Kao da ih Njemačka daje Hitleru",
-        "url": "https://www.klix.ba/vijesti/svijet/americki-kongresmen-o-najavi-sahrane-mladica-uz-drzavne-pocasti-kao-da-ih-njemacka-daje-hitleru/260831207",
-        "source_id": "FBIH_001",
-        "published_at": "2026-08-31T21:51:00Z",
-        "n_items": 2
-      },
-      {
-        "cluster_id": "CL-2026-0459",
-        "title": "Borovina, Kokeza, Mrakić: Pontonski mostovi između PSS-a i struktura iz Srbije",
-        "url": "https://spin-portal.info/borovina-kokeza-mrakic-pontonski-mostovi-izmedju-pss-a-i-struktura-iz-srbije",
-        "source_id": "RS_IJ_027",
-        "published_at": "2026-08-31T08:23:31Z",
-        "n_items": 1
-      }
-    ],
-    "evidence": [
-      "https://www.klix.ba/vijesti/svijet/americki-kongresmen-o-najavi-sahrane-mladica-uz-drzavne-pocasti-kao-da-ih-njemacka-daje-hitleru/260831207",
-      "https://www.klix.ba/sport/kosarka/kosarkasi-bih-se-fotografisali-s-lazicevim-dresom-savez-poslao-snaznu-poruku-uoci-duela-s-litvanijom/260831159",
-      "https://spin-portal.info/borovina-kokeza-mrakic-pontonski-mostovi-izmedju-pss-a-i-struktura-iz-srbije"
-    ]
-  },
-  {
     "entity_id": "predsjednik-rs",
     "label": "Predsjednik RS",
     "mentions_24h": 10,
@@ -600,7 +577,7 @@
     "last_event_at": "2026-08-31T19:15:00Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0414",
+        "cluster_id": "CL-2026-0422",
         "title": "Једнократне помоћи за студенте и ученике, трудницама сигурност и заштита",
         "url": "https://atvbl.rs/vijesti/republika-srpska/jednokratne-pomoci-za-studente-i-ucenike-trudnicama-sigurnost-i-zastita/2337398",
         "source_id": "RS_ENT_002",
@@ -616,7 +593,7 @@
         "n_items": 1
       },
       {
-        "cluster_id": "CL-2026-0487",
+        "cluster_id": "CL-2026-0493",
         "title": "У Бањалуци одржана сједница Предсједништва СНСД-а у проширеном саставу",
         "url": "https://www.rtrs.tv/vijesti/vijest.php?id=658277",
         "source_id": "RS_ENT_001",
@@ -638,17 +615,40 @@
     ]
   },
   {
+    "entity_id": "trivic",
+    "label": "Jelena Trivić",
+    "mentions_24h": 1,
+    "unique_events_24h": 1,
+    "unique_sources_24h": 1,
+    "baseline_7d": 0.625,
+    "momentum": 0.6,
+    "last_event_at": "2026-08-31T06:33:40Z",
+    "top_events": [
+      {
+        "cluster_id": "CL-2026-0014",
+        "title": "Koalicija Draško Stanivuković – Pokret Sigurna Srpska kažnjena zbog preuranjene izborne kampanje sa 3.000 KM",
+        "url": "https://podlupom.org/press-kutak/vijesti/koalicija-drasko-stanivukovic-pokret-sigurna-srpska-kaznjena-zbog-preuranjene-izborne-kampanje-sa-3-000-km-2",
+        "source_id": "BIH_ELEC_002",
+        "published_at": "2026-08-31T06:33:40Z",
+        "n_items": 1
+      }
+    ],
+    "evidence": [
+      "https://podlupom.org/press-kutak/vijesti/koalicija-drasko-stanivukovic-pokret-sigurna-srpska-kaznjena-zbog-preuranjene-izborne-kampanje-sa-3-000-km-2"
+    ]
+  },
+  {
     "entity_id": "opozicija",
     "label": "Opozicija · odnosi",
     "mentions_24h": 7,
     "unique_events_24h": 7,
     "unique_sources_24h": 5,
-    "baseline_7d": 4.5,
-    "momentum": 0.556,
+    "baseline_7d": 4.625,
+    "momentum": 0.514,
     "last_event_at": "2026-08-31T15:57:50Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0436",
+        "cluster_id": "CL-2026-0444",
         "title": "U današnjem \"Dnevnom avazu\" čitajte: Mrtvi Mladić razotkrio Dinu i Denisa",
         "url": "https://avaz.ba/vijesti/bih/1069031/u-danasnjem-dnevnom-avazu-citajte-mrtvi-mladic-razotkrio-dinu-i-denisa",
         "source_id": "FBIH_002",
@@ -664,7 +664,7 @@
         "n_items": 1
       },
       {
-        "cluster_id": "CL-2026-0444",
+        "cluster_id": "CL-2026-0452",
         "title": "",
         "url": "https://avaz.ba/sitemap-server.xml/2022-1.xml",
         "source_id": "FBIH_002",
@@ -688,12 +688,12 @@
     "mentions_24h": 25,
     "unique_events_24h": 22,
     "unique_sources_24h": 12,
-    "baseline_7d": 16.125,
-    "momentum": 0.55,
+    "baseline_7d": 16.625,
+    "momentum": 0.504,
     "last_event_at": "2026-08-31T20:56:00Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0426",
+        "cluster_id": "CL-2026-0434",
         "title": "VLADA LOŠIH ĐAKA! Minić u panici prepisuje recepte od STANIVUKOVIĆA za čitavu Srpsku!",
         "url": "https://banjaluka-24.com/vlada-losih-daka-minic-u-panici-prepisuje-recepte-od-stanivukovica-za-citavu-srpsku",
         "source_id": "BL_IJ3_006",
@@ -701,7 +701,7 @@
         "n_items": 2
       },
       {
-        "cluster_id": "CL-2026-0414",
+        "cluster_id": "CL-2026-0422",
         "title": "Једнократне помоћи за студенте и ученике, трудницама сигурност и заштита",
         "url": "https://atvbl.rs/vijesti/republika-srpska/jednokratne-pomoci-za-studente-i-ucenike-trudnicama-sigurnost-i-zastita/2337398",
         "source_id": "RS_ENT_002",
@@ -709,7 +709,7 @@
         "n_items": 2
       },
       {
-        "cluster_id": "CL-2026-0513",
+        "cluster_id": "CL-2026-0519",
         "title": "Vijeće ministara BiH izdvojilo 4.000.000 KM za Fond za povratak, entitetske vlade daju još po 50.000 KM",
         "url": "https://www.klix.ba/vijesti/bih/vijece-ministara-bih-izdvojilo-4000000-km-za-fond-za-povratak-entitetske-vlade-daju-jos-po-50000-km/260831170",
         "source_id": "FBIH_001",
@@ -731,17 +731,49 @@
     ]
   },
   {
+    "entity_id": "vukanovic",
+    "label": "Vukanović / Crnadak",
+    "mentions_24h": 2,
+    "unique_events_24h": 2,
+    "unique_sources_24h": 2,
+    "baseline_7d": 1.375,
+    "momentum": 0.455,
+    "last_event_at": "2026-08-31T09:46:25Z",
+    "top_events": [
+      {
+        "cluster_id": "CL-2026-0466",
+        "title": "Borovina, Kokeza, Mrakić: Pontonski mostovi između PSS-a i struktura iz Srbije",
+        "url": "https://spin-portal.info/borovina-kokeza-mrakic-pontonski-mostovi-izmedju-pss-a-i-struktura-iz-srbije",
+        "source_id": "RS_IJ_027",
+        "published_at": "2026-08-31T08:23:31Z",
+        "n_items": 1
+      },
+      {
+        "cluster_id": "CL-2026-0478",
+        "title": "СНСД има кандидате за Парламент БиХ и у четири изборне јединице у ФБиХ",
+        "url": "https://www.rtrs.tv/vijesti/vijest.php?id=658261",
+        "source_id": "RS_ENT_001",
+        "published_at": "2026-08-31T09:46:25Z",
+        "n_items": 1
+      }
+    ],
+    "evidence": [
+      "https://www.rtrs.tv/vijesti/vijest.php?id=658261",
+      "https://spin-portal.info/borovina-kokeza-mrakic-pontonski-mostovi-izmedju-pss-a-i-struktura-iz-srbije"
+    ]
+  },
+  {
     "entity_id": "beograd",
     "label": "Beograd / Srbija",
     "mentions_24h": 13,
     "unique_events_24h": 12,
     "unique_sources_24h": 5,
-    "baseline_7d": 8.5,
-    "momentum": 0.529,
+    "baseline_7d": 9.0,
+    "momentum": 0.444,
     "last_event_at": "2026-08-31T23:00:36Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0519",
+        "cluster_id": "CL-2026-0525",
         "title": "Američki kongresmen o najavi sahrane ratnog zločinca Ratka Mladića uz državne počasti: \"To je kao da ih Njemačka odaje Hitleru\"",
         "url": "https://avaz.ba/vijesti/globus/1069284/americki-kongresmen-o-najavi-sahrane-ratnog-zlocinca-ratka-mladica-uz-drzavne-pocasti-to-je-kao-da-ih-njemacka-odaje-hitleru",
         "source_id": "FBIH_002",
@@ -749,7 +781,7 @@
         "n_items": 2
       },
       {
-        "cluster_id": "CL-2026-0444",
+        "cluster_id": "CL-2026-0452",
         "title": "",
         "url": "https://avaz.ba/sitemap-server.xml/2022-1.xml",
         "source_id": "FBIH_002",
@@ -757,7 +789,7 @@
         "n_items": 1
       },
       {
-        "cluster_id": "CL-2026-0459",
+        "cluster_id": "CL-2026-0466",
         "title": "Borovina, Kokeza, Mrakić: Pontonski mostovi između PSS-a i struktura iz Srbije",
         "url": "https://spin-portal.info/borovina-kokeza-mrakic-pontonski-mostovi-izmedju-pss-a-i-struktura-iz-srbije",
         "source_id": "RS_IJ_027",
@@ -779,49 +811,17 @@
     ]
   },
   {
-    "entity_id": "vukanovic",
-    "label": "Vukanović / Crnadak",
-    "mentions_24h": 2,
-    "unique_events_24h": 2,
-    "unique_sources_24h": 2,
-    "baseline_7d": 1.375,
-    "momentum": 0.455,
-    "last_event_at": "2026-08-31T09:46:25Z",
-    "top_events": [
-      {
-        "cluster_id": "CL-2026-0459",
-        "title": "Borovina, Kokeza, Mrakić: Pontonski mostovi između PSS-a i struktura iz Srbije",
-        "url": "https://spin-portal.info/borovina-kokeza-mrakic-pontonski-mostovi-izmedju-pss-a-i-struktura-iz-srbije",
-        "source_id": "RS_IJ_027",
-        "published_at": "2026-08-31T08:23:31Z",
-        "n_items": 1
-      },
-      {
-        "cluster_id": "CL-2026-0472",
-        "title": "СНСД има кандидате за Парламент БиХ и у четири изборне јединице у ФБиХ",
-        "url": "https://www.rtrs.tv/vijesti/vijest.php?id=658261",
-        "source_id": "RS_ENT_001",
-        "published_at": "2026-08-31T09:46:25Z",
-        "n_items": 1
-      }
-    ],
-    "evidence": [
-      "https://www.rtrs.tv/vijesti/vijest.php?id=658261",
-      "https://spin-portal.info/borovina-kokeza-mrakic-pontonski-mostovi-izmedju-pss-a-i-struktura-iz-srbije"
-    ]
-  },
-  {
     "entity_id": "ij5-konkurencija",
     "label": "IJ5 · borba za mandat",
     "mentions_24h": 53,
     "unique_events_24h": 44,
     "unique_sources_24h": 14,
-    "baseline_7d": 37.875,
-    "momentum": 0.399,
+    "baseline_7d": 38.125,
+    "momentum": 0.39,
     "last_event_at": "2026-08-31T21:30:08Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0450",
+        "cluster_id": "CL-2026-0026",
         "title": "Pješak teško povrijeđen u saobraćajnoj nesreći u Doboju",
         "url": "https://srpskainfo.com/hronika/saobracajna-nesreca-u-doboju-pjesak-tesko-povrijedjen-nakon-udara-pezoa/",
         "source_id": "BL_IJ3_001",
@@ -837,7 +837,7 @@
         "n_items": 2
       },
       {
-        "cluster_id": "CL-2026-0448",
+        "cluster_id": "CL-2026-0456",
         "title": "Нову школску годину спремно дочекују школе добојске регије (ВИДЕО)",
         "url": "https://www.rtrs.tv/vijesti/vijest.php?id=658264",
         "source_id": "RS_ENT_001",
@@ -864,12 +864,12 @@
     "mentions_24h": 11,
     "unique_events_24h": 10,
     "unique_sources_24h": 7,
-    "baseline_7d": 8.0,
-    "momentum": 0.375,
+    "baseline_7d": 8.375,
+    "momentum": 0.313,
     "last_event_at": "2026-08-31T19:15:00Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0414",
+        "cluster_id": "CL-2026-0422",
         "title": "Једнократне помоћи за студенте и ученике, трудницама сигурност и заштита",
         "url": "https://atvbl.rs/vijesti/republika-srpska/jednokratne-pomoci-za-studente-i-ucenike-trudnicama-sigurnost-i-zastita/2337398",
         "source_id": "RS_ENT_002",
@@ -877,7 +877,7 @@
         "n_items": 2
       },
       {
-        "cluster_id": "CL-2026-0439",
+        "cluster_id": "CL-2026-0447",
         "title": "DRUGI SUSRET RATNIH VETERANA PRVOG BATALJONA 43. BRIGADE",
         "url": "https://infoprijedor.ba/drugi-susret-ratnih-veterana-prvog-bataljona-43-brigade",
         "source_id": "RS_IJ_002",
@@ -885,7 +885,7 @@
         "n_items": 1
       },
       {
-        "cluster_id": "CL-2026-0487",
+        "cluster_id": "CL-2026-0493",
         "title": "У Бањалуци одржана сједница Предсједништва СНСД-а у проширеном саставу",
         "url": "https://www.rtrs.tv/vijesti/vijest.php?id=658277",
         "source_id": "RS_ENT_001",
@@ -912,12 +912,12 @@
     "mentions_24h": 3,
     "unique_events_24h": 3,
     "unique_sources_24h": 3,
-    "baseline_7d": 2.375,
-    "momentum": 0.263,
+    "baseline_7d": 2.5,
+    "momentum": 0.2,
     "last_event_at": "2026-08-31T15:12:49Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0436",
+        "cluster_id": "CL-2026-0444",
         "title": "U današnjem \"Dnevnom avazu\" čitajte: Mrtvi Mladić razotkrio Dinu i Denisa",
         "url": "https://avaz.ba/vijesti/bih/1069031/u-danasnjem-dnevnom-avazu-citajte-mrtvi-mladic-razotkrio-dinu-i-denisa",
         "source_id": "FBIH_002",
@@ -925,7 +925,7 @@
         "n_items": 1
       },
       {
-        "cluster_id": "CL-2026-0459",
+        "cluster_id": "CL-2026-0466",
         "title": "Borovina, Kokeza, Mrakić: Pontonski mostovi između PSS-a i struktura iz Srbije",
         "url": "https://spin-portal.info/borovina-kokeza-mrakic-pontonski-mostovi-izmedju-pss-a-i-struktura-iz-srbije",
         "source_id": "RS_IJ_027",
@@ -933,7 +933,7 @@
         "n_items": 1
       },
       {
-        "cluster_id": "CL-2026-0522",
+        "cluster_id": "CL-2026-0528",
         "title": "Koliko zaista pripada opštinama od poreza na lična primanja? - Istinomjer",
         "url": "https://istinomjer.ba/koliko-zaista-pripada-opstinama-od-poreza-na-licna-primanja/",
         "source_id": "BIH_ELEC_005",
@@ -953,12 +953,12 @@
     "mentions_24h": 3,
     "unique_events_24h": 2,
     "unique_sources_24h": 3,
-    "baseline_7d": 2.75,
-    "momentum": 0.091,
+    "baseline_7d": 2.875,
+    "momentum": 0.043,
     "last_event_at": "2026-08-31T11:42:43Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0492",
+        "cluster_id": "CL-2026-0498",
         "title": "(FOTO) Šta je Stevandić rekao direktoru Kancelarije Ambasade SAD u Banjaluci",
         "url": "https://srpskainfo.com/politika/sta-je-stevandic-rekao-direktoru-kancelarije-ambasade-sad-u-banjaluci/",
         "source_id": "BL_IJ3_001",
@@ -966,7 +966,7 @@
         "n_items": 2
       },
       {
-        "cluster_id": "CL-2026-0444",
+        "cluster_id": "CL-2026-0452",
         "title": "",
         "url": "https://avaz.ba/sitemap-server.xml/2022-1.xml",
         "source_id": "FBIH_002",
@@ -986,12 +986,12 @@
     "mentions_24h": 23,
     "unique_events_24h": 17,
     "unique_sources_24h": 5,
-    "baseline_7d": 24.375,
-    "momentum": -0.056,
+    "baseline_7d": 24.625,
+    "momentum": -0.066,
     "last_event_at": "2026-08-31T21:30:08Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0450",
+        "cluster_id": "CL-2026-0026",
         "title": "Pješak teško povrijeđen u saobraćajnoj nesreći u Doboju",
         "url": "https://srpskainfo.com/hronika/saobracajna-nesreca-u-doboju-pjesak-tesko-povrijedjen-nakon-udara-pezoa/",
         "source_id": "BL_IJ3_001",
@@ -1007,7 +1007,7 @@
         "n_items": 2
       },
       {
-        "cluster_id": "CL-2026-0448",
+        "cluster_id": "CL-2026-0456",
         "title": "Нову школску годину спремно дочекују школе добојске регије (ВИДЕО)",
         "url": "https://www.rtrs.tv/vijesti/vijest.php?id=658264",
         "source_id": "RS_ENT_001",
@@ -1039,7 +1039,7 @@
     "last_event_at": "2026-08-31T11:42:43Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0492",
+        "cluster_id": "CL-2026-0498",
         "title": "(FOTO) Šta je Stevandić rekao direktoru Kancelarije Ambasade SAD u Banjaluci",
         "url": "https://srpskainfo.com/politika/sta-je-stevandic-rekao-direktoru-kancelarije-ambasade-sad-u-banjaluci/",
         "source_id": "BL_IJ3_001",
@@ -1057,12 +1057,12 @@
     "mentions_24h": 5,
     "unique_events_24h": 5,
     "unique_sources_24h": 4,
-    "baseline_7d": 6.5,
-    "momentum": -0.231,
+    "baseline_7d": 6.625,
+    "momentum": -0.245,
     "last_event_at": "2026-08-31T20:58:00Z",
     "top_events": [
       {
-        "cluster_id": "CL-2026-0473",
+        "cluster_id": "CL-2026-0479",
         "title": "Обавјештење кандидатима СНСД-а",
         "url": "https://snsd.org/izborne-kampanje/opsti-izbori-2026/obavjestenje-kandidatima/",
         "source_id": "POL_RS_001",
@@ -1070,7 +1070,7 @@
         "n_items": 1
       },
       {
-        "cluster_id": "CL-2026-0476",
+        "cluster_id": "CL-2026-0482",
         "title": "Uhapšen muškarac iz Čelinca: Vozio s tri promila alkohola u krvi, u kući skrivao ručni bacač raketa",
         "url": "https://www.klix.ba/vijesti/crna-hronika/uhapsen-muskarac-iz-celinca-vozio-s-tri-promila-alkohola-u-krvi-u-kuci-skrivao-rucni-bacac-raketa/260831081",
         "source_id": "FBIH_001",
@@ -1078,7 +1078,7 @@
         "n_items": 1
       },
       {
-        "cluster_id": "CL-2026-0480",
+        "cluster_id": "CL-2026-0486",
         "title": "Нажалост, не пише нам се добро: Упозорење метео стручњака из БиХ",
         "url": "https://atvbl.rs/vijesti/drustvo/nazalost-ne-pise-nam-se-dobro-upozorenje-meteo-strucnjaka-iz-bih/2337161",
         "source_id": "RS_ENT_002",

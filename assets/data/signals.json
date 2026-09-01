@@ -8,14 +8,14 @@
       "stevandic"
     ],
     "events": [
-      "CL-2026-0492",
-      "CL-2026-0444"
+      "CL-2026-0498",
+      "CL-2026-0452"
     ],
     "metrics": {
       "mentions_24h": 3,
       "unique_events_24h": 2,
       "unique_sources_24h": 3,
-      "momentum": 0.091,
+      "momentum": 0.043,
       "acceleration": 0.0,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 23
@@ -44,20 +44,20 @@
     "entity_id": "us-snsd",
     "label": "US ↔ SNSD",
     "classification": "REVIEW",
-    "why_now": "momentum +120% vs normale; 11 fonti indipendenti nelle ultime 24h; 25 eventi distinti; entita' primaria/in titolo in almeno un articolo",
+    "why_now": "momentum +118% vs normale; 11 fonti indipendenti nelle ultime 24h; 25 eventi distinti; entita' primaria/in titolo in almeno un articolo",
     "entities": [
       "us-snsd"
     ],
     "events": [
-      "CL-2026-0492",
-      "CL-2026-0414",
-      "CL-2026-0413"
+      "CL-2026-0498",
+      "CL-2026-0422",
+      "CL-2026-0421"
     ],
     "metrics": {
       "mentions_24h": 28,
       "unique_events_24h": 25,
       "unique_sources_24h": 11,
-      "momentum": 1.196,
+      "momentum": 1.175,
       "acceleration": 0.0,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 23
@@ -99,9 +99,9 @@
       "mandati-us"
     ],
     "events": [
-      "CL-2026-0492",
-      "CL-2026-0497",
-      "CL-2026-0414"
+      "CL-2026-0498",
+      "CL-2026-0503",
+      "CL-2026-0422"
     ],
     "metrics": {
       "mentions_24h": 4,
@@ -138,20 +138,20 @@
     "entity_id": "snsd",
     "label": "SNSD",
     "classification": "REVIEW",
-    "why_now": "momentum +120% vs normale; 11 fonti indipendenti nelle ultime 24h; 25 eventi distinti; entita' primaria/in titolo in almeno un articolo",
+    "why_now": "momentum +118% vs normale; 11 fonti indipendenti nelle ultime 24h; 25 eventi distinti; entita' primaria/in titolo in almeno un articolo",
     "entities": [
       "snsd"
     ],
     "events": [
-      "CL-2026-0492",
-      "CL-2026-0414",
-      "CL-2026-0413"
+      "CL-2026-0498",
+      "CL-2026-0422",
+      "CL-2026-0421"
     ],
     "metrics": {
       "mentions_24h": 28,
       "unique_events_24h": 25,
       "unique_sources_24h": 11,
-      "momentum": 1.196,
+      "momentum": 1.175,
       "acceleration": 0.0,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 23
@@ -188,20 +188,20 @@
     "entity_id": "dodik",
     "label": "Milorad Dodik",
     "classification": "REVIEW",
-    "why_now": "momentum +88% vs normale; 13 fonti indipendenti nelle ultime 24h; 38 eventi distinti; entita' primaria/in titolo in almeno un articolo",
+    "why_now": "momentum +83% vs normale; 13 fonti indipendenti nelle ultime 24h; 38 eventi distinti; entita' primaria/in titolo in almeno un articolo",
     "entities": [
       "dodik"
     ],
     "events": [
-      "CL-2026-0413",
-      "CL-2026-0486",
-      "CL-2026-0492"
+      "CL-2026-0421",
+      "CL-2026-0492",
+      "CL-2026-0498"
     ],
     "metrics": {
       "mentions_24h": 45,
       "unique_events_24h": 38,
       "unique_sources_24h": 13,
-      "momentum": 0.885,
+      "momentum": 0.827,
       "acceleration": 0.0,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 23
@@ -234,47 +234,6 @@
     "provenance": "PILOT_RULES"
   },
   {
-    "entity_id": "sp-demos",
-    "label": "SP · DEMOS · NDP",
-    "classification": "REVIEW",
-    "why_now": "momentum +85% vs normale; 2 eventi distinti; entita' primaria/in titolo in almeno un articolo",
-    "entities": [
-      "sp-demos"
-    ],
-    "events": [
-      "CL-2026-0519",
-      "CL-2026-0459"
-    ],
-    "metrics": {
-      "mentions_24h": 3,
-      "unique_events_24h": 2,
-      "unique_sources_24h": 2,
-      "momentum": 0.846,
-      "acceleration": 1.0,
-      "max_entity_salience": 0.85,
-      "max_co_entities_in_event": 11
-    },
-    "sources": [
-      "FBIH_001",
-      "RS_IJ_027"
-    ],
-    "evidence": [
-      "https://www.klix.ba/vijesti/svijet/americki-kongresmen-o-najavi-sahrane-mladica-uz-drzavne-pocasti-kao-da-ih-njemacka-daje-hitleru/260831207",
-      "https://www.klix.ba/sport/kosarka/kosarkasi-bih-se-fotografisali-s-lazicevim-dresom-savez-poslao-snaznu-poruku-uoci-duela-s-litvanijom/260831159",
-      "https://spin-portal.info/borovina-kokeza-mrakic-pontonski-mostovi-izmedju-pss-a-i-struktura-iz-srbije"
-    ],
-    "first_seen": "2026-08-31T08:23:31Z",
-    "last_seen": "2026-08-31T21:51:00Z",
-    "confidence": 0.75,
-    "confidence_components": {
-      "momentum": true,
-      "sources": false,
-      "events": true,
-      "salience": true
-    },
-    "provenance": "PILOT_RULES"
-  },
-  {
     "entity_id": "sds",
     "label": "SDS",
     "classification": "REVIEW",
@@ -283,15 +242,15 @@
       "sds"
     ],
     "events": [
-      "CL-2026-0436",
-      "CL-2026-0459",
-      "CL-2026-0522"
+      "CL-2026-0444",
+      "CL-2026-0466",
+      "CL-2026-0528"
     ],
     "metrics": {
       "mentions_24h": 3,
       "unique_events_24h": 3,
       "unique_sources_24h": 3,
-      "momentum": 0.263,
+      "momentum": 0.2,
       "acceleration": 0.0,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 23
@@ -321,20 +280,20 @@
     "entity_id": "stanivukovic",
     "label": "Draško Stanivuković",
     "classification": "REVIEW",
-    "why_now": "momentum +129% vs normale; 6 fonti indipendenti nelle ultime 24h; 8 eventi distinti; entita' primaria/in titolo in almeno un articolo",
+    "why_now": "momentum +121% vs normale; 6 fonti indipendenti nelle ultime 24h; 8 eventi distinti; entita' primaria/in titolo in almeno un articolo",
     "entities": [
       "stanivukovic"
     ],
     "events": [
       "CL-2026-0014",
-      "CL-2026-0426",
-      "CL-2026-0459"
+      "CL-2026-0434",
+      "CL-2026-0466"
     ],
     "metrics": {
       "mentions_24h": 8,
       "unique_events_24h": 8,
       "unique_sources_24h": 6,
-      "momentum": 1.286,
+      "momentum": 1.207,
       "acceleration": 0.0,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 23
@@ -369,20 +328,20 @@
     "entity_id": "opozicija",
     "label": "Opozicija · odnosi",
     "classification": "REVIEW",
-    "why_now": "momentum +56% vs normale; 5 fonti indipendenti nelle ultime 24h; 7 eventi distinti; entita' primaria/in titolo in almeno un articolo",
+    "why_now": "momentum +51% vs normale; 5 fonti indipendenti nelle ultime 24h; 7 eventi distinti; entita' primaria/in titolo in almeno un articolo",
     "entities": [
       "opozicija"
     ],
     "events": [
-      "CL-2026-0436",
+      "CL-2026-0444",
       "CL-2026-0014",
-      "CL-2026-0444"
+      "CL-2026-0452"
     ],
     "metrics": {
       "mentions_24h": 7,
       "unique_events_24h": 7,
       "unique_sources_24h": 5,
-      "momentum": 0.556,
+      "momentum": 0.514,
       "acceleration": 0.0,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 23
@@ -420,15 +379,15 @@
       "ij5-konkurencija"
     ],
     "events": [
-      "CL-2026-0450",
+      "CL-2026-0026",
       "CL-2026-0006",
-      "CL-2026-0448"
+      "CL-2026-0456"
     ],
     "metrics": {
       "mentions_24h": 53,
       "unique_events_24h": 44,
       "unique_sources_24h": 14,
-      "momentum": 0.399,
+      "momentum": 0.39,
       "acceleration": 0.143,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 23
@@ -470,9 +429,9 @@
       "predsjednik-rs"
     ],
     "events": [
-      "CL-2026-0414",
+      "CL-2026-0422",
       "CL-2026-0014",
-      "CL-2026-0487"
+      "CL-2026-0493"
     ],
     "metrics": {
       "mentions_24h": 10,
@@ -520,15 +479,15 @@
       "minic"
     ],
     "events": [
-      "CL-2026-0414",
-      "CL-2026-0439",
-      "CL-2026-0487"
+      "CL-2026-0422",
+      "CL-2026-0447",
+      "CL-2026-0493"
     ],
     "metrics": {
       "mentions_24h": 11,
       "unique_events_24h": 10,
       "unique_sources_24h": 7,
-      "momentum": 0.375,
+      "momentum": 0.313,
       "acceleration": 0.0,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 23
@@ -565,20 +524,20 @@
     "entity_id": "predsjednistvo",
     "label": "Predsjedništvo BiH",
     "classification": "REVIEW",
-    "why_now": "momentum +138% vs normale; 8 fonti indipendenti nelle ultime 24h; 12 eventi distinti; entita' primaria/in titolo in almeno un articolo",
+    "why_now": "momentum +129% vs normale; 8 fonti indipendenti nelle ultime 24h; 12 eventi distinti; entita' primaria/in titolo in almeno un articolo",
     "entities": [
       "predsjednistvo"
     ],
     "events": [
-      "CL-2026-0503",
+      "CL-2026-0509",
       "CL-2026-0014",
-      "CL-2026-0444"
+      "CL-2026-0452"
     ],
     "metrics": {
       "mentions_24h": 14,
       "unique_events_24h": 12,
       "unique_sources_24h": 8,
-      "momentum": 1.383,
+      "momentum": 1.286,
       "acceleration": 0.0,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 23
@@ -615,20 +574,20 @@
     "entity_id": "cik",
     "label": "CIK BiH",
     "classification": "REVIEW",
-    "why_now": "momentum +88% vs normale; 5 fonti indipendenti nelle ultime 24h; 6 eventi distinti; entita' primaria/in titolo in almeno un articolo",
+    "why_now": "momentum +83% vs normale; 5 fonti indipendenti nelle ultime 24h; 6 eventi distinti; entita' primaria/in titolo in almeno un articolo",
     "entities": [
       "cik"
     ],
     "events": [
-      "CL-2026-0397",
+      "CL-2026-0406",
       "CL-2026-0014",
-      "CL-2026-0473"
+      "CL-2026-0479"
     ],
     "metrics": {
       "mentions_24h": 8,
       "unique_events_24h": 6,
       "unique_sources_24h": 5,
-      "momentum": 0.882,
+      "momentum": 0.829,
       "acceleration": 0.0,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 23
@@ -663,20 +622,20 @@
     "entity_id": "izborni-proces",
     "label": "Izborni proces",
     "classification": "REVIEW",
-    "why_now": "momentum +106% vs normale; 5 fonti indipendenti nelle ultime 24h; 7 eventi distinti; entita' primaria/in titolo in almeno un articolo",
+    "why_now": "momentum +100% vs normale; 5 fonti indipendenti nelle ultime 24h; 7 eventi distinti; entita' primaria/in titolo in almeno un articolo",
     "entities": [
       "izborni-proces"
     ],
     "events": [
-      "CL-2026-0397",
+      "CL-2026-0406",
       "CL-2026-0014",
-      "CL-2026-0473"
+      "CL-2026-0479"
     ],
     "metrics": {
       "mentions_24h": 9,
       "unique_events_24h": 7,
       "unique_sources_24h": 5,
-      "momentum": 1.057,
+      "momentum": 1.0,
       "acceleration": 0.0,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 23
@@ -712,14 +671,14 @@
     "entity_id": "ohr",
     "label": "OHR",
     "classification": "REVIEW",
-    "why_now": "momentum +211% vs normale; 5 fonti indipendenti nelle ultime 24h; 5 eventi distinti; entita' primaria/in titolo in almeno un articolo",
+    "why_now": "momentum +211% vs normale; 5 fonti indipendenti nelle ultime 24h; 5 eventi distinti",
     "entities": [
       "ohr"
     ],
     "events": [
-      "CL-2026-0492",
-      "CL-2026-0502",
-      "CL-2026-0459"
+      "CL-2026-0498",
+      "CL-2026-0508",
+      "CL-2026-0466"
     ],
     "metrics": {
       "mentions_24h": 7,
@@ -746,12 +705,12 @@
     ],
     "first_seen": "2026-08-31T08:23:31Z",
     "last_seen": "2026-08-31T17:05:15Z",
-    "confidence": 1.0,
+    "confidence": 0.75,
     "confidence_components": {
       "momentum": true,
       "sources": true,
       "events": true,
-      "salience": true
+      "salience": false
     },
     "provenance": "PILOT_RULES"
   },
@@ -759,21 +718,21 @@
     "entity_id": "beograd",
     "label": "Beograd / Srbija",
     "classification": "REVIEW",
-    "why_now": "momentum +53% vs normale; 5 fonti indipendenti nelle ultime 24h; 12 eventi distinti; entita' primaria/in titolo in almeno un articolo",
+    "why_now": "5 fonti indipendenti nelle ultime 24h; 12 eventi distinti; entita' primaria/in titolo in almeno un articolo",
     "entities": [
       "beograd"
     ],
     "events": [
-      "CL-2026-0519",
-      "CL-2026-0444",
-      "CL-2026-0459"
+      "CL-2026-0525",
+      "CL-2026-0452",
+      "CL-2026-0466"
     ],
     "metrics": {
       "mentions_24h": 13,
       "unique_events_24h": 12,
       "unique_sources_24h": 5,
-      "momentum": 0.529,
-      "acceleration": 2.0,
+      "momentum": 0.444,
+      "acceleration": 1.0,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 23
     },
@@ -795,9 +754,9 @@
     ],
     "first_seen": "2026-08-31T06:51:07.574000Z",
     "last_seen": "2026-08-31T23:00:36Z",
-    "confidence": 1.0,
+    "confidence": 0.75,
     "confidence_components": {
-      "momentum": true,
+      "momentum": false,
       "sources": true,
       "events": true,
       "salience": true
@@ -808,21 +767,21 @@
     "entity_id": "finansiranje",
     "label": "Finansiranje kampanje",
     "classification": "REVIEW",
-    "why_now": "momentum +55% vs normale; 12 fonti indipendenti nelle ultime 24h; 22 eventi distinti; entita' primaria/in titolo in almeno un articolo",
+    "why_now": "momentum +50% vs normale; 12 fonti indipendenti nelle ultime 24h; 22 eventi distinti; entita' primaria/in titolo in almeno un articolo",
     "entities": [
       "finansiranje"
     ],
     "events": [
-      "CL-2026-0426",
-      "CL-2026-0414",
-      "CL-2026-0513"
+      "CL-2026-0434",
+      "CL-2026-0422",
+      "CL-2026-0519"
     ],
     "metrics": {
       "mentions_24h": 25,
       "unique_events_24h": 22,
       "unique_sources_24h": 12,
-      "momentum": 0.55,
-      "acceleration": 0.5,
+      "momentum": 0.504,
+      "acceleration": 0.333,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 23
     },
@@ -858,20 +817,20 @@
     "entity_id": "mediji",
     "label": "Medijski signal",
     "classification": "REVIEW",
-    "why_now": "momentum +243% vs normale; 6 fonti indipendenti nelle ultime 24h; 7 eventi distinti; entita' primaria/in titolo in almeno un articolo",
+    "why_now": "momentum +227% vs normale; 6 fonti indipendenti nelle ultime 24h; 7 eventi distinti; entita' primaria/in titolo in almeno un articolo",
     "entities": [
       "mediji"
     ],
     "events": [
-      "CL-2026-0462",
-      "CL-2026-0453",
-      "CL-2026-0458"
+      "CL-2026-0469",
+      "CL-2026-0460",
+      "CL-2026-0465"
     ],
     "metrics": {
       "mentions_24h": 9,
       "unique_events_24h": 7,
       "unique_sources_24h": 6,
-      "momentum": 2.429,
+      "momentum": 2.273,
       "acceleration": 0.0,
       "max_entity_salience": 1.35,
       "max_co_entities_in_event": 8
@@ -912,15 +871,15 @@
       "doboj"
     ],
     "events": [
-      "CL-2026-0450",
+      "CL-2026-0026",
       "CL-2026-0006",
-      "CL-2026-0448"
+      "CL-2026-0456"
     ],
     "metrics": {
       "mentions_24h": 23,
       "unique_events_24h": 17,
       "unique_sources_24h": 5,
-      "momentum": -0.056,
+      "momentum": -0.066,
       "acceleration": 0.5,
       "max_entity_salience": 1.65,
       "max_co_entities_in_event": 23
@@ -962,15 +921,15 @@
       "banjaluka"
     ],
     "events": [
-      "CL-2026-0473",
-      "CL-2026-0476",
-      "CL-2026-0480"
+      "CL-2026-0479",
+      "CL-2026-0482",
+      "CL-2026-0486"
     ],
     "metrics": {
       "mentions_24h": 5,
       "unique_events_24h": 5,
       "unique_sources_24h": 4,
-      "momentum": -0.231,
+      "momentum": -0.245,
       "acceleration": 1.0,
       "max_entity_salience": 1.25,
       "max_co_entities_in_event": 23
