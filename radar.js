@@ -304,8 +304,18 @@
       .join(' ');
   }
 
+  // Traslitterazione cirillico -> latino. Senza questa, il .replace(/[^a-z0-9 ]/g,' ') qui sotto
+  // cancellava ogni carattere cirillico: le keyword delle card erano cieche al 65% del corpus
+  // (misurato su rassegna.json, 937 item: 'SNSD' passa da 28 a 43 item corrispondenti, 'Doboj'
+  // da 172 a 182, 'Josic' da 0 a 1). La pipeline traslittera gia' allo stesso modo in
+  // normalize_search() (pilot/util.py:194): questo allinea il frontend, non aggiunge una regola.
+  var CYR_LAT = {
+    'а':'a','б':'b','в':'v','г':'g','д':'d','ђ':'dj','е':'e','ж':'z','з':'z','и':'i',
+    'ј':'j','к':'k','л':'l','љ':'lj','м':'m','н':'n','њ':'nj','о':'o','п':'p','р':'r',
+    'с':'s','т':'t','ћ':'c','у':'u','ф':'f','х':'h','ц':'c','ч':'c','џ':'dz','ш':'s'
+  };
   function normSearch(t) {
-    return String(t || '').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
+    return String(t || '').toLowerCase().replace(/[Ѐ-ӿ]/g, function (ch) { return CYR_LAT[ch] || ' '; }).normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
       .replace(/đ/g, 'dj').replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
   }
 

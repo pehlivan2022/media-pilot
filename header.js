@@ -12,6 +12,7 @@
     return [
       { href:'index.html', label:'Radar', icon:'◉' },
       { href:'us.html', label:'US', icon:'U' },
+      { href:'ij5.html', label:'IJ5 Doboj', icon:'⌖' },
       { href:'konkurenti.html', label:'Konkurenti', icon:'↔' },
       { href:'go.html', label:'Teritorij', icon:'⌖' },
       { href:'ostali.html', label:'Ostali', icon:'+' }
@@ -24,6 +25,7 @@
     var base = [
       { href:'index.html', label:'Radar', icon:'◉' },
       { href:'us.html', label:'US', icon:'U' },
+      { href:'ij5.html', label:'IJ5', icon:'⌖' },
       { href:'konkurenti.html', label:'Konkurenti', icon:'↔' }
     ];
     base.push({ href:'go.html', label:'Teritorij', icon:'⌖' });

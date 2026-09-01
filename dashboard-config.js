@@ -86,5 +86,72 @@
   TERITORIJ.push(c('banjaluka','Banja Luka','ključni centar · IJ3',{base:11,mark:'BL',theme:'teal',keywords:['Banja Luka'],ij:'IJ3',type:'territory'}));
   TERITORIJ.push(c('teren-promjene','Promjene na terenu','najveći lokalni pomak u feedu',{base:12,mark:'↑',theme:'teal',modules:['GO','IJ','LHI'],type:'territory',requireAny:true}));
 
-  window.DashboardConfig = { US:US, KONKURENTI:KONKURENTI, OSTALI:OSTALI, TERITORIJ:TERITORIJ, IJ_NAMES:IJ_NAMES };
+  // --- IJ5 · Doboj / Teslić / Petrovo / Stanari ------------------------------------------
+  // Perimetro della vista dedicata (ij5.html): Rade Tešić, i cinque capolista avversari della
+  // STESSA izborna jedinica (fonte: assets/data/candidates_source.json, Zvornik Danas
+  // 2026-08-18), i partiti che li portano, il territorio.
+  //
+  // Tre vincoli del codice esistente spiegano perche' questa lista e' costruita cosi':
+  //
+  // 1) parse_c_calls() (pilot/entities.py:153) legge OGNI c(...) letterale del file e NON
+  //    deduplica per key: ripetere qui una card gia' definita sopra creerebbe un'entita'
+  //    DOPPIA in config/entities.yaml, che run_all.py rigenera a ogni run. Quindi le card che
+  //    esistono gia' vengono riusate per riferimento (pickCard), non ridichiarate.
+  //
+  // 2) cardItems() (radar.js) filtra con `!card.ij || item.territory_ij === card.ij`, e la
+  //    pipeline lascia territory_ij SEMPRE null di proposito (pilot/score.py:112, garantito da
+  //    test_9_no_item_has_territory_ij_valued). Una card con `ij` valorizzato quindi non matcha
+  //    mai niente: e' il motivo per cui la card 'tesic' e le nove card IJ di go.html oggi sono
+  //    vuote per costruzione. pickCard() azzera `ij` sulla COPIA locale, senza toccare le card
+  //    originali (us.html e go.html restano esattamente come sono). Il perimetro territoriale
+  //    lo applica page-ij5.js filtrando su source_note, che e' un dato reale per ogni item.
+  //
+  // 3) cardStatus() accende l'ambra solo quando card.key coincide con un entity_id di
+  //    signals.json. Le tre card nuove qui sotto (Jović / Smiljanić / Hurtić) NON sono entita'
+  //    della pipeline: contano articoli per keyword, ma non diventeranno mai ambra.
+  //    Sono dichiarate con ij5Card() e non con c() di proposito. parse_c_calls() scarta le
+  //    chiamate con argomenti non letterali (stessa regola che gia' salta il template delle IJ),
+  //    quindi passando per questo wrapper le tre card NON entrano in config/entities.yaml e la
+  //    pipeline resta identica a prima: nessun run cambia risultato per colpa di questo file.
+  //    Per promuoverle a entita' vere (e avere l'ambra) basta riscriverle come c(...) letterali:
+  //    farlo consapevolmente, perche' cambia il corpus rilevante di dedup/trending/signals.
+  function ij5Card(key, label, meta, opts) { return c(key, label, meta, opts); }
+
+  function pickCard(key, base) {
+    var pools = [US, KONKURENTI, OSTALI, TERITORIJ];
+    for (var p = 0; p < pools.length; p++) {
+      for (var i = 0; i < pools[p].length; i++) {
+        if (pools[p][i].key === key) return Object.assign({}, pools[p][i], { ij: null, base: base });
+      }
+    }
+    return null;
+  }
+  var IJ5 = [
+    pickCard('tesic', 1),
+    pickCard('josic', 2),
+    pickCard('skrebic', 3),
+    ij5Card('jovic-ij5', 'Slađan Jović', 'SP-DEMOS-NDP · nosilac liste IJ5', { base:4, mark:'•', theme:'rose', keywords:['Slađan Jović','Sladan Jovic','Слађан Јовић','Јовић'] }),
+    ij5Card('smiljanic-ij5', 'Stojan Smiljanić', 'SDS · nosilac liste IJ5', { base:5, mark:'•', theme:'rose', keywords:['Stojan Smiljanić','Stojan Smiljanic','Стојан Смиљанић','Смиљанић'] }),
+    ij5Card('hurtic-ij5', 'Sevlid Hurtić', 'Koalicija za državu · nosilac liste IJ5', { base:6, mark:'•', theme:'rose', keywords:['Sevlid Hurtić','Sevlid Hurtic','Севлид Хуртић','Хуртић'] }),
+    pickCard('us', 7),
+    pickCard('snsd', 8),
+    pickCard('sps', 9),
+    pickCard('sp-demos', 10),
+    pickCard('sds', 11),
+    pickCard('doboj', 12),
+    pickCard('ij5-konkurencija', 13)
+  ].filter(Boolean);
+
+  // source_id -> nome, per le fonti che config/sources.yaml dichiara su IJ5 (piu' le due IJ4
+  // confinanti, tenute separate). Duplicato deliberato e piccolo: il frontend non legge YAML.
+  // Se si abilitano nuove fonti locali in config/sources.yaml, aggiungerle anche qui.
+  var IJ5_SOURCES = {
+    RS_IJ_014: { name:'RTV Doboj', territory:'IJ5' },
+    RS_IJ_013: { name:'Dobojski.info', territory:'IJ5' },
+    RS_IJ_015: { name:'Granice Doboja', territory:'IJ5' },
+    RS_IJ_012: { name:'Glas Regije', territory:'IJ4/IJ5' },
+    RS_IJ_009: { name:'Derventski List', territory:'IJ4' }
+  };
+
+  window.DashboardConfig = { US:US, KONKURENTI:KONKURENTI, OSTALI:OSTALI, TERITORIJ:TERITORIJ, IJ_NAMES:IJ_NAMES, IJ5:IJ5, IJ5_SOURCES:IJ5_SOURCES };
 })();
