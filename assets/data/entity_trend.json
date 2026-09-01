@@ -1,0 +1,1698 @@
+[
+  {
+    "entity_id": "ij5-konkurencija",
+    "label": "IJ5 · borba za mandat",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 365,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 61
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 44
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 47
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 30
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 37
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 29
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 53
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 64
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "doboj",
+    "label": "Doboj",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 235,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 40
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 33
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 33
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 24
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 31
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 17
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 29
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 28
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "dodik",
+    "label": "Milorad Dodik",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 229,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 37
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 25
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 28
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 24
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 9
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 23
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 31
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 52
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "finansiranje",
+    "label": "Finansiranje kampanje",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 153,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 23
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 19
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 21
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 17
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 8
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 20
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 17
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 28
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "us-snsd",
+    "label": "US ↔ SNSD",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 128,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 25
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 9
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 17
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 10
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 6
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 8
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 20
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 33
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "snsd",
+    "label": "SNSD",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 127,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 24
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 9
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 17
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 10
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 6
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 8
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 20
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 33
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "beograd",
+    "label": "Beograd / Srbija",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 77,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 9
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 11
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 9
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 5
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 9
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 5
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 13
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 16
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "minic",
+    "label": "Savo Minić",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 74,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 10
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 12
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 3
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 8
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 4
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 3
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 22
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 12
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "banjaluka",
+    "label": "Banja Luka",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 57,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 5
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 8
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 7
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 6
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 6
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 12
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 7
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 6
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "predsjednik-rs",
+    "label": "Predsjednik RS",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 55,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 6
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 7
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 6
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 4
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 3
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 18
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 11
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "predsjednistvo",
+    "label": "Predsjedništvo BiH",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 54,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 7
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 7
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 6
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 7
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 1
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 5
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 3
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 18
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "opozicija",
+    "label": "Opozicija · odnosi",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 44,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 8
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 3
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 9
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 6
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 1
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 2
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 7
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 8
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "izborni-proces",
+    "label": "Izborni proces",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 42,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 6
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 4
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 6
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 7
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 3
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 4
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 3
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 9
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "cik",
+    "label": "CIK BiH",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 41,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 6
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 4
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 6
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 7
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 3
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 3
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 4
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 8
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "stanivukovic",
+    "label": "Draško Stanivuković",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 34,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 5
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 1
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 2
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 2
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 1
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 4
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 9
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 10
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "stevandic",
+    "label": "Nenad Stevandić",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 27,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 4
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 3
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 2
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 3
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 1
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 11
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 3
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "sds",
+    "label": "SDS",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 21,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 2
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 1
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 7
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 4
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 1
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 1
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 2
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 3
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "ohr",
+    "label": "OHR",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 21,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 3
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 3
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 1
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 4
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 3
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 7
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "mediji",
+    "label": "Medijski signal",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 21,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 3
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 2
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 4
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 2
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 10
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "mandati-us",
+    "label": "Mandatni radar US",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 18,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 6
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 1
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 2
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 2
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 2
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 5
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "vukanovic",
+    "label": "Vukanović / Crnadak",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 14,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 3
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 2
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 1
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 1
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 4
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 3
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "sp-demos",
+    "label": "SP · DEMOS · NDP",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 13,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 3
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 2
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 1
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 3
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 1
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 3
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "us-sps",
+    "label": "US ↔ SPS",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 11,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 2
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 1
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 6
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 2
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "sps",
+    "label": "SPS · Goran Selak",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 8,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 1
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 6
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 1
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "dns-nps",
+    "label": "DNS · NPS",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 8,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 4
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 2
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 2
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 0
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "trivic",
+    "label": "Jelena Trivić",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 5,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 1
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 1
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 1
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 1
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 1
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "us",
+    "label": "Ujedinjena Srpska",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 3,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 2
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 1
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "josic",
+    "label": "Danijel Jošić",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 3,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 1
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 2
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 0
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "petkovic",
+    "label": "Milan Petković",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 2,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 1
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 1
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "blanusa",
+    "label": "Branko Blanuša",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 2,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 1
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 1
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "teren-promjene",
+    "label": "Promjene na terenu",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 2,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 1
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 1
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 0
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  },
+  {
+    "entity_id": "skrebic",
+    "label": "Dragutin Škrebić",
+    "window_start": "2026-08-22",
+    "window_end": "2026-09-01",
+    "total_mentions": 1,
+    "daily": [
+      {
+        "date": "2026-08-22",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-23",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-24",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-25",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-26",
+        "mentions": 1
+      },
+      {
+        "date": "2026-08-27",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-28",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-29",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-30",
+        "mentions": 0
+      },
+      {
+        "date": "2026-08-31",
+        "mentions": 0
+      },
+      {
+        "date": "2026-09-01",
+        "mentions": 0
+      }
+    ]
+  }
+]

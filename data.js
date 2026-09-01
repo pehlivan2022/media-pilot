@@ -16,7 +16,7 @@
   var DATA_SOURCE = { mode: 'local', base: 'assets/data/' };
   // mode: 'api' -> FILES diventa una mappa nome->endpoint, es:
   //   rassegna: '/api/radar-feed', cases: '/api/cases', tasks: '/api/tasks', archive: '/api/archive'
-  var FILES = ['rassegna', 'trending', 'signals', 'alerts', 'cases', 'tasks', 'archive', 'candidates'];
+  var FILES = ['rassegna', 'trending', 'signals', 'alerts', 'cases', 'tasks', 'archive', 'candidates', 'entity_trend'];
 
   var memo = null;
 

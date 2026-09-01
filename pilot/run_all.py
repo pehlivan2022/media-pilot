@@ -97,6 +97,7 @@ def run(days=collect.BACKFILL_DAYS_DEFAULT, do_collect=True, only_source_ids=Non
         print("\n=== trending ===")
         s["trending_rows"] = trending.run()
         s["trending_active"] = trending.export_trending_json(s["trending_rows"])
+        trending.run_entity_daily_trend()
 
         print("\n=== signals ===")
         s["signal_rows"] = signals.run()

@@ -95,13 +95,32 @@
     return '<button type="button" class="home-list-row" data-trend-entity="'+UI.esc(e.entity_id)+'"><div class="home-vrh-row-title">'+UI.esc(e.label)+'</div>'+
       '<div class="home-vrh-row-meta">'+mom+e.unique_events_24h+' eventi · '+e.unique_sources_24h+' fonti · '+UI.esc(UI.formatDate(e.last_event_at||''))+'</div></button>';
   }
-  function trendingEntitySheetBody(e){
+  // STEP 6 TASK_FASE4_CHIUSURA, 2026-09-01: andamento giornaliero reale, da
+  // assets/data/entity_trend.json (pilot/trending.py:compute_entity_daily_trend — stessa fonte
+  // di verita' di trending.json, scored_items.jsonl, solo aggregata per giorno invece che per
+  // finestra 1h/4h/24h). Nessun numero inventato: se l'entita' non ha storico multi-giorno
+  // (mai vista prima del run corrente) la sezione non compare, non si mostra un grafico vuoto.
+  function entityDailyTrendHtml(entityId, entityTrendList){
+    var t=(entityTrendList||[]).find(function(x){return x.entity_id===entityId;});
+    if(!t || !t.daily || t.daily.length<2) return '';
+    var maxM=t.daily.reduce(function(m,d){return Math.max(m,d.mentions);},1);
+    var rows=t.daily.map(function(d){
+      var pct=Math.round((d.mentions/maxM)*100);
+      var dLabel=UI.formatDate(d.date);
+      return '<div class="theme-row" style="gap:8px"><span class="th-meta" style="width:76px;flex:none">'+UI.esc(dLabel)+'</span>'+
+        '<span style="flex:1;background:var(--line,#2a2f3a);border-radius:4px;overflow:hidden;height:10px"><span style="display:block;height:100%;width:'+pct+'%;background:var(--accent,#7b4b9e)"></span></span>'+
+        '<span class="th-meta" style="width:28px;text-align:right;flex:none">'+d.mentions+'</span></div>';
+    }).join('');
+    return '<div class="sheet-section"><h3>Andamento ('+UI.esc(t.window_start)+' — '+UI.esc(t.window_end)+')</h3>'+rows+'</div>';
+  }
+  function trendingEntitySheetBody(e, entityTrendList){
     var mom = e.momentum!=null ? ('+'+Math.round(e.momentum*100)+'% momentum · ') : '';
     var events=(e.top_events||[]).map(function(ev){
       return '<li>'+(ev.url?('<a href="'+UI.esc(ev.url)+'" target="_blank" rel="noopener">'+UI.esc(ev.title)+'</a>'):UI.esc(ev.title))+
         '<div class="th-meta">'+UI.esc(ev.source_id||'')+' · '+UI.esc(UI.formatDate(ev.published_at||''))+'</div></li>';
     }).join('');
     return '<div class="sheet-section"><p class="t-14">'+mom+e.mentions_24h+' mentions/24h · '+e.unique_events_24h+' eventi · '+e.unique_sources_24h+' fonti</p></div>'+
+      entityDailyTrendHtml(e.entity_id, entityTrendList)+
       '<div class="sheet-section"><h3>Događaji</h3><ul class="sheet-list">'+(events||'<li>Nema.</li>')+'</ul></div>';
   }
   function trendingListSheetBody(list){
@@ -193,7 +212,7 @@
     content.querySelectorAll('[data-trend-entity]').forEach(function(btn){
       btn.addEventListener('click', function(){
         var e=trendingSorted.find(function(x){return x.entity_id===btn.getAttribute('data-trend-entity');});
-        if(e) UI.openSheet({ title:e.label, triggerEl:btn, bodyHtml:trendingEntitySheetBody(e) });
+        if(e) UI.openSheet({ title:e.label, triggerEl:btn, bodyHtml:trendingEntitySheetBody(e, data.entity_trend) });
       });
     });
     content.querySelectorAll('[data-signal-idx]').forEach(function(btn){

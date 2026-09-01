@@ -35,6 +35,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SCORED_ITEMS_JSONL = ROOT / "data" / "scored_items.jsonl"
 TRENDING_JSONL = ROOT / "data" / "trending_entities.jsonl"
 TRENDING_ASSET_JSON = ROOT / "assets" / "data" / "trending.json"
+ENTITY_TREND_ASSET_JSON = ROOT / "assets" / "data" / "entity_trend.json"
 MAX_EVIDENCE_URLS = 10
 
 BASELINE_WINDOW_DAYS = 7
@@ -216,6 +217,61 @@ def export_trending_json(rows):
     TRENDING_ASSET_JSON.write_text(json.dumps(entries, ensure_ascii=False, indent=2), encoding="utf-8", newline="\n")
     print(f"{TRENDING_ASSET_JSON.relative_to(ROOT)} scritto: {len(entries)} entita' attive nelle ultime 24h")
     return entries
+
+
+def compute_entity_daily_trend(items, entities):
+    """TASK_FASE4_CHIUSURA STEP 6, 2026-09-01 — andamento per entita' nel tempo: stessa fonte di
+    verita' di compute_trending() (`modules` su ogni scored_items relevant e' gia' la lista di
+    entity key menzionate, join gia' fatto a monte da score.py), qui aggregato per giorno civile
+    UTC invece che per bucket 1h/4h/24h. Giorni senza mention inclusi (zero reale, non assente)
+    sull'intera finestra coperta dal corpus, stesso principio di bucket_counts in
+    compute_trending() sopra. Solo entita' con almeno una mention nel corpus: le altre non hanno
+    nessun giorno da mostrare, non e' un dato mancante da riempire."""
+    relevant = [it for it in items if it.get("is_relevant") and it.get("published_at") and _dt(it["published_at"])]
+    if not relevant:
+        return []
+    all_dates = sorted({_dt(it["published_at"]).date() for it in relevant})
+    day_range = [(all_dates[0] + timedelta(days=i)) for i in range((all_dates[-1] - all_dates[0]).days + 1)]
+
+    by_entity_day = defaultdict(lambda: defaultdict(int))
+    for it in relevant:
+        d = _dt(it["published_at"]).date()
+        for key in it.get("modules") or []:
+            by_entity_day[key][d] += 1
+
+    rows = []
+    for ent in entities:
+        key = ent["key"]
+        day_counts = by_entity_day.get(key)
+        if not day_counts:
+            continue
+        daily = [{"date": d.isoformat(), "mentions": day_counts.get(d, 0)} for d in day_range]
+        rows.append({
+            "entity_id": key, "label": ent.get("label") or key,
+            "window_start": day_range[0].isoformat(), "window_end": day_range[-1].isoformat(),
+            "total_mentions": sum(day_counts.values()),
+            "daily": daily,
+        })
+    rows.sort(key=lambda r: r["total_mentions"], reverse=True)
+    return rows
+
+
+def export_entity_daily_trend(rows):
+    ENTITY_TREND_ASSET_JSON.parent.mkdir(parents=True, exist_ok=True)
+    ENTITY_TREND_ASSET_JSON.write_text(json.dumps(rows, ensure_ascii=False, indent=2), encoding="utf-8", newline="\n")
+    print(f"{ENTITY_TREND_ASSET_JSON.relative_to(ROOT)} scritto: {len(rows)} entita' con storico")
+    return rows
+
+
+def run_entity_daily_trend():
+    """Chiamata separata da run() (stesso pattern di export_trending_json in run_all.py): rilegge
+    scored_items.jsonl invece di condividere lo stato di run(), costo trascurabile (~3k righe) e
+    tiene run() libero da un secondo output non richiesto da chi lo chiama solo per
+    trending_entities.jsonl (es. test)."""
+    items = load_scored_items()
+    entities = load_entities_yaml()
+    rows = compute_entity_daily_trend(items, entities)
+    return export_entity_daily_trend(rows)
 
 
 def run():
