@@ -43,7 +43,7 @@ def fetch(url, timeout=15, retries=2, headers=None):
             if e.code in (429, 502, 503, 504) and attempt < retries:
                 time.sleep(2 ** attempt)
                 continue
-            kind = "RATE_LIMIT" if e.code in (429, 502, 503, 504) else ("BLOCKED" if e.code in (401, 403) else "FETCH_ERROR")
+            kind = "RATE_LIMIT" if e.code == 429 else ("BLOCKED" if e.code in (401, 403) else "FETCH_ERROR")
             raise FetchError(kind, f"HTTP {e.code} {url}", e.code) from e
         except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
             # ConnectionError copre http.client.RemoteDisconnected: verificato dal vivo (B1/B2a,
