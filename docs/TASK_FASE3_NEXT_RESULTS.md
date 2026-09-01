@@ -190,3 +190,38 @@ BiH/RS su questo insieme di entità.
   la rimozione di `cross_entity`.
 - "`classification` produce ≥2 valori distinti" → **soddisfatto** (REVIEW/MONITORING, 22/6 sui
   dati freschi), confermato anche dopo la rimozione (0/28 classificazioni cambiate).
+
+---
+
+## TASK_FASE4_CHIUSURA STEP 1/2 — gate del backfill era la causa vera
+
+Diagnosi confermata leggendo il codice: `collect.py:494` (numerazione pre-fix) passava `days`
+(30, da `BACKFILL_DAYS_DEFAULT`) a `_needs_history_supplement`, non i 7 giorni che sono il vero
+criterio di successo del progetto. Nessuna fonte era vicina a 30, quindi il gate non scattava mai.
+Fix (commit `d988fe5` + `0ce7d84`): nuova costante `BACKFILL_TARGET_DAYS = 7` usata solo nel gate
+(non in `window_start`, che resta su `BACKFILL_DAYS_DEFAULT`/`days` per non restringere la
+raccolta), `MAX_BACKFILL_URLS` 100→50, `BACKFILL_FETCH_WORKERS` 8→1 (elimina la concorrenza come
+variabile non spiegata, vedi run `9d4f2a1` sopra), retry su 502/503/504 oltre a 429 in
+`pilot/util.py:fetch()` (label lasciata `FETCH_ERROR`, non `RATE_LIMIT`, per non confondere quella
+metrica con l'esistente).
+
+**Nota sul criterio di successo:** la richiesta originale STEP 2 (`items_written ≥ 800`) è stata
+corretta a runtime dall'utente — sbagliata per costruzione, perché gate+cap riducono gli item
+*nuovi* per definizione (le fonti che saltano il supplemento scrivono zero item di backfill, non
+800). Criteri sostitutivi usati da qui in avanti: `duration_sec < 1200`, `sources_failed ≤ 15`,
+`items_fetched` in calo netto rispetto al baseline 1250 (run `9d4f2a1`), conteggio fonti con
+`window_actual_days ≥ 7` in salita rispetto al baseline 10/33.
+
+### Run 1 — commit `0ce7d84`, run Actions `33458654978`
+
+| metrica | valore | criterio | esito |
+|---|---|---|---|
+| `duration_sec` | 1939.6 | < 1200 | **FAIL** (+62%) |
+| `sources_failed` | 13 | ≤ 15 | OK |
+| `items_fetched` | 921 | calo netto da 1250 | OK (−26%) |
+| `items_written` | 205 | — (criterio ritirato) | — |
+| fonti `window_actual_days ≥ 7` | 11/33 | in salita da 10 | OK (marginale) |
+
+`duration_sec` ancora ben sopra target ma nessun segnale di rottura (fonti fallite in linea,
+fetch in calo, finestra che converge) → ramo "ancora alto ma sano" del task: run 2 con
+`MAX_BACKFILL_URLS = 30` invece di fermarsi o investigare un crash che non c'è.
