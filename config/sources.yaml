@@ -135,7 +135,7 @@ sources:
     enabled: true  # riattivata: B2a l'ha recuperata via Wayback CDX
     last_verified_at: "2026-08-27T01:05:01.315267Z"
     items_7d_at_audit: 2
-    window_actual_days: 0
+    window_actual_days: 1
     website_url: "https://www.dobojski.info/"
   - source_id: RS_IJ_012
     name: "Glas Regije"
@@ -258,7 +258,7 @@ sources:
     enabled: true
     last_verified_at: "2026-08-27T23:09:31.898199Z"
     items_7d_at_audit: 30
-    window_actual_days: 2
+    window_actual_days: 3
     website_url: "https://www.klix.ba/"
   # B2a — aggiunta 2026-08-28: Capital.ba era BLOCKED (HTTP 403 in diretta) nell'audit di FIX_01.
   # Wayback CDX la recupera (403 non si applica alle pagine archiviate): 48 item verificati dal
@@ -343,7 +343,7 @@ sources:
     enabled: true
     last_verified_at: "2026-08-29T00:00:00Z"
     items_7d_at_audit: 10
-    window_actual_days: 5
+    window_actual_days: 6
     website_url: "https://6yka.com/"
   - source_id: BL_IJ3_004
     name: "Frontal.ba"
@@ -388,7 +388,7 @@ sources:
     enabled: true
     last_verified_at: "2026-08-29T00:00:00Z"
     items_7d_at_audit: 50
-    window_actual_days: 2
+    window_actual_days: 8
     website_url: "https://www.oslobodjenje.ba/"
   - source_id: RS_IJ_002
     name: "InfoPrijedor"
@@ -493,7 +493,7 @@ sources:
     enabled: true
     last_verified_at: "2026-08-29T00:00:00Z"
     items_7d_at_audit: 10
-    window_actual_days: 3
+    window_actual_days: 4
     website_url: "https://avaz.ba/"
   - source_id: BL_IJ3_008
     name: "Banjaluka.net"
